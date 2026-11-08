@@ -26,16 +26,17 @@ const state = {
   changes: { prevDate: null, drops: [], ups: [], newOffers: [], newVehicles: [] },
   filters: {
     q: '',
-    quick: 'all', // all | suv | compact | BEV | PHEV | HEV | chinese | bonus
+    quick: 'all', // all | suv-familial | suv-compact | suv-citadin | compacte | citadine | lease450 | BEV | PHEV | HEV | chinese | bonus
     maxBudget: '',
-    maxMonthly: '',
+    maxMonthly: '450',
     minRange: '',
     minTrunk: '',
     sort: 'score', // score | netAsc | monthlyAsc | discountDesc | rangeDesc
+    viewMode: 'byType', // byType | flat
   },
   compareIds: [],
   tco: {
-    kmPerYear: 14000,
+    kmPerYear: 15000,
     years: 4,
     homeChargeShare: 80,
     elecHomeEur: 0.21,
@@ -43,7 +44,7 @@ const state = {
     petrolEur: 1.78,
     summerWeeks: 3,
     summerWeekCostEur: 620,
-    mode: 'cash', // cash | lease
+    mode: 'lease', // cash | lease
     compactId: '',
     suvId: '',
     thirdId: '',
@@ -272,11 +273,11 @@ function renderVehicleCard(v) {
           }
         </div>
         <div class="price-col">
-          <span class="price-lbl">Meilleure LLD / LOA</span>
+          <span class="price-lbl">LLD / LOA (0 € apport · 15 000 km/an)</span>
           <span class="price-lease">${m.bestMonthly ? `${eur(m.bestMonthly)}/mois` : 'Sur devis'}</span>
           <span class="price-lbl">${
             m.bestMonthlyOffer
-              ? `Apport ${eur(m.bestMonthlyOffer.downPaymentEur || 0)} · ${m.bestMonthlyOffer.durationMonths || 37} mois`
+              ? `0 € d'apport · ${(m.bestMonthlyOffer.kmPerYear || 15000).toLocaleString('fr-FR')} km/an · ${m.bestMonthlyOffer.durationMonths || 48} mois`
               : 'Voir offres concession'
           }</span>
         </div>
@@ -318,6 +319,39 @@ function renderVehicleCard(v) {
   `;
 }
 
+const VEHICLE_TYPE_GROUPS = [
+  {
+    id: 'suv-familial',
+    title: '🚙 SUV Familiaux (Spacieux & Longs Trajets)',
+    subtitle: 'Gabarit 4,45 m à 4,78 m · Grand coffre (450 à 850 L) — ex : Jaecoo 7 SHS, Renault Scénic E-Tech, BYD Seal U DM-i, Peugeot 3008, Tesla Model Y…',
+    match: (v) => str(v.segment).toLowerCase() === 'suv familial',
+  },
+  {
+    id: 'suv-compact',
+    title: '🚙 SUV Compacts (Polyvalents Ville & Route)',
+    subtitle: 'Gabarit 4,30 m à 4,45 m — ex : Jaecoo 5 SHS / EV, Kia EV3, Renault Symbioz, Dacia Duster Hybrid, Hyundai Kona, MG ZS Hybrid+, Skoda Elroq…',
+    match: (v) => str(v.segment).toLowerCase() === 'suv compact',
+  },
+  {
+    id: 'suv-citadin',
+    title: '🚙 SUV Citadins & Urbains (Format Compact Surélevé)',
+    subtitle: 'Gabarit 3,82 m à 4,30 m — ex : Peugeot e-2008, Renault 4 E-Tech, Captur E-Tech, Toyota Yaris Cross, Citroën ë-C3 Aircross, Jeep Avenger…',
+    match: (v) => str(v.segment).toLowerCase() === 'suv citadin',
+  },
+  {
+    id: 'compacte',
+    title: '🚗 Compactes & Berlines (Gabarit type Mégane + Option Location Été)',
+    subtitle: 'Berlines compactes & familiales à faible consommation — ex : Renault Mégane E-Tech, MG4, VW ID.3, Citroën ë-C4, Tesla Model 3…',
+    match: (v) => !v.isSUV && ['compacte', 'berline'].includes(str(v.segment).toLowerCase()),
+  },
+  {
+    id: 'citadine',
+    title: '🚗 Citadines (Gabarit type Clio / R5 + Option Location Été)',
+    subtitle: 'Agiles au quotidien et loyers ultra-réduits — ex : Renault Clio E-Tech, R5 E-Tech, Peugeot e-208, Citroën ë-C3, BYD Dolphin, Dacia Spring…',
+    match: (v) => !v.isSUV && str(v.segment).toLowerCase() === 'citadine',
+  },
+];
+
 /* ---------- Vue 1 : Tableau de bord & Offres (#/) ---------- */
 function filterAndSortVehicles() {
   const vehicles = arr(state.data?.vehicles);
@@ -337,7 +371,13 @@ function filterAndSortVehicles() {
         .replace(/[\u0300-\u036f]/g, '');
       if (!hay.includes(qNorm)) return false;
     }
+    const segLower = str(v.segment).toLowerCase();
     if (f.quick === 'suv' && !v.isSUV) return false;
+    if (f.quick === 'suv-familial' && segLower !== 'suv familial') return false;
+    if (f.quick === 'suv-compact' && segLower !== 'suv compact') return false;
+    if (f.quick === 'suv-citadin' && segLower !== 'suv citadin') return false;
+    if (f.quick === 'compacte' && !(!v.isSUV && ['compacte', 'berline'].includes(segLower))) return false;
+    if (f.quick === 'citadine' && !(!v.isSUV && segLower === 'citadine')) return false;
     if (f.quick === 'compact' && !isCompactGab(v)) return false;
     if (['BEV', 'PHEV', 'HEV'].includes(f.quick) && v.energy !== f.quick) return false;
     if (f.quick === 'chinese' && !v.chineseBrand) return false;
@@ -503,28 +543,39 @@ function renderDashboard(main) {
     <section class="filter-panel" aria-label="Recherche et filtres">
       <div class="filter-top">
         <div class="search-input-wrap">
-          <input id="f-q" type="search" class="search-input" placeholder="🔍 Rechercher une marque, un modèle (ex: Clio, Mégane, Scenic, BYD, MG, Kia EV3, 3008…)" value="${esc(state.filters.q)}" />
+          <input id="f-q" type="search" class="search-input" placeholder="🔍 Rechercher une marque, un modèle (ex: Jaecoo, Clio, Mégane, Scenic, BYD, MG, Kia EV3, 3008…)" value="${esc(state.filters.q)}" />
         </div>
         <select id="f-sort" class="select-input" aria-label="Trier par">
           <option value="score" ${state.filters.sort === 'score' ? 'selected' : ''}>Trier : Meilleur score (/100)</option>
           <option value="netAsc" ${state.filters.sort === 'netAsc' ? 'selected' : ''}>Trier : Prix net croissant</option>
-          <option value="monthlyAsc" ${state.filters.sort === 'monthlyAsc' ? 'selected' : ''}>Trier : Mensualité croissante</option>
+          <option value="monthlyAsc" ${state.filters.sort === 'monthlyAsc' ? 'selected' : ''}>Trier : Mensualité croissante (0 € apport)</option>
           <option value="discountDesc" ${state.filters.sort === 'discountDesc' ? 'selected' : ''}>Trier : Remise max</option>
           <option value="rangeDesc" ${state.filters.sort === 'rangeDesc' ? 'selected' : ''}>Trier : Autonomie décroissante</option>
         </select>
-        <button id="f-reset" type="button" class="btn btn-ghost btn-sm">Réinitialiser</button>
+        <div style="display:flex;gap:0.4rem;">
+          <button id="f-view-toggle" type="button" class="btn btn-outline btn-sm" title="Basculer entre la présentation par type de véhicule et la grille globale">
+            ${state.filters.viewMode === 'byType' ? '🗂️ Vue : Par type de véhicule' : '📋 Vue : Grille globale'}
+          </button>
+          <button id="f-reset" type="button" class="btn btn-ghost btn-sm">Tout afficher (sans limite loyer)</button>
+        </div>
       </div>
 
+      <div style="font-size:0.78rem;color:var(--text-muted);margin:0.5rem 0 0.35rem;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;">
+        1. Filtrer directement par type de véhicule (ou motorisation) :
+      </div>
       <div class="quick-pills" id="quick-pills">
         ${[
-          ['all', 'Tout voir'],
-          ['suv', '🚙 SUV (Urbains / Compacts / Familiaux)'],
-          ['compact', '🚗 Citadine & Compacte (type Clio / Mégane)'],
+          ['all', '🗂️ Tous les types (groupés)'],
+          ['suv-familial', '🚙 SUV Familiaux (Jaecoo 7, Scénic, Seal U, 3008…)'],
+          ['suv-compact', '🚙 SUV Compacts (Jaecoo 5, EV3, Symbioz, Duster…)'],
+          ['suv-citadin', '🚙 SUV Citadins (e-2008, R4, Captur, Yaris Cross…)'],
+          ['compacte', '🚗 Compactes & Berlines (type Mégane, MG4, ID.3…)'],
+          ['citadine', '🚗 Citadines (type Clio, R5, e-208, ë-C3…)'],
           ['BEV', '⚡ 100% Électrique (BEV)'],
           ['PHEV', '🔌 Hybride Rechargeable (PHEV)'],
-          ['HEV', '🌿 Hybride Simple (HEV)'],
-          ['chinese', '🐉 Marques chinoises (BYD, MG, Leapmotor, Xpeng)'],
-          ['bonus', '🎁 Éligible Bonus / Aides CEE'],
+          ['HEV', '🌿 Full Hybride (HEV)'],
+          ['chinese', '🐉 Marques chinoises (Jaecoo, BYD, MG, Xpeng, Leapmotor)'],
+          ['bonus', '🎁 Éligible Bonus / CEE'],
         ]
           .map(
             ([key, label]) =>
@@ -535,12 +586,12 @@ function renderDashboard(main) {
 
       <div class="filter-sliders">
         <div class="filter-field">
-          <label for="f-budget">Budget net max (€)</label>
-          <input id="f-budget" type="number" step="1000" placeholder="Ex: 35000" class="number-input" value="${esc(state.filters.maxBudget)}" />
+          <label for="f-budget">Budget achat net max (€)</label>
+          <input id="f-budget" type="number" step="1000" placeholder="Ex: 38000" class="number-input" value="${esc(state.filters.maxBudget)}" />
         </div>
         <div class="filter-field">
-          <label for="f-monthly">Mensualité max (€/mois)</label>
-          <input id="f-monthly" type="number" step="20" placeholder="Ex: 350" class="number-input" value="${esc(state.filters.maxMonthly)}" />
+          <label for="f-monthly">Loyer max (€/mois · 0 € apport · 15 000 km/an)</label>
+          <input id="f-monthly" type="number" step="10" placeholder="Ex: 450" class="number-input" value="${esc(state.filters.maxMonthly)}" />
         </div>
         <div class="filter-field">
           <label for="f-range">Autonomie min (km)</label>
@@ -553,35 +604,80 @@ function renderDashboard(main) {
       </div>
     </section>
 
-    <div class="section-header" style="margin-top:0.5rem;">
+    <div class="section-header" style="margin-top:0.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.75rem;">
       <div id="results-count" class="section-subtitle"></div>
+      <div id="type-jump-bar" style="display:flex;gap:0.4rem;flex-wrap:wrap;"></div>
     </div>
 
-    <section id="vehicles-grid" class="vehicles-grid"></section>
+    <div id="vehicles-container"></div>
   `;
 
   const updateGridOnly = () => {
     const list = filterAndSortVehicles();
     const countEl = document.getElementById('results-count');
+    const jumpBar = document.getElementById('type-jump-bar');
+    const maxM = num(state.filters.maxMonthly);
     if (countEl) {
-      countEl.innerHTML = `<strong>${list.length}</strong> véhicule${list.length > 1 ? 's' : ''} correspond${list.length > 1 ? 'ent' : ''} à vos critères`;
+      countEl.innerHTML = `<strong>${list.length}</strong> véhicule${list.length > 1 ? 's' : ''} affiché${list.length > 1 ? 's' : ''} · Base financement : <strong>0 € d'apport · 15 000 km/an</strong>${
+        maxM ? ` · Plafond actif : <strong>≤ ${eur(maxM)}/mois</strong>` : ''
+      }`;
     }
-    const grid = document.getElementById('vehicles-grid');
-    if (!grid) return;
+    const container = document.getElementById('vehicles-container');
+    if (!container) return;
     if (!list.length) {
-      grid.innerHTML = `
-        <div class="panel-card" style="grid-column:1/-1;text-align:center;">
+      if (jumpBar) jumpBar.innerHTML = '';
+      container.innerHTML = `
+        <div class="panel-card" style="text-align:center;">
           <p>Aucun véhicule ne correspond à ces filtres.</p>
-          <button type="button" class="btn btn-primary btn-sm" style="margin-top:0.75rem;" id="empty-reset">Afficher tous les véhicules</button>
+          <button type="button" class="btn btn-primary btn-sm" style="margin-top:0.75rem;" id="empty-reset">Réinitialiser les filtres (0 € apport · ≤ 450 €/mois)</button>
         </div>
       `;
       document.getElementById('empty-reset')?.addEventListener('click', () => {
-        state.filters = { q: '', quick: 'all', maxBudget: '', maxMonthly: '', minRange: '', minTrunk: '', sort: 'score' };
+        state.filters = { q: '', quick: 'all', maxBudget: '', maxMonthly: '450', minRange: '', minTrunk: '', sort: 'score', viewMode: 'byType' };
         renderDashboard(main);
       });
       return;
     }
-    grid.innerHTML = list.map(renderVehicleCard).join('');
+
+    if (state.filters.viewMode === 'byType') {
+      const groupsHtml = [];
+      const jumpLinks = [];
+      for (const grp of VEHICLE_TYPE_GROUPS) {
+        const items = list.filter(grp.match);
+        if (!items.length) continue;
+        jumpLinks.push(
+          `<a href="# group-${grp.id}" data-jump="group-${grp.id}" class="tag" style="text-decoration:none;cursor:pointer;">${esc(grp.title.split('(')[0].trim())} (${items.length})</a>`
+        );
+        groupsHtml.push(`
+          <section id="group-${grp.id}" class="type-group-section" style="margin-bottom:2.25rem;">
+            <div class="panel-card" style="margin-bottom:1rem;padding:1rem 1.25rem;border-left:4px solid var(--accent);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;">
+              <div>
+                <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1.2rem;margin:0 0 0.2rem;">${esc(grp.title)}</h3>
+                <p class="muted" style="font-size:0.83rem;margin:0;">${esc(grp.subtitle)}</p>
+              </div>
+              <span class="tag tag-bev" style="font-size:0.82rem;">${items.length} modèle${items.length > 1 ? 's' : ''}</span>
+            </div>
+            <div class="vehicles-grid">
+              ${items.map(renderVehicleCard).join('')}
+            </div>
+          </section>
+        `);
+      }
+      if (jumpBar) {
+        jumpBar.innerHTML = jumpLinks.join('');
+        jumpBar.querySelectorAll('[data-jump]').forEach((a) => {
+          a.addEventListener('click', (ev) => {
+            ev.preventDefault();
+            const target = document.getElementById(a.getAttribute('data-jump'));
+            target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
+        });
+      }
+      container.innerHTML = groupsHtml.join('');
+    } else {
+      if (jumpBar) jumpBar.innerHTML = '';
+      container.innerHTML = `<section class="vehicles-grid">${list.map(renderVehicleCard).join('')}</section>`;
+    }
   };
 
   updateGridOnly();
@@ -593,6 +689,10 @@ function renderDashboard(main) {
   document.getElementById('f-sort')?.addEventListener('change', (e) => {
     state.filters.sort = e.target.value;
     updateGridOnly();
+  });
+  document.getElementById('f-view-toggle')?.addEventListener('click', () => {
+    state.filters.viewMode = state.filters.viewMode === 'byType' ? 'flat' : 'byType';
+    renderDashboard(main);
   });
   document.getElementById('f-budget')?.addEventListener('input', (e) => {
     state.filters.maxBudget = e.target.value;
@@ -611,7 +711,7 @@ function renderDashboard(main) {
     updateGridOnly();
   });
   document.getElementById('f-reset')?.addEventListener('click', () => {
-    state.filters = { q: '', quick: 'all', maxBudget: '', maxMonthly: '', minRange: '', minTrunk: '', sort: 'score' };
+    state.filters = { q: '', quick: 'all', maxBudget: '', maxMonthly: '', minRange: '', minTrunk: '', sort: 'score', viewMode: 'byType' };
     renderDashboard(main);
   });
   document.getElementById('quick-pills')?.addEventListener('click', (e) => {

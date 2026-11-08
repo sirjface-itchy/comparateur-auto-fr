@@ -45,6 +45,7 @@ function extractJsonBlock(text) {
 async function fetchVehicleOffersFromGemini(vehicle, today) {
   const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${encodeURIComponent(API_KEY)}`;
   const prompt = `Nous sommes le ${today} en France. Recherche sur Google les offres constructeurs et concessions actuelles en France pour le véhicule "${vehicle.brand} ${vehicle.model}" (${vehicle.energy}, site officiel : ${vehicle.officialUrl || ''}).
+Calcule ou ajuste les offres de financement LLD/LOA sur la base stricte demandée par l'acheteur : 0 € d'apport personnel (hors bonus/prime CEE éventuel) et 15 000 km/an (contrat 37 ou 48 mois).
 Renvoie UNIQUEMENT un bloc JSON valide (entouré de \`\`\`json ... \`\`\`) au format exact suivant :
 \`\`\`json
 {
@@ -53,15 +54,15 @@ Renvoie UNIQUEMENT un bloc JSON valide (entouré de \`\`\`json ... \`\`\`) au fo
   "offers": [
     {
       "type": "LLD",
-      "title": "Intitulé précis de l'offre en cours",
-      "monthlyEur": 249,
-      "durationMonths": 37,
-      "downPaymentEur": 3000,
-      "kmPerYear": 10000,
+      "title": "LLD — 0 € d'apport · 15 000 km/an",
+      "monthlyEur": 329,
+      "durationMonths": 48,
+      "downPaymentEur": 0,
+      "kmPerYear": 15000,
       "discountEur": 3000,
       "priceAfterEur": 26990,
       "validUntil": "2026-12-31",
-      "conditions": "Conditions principales de l'offre",
+      "conditions": "Sans apport personnel (0 € d'apport), 15 000 km/an",
       "sourceUrl": "${vehicle.officialUrl || ''}"
     }
   ]
