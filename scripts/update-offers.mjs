@@ -166,6 +166,10 @@ async function main() {
         }
       } catch (err) {
         console.log(`ignoré (${err.message})`);
+        if (/HTTP (400|401|403)/.test(err.message)) {
+          console.log('ℹ️ Clé GEMINI_API_KEY non reconnue par Google AI Studio (format attendu : AIza...). Arrêt des appels live et conservation du catalogue actuel.');
+          break;
+        }
       }
       await sleep(SLEEP_MS);
     }

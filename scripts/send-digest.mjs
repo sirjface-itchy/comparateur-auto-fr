@@ -236,9 +236,11 @@ async function main() {
 
   const html = buildDigestHtml({ catalog, config, scores, changes, today });
   const outPath = path.join(ROOT, 'out', 'digest.html');
+  const publicDigestPath = path.join(ROOT, 'digest.html');
   await fs.mkdir(path.dirname(outPath), { recursive: true });
   await fs.writeFile(outPath, html, 'utf8');
-  console.log(`📝 Rapport HTML généré dans ${outPath}`);
+  await fs.writeFile(publicDigestPath, html, 'utf8');
+  console.log(`📝 Rapport HTML généré dans ${outPath} et ${publicDigestPath}`);
 
   if (isDryRun) {
     console.log('✅ Mode --dry-run terminé avec succès.');
@@ -251,7 +253,7 @@ async function main() {
 
   if (!gmailUser || !gmailPass) {
     console.log(
-      `ℹ️ Secrets GMAIL_USER / GMAIL_APP_PASSWORD non configurés : l'email à ${to} n'a pas été envoyé (le rapport HTML reste disponible dans out/digest.html).`
+      `ℹ️ Secrets GMAIL_USER / GMAIL_APP_PASSWORD non configurés : l'email à ${to} n'a pas été envoyé (le rapport HTML reste disponible dans digest.html).`
     );
     return;
   }
@@ -259,17 +261,25 @@ async function main() {
   const nodemailer = await import('nodemailer');
   const transporter = nodemailer.default.createTransport({
     service: 'gmail',
-    auth: { user: gmailUser, pass: gmailPass },
+    auth: { user: gmailUser, pass: gmailPass.replace(/\s+/g, '') },
   });
 
-  await transporter.sendMail({
-    from: `"AutoVeille FR" <${gmailUser}>`,
-    to,
-    subject: `🚗 AutoVeille 6h30 — Meilleures Offres & Remises du ${today}`,
-    html,
-  });
-
-  console.log(`📧 Email quotidien envoyé avec succès à ${to} !`);
+  try {
+    await transporter.sendMail({
+      from: `"AutoVeille FR" <${gmailUser}>`,
+      to,
+      subject: `🚗 AutoVeille 6h30 — Meilleures Offres & Remises du ${today}`,
+      html,
+    });
+    console.log(`📧 Email quotidien envoyé avec succès à ${to} !`);
+  } catch (err) {
+    console.warn(`⚠️ Envoi SMTP Gmail refusé (${err.responseCode || err.code || err.message}).`);
+    console.warn(
+      `👉 Gmail exige un "Mot de passe d'application" de 16 lettres (https://myaccount.google.com/apppasswords) au lieu du mot de passe principal du compte lorsque la validation à 2 facteurs est active.`
+    );
+    console.log(`📲 Envoi automatique d'une notification de secours avec lien vers le rapport HTML en ligne…`);
+    await sendPushNotification({ catalog, config, scores, changes, today });
+  }
 }
 
 main().catch((err) => {
