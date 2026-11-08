@@ -1099,3 +1099,216 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ---------- Car Visuals (Photos) & Promo Badges ---------- */
+.card-media {
+  position: relative;
+  width: 100%;
+  height: 185px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 60%, color-mix(in srgb, var(--bg-subtle) 85%, #fff 15%), var(--bg-elevated));
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.28s ease;
+}
+
+.card-photo.is-cutout {
+  object-fit: contain;
+  padding: 0.5rem 0.85rem;
+}
+
+.vehicle-card:hover .card-photo {
+  transform: scale(1.04);
+}
+
+.card-media-overlay {
+  position: absolute;
+  bottom: 0.45rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.35rem;
+  pointer-events: none;
+}
+
+.promo-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 0.24rem 0.6rem;
+  border-radius: 99px;
+  background: rgba(15, 23, 42, 0.86);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.6);
+  backdrop-filter: blur(6px);
+}
+
+.promo-pill.urgent {
+  color: #fda4af;
+  border-color: rgba(244, 63, 94, 0.75);
+  background: rgba(136, 19, 55, 0.88);
+}
+
+.promo-banner-box {
+  background: linear-gradient(90deg, var(--amber-soft), var(--rose-soft));
+  border: 1px solid color-mix(in srgb, var(--amber) 55%, transparent);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.79rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* ---------- Transparent Price & Lease Breakdown ---------- */
+.price-waterfall {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 0.85rem;
+  font-size: 0.78rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.waterfall-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.waterfall-row.net-row {
+  border-top: 1px dashed var(--border-strong);
+  padding-top: 0.35rem;
+  margin-top: 0.15rem;
+  font-weight: 700;
+  font-size: 0.84rem;
+}
+
+.price-explain-note {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  background: color-mix(in srgb, var(--accent-soft) 55%, var(--bg-elevated));
+  border-left: 3px solid var(--accent);
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
+  line-height: 1.42;
+}
+
+.detail-photo-frame {
+  width: 340px;
+  max-width: 100%;
+  height: 200px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 60%, color-mix(in srgb, var(--bg-subtle) 85%, #fff 15%), var(--bg-elevated));
+  border: 1px solid var(--border-strong);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-photo.is-cutout {
+  object-fit: contain;
+  padding: 0.5rem;
+}
+
+.cmp-photo-wrap {
+  width: 100%;
+  height: 115px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 60%, color-mix(in srgb, var(--bg-subtle) 85%, #fff 15%), var(--bg-elevated));
+  border: 1px solid var(--border);
+  margin-bottom: 0.55rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cmp-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cmp-photo.is-cutout {
+  object-fit: contain;
+  padding: 0.35rem;
+}
+
+/* ---------- Dedicated Comparator Scenario Presets ---------- */
+.cmp-presets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.cmp-preset-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.16s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  color: var(--text);
+  font-family: inherit;
+}
+
+.cmp-preset-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  background: var(--bg-card-hover);
+}
+
+.cmp-preset-card.active {
+  border-color: var(--emerald);
+  background: color-mix(in srgb, var(--emerald-soft) 50%, var(--bg-card));
+  box-shadow: 0 0 0 1px var(--emerald);
+}
+
+.cmp-preset-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 0.92rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+
+.cmp-preset-sub {
+  font-size: 0.76rem;
+  color: var(--muted);
+  line-height: 1.35;
+}

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T13:45:47.385Z",
+  "updatedAt": "2026-11-08T18:00:03.922Z",
   "source": "Veille tarifaire constructeurs & réseaux de concessions France (novembre 2026)",
   "incentives": {
     "summary": "En France, les véhicules 100 % électriques assemblés en Europe et validant l'éco-score ADEME bénéficient du Bonus Écologique / Coup de pouce CEE (2 000 € à 4 200 € selon revenus). Les véhicules importés de Chine (BEV) sont soumis aux droits de douane européens additionnels et exclus du bonus gouvernemental, mais compensent par d'importantes remises constructeurs ou basculent sur des motorisations hybrides (HEV/PHEV) exemptées de surtaxe douanière.",
@@ -65,7 +65,7 @@
     {
       "id": "renault-scenic-e-tech-87",
       "brand": "Renault",
-      "model": "Scénic E-Tech Electric 220 ch Grande Autonomie",
+      "model": "Scénic E-Tech électrique",
       "origin": "France",
       "madeIn": "Douai (France - ElectriCity)",
       "chineseBrand": false,
@@ -73,9 +73,9 @@
       "segment": "SUV familial",
       "isSUV": true,
       "officialUrl": "https://www.renault.fr/vehicules-electriques/scenic-e-tech-electrique.html",
-      "configuratorUrl": "https://www.renault.fr/vehicules-electriques/scenic-e-tech-electrique/configurateur.html",
-      "imageUrl": null,
-      "priceFromEur": 46990,
+      "configuratorUrl": "https://www.renault.fr/vehicules-electriques/scenic-e-tech-electrique.html",
+      "imageUrl": "https://www.renault.fr/agg/vn/unique/ONE_DACIA_PP_LARGE_DENSITY1/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Ffr.co.rplug.renault.com%2Fproduct%2Fmodel%2FZH1%2Fscenic-e-tech-electrique%2Fc%2FA-ENS_0MDL2PSL1SERIELIM4_-BIXUI",
+      "priceFromEur": 39990,
       "priceToEur": 52490,
       "specs": {
         "lengthMm": 4470,
@@ -142,16 +142,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Renault Scénic E-Tech Electric 220 ch Grande Autonomie — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 494,
+          "title": "Portes Ouvertes & Prime CEE Renault (−4 830 € cumulés)",
+          "monthlyEur": 439,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 2500,
-          "priceAfterEur": 40490,
+          "officialMonthlyEur": 389,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km (10 000 km/an) · 1er loyer couvert par Prime CEE / Bonus",
+          "discountEur": 830,
+          "priceAfterEur": 35160,
           "validUntil": "2026-11-30",
-          "conditions": "1er loyer intégralement couvert par le Bonus / Prime CEE de 4 000 € (0 € à débourser), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 2 500 € incluse.",
-          "sourceUrl": "https://www.renault.fr/offres-du-moment/offres-vehicules-electriques.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 439 €/mois (Offre affichée sur le site officiel : 389 €/mois — LLD 37 mois · 30 000 km (10 000 km/an) · 1er loyer couvert par Prime CEE / Bonus). Sur renault.fr, le prix d'appel affiché à 35 160 € correspond à la finition Evolution 60 kWh (170 ch, catalogue 39 990 €) après déduction du Bonus / Prime CEE (jusqu'à 4 830 €). Pour la version Grande Autonomie 87 kWh (220 ch, 625 km WLTP), le tarif catalogue est de 46 990 €, soit ~40 490 € net après bonus de 4 000 € et remise commerciale de 2 500 €.",
+          "sourceUrl": "https://www.renault.fr/offres-vehicules.html"
         }
       ],
       "dealerBehavior": "Élu Voiture de l'Année, fort succès mais concessions ouvertes à 2 500 € de remise ou pack accessoires offert.",
@@ -174,12 +176,16 @@
         "comfort": 9,
         "equipment": 9.2
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 35160,
+      "priceExplanation": "Sur renault.fr, le prix d'appel affiché à 35 160 € correspond à la finition Evolution 60 kWh (170 ch, catalogue 39 990 €) après déduction du Bonus / Prime CEE (jusqu'à 4 830 €). Pour la version Grande Autonomie 87 kWh (220 ch, 625 km WLTP), le tarif catalogue est de 46 990 €, soit ~40 490 € net après bonus de 4 000 € et remise commerciale de 2 500 €.",
+      "promoName": "Portes Ouvertes & Prime CEE Renault (−4 830 € cumulés)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "renault-5-e-tech-150",
       "brand": "Renault",
-      "model": "R5 E-Tech Electric 150 ch Autonomie Confort",
+      "model": "R5 E-Tech électrique",
       "origin": "France",
       "madeIn": "Douai (France - ElectriCity)",
       "chineseBrand": false,
@@ -187,8 +193,8 @@
       "segment": "Citadine",
       "isSUV": false,
       "officialUrl": "https://www.renault.fr/vehicules-electriques/r5-e-tech-electrique.html",
-      "configuratorUrl": "https://www.renault.fr/vehicules-electriques/r5-e-tech-electrique/configurateur.html",
-      "imageUrl": null,
+      "configuratorUrl": "https://www.renault.fr/vehicules-electriques/r5-e-tech-electrique.html",
+      "imageUrl": "https://www.renault.fr/agg/vn/unique/ONE_DACIA_PP_LARGE_DENSITY1/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Ffr.co.rplug.renault.com%2Fproduct%2Fmodel%2FR5E%3Bck%3DVP%2Frenault-5-e-tech-electrique%2Fc%2FA-ENS_0MDL3P4X41SERIESPE1_-BIYYA",
       "priceFromEur": 27990,
       "priceToEur": 35490,
       "specs": {
@@ -263,16 +269,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Renault R5 E-Tech Electric 150 ch Autonomie Confort — 0 € d'apport · 15 000 km/an (48 mois)",
+          "title": "Offre R5 E-Tech Prime CEE déduite",
           "monthlyEur": 269,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 1800,
-          "priceAfterEur": 22190,
+          "officialMonthlyEur": 220,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km (10 000 km/an) · 0 € d'apport (Bonus déduit)",
+          "discountEur": 1200,
+          "priceAfterEur": 22790,
           "validUntil": "2026-11-30",
-          "conditions": "1er loyer intégralement couvert par le Bonus / Prime CEE de 4 000 € (0 € à débourser), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 1 800 € incluse.",
-          "sourceUrl": "https://www.renault.fr/offres-du-moment/offres-vehicules-electriques.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 269 €/mois (Offre affichée sur le site officiel : 220 €/mois — LLD 37 mois · 30 000 km (10 000 km/an) · 0 € d'apport (Bonus déduit)). Le tarif « à partir de 24 870 € » sur renault.fr s'applique à la version Urban Range 40 kWh (120 ch, catalogue 27 990 €) prime CEE déduite. La version Confort 52 kWh (150 ch, 410 km WLTP) démarre à 31 490 € catalogue, soit 26 290 € net après bonus (4 000 €) et remise concession (1 200 €).",
+          "sourceUrl": "https://www.renault.fr/offres-vehicules.html"
         }
       ],
       "dealerBehavior": "Forte demande mais disponibilité immédiate en concession. Négociation possible sur frais de mise en route ou 3-5 % sur stock.",
@@ -295,12 +303,16 @@
         "comfort": 8.2,
         "equipment": 9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 24870,
+      "priceExplanation": "Le tarif « à partir de 24 870 € » sur renault.fr s'applique à la version Urban Range 40 kWh (120 ch, catalogue 27 990 €) prime CEE déduite. La version Confort 52 kWh (150 ch, 410 km WLTP) démarre à 31 490 € catalogue, soit 26 290 € net après bonus (4 000 €) et remise concession (1 200 €).",
+      "promoName": "Offre R5 E-Tech Prime CEE déduite",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "renault-4-e-tech-150",
       "brand": "Renault",
-      "model": "R4 E-Tech Electric 150 ch",
+      "model": "R4 E-Tech électrique",
       "origin": "France",
       "madeIn": "Maubeuge (France - ElectriCity)",
       "chineseBrand": false,
@@ -308,8 +320,8 @@
       "segment": "SUV citadin",
       "isSUV": true,
       "officialUrl": "https://www.renault.fr/vehicules-electriques/r4-e-tech-electrique.html",
-      "configuratorUrl": "https://www.renault.fr/vehicules-electriques/r4-e-tech-electrique/configurateur.html",
-      "imageUrl": null,
+      "configuratorUrl": "https://www.renault.fr/vehicules-electriques/r4-e-tech-electrique.html",
+      "imageUrl": "https://www.renault.fr/agg/vn/unique/ONE_DACIA_PP_LARGE_DENSITY1/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Ffr.co.rplug.renault.com%2Fproduct%2Fmodel%2FA4E%3Bck%3DVP%2Frenault-4-e-tech-electrique%2Fc%2FA-ENS_0MDL2PSP1SERIELIM2_-BIYZE",
       "priceFromEur": 29990,
       "priceToEur": 36990,
       "specs": {
@@ -375,16 +387,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Renault R4 E-Tech Electric 150 ch — 0 € d'apport · 15 000 km/an (48 mois)",
+          "title": "Offre de lancement Renault 4 E-Tech",
           "monthlyEur": 299,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
+          "officialMonthlyEur": 259,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km (10 000 km/an) · 0 € d'apport (Bonus déduit)",
           "discountEur": 1500,
-          "priceAfterEur": 27990,
+          "priceAfterEur": 24490,
           "validUntil": "2026-11-30",
-          "conditions": "1er loyer intégralement couvert par le Bonus / Prime CEE de 4 000 € (0 € à débourser), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 1 500 € incluse.",
-          "sourceUrl": "https://www.renault.fr/offres-du-moment.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 299 €/mois (Offre affichée sur le site officiel : 259 €/mois — LLD 37 mois · 30 000 km (10 000 km/an) · 0 € d'apport (Bonus déduit)). Sur renault.fr, le prix d'appel de 26 370 € correspond à la R4 Evolution 40 kWh (120 ch, catalogue 29 990 €) après déduction de la prime CEE (3 620 €). La version 52 kWh (150 ch, 400 km) est à 33 490 € catalogue.",
+          "sourceUrl": "https://www.renault.fr/offres-vehicules.html"
         }
       ],
       "dealerBehavior": "Nouveauté phare 2026 : carnet de commandes plein, remises faibles (2 à 4 %), focus sur les financements LLD bonifiés.",
@@ -407,22 +421,26 @@
         "comfort": 8.5,
         "equipment": 8.9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 26370,
+      "priceExplanation": "Sur renault.fr, le prix d'appel de 26 370 € correspond à la R4 Evolution 40 kWh (120 ch, catalogue 29 990 €) après déduction de la prime CEE (3 620 €). La version 52 kWh (150 ch, 400 km) est à 33 490 € catalogue.",
+      "promoName": "Offre de lancement Renault 4 E-Tech",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "renault-megane-e-tech-ev60",
       "brand": "Renault",
-      "model": "Mégane E-Tech Electric EV60 220 ch",
+      "model": "Mégane E-Tech électrique EV60 220 ch",
       "origin": "France",
       "madeIn": "Douai (France - ElectriCity)",
       "chineseBrand": false,
       "energy": "BEV",
       "segment": "Compacte",
       "isSUV": false,
-      "officialUrl": "https://www.renault.fr/vehicules-electriques/megane-e-tech-electrique.html",
-      "configuratorUrl": "https://www.renault.fr/vehicules-electriques/megane-e-tech-electrique/configurateur.html",
-      "imageUrl": null,
-      "priceFromEur": 34000,
+      "officialUrl": "https://www.renault.fr/vehicules-electriques/nouvelle-megane.html",
+      "configuratorUrl": "https://www.renault.fr/vehicules-electriques/nouvelle-megane.html",
+      "imageUrl": "https://www.renault.fr/agg/vn/unique/ONE_DACIA_PP_LARGE_DENSITY1/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Ffr.co.rplug.renault.com%2Fproduct%2Fmodel%2FZO1%3Bmtc%3DEAL_slash_EPER3%2Fmegane-e-tech-electrique%2Fc%2FA-BIYZJ",
+      "priceFromEur": 38000,
       "priceToEur": 42000,
       "specs": {
         "lengthMm": 4200,
@@ -485,17 +503,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Renault Mégane E-Tech Electric EV60 220 ch — 0 € d'apport · 15 000 km/an (48 mois)",
+          "type": "LLD",
+          "title": "Bonus Stock Mégane E-Tech (−3 500 € + Prime CEE)",
           "monthlyEur": 324,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
+          "officialMonthlyEur": 289,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km (10 000 km/an) · 0 € d'apport (Bonus déduit)",
           "discountEur": 3500,
           "priceAfterEur": 30500,
           "validUntil": "2026-11-30",
-          "conditions": "1er loyer intégralement couvert par le Bonus / Prime CEE de 4 000 € (0 € à débourser), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 3 500 € incluse.",
-          "sourceUrl": "https://www.renault.fr/offres-du-moment.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 324 €/mois (Offre affichée sur le site officiel : 289 €/mois — LLD 37 mois · 30 000 km (10 000 km/an) · 0 € d'apport (Bonus déduit)). Le site officiel Renault affiche « à partir de 33 070 € » (prime CEE déduite). En ajoutant la remise concession sur stock de ~3 500 € et le bonus de 4 000 €, la version EV60 220 ch (38 000 € catalogue) descend à 30 500 € net.",
+          "sourceUrl": "https://www.renault.fr/offres-vehicules.html"
         }
       ],
       "dealerBehavior": "Concurrencée par le Scénic et la R5, les concessionnaires accordent d'excellentes remises jusqu'à 3 500 € sur stock.",
@@ -518,21 +538,25 @@
         "comfort": 8.2,
         "equipment": 8.8
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 33070,
+      "priceExplanation": "Le site officiel Renault affiche « à partir de 33 070 € » (prime CEE déduite). En ajoutant la remise concession sur stock de ~3 500 € et le bonus de 4 000 €, la version EV60 220 ch (38 000 € catalogue) descend à 30 500 € net.",
+      "promoName": "Bonus Stock Mégane E-Tech (−3 500 € + Prime CEE)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "renault-symbioz-e-tech-145",
       "brand": "Renault",
-      "model": "Symbioz E-Tech full hybrid 145",
+      "model": "Symbioz full hybrid E-Tech 145",
       "origin": "France",
       "madeIn": "Valladolid (Espagne)",
       "chineseBrand": false,
       "energy": "HEV",
       "segment": "SUV compact",
       "isSUV": true,
-      "officialUrl": "https://www.renault.fr/vehicules-hybrides/symbioz-e-tech-hybride.html",
-      "configuratorUrl": "https://www.renault.fr/vehicules-hybrides/symbioz-e-tech-hybride/configurateur.html",
-      "imageUrl": null,
+      "officialUrl": "https://www.renault.fr/vehicules-hybrides/symbioz.html",
+      "configuratorUrl": "https://www.renault.fr/vehicules-hybrides/symbioz.html",
+      "imageUrl": "https://www.renault.fr/agg/vn/unique/ONE_DACIA_PP_LARGE_DENSITY1/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Ffr.co.rplug.renault.com%2Fproduct%2Fmodel%2FAR1%3Bmtc%3DPT5662_hev%2Fsymbioz%2Fc%2FA-TERRM",
       "priceFromEur": 33400,
       "priceToEur": 38400,
       "specs": {
@@ -597,16 +621,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Renault Symbioz E-Tech full hybrid 145 — 0 € d'apport · 15 000 km/an (48 mois)",
+          "title": "Offre Portes Ouvertes Symbioz (−2 200 € sur stock)",
           "monthlyEur": 369,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
+          "officialMonthlyEur": 329,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km (10 000 km/an) · avec 1er loyer ou reprise",
           "discountEur": 2200,
-          "priceAfterEur": 33200,
+          "priceAfterEur": 31200,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 2 200 € incluse.",
-          "sourceUrl": "https://www.renault.fr/offres-du-moment.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 369 €/mois (Offre affichée sur le site officiel : 329 €/mois — LLD 37 mois · 30 000 km (10 000 km/an) · avec 1er loyer ou reprise). Attention : le prix « dès 29 900 € » affiché sur renault.fr concerne la nouvelle motorisation d'entrée de gamme mild-hybrid/GPL. La motorisation Full Hybrid E-Tech 145 ch démarre à 33 400 € catalogue (soit 31 200 € après 2 200 € de remise concession).",
+          "sourceUrl": "https://www.renault.fr/offres-vehicules.html"
         }
       ],
       "dealerBehavior": "Format intermédiaire très apprécié des familles. Remises de 2 000 € à 2 500 € facilement négociables sur stock.",
@@ -629,21 +655,25 @@
         "comfort": 8.4,
         "equipment": 8.8
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 29900,
+      "priceExplanation": "Attention : le prix « dès 29 900 € » affiché sur renault.fr concerne la nouvelle motorisation d'entrée de gamme mild-hybrid/GPL. La motorisation Full Hybrid E-Tech 145 ch démarre à 33 400 € catalogue (soit 31 200 € après 2 200 € de remise concession).",
+      "promoName": "Offre Portes Ouvertes Symbioz (−2 200 € sur stock)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "renault-austral-e-tech-200",
       "brand": "Renault",
-      "model": "Austral E-Tech full hybrid 200",
+      "model": "Austral full hybrid E-Tech 200",
       "origin": "France",
       "madeIn": "Palencia (Espagne)",
       "chineseBrand": false,
       "energy": "HEV",
       "segment": "SUV compact",
       "isSUV": true,
-      "officialUrl": "https://www.renault.fr/vehicules-hybrides/austral-e-tech-hybride.html",
-      "configuratorUrl": "https://www.renault.fr/vehicules-hybrides/austral-e-tech-hybride/configurateur.html",
-      "imageUrl": null,
+      "officialUrl": "https://www.renault.fr/vehicules-hybrides/renault-austral.html",
+      "configuratorUrl": "https://www.renault.fr/vehicules-hybrides/renault-austral.html",
+      "imageUrl": "https://www.renault.fr/agg/vn/unique/ONE_DACIA_PP_LARGE_DENSITY1/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Ffr.co.rplug.renault.com%2Fproduct%2Fmodel%2FHN1%2Faustral%2Fc%2FA-ENS_0MDL2PSP1SERIELIM3_-BIYYZ",
       "priceFromEur": 40800,
       "priceToEur": 46200,
       "specs": {
@@ -707,17 +737,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Renault Austral E-Tech full hybrid 200 — 0 € d'apport · 15 000 km/an (48 mois)",
+          "type": "LLD",
+          "title": "Remise Stock Austral E-Tech (−3 200 €)",
           "monthlyEur": 444,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
+          "officialMonthlyEur": 389,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km · 1er loyer 3 500 €",
           "discountEur": 3200,
-          "priceAfterEur": 40100,
+          "priceAfterEur": 37600,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 3 200 € incluse.",
-          "sourceUrl": "https://www.renault.fr/offres-du-moment.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 444 €/mois (Offre affichée sur le site officiel : 389 €/mois — LLD 37 mois · 30 000 km · 1er loyer 3 500 €). Sur renault.fr, l'Austral s'affiche dès 39 900 € (version Evolution) et 40 800 € en E-Tech 200. En concession, une remise de 3 200 € (~8 %) ramène le prix net à 37 600 €.",
+          "sourceUrl": "https://www.renault.fr/offres-vehicules.html"
         }
       ],
       "dealerBehavior": "Fin d'année active, les concessions ont des objectifs de volume sur Austral et accordent 7 à 9 % de remise.",
@@ -740,23 +772,27 @@
         "comfort": 8.6,
         "equipment": 9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 39900,
+      "priceExplanation": "Sur renault.fr, l'Austral s'affiche dès 39 900 € (version Evolution) et 40 800 € en E-Tech 200. En concession, une remise de 3 200 € (~8 %) ramène le prix net à 37 600 €.",
+      "promoName": "Remise Stock Austral E-Tech (−3 200 €)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "renault-clio-e-tech-145",
       "brand": "Renault",
-      "model": "Clio E-Tech full hybrid 145",
+      "model": "Clio full hybrid E-Tech 145",
       "origin": "France",
       "madeIn": "Bursa (Turquie) / Novo Mesto (Slovénie)",
       "chineseBrand": false,
       "energy": "HEV",
       "segment": "Citadine",
       "isSUV": false,
-      "officialUrl": "https://www.renault.fr/vehicules-hybrides/clio-e-tech-hybride.html",
-      "configuratorUrl": "https://www.renault.fr/vehicules-hybrides/clio-e-tech-hybride/configurateur.html",
-      "imageUrl": null,
-      "priceFromEur": 23900,
-      "priceToEur": 27700,
+      "officialUrl": "https://www.renault.fr/vehicules-hybrides/nouvelle-clio.html",
+      "configuratorUrl": "https://www.renault.fr/vehicules-hybrides/nouvelle-clio.html",
+      "imageUrl": "https://www.renault.fr/agg/vn/unique/ONE_DACIA_PP_LARGE_DENSITY1/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Ffr.co.rplug.renault.com%2Fproduct%2Fmodel%2FCL6%3Bck%3DVP%2Fnouvelle-renault-clio%2Fc%2FA-ENS_0MDL2PSP1SERIELIM3_-TENPU",
+      "priceFromEur": 24200,
+      "priceToEur": 28200,
       "specs": {
         "lengthMm": 4053,
         "widthMm": 1798,
@@ -820,16 +856,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Renault Clio E-Tech full hybrid 145 — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 254,
+          "title": "Offre Clio Full Hybrid E-Tech (−1 800 €)",
+          "monthlyEur": 269,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 2100,
-          "priceAfterEur": 23300,
+          "officialMonthlyEur": 219,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km · 1er loyer 2 500 €",
+          "discountEur": 1800,
+          "priceAfterEur": 22400,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 2 100 € incluse.",
-          "sourceUrl": "https://www.renault.fr/offres-du-moment.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 269 €/mois (Offre affichée sur le site officiel : 219 €/mois — LLD 37 mois · 30 000 km · 1er loyer 2 500 €). Sur renault.fr, le prix « à partir de 19 900 € » concerne la Clio essence SCe/TCe d'entrée de gamme. La version Full Hybrid E-Tech 145 ch démarre à 24 200 € catalogue, soit 22 400 € net après remise de 1 800 €.",
+          "sourceUrl": "https://www.renault.fr/offres-vehicules.html"
         }
       ],
       "dealerBehavior": "Best-seller absolu en France, stocks élevés, marges de négociation généreuses (jusqu'à 9-11 % en concession).",
@@ -852,22 +890,26 @@
         "comfort": 8.7,
         "equipment": 8.6
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 19900,
+      "priceExplanation": "Sur renault.fr, le prix « à partir de 19 900 € » concerne la Clio essence SCe/TCe d'entrée de gamme. La version Full Hybrid E-Tech 145 ch démarre à 24 200 € catalogue, soit 22 400 € net après remise de 1 800 €.",
+      "promoName": "Offre Clio Full Hybrid E-Tech (−1 800 €)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "renault-captur-e-tech-145",
       "brand": "Renault",
-      "model": "Captur E-Tech full hybrid 145",
+      "model": "Captur full hybrid E-Tech 145",
       "origin": "France",
       "madeIn": "Valladolid (Espagne)",
       "chineseBrand": false,
       "energy": "HEV",
       "segment": "SUV citadin",
       "isSUV": true,
-      "officialUrl": "https://www.renault.fr/vehicules-hybrides/captur-e-tech-hybride.html",
-      "configuratorUrl": "https://www.renault.fr/vehicules-hybrides/captur-e-tech-hybride/configurateur.html",
-      "imageUrl": null,
-      "priceFromEur": 28900,
+      "officialUrl": "https://www.renault.fr/vehicules-hybrides/captur.html",
+      "configuratorUrl": "https://www.renault.fr/vehicules-hybrides/captur.html",
+      "imageUrl": "https://www.renault.fr/agg/vn/unique/ONE_DACIA_PP_LARGE_DENSITY1/r_brandSite_carPicker_1.png?uri=https%3A%2F%2Ffr.co.rplug.renault.com%2Fproduct%2Fmodel%2FCP1%2Fcaptur%2Fc%2FA-RDIF30-BIYNM",
+      "priceFromEur": 29400,
       "priceToEur": 33800,
       "specs": {
         "lengthMm": 4239,
@@ -930,17 +972,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Renault Captur E-Tech full hybrid 145 — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 309,
+          "type": "LLD",
+          "title": "Avantage Client Captur E-Tech (−2 000 €)",
+          "monthlyEur": 315,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 2600,
-          "priceAfterEur": 28300,
+          "officialMonthlyEur": 269,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km · 1er loyer 3 000 €",
+          "discountEur": 2000,
+          "priceAfterEur": 27400,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 2 600 € incluse.",
-          "sourceUrl": "https://www.renault.fr/offres-du-moment.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 315 €/mois (Offre affichée sur le site officiel : 269 €/mois — LLD 37 mois · 30 000 km · 1er loyer 3 000 €). Sur renault.fr, « à partir de 26 900 € » correspond à la motorisation TCe 90/GPL. La motorisation Full Hybrid E-Tech 145 ch débute à 29 400 € catalogue, soit 27 400 € net après 2 000 € de remise concession.",
+          "sourceUrl": "https://www.renault.fr/offres-vehicules.html"
         }
       ],
       "dealerBehavior": "Le restylage avec face avant affûtée plaît beaucoup. Stocks réguliers, 6 à 9 % de remise envisageable.",
@@ -963,7 +1007,11 @@
         "comfort": 8.6,
         "equipment": 8.8
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 26900,
+      "priceExplanation": "Sur renault.fr, « à partir de 26 900 € » correspond à la motorisation TCe 90/GPL. La motorisation Full Hybrid E-Tech 145 ch débute à 29 400 € catalogue, soit 27 400 € net après 2 000 € de remise concession.",
+      "promoName": "Avantage Client Captur E-Tech (−2 000 €)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "dacia-spring-electric-65",
@@ -976,10 +1024,10 @@
       "segment": "Citadine",
       "isSUV": false,
       "officialUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/spring.html",
-      "configuratorUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/spring/configurateur.html",
-      "imageUrl": null,
+      "configuratorUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/spring.html",
+      "imageUrl": "https://www.dacia.fr/agg/vn/unique/ONE_DACIA_PP_XLARGE_DENSITY1/d_brandSite_carPicker_1.png?uri=https%3A%2F%2Ffr.co.rplug.renault.com%2Fproduct%2Fmodel%2FTWD%3Bck%3DVP%2Fnouvelle-spring%2Fc%2FA-ENS_0MDL2P1SERIELIM2_-OVDQQ",
       "priceFromEur": 18900,
-      "priceToEur": 21200,
+      "priceToEur": 20900,
       "specs": {
         "lengthMm": 3701,
         "widthMm": 1583,
@@ -1032,17 +1080,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Dacia Spring Electric 65 ch — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 199,
+          "type": "LLD",
+          "title": "Offre Dacia Spring jusqu'au 30/11 (−2 000 €)",
+          "monthlyEur": 189,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 2500,
-          "priceAfterEur": 17400,
+          "officialMonthlyEur": 139,
+          "officialLeaseTerms": "LLD 49 mois · 40 000 km · 1er loyer 2 500 €",
+          "discountEur": 2000,
+          "priceAfterEur": 16900,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 2 500 € incluse.",
-          "sourceUrl": "https://www.dacia.fr/offres.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 189 €/mois (Offre affichée sur le site officiel : 139 €/mois — LLD 49 mois · 40 000 km · 1er loyer 2 500 €). Non éligible au bonus gouvernemental (assemblée en Chine), mais Dacia applique une remise directe de 2 000 € sur le tarif catalogue de 18 900 €, soit 16 900 € net.",
+          "sourceUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/spring/offre-spring.html"
         }
       ],
       "dealerBehavior": "Pour compenser la perte du bonus écologique, Dacia offre une remise de 2 000 à 2 500 € pour maintenir la mensualité sous 120 €/mois.",
@@ -1065,7 +1115,11 @@
         "comfort": 6.9,
         "equipment": 7.2
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 16900,
+      "priceExplanation": "Non éligible au bonus gouvernemental (assemblée en Chine), mais Dacia applique une remise directe de 2 000 € sur le tarif catalogue de 18 900 €, soit 16 900 € net.",
+      "promoName": "Offre Dacia Spring jusqu'au 30/11 (−2 000 €)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "dacia-duster-hybrid-140",
@@ -1077,11 +1131,11 @@
       "energy": "HEV",
       "segment": "SUV compact",
       "isSUV": true,
-      "officialUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/duster.html",
-      "configuratorUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/duster/configurateur.html",
-      "imageUrl": null,
-      "priceFromEur": 26600,
-      "priceToEur": 28100,
+      "officialUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/duster-suv.html",
+      "configuratorUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/duster-suv.html",
+      "imageUrl": "https://www.dacia.fr/agg/vn/unique/ONE_DACIA_PP_XLARGE_DENSITY1/d_brandSite_carPicker_1.png?uri=https%3A%2F%2Ffr.co.rplug.renault.com%2Fproduct%2Fmodel%2FDU3%3Bck%3DVP%2Fduster%2Fc%2FA-ENS_0MDL2PSL1SERIESPE4_-TEHNV",
+      "priceFromEur": 26800,
+      "priceToEur": 29900,
       "specs": {
         "lengthMm": 4343,
         "widthMm": 1813,
@@ -1145,16 +1199,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Dacia Duster Hybrid 140 ch — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 304,
+          "title": "Offres du Moment Dacia (jusqu'au 30/11)",
+          "monthlyEur": 299,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 800,
-          "priceAfterEur": 27300,
+          "officialMonthlyEur": 249,
+          "officialLeaseTerms": "LLD 49 mois · 40 000 km · 1er loyer 3 000 €",
+          "discountEur": 500,
+          "priceAfterEur": 26300,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 800 € incluse.",
-          "sourceUrl": "https://www.dacia.fr/offres.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 299 €/mois (Offre affichée sur le site officiel : 249 €/mois — LLD 49 mois · 40 000 km · 1er loyer 3 000 €). Le prix d'appel de 19 990 € sur dacia.fr concerne le Duster Eco-G 100 GPL. La motorisation Full Hybrid 140 ch automatique démarre à 26 800 € TTC (politique Dacia « prix serré » avec ~500 € de geste commercial sur accessoires/frais).",
+          "sourceUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/duster-suv/offre-duster.html"
         }
       ],
       "dealerBehavior": "Politique de prix nets Dacia : peu de remises directes sur le neuf (1 à 3 %), mais facilités sur accessoires YouClip et frais d'immatriculation.",
@@ -1177,7 +1233,11 @@
         "comfort": 8.3,
         "equipment": 8.4
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 19990,
+      "priceExplanation": "Le prix d'appel de 19 990 € sur dacia.fr concerne le Duster Eco-G 100 GPL. La motorisation Full Hybrid 140 ch automatique démarre à 26 800 € TTC (politique Dacia « prix serré » avec ~500 € de geste commercial sur accessoires/frais).",
+      "promoName": "Offres du Moment Dacia (jusqu'au 30/11)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "dacia-bigster-hybrid-155",
@@ -1189,11 +1249,11 @@
       "energy": "HEV",
       "segment": "SUV familial",
       "isSUV": true,
-      "officialUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/bigster.html",
-      "configuratorUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/bigster/configurateur.html",
-      "imageUrl": null,
+      "officialUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/bigster-suv.html",
+      "configuratorUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/bigster-suv.html",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Dacia_Bigster_DSC_8452.jpg/960px-Dacia_Bigster_DSC_8452.jpg",
       "priceFromEur": 29900,
-      "priceToEur": 32900,
+      "priceToEur": 33500,
       "specs": {
         "lengthMm": 4570,
         "widthMm": 1820,
@@ -1257,16 +1317,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Dacia Bigster Hybrid 155 ch — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 344,
+          "title": "Offre de lancement Dacia Bigster Hybrid 155",
+          "monthlyEur": 339,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 700,
-          "priceAfterEur": 31200,
+          "officialMonthlyEur": 289,
+          "officialLeaseTerms": "LLD 49 mois · 40 000 km · 1er loyer 3 500 €",
+          "discountEur": 500,
+          "priceAfterEur": 29400,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 700 € incluse.",
-          "sourceUrl": "https://www.dacia.fr/offres.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 339 €/mois (Offre affichée sur le site officiel : 289 €/mois — LLD 49 mois · 40 000 km · 1er loyer 3 500 €). Sur dacia.fr, le Bigster débute à 24 990 € en mild-hybrid 140 ch. La nouvelle motorisation Full Hybrid 155 ch démarre à 29 900 € TTC.",
+          "sourceUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/bigster-suv/offre-bigster.html"
         }
       ],
       "dealerBehavior": "Grand SUV familial le plus accessible de France. Carnet de réservation très dynamique, négociation limitée aux packs d'options.",
@@ -1289,23 +1351,27 @@
         "comfort": 8.5,
         "equipment": 8.6
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 24990,
+      "priceExplanation": "Sur dacia.fr, le Bigster débute à 24 990 € en mild-hybrid 140 ch. La nouvelle motorisation Full Hybrid 155 ch démarre à 29 900 € TTC.",
+      "promoName": "Offre de lancement Dacia Bigster Hybrid 155",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "peugeot-e-2008-156",
       "brand": "Peugeot",
-      "model": "e-2008 156 ch Autonomie Élargie (54 kWh)",
+      "model": "e-2008 156 ch (54 kWh)",
       "origin": "France",
       "madeIn": "Vigo (Espagne)",
       "chineseBrand": false,
       "energy": "BEV",
       "segment": "SUV citadin",
       "isSUV": true,
-      "officialUrl": "https://www.peugeot.fr/gamme/peugeot-2008/electrique.html",
-      "configuratorUrl": "https://www.peugeot.fr/configurateur/2008.html",
-      "imageUrl": null,
-      "priceFromEur": 38750,
-      "priceToEur": 42550,
+      "officialUrl": "https://www.peugeot.fr/nos-vehicules/suv-peugeot-2008/electrique.html",
+      "configuratorUrl": "https://www.peugeot.fr/nos-vehicules/suv-peugeot-2008/electrique.html",
+      "imageUrl": "https://www.peugeot.fr/content/dam/peugeot/france/b2c/odm/vignettes/D_ODM_LP_N2008_860x360.png?imwidth=1920",
+      "priceFromEur": 39200,
+      "priceToEur": 43500,
       "specs": {
         "lengthMm": 4304,
         "widthMm": 1775,
@@ -1367,17 +1433,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Peugeot e-2008 156 ch Autonomie Élargie (54 kWh) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 374,
+          "type": "LLD",
+          "title": "Offres du Moment Peugeot Novembre (jusqu'au 30/11)",
+          "monthlyEur": 295,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 4200,
-          "priceAfterEur": 30550,
+          "officialMonthlyEur": 225,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km (10 000 km/an) · 0 € apport (Prime CEE 7 000 € D1-D3 déduite)",
+          "discountEur": 3000,
+          "priceAfterEur": 32200,
           "validUntil": "2026-11-30",
-          "conditions": "1er loyer intégralement couvert par le Bonus / Prime CEE de 4 000 € (0 € à débourser), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 4 200 € incluse.",
-          "sourceUrl": "https://www.peugeot.fr/offres-vehicules-electriques.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 295 €/mois (Offre affichée sur le site officiel : 225 €/mois — LLD 37 mois · 30 000 km (10 000 km/an) · 0 € apport (Prime CEE 7 000 € D1-D3 déduite)). Sur peugeot.fr/offres.html, le loyer d'appel à 225 €/mois sans apport déduit une Prime CEE maximale de 7 000 € (réservée aux revenus modestes D1-D3 avec condition de reprise) sur 37 mois / 30 000 km. Pour un foyer standard (bonus/CEE 4 000 €) en 15 000 km/an sans apport, le loyer réel s'établit autour de 295 €/mois (prix net achat ~32 200 € au lieu de 39 200 € catalogue).",
+          "sourceUrl": "https://www.peugeot.fr/offres.html"
         }
       ],
       "dealerBehavior": "Concurrence rude avec Renault et BYD. Concessions très agressives : 4 000 à 4 500 € de remise immédiate sur stock livrable.",
@@ -1400,23 +1468,27 @@
         "comfort": 8.4,
         "equipment": 8.7
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 32200,
+      "priceExplanation": "Sur peugeot.fr/offres.html, le loyer d'appel à 225 €/mois sans apport déduit une Prime CEE maximale de 7 000 € (réservée aux revenus modestes D1-D3 avec condition de reprise) sur 37 mois / 30 000 km. Pour un foyer standard (bonus/CEE 4 000 €) en 15 000 km/an sans apport, le loyer réel s'établit autour de 295 €/mois (prix net achat ~32 200 € au lieu de 39 200 € catalogue).",
+      "promoName": "Offres du Moment Peugeot Novembre (jusqu'au 30/11)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "peugeot-e-3008-210",
       "brand": "Peugeot",
-      "model": "e-3008 210 ch Autonomie Standard (73 kWh)",
+      "model": "e-3008 210 ch (73 kWh)",
       "origin": "France",
       "madeIn": "Sochaux (France)",
       "chineseBrand": false,
       "energy": "BEV",
       "segment": "SUV compact",
       "isSUV": true,
-      "officialUrl": "https://www.peugeot.fr/gamme/peugeot-3008/electrique.html",
-      "configuratorUrl": "https://www.peugeot.fr/configurateur/3008.html",
-      "imageUrl": null,
+      "officialUrl": "https://www.peugeot.fr/nos-vehicules/peugeot-3008/electrique.html",
+      "configuratorUrl": "https://www.peugeot.fr/nos-vehicules/peugeot-3008/electrique.html",
+      "imageUrl": "https://www.peugeot.fr/content/dam/peugeot/france/b2c/odm/vignettes/D_ODM_LP_N3008_860x360.png?imwidth=1920",
       "priceFromEur": 44990,
-      "priceToEur": 49990,
+      "priceToEur": 51490,
       "specs": {
         "lengthMm": 4542,
         "widthMm": 1895,
@@ -1479,16 +1551,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Peugeot e-3008 210 ch Autonomie Standard (73 kWh) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 464,
+          "title": "Offre Peugeot e-3008 Garantie 8 ansAllure Care",
+          "monthlyEur": 399,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 2800,
-          "priceAfterEur": 38190,
+          "officialMonthlyEur": 360,
+          "officialLeaseTerms": "LLD 49 mois · 50 000 km (~12 200 km/an) · 0 € apport (Prime CEE 6 100 € déduite)",
+          "discountEur": 2100,
+          "priceAfterEur": 38890,
           "validUntil": "2026-11-30",
-          "conditions": "1er loyer intégralement couvert par le Bonus / Prime CEE de 4 000 € (0 € à débourser), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 2 800 € incluse.",
-          "sourceUrl": "https://www.peugeot.fr/offres-vehicules-electriques.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 399 €/mois (Offre affichée sur le site officiel : 360 €/mois — LLD 49 mois · 50 000 km (~12 200 km/an) · 0 € apport (Prime CEE 6 100 € déduite)). Peugeot affiche sur son site officiel 360 €/mois sans apport (sur 49 mois / 50 000 km avec Prime CEE bonifiée de 6 100 € déduite). Ajusté à 15 000 km/an (60 000 km sur 48 mois) et 0 € d'apport pour tous les profils, le loyer ressort à 399 €/mois (prix net achat ~38 890 € contre 44 990 € catalogue).",
+          "sourceUrl": "https://www.peugeot.fr/offres.html"
         }
       ],
       "dealerBehavior": "Fabriqué à Sochaux et éligible au bonus d'État sur Allure. Remises de 2 500 à 3 500 € accordées en concession pour contrer le Scénic E-Tech.",
@@ -1511,7 +1585,11 @@
         "comfort": 9.2,
         "equipment": 9.1
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 38890,
+      "priceExplanation": "Peugeot affiche sur son site officiel 360 €/mois sans apport (sur 49 mois / 50 000 km avec Prime CEE bonifiée de 6 100 € déduite). Ajusté à 15 000 km/an (60 000 km sur 48 mois) et 0 € d'apport pour tous les profils, le loyer ressort à 399 €/mois (prix net achat ~38 890 € contre 44 990 € catalogue).",
+      "promoName": "Offre Peugeot e-3008 Garantie 8 ansAllure Care",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "peugeot-3008-hybrid-136",
@@ -1523,11 +1601,11 @@
       "energy": "HEV",
       "segment": "SUV compact",
       "isSUV": true,
-      "officialUrl": "https://www.peugeot.fr/gamme/peugeot-3008/hybride.html",
-      "configuratorUrl": "https://www.peugeot.fr/configurateur/3008.html",
-      "imageUrl": null,
+      "officialUrl": "https://www.peugeot.fr/nos-vehicules/gamme/nos-vehicules-hybrides.html",
+      "configuratorUrl": "https://www.peugeot.fr/nos-vehicules/gamme/nos-vehicules-hybrides.html",
+      "imageUrl": "https://www.peugeot.fr/content/dam/peugeot/france/b2c/acheter/offer-images/novembre-26/MASTHEAD_ODM_D_1920x1080.jpg?imwidth=1920",
       "priceFromEur": 38490,
-      "priceToEur": 42990,
+      "priceToEur": 43490,
       "specs": {
         "lengthMm": 4542,
         "widthMm": 1895,
@@ -1581,17 +1659,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Peugeot 3008 Hybrid 136 ch e-DCS6 — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 419,
+          "type": "LLD",
+          "title": "Prime Fidélité & Reprise Peugeot (−2 800 €)",
+          "monthlyEur": 389,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 3000,
-          "priceAfterEur": 35490,
+          "officialMonthlyEur": 340,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km · sous condition de reprise Peugeot (+1 000 €)",
+          "discountEur": 2800,
+          "priceAfterEur": 35690,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 3 000 € incluse.",
-          "sourceUrl": "https://www.peugeot.fr/offres-du-moment.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 389 €/mois (Offre affichée sur le site officiel : 340 €/mois — LLD 37 mois · 30 000 km · sous condition de reprise Peugeot (+1 000 €)). Tarif catalogue 38 490 € en finition Allure. Les concessions Peugeot appliquent 2 800 € de remise directe + prime reprise (soit 35 690 € net).",
+          "sourceUrl": "https://www.peugeot.fr/offres.html"
         }
       ],
       "dealerBehavior": "Très demandé en flotte et particulier, les concessions accordent néanmoins 6 à 8 % de remise pour liquider les stocks.",
@@ -1614,23 +1694,27 @@
         "comfort": 8.7,
         "equipment": 8.9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 35690,
+      "priceExplanation": "Tarif catalogue 38 490 € en finition Allure. Les concessions Peugeot appliquent 2 800 € de remise directe + prime reprise (soit 35 690 € net).",
+      "promoName": "Prime Fidélité & Reprise Peugeot (−2 800 €)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "peugeot-e-208-156",
       "brand": "Peugeot",
-      "model": "e-208 156 ch Autonomie Élargie (51 kWh)",
+      "model": "e-208 156 ch (51 kWh)",
       "origin": "France",
       "madeIn": "Zaragoza (Espagne)",
       "chineseBrand": false,
       "energy": "BEV",
       "segment": "Citadine",
       "isSUV": false,
-      "officialUrl": "https://www.peugeot.fr/gamme/peugeot-208/electrique.html",
-      "configuratorUrl": "https://www.peugeot.fr/configurateur/208.html",
-      "imageUrl": null,
-      "priceFromEur": 33400,
-      "priceToEur": 37300,
+      "officialUrl": "https://www.peugeot.fr/nos-vehicules/208/electrique.html",
+      "configuratorUrl": "https://www.peugeot.fr/nos-vehicules/208/electrique.html",
+      "imageUrl": "https://www.peugeot.fr/content/dam/peugeot/france/b2c/odm/vignettes/D_ODM_LP_N208_860x360.png?imwidth=1920",
+      "priceFromEur": 34100,
+      "priceToEur": 38300,
       "specs": {
         "lengthMm": 4055,
         "widthMm": 1745,
@@ -1693,16 +1777,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Peugeot e-208 156 ch Autonomie Élargie (51 kWh) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 314,
+          "title": "Offre Novembre e-208 dès 190 €/mois (jusqu'au 30/11)",
+          "monthlyEur": 259,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 3500,
-          "priceAfterEur": 25900,
+          "officialMonthlyEur": 190,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km (10 000 km/an) · 0 € apport (Prime CEE 7 000 € D1-D3 déduite)",
+          "discountEur": 3000,
+          "priceAfterEur": 27100,
           "validUntil": "2026-11-30",
-          "conditions": "1er loyer intégralement couvert par le Bonus / Prime CEE de 4 000 € (0 € à débourser), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 3 500 € incluse.",
-          "sourceUrl": "https://www.peugeot.fr/offres-vehicules-electriques.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 259 €/mois (Offre affichée sur le site officiel : 190 €/mois — LLD 37 mois · 30 000 km (10 000 km/an) · 0 € apport (Prime CEE 7 000 € D1-D3 déduite)). L'offre officielle à 190 €/mois sur peugeot.fr concerne l'e-208 136 ch (46 kWh) sur 37 mois / 30 000 km avec Prime CEE de 7 000 € (ménages déciles D1-D3). En version 156 ch (51 kWh), sans condition de revenus et avec 15 000 km/an sans apport, comptez 259 €/mois (27 100 € net au lieu de 34 100 € catalogue).",
+          "sourceUrl": "https://www.peugeot.fr/offres.html"
         }
       ],
       "dealerBehavior": "Riposte directe à la R5 E-Tech : Peugeot brade les e-208 en stock avec jusqu'à 10 % de remise constructeur.",
@@ -1725,21 +1811,25 @@
         "comfort": 8.4,
         "equipment": 8.8
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 27100,
+      "priceExplanation": "L'offre officielle à 190 €/mois sur peugeot.fr concerne l'e-208 136 ch (46 kWh) sur 37 mois / 30 000 km avec Prime CEE de 7 000 € (ménages déciles D1-D3). En version 156 ch (51 kWh), sans condition de revenus et avec 15 000 km/an sans apport, comptez 259 €/mois (27 100 € net au lieu de 34 100 € catalogue).",
+      "promoName": "Offre Novembre e-208 dès 190 €/mois (jusqu'au 30/11)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "citroen-e-c3-113",
       "brand": "Citroën",
-      "model": "ë-C3 113 ch Batterie LFP 44 kWh",
+      "model": "ë-C3 113 ch (44 kWh)",
       "origin": "France",
       "madeIn": "Trnava (Slovaquie)",
       "chineseBrand": false,
       "energy": "BEV",
       "segment": "Citadine",
       "isSUV": false,
-      "officialUrl": "https://www.citroen.fr/vehicules/nouvelle-e-c3.html",
-      "configuratorUrl": "https://www.citroen.fr/configurateur/nouvelle-e-c3.html",
-      "imageUrl": null,
+      "officialUrl": "https://www.citroen.fr/acheter/offres-particuliers/ec3.html",
+      "configuratorUrl": "https://www.citroen.fr/acheter/offres-particuliers/ec3.html",
+      "imageUrl": "https://www.citroen.fr/content/dam/citroen/france/slideshow-home/b2c/11-25/eC3_2880x1152.png?imwidth=1920",
       "priceFromEur": 23300,
       "priceToEur": 27800,
       "specs": {
@@ -1803,16 +1893,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Citroën ë-C3 113 ch Batterie LFP 44 kWh — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 219,
+          "title": "Offre Particuliers Citroën ë-C3 (jusqu'au 30/11)",
+          "monthlyEur": 179,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 1200,
-          "priceAfterEur": 18100,
+          "officialMonthlyEur": 139,
+          "officialLeaseTerms": "LLD 36 mois · 30 000 km · 0 € apport (Bonus + Prime CEE déduits)",
+          "discountEur": 500,
+          "priceAfterEur": 18800,
           "validUntil": "2026-11-30",
-          "conditions": "1er loyer intégralement couvert par le Bonus / Prime CEE de 4 000 € (0 € à débourser), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 1 200 € incluse.",
-          "sourceUrl": "https://www.citroen.fr/offres.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 179 €/mois (Offre affichée sur le site officiel : 139 €/mois — LLD 36 mois · 30 000 km · 0 € apport (Bonus + Prime CEE déduits)). Prix catalogue officiel très bas à 23 300 € TTC (finition You). Une fois le Bonus / Prime CEE de 4 000 € déduit, le prix net tombe à 19 300 € (18 800 € avec geste commercial sur stock).",
+          "sourceUrl": "https://www.citroen.fr/acheter/offres-particuliers.html"
         }
       ],
       "dealerBehavior": "Offre d'accès électrique très plébiscitée. Délais de livraison désormais stabilisés, 1 000 € de remise ou accessoires négociables.",
@@ -1835,7 +1927,11 @@
         "comfort": 8.9,
         "equipment": 7.9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 19300,
+      "priceExplanation": "Prix catalogue officiel très bas à 23 300 € TTC (finition You). Une fois le Bonus / Prime CEE de 4 000 € déduit, le prix net tombe à 19 300 € (18 800 € avec geste commercial sur stock).",
+      "promoName": "Offre Particuliers Citroën ë-C3 (jusqu'au 30/11)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "citroen-e-c3-aircross-113",
@@ -1847,9 +1943,9 @@
       "energy": "BEV",
       "segment": "SUV compact",
       "isSUV": true,
-      "officialUrl": "https://www.citroen.fr/vehicules/nouveau-c3-aircross.html",
-      "configuratorUrl": "https://www.citroen.fr/configurateur/nouveau-c3-aircross.html",
-      "imageUrl": null,
+      "officialUrl": "https://www.citroen.fr/acheter/offres-particuliers/ec3-aircross.html",
+      "configuratorUrl": "https://www.citroen.fr/acheter/offres-particuliers/ec3-aircross.html",
+      "imageUrl": "https://www.citroen.fr/content/dam/citroen/france/basebal-cards/b2c/Citroen_C3_Aircross_2023.png?imwidth=1920",
       "priceFromEur": 27400,
       "priceToEur": 31900,
       "specs": {
@@ -1905,16 +2001,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Citroën ë-C3 Aircross 113 ch (44 kWh) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 264,
+          "title": "Offre Lancement ë-C3 Aircross (jusqu'au 30/11)",
+          "monthlyEur": 219,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 1500,
-          "priceAfterEur": 21900,
+          "officialMonthlyEur": 179,
+          "officialLeaseTerms": "LLD 36 mois · 30 000 km · 0 € apport (Bonus / CEE déduit)",
+          "discountEur": 800,
+          "priceAfterEur": 22600,
           "validUntil": "2026-11-30",
-          "conditions": "1er loyer intégralement couvert par le Bonus / Prime CEE de 4 000 € (0 € à débourser), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 1 500 € incluse.",
-          "sourceUrl": "https://www.citroen.fr/offres.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 219 €/mois (Offre affichée sur le site officiel : 179 €/mois — LLD 36 mois · 30 000 km · 0 € apport (Bonus / CEE déduit)). Catalogue officiel 27 400 € TTC. Éligible au Bonus / Prime CEE de 4 000 € (fabrication européenne à Trnava), soit 23 400 € prix net officiel (et ~22 600 € après remise stock).",
+          "sourceUrl": "https://www.citroen.fr/acheter/offres-particuliers.html"
         }
       ],
       "dealerBehavior": "SUV compact électrique le plus abordable de France après bonus. Concessions ouvertes à 1 500 € de remise pour booster le lancement.",
@@ -1937,7 +2035,11 @@
         "comfort": 8.8,
         "equipment": 8
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 23400,
+      "priceExplanation": "Catalogue officiel 27 400 € TTC. Éligible au Bonus / Prime CEE de 4 000 € (fabrication européenne à Trnava), soit 23 400 € prix net officiel (et ~22 600 € après remise stock).",
+      "promoName": "Offre Lancement ë-C3 Aircross (jusqu'au 30/11)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "tesla-model-y-propulsion",
@@ -1951,9 +2053,9 @@
       "isSUV": true,
       "officialUrl": "https://www.tesla.com/fr_fr/modely",
       "configuratorUrl": "https://www.tesla.com/fr_fr/modely/design",
-      "imageUrl": null,
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Tesla_Model_Y_1X7A6211.jpg/960px-Tesla_Model_Y_1X7A6211.jpg",
       "priceFromEur": 44990,
-      "priceToEur": 57990,
+      "priceToEur": 53990,
       "specs": {
         "lengthMm": 4751,
         "widthMm": 1921,
@@ -2015,16 +2117,18 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Tesla Model Y Propulsion Grande Autonomie — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 474,
+          "type": "LLD",
+          "title": "Bonus Tesla Véhicules Disponibles (−2 000 € + Taux bonifié)",
+          "monthlyEur": 439,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
+          "officialMonthlyEur": 399,
+          "officialLeaseTerms": "LOA 48 mois · 10 000 km/an · 1er loyer couvert par Bonus 4 000 €",
           "discountEur": 2000,
-          "priceAfterEur": 40990,
-          "validUntil": "2026-11-30",
-          "conditions": "1er loyer intégralement couvert par le Bonus / Prime CEE de 4 000 € (0 € à débourser), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 2 000 € incluse.",
+          "priceAfterEur": 38990,
+          "validUntil": "2026-12-15",
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 439 €/mois (Offre affichée sur le site officiel : 399 €/mois — LOA 48 mois · 10 000 km/an · 1er loyer couvert par Bonus 4 000 €). Sur tesla.com/fr_fr, le Model Y Propulsion démarre à 44 990 € catalogue (assemblé à Berlin, donc éligible au Bonus de 4 000 €, soit 40 990 € sur le configurateur). Sur la page « Véhicules disponibles » (stock), Tesla ajoute un réajustement tarifaire de 2 000 € amenant le prix net à 38 990 €.",
           "sourceUrl": "https://www.tesla.com/fr_fr/inventory/new/my"
         }
       ],
@@ -2048,12 +2152,16 @@
         "comfort": 8.5,
         "equipment": 9.3
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 38990,
+      "priceExplanation": "Sur tesla.com/fr_fr, le Model Y Propulsion démarre à 44 990 € catalogue (assemblé à Berlin, donc éligible au Bonus de 4 000 €, soit 40 990 € sur le configurateur). Sur la page « Véhicules disponibles » (stock), Tesla ajoute un réajustement tarifaire de 2 000 € amenant le prix net à 38 990 €.",
+      "promoName": "Bonus Tesla Véhicules Disponibles (−2 000 € + Taux bonifié)",
+      "validUntil": "2026-12-15"
     },
     {
       "id": "tesla-model-3-highland",
       "brand": "Tesla",
-      "model": "Model 3 Restylée (Highland) Propulsion",
+      "model": "Model 3 Propulsion (Restylée Highland)",
       "origin": "États-Unis",
       "madeIn": "Shanghai (Chine)",
       "chineseBrand": false,
@@ -2062,9 +2170,9 @@
       "isSUV": false,
       "officialUrl": "https://www.tesla.com/fr_fr/model3",
       "configuratorUrl": "https://www.tesla.com/fr_fr/model3/design",
-      "imageUrl": null,
-      "priceFromEur": 39990,
-      "priceToEur": 49990,
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Tesla_Model_3_%27Highland%27_%282024%29_3.jpg/960px-Tesla_Model_3_%27Highland%27_%282024%29_3.jpg",
+      "priceFromEur": 41490,
+      "priceToEur": 50490,
       "specs": {
         "lengthMm": 4720,
         "widthMm": 1849,
@@ -2126,16 +2234,18 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Tesla Model 3 Restylée (Highland) Propulsion — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 454,
+          "type": "LLD",
+          "title": "Réajustement tarifaire Stock Tesla (−2 000 €)",
+          "monthlyEur": 435,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 2500,
-          "priceAfterEur": 37490,
-          "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 2 500 € incluse.",
+          "officialMonthlyEur": 389,
+          "officialLeaseTerms": "LOA 48 mois · 10 000 km/an · Apport 2 500 €",
+          "discountEur": 2000,
+          "priceAfterEur": 39490,
+          "validUntil": "2026-12-15",
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 435 €/mois (Offre affichée sur le site officiel : 389 €/mois — LOA 48 mois · 10 000 km/an · Apport 2 500 €). Contrairement au Model Y (produit à Berlin), la Model 3 est produite à Shanghai et n'a pas droit au bonus gouvernemental français. Son prix catalogue est de 41 490 €, ramené à 39 490 € sur les exemplaires en stock immédiat.",
           "sourceUrl": "https://www.tesla.com/fr_fr/inventory/new/m3"
         }
       ],
@@ -2159,12 +2269,16 @@
         "comfort": 9.2,
         "equipment": 9.4
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 39490,
+      "priceExplanation": "Contrairement au Model Y (produit à Berlin), la Model 3 est produite à Shanghai et n'a pas droit au bonus gouvernemental français. Son prix catalogue est de 41 490 €, ramené à 39 490 € sur les exemplaires en stock immédiat.",
+      "promoName": "Réajustement tarifaire Stock Tesla (−2 000 €)",
+      "validUntil": "2026-12-15"
     },
     {
       "id": "kia-ev3-81kwh",
       "brand": "Kia",
-      "model": "EV3 Long Range 81,4 kWh",
+      "model": "EV3 (58,3 kWh & Long Range 81,4 kWh)",
       "origin": "Corée du Sud",
       "madeIn": "Gwangmyeong (Corée du Sud)",
       "chineseBrand": false,
@@ -2172,8 +2286,8 @@
       "segment": "SUV citadin",
       "isSUV": true,
       "officialUrl": "https://www.kia.com/fr/modeles/ev3/decouvrir/",
-      "configuratorUrl": "https://www.kia.com/fr/acheter/configurateur/#/modele/ev3",
-      "imageUrl": null,
+      "configuratorUrl": "https://www.kia.com/fr/modeles/ev3/decouvrir/",
+      "imageUrl": "https://www.kia.com/content/dam/kwcms/kme/fr/fr/assets/offers/ev3.webp?v=4",
       "priceFromEur": 35990,
       "priceToEur": 45990,
       "specs": {
@@ -2238,16 +2352,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Kia EV3 Long Range 81,4 kWh — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 389,
+          "title": "Offre Kia EV3 Sans Apport dès 367 €/mois",
+          "monthlyEur": 397,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 4000,
-          "priceAfterEur": 31990,
+          "officialMonthlyEur": 367,
+          "officialLeaseTerms": "LLD 49 mois · 40 000 km · 0 € d'apport (Prime CEE de 730 € + remise Kia)",
+          "discountEur": 2230,
+          "priceAfterEur": 33760,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 4 000 € incluse.",
-          "sourceUrl": "https://www.kia.com/fr/acheter/offres-du-moment/"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 397 €/mois (Offre affichée sur le site officiel : 367 €/mois — LLD 49 mois · 40 000 km · 0 € d'apport (Prime CEE de 730 € + remise Kia)). Sur kia.com/fr, l'EV3 débute à 35 990 € en batterie 58,3 kWh (436 km WLTP) avec une Prime CEE de 730 € et une LLD officielle à 367 €/mois sans apport (10 000 km/an). En passant à 15 000 km/an sans apport, le loyer est de 397 €/mois (la version Grande Autonomie 81,4 kWh / 605 km WLTP est à 40 990 € catalogue).",
+          "sourceUrl": "https://www.kia.com/fr/achat-location/offres-commerciales/"
         }
       ],
       "dealerBehavior": "Pour compenser l'absence de bonus écologique (fabriqué en Corée), Kia offre 4 000 € de remise officielle + 3 % négociables.",
@@ -2270,23 +2386,27 @@
         "comfort": 8.7,
         "equipment": 8.9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 35260,
+      "priceExplanation": "Sur kia.com/fr, l'EV3 débute à 35 990 € en batterie 58,3 kWh (436 km WLTP) avec une Prime CEE de 730 € et une LLD officielle à 367 €/mois sans apport (10 000 km/an). En passant à 15 000 km/an sans apport, le loyer est de 397 €/mois (la version Grande Autonomie 81,4 kWh / 605 km WLTP est à 40 990 € catalogue).",
+      "promoName": "Offre Kia EV3 Sans Apport dès 367 €/mois",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "kia-niro-ev-64",
       "brand": "Kia",
-      "model": "Niro EV 204 ch (64,8 kWh)",
+      "model": "Nouveau Niro Hybride & Niro EV",
       "origin": "Corée du Sud",
       "madeIn": "Hwasung (Corée du Sud)",
       "chineseBrand": false,
       "energy": "BEV",
       "segment": "SUV compact",
       "isSUV": true,
-      "officialUrl": "https://www.kia.com/fr/modeles/niro-ev/decouvrir/",
-      "configuratorUrl": "https://www.kia.com/fr/acheter/configurateur/#/modele/niro-ev",
-      "imageUrl": null,
-      "priceFromEur": 41690,
-      "priceToEur": 47690,
+      "officialUrl": "https://www.kia.com/fr/modeles/niro/decouvrir/",
+      "configuratorUrl": "https://www.kia.com/fr/modeles/niro/decouvrir/",
+      "imageUrl": "https://www.kia.com/content/dam/kwcms/kme/fr/fr/assets/offers/nouveau-niro-hybride.webp?v=4",
+      "priceFromEur": 33990,
+      "priceToEur": 45990,
       "specs": {
         "lengthMm": 4420,
         "widthMm": 1825,
@@ -2346,17 +2466,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Kia Niro EV 204 ch (64,8 kWh) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 449,
+          "type": "LLD",
+          "title": "Offre Commerciale Kia Niro Sans Apport (297 €/mois)",
+          "monthlyEur": 335,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 5000,
-          "priceAfterEur": 36690,
+          "officialMonthlyEur": 297,
+          "officialLeaseTerms": "LLD 49 mois · 40 000 km (10 000 km/an) · 0 € d'apport",
+          "discountEur": 3000,
+          "priceAfterEur": 30990,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 5 000 € incluse.",
-          "sourceUrl": "https://www.kia.com/fr/acheter/offres-du-moment/"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 335 €/mois (Offre affichée sur le site officiel : 297 €/mois — LLD 49 mois · 40 000 km (10 000 km/an) · 0 € d'apport). Sur la page Offres Commerciales Kia France, le Nouveau Kia Niro s'affiche dès 297 €/mois sans apport (sur 49 mois / 40 000 km) grâce à 3 000 € d'avantage client. Recalculé pour 15 000 km/an sans apport, le loyer est de 335 €/mois.",
+          "sourceUrl": "https://www.kia.com/fr/achat-location/offres-commerciales/"
         }
       ],
       "dealerBehavior": "Remplacé dans le cœur de gamme par l'EV3, le Niro EV subit de gros déstockages en concession (jusqu'à 6 000 € de remise).",
@@ -2379,12 +2501,16 @@
         "comfort": 8.5,
         "equipment": 8.6
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 30990,
+      "priceExplanation": "Sur la page Offres Commerciales Kia France, le Nouveau Kia Niro s'affiche dès 297 €/mois sans apport (sur 49 mois / 40 000 km) grâce à 3 000 € d'avantage client. Recalculé pour 15 000 km/an sans apport, le loyer est de 335 €/mois.",
+      "promoName": "Offre Commerciale Kia Niro Sans Apport (297 €/mois)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "kia-sportage-hybrid-215",
       "brand": "Kia",
-      "model": "Sportage Hybride 215 ch",
+      "model": "Nouveau Sportage Restylé Hybride 215 ch",
       "origin": "Corée du Sud",
       "madeIn": "Zilina (Slovaquie)",
       "chineseBrand": false,
@@ -2392,10 +2518,10 @@
       "segment": "SUV compact",
       "isSUV": true,
       "officialUrl": "https://www.kia.com/fr/modeles/sportage/decouvrir/",
-      "configuratorUrl": "https://www.kia.com/fr/acheter/configurateur/#/modele/sportage",
-      "imageUrl": null,
-      "priceFromEur": 39990,
-      "priceToEur": 46990,
+      "configuratorUrl": "https://www.kia.com/fr/modeles/sportage/decouvrir/",
+      "imageUrl": "https://www.kia.com/content/dam/kwcms/kme/fr/fr/assets/offers/sportage-restyle.webp?v=4",
+      "priceFromEur": 39590,
+      "priceToEur": 47290,
       "specs": {
         "lengthMm": 4515,
         "widthMm": 1865,
@@ -2456,17 +2582,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Kia Sportage Hybride 215 ch — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 429,
+          "type": "LLD",
+          "title": "Offre Spéciale Sportage Restylé Sans Apport (297 €/mois)",
+          "monthlyEur": 349,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 3500,
-          "priceAfterEur": 36490,
+          "officialMonthlyEur": 297,
+          "officialLeaseTerms": "LLD 37/49 mois · 10 000 km/an · Sans apport (Avantage Kia déduit)",
+          "discountEur": 4000,
+          "priceAfterEur": 35590,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 3 500 € incluse.",
-          "sourceUrl": "https://www.kia.com/fr/acheter/offres-du-moment/"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 349 €/mois (Offre affichée sur le site officiel : 297 €/mois — LLD 37/49 mois · 10 000 km/an · Sans apport (Avantage Kia déduit)). Offre coup de poing sur kia.com/fr : le Nouveau Kia Sportage restylé Hybride est proposé dès 297 €/mois sans apport (base 10 000 km/an) avec jusqu'à 4 000 € de prime/avantage. Ajusté à 15 000 km/an et 0 € d'apport, le loyer est d'environ 349 €/mois.",
+          "sourceUrl": "https://www.kia.com/fr/achat-location/offres-commerciales/nouveau-sportage-hybride/"
         }
       ],
       "dealerBehavior": "Valeur sûre fabriquée en Slovaquie. Forte disponibilité, remises courantes de 7 à 9 % en concession.",
@@ -2489,12 +2617,16 @@
         "comfort": 8.8,
         "equipment": 9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 35590,
+      "priceExplanation": "Offre coup de poing sur kia.com/fr : le Nouveau Kia Sportage restylé Hybride est proposé dès 297 €/mois sans apport (base 10 000 km/an) avec jusqu'à 4 000 € de prime/avantage. Ajusté à 15 000 km/an et 0 € d'apport, le loyer est d'environ 349 €/mois.",
+      "promoName": "Offre Spéciale Sportage Restylé Sans Apport (297 €/mois)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "hyundai-kona-electric-65",
       "brand": "Hyundai",
-      "model": "Kona Electric 217 ch (65,4 kWh)",
+      "model": "Kona Electric (48 kWh & 65 kWh)",
       "origin": "Corée du Sud",
       "madeIn": "Nosovice (Tchéquie)",
       "chineseBrand": false,
@@ -2502,10 +2634,10 @@
       "segment": "SUV compact",
       "isSUV": true,
       "officialUrl": "https://www.hyundai.com/fr/fr/modeles/kona-electric.html",
-      "configuratorUrl": "https://www.hyundai.com/fr/fr/modeles/kona-electric/configurateur.html",
-      "imageUrl": null,
-      "priceFromEur": 40850,
-      "priceToEur": 46750,
+      "configuratorUrl": "https://www.hyundai.com/fr/fr/modeles/kona-electric.html",
+      "imageUrl": "https://www.hyundai.com/cdn-cgi/image/width=680,height=383,fit=scale-down,quality=75,format=auto/eu/dam/hpp/eu/model/sx2-ev/clearcut/lhd/KONA_EV_7FW5ZHZ7ZGG0PP_PM2_NNB_C082.png",
+      "priceFromEur": 36850,
+      "priceToEur": 47250,
       "specs": {
         "lengthMm": 4355,
         "widthMm": 1825,
@@ -2568,17 +2700,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Hyundai Kona Electric 217 ch (65,4 kWh) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 404,
+          "type": "LLD",
+          "title": "Remise Ecobonus Hyundai + Bonus Écologique (−7 500 €)",
+          "monthlyEur": 339,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
+          "officialMonthlyEur": 299,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km · Bonus 4 000 € déduit (Usine Nosovice République Tchèque)",
           "discountEur": 3500,
-          "priceAfterEur": 33350,
+          "priceAfterEur": 29350,
           "validUntil": "2026-11-30",
-          "conditions": "1er loyer intégralement couvert par le Bonus / Prime CEE de 4 000 € (0 € à débourser), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 3 500 € incluse.",
-          "sourceUrl": "https://www.hyundai.com/fr/fr/offres.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 339 €/mois (Offre affichée sur le site officiel : 299 €/mois — LLD 37 mois · 30 000 km · Bonus 4 000 € déduit (Usine Nosovice République Tchèque)). Assemblé en Europe (République Tchèque), le Kona Electric cumule le Bonus/CEE de 4 000 € et la remise Hyundai de 3 500 €. Le prix catalogue de 36 850 € (48 kWh) ou 41 250 € (65 kWh) baisse ainsi de 7 500 € en prix net.",
+          "sourceUrl": "https://www.hyundai.com/fr/fr/modeles/kona-electric.html"
         }
       ],
       "dealerBehavior": "Fabriqué en Europe, il bénéficie du bonus écologique contrairement à son cousin Kia EV3. Les concessions poussent fort avec 3 000 à 4 000 € de remise.",
@@ -2601,7 +2735,11 @@
         "comfort": 8.6,
         "equipment": 8.9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 32850,
+      "priceExplanation": "Assemblé en Europe (République Tchèque), le Kona Electric cumule le Bonus/CEE de 4 000 € et la remise Hyundai de 3 500 €. Le prix catalogue de 36 850 € (48 kWh) ou 41 250 € (65 kWh) baisse ainsi de 7 500 € en prix net.",
+      "promoName": "Remise Ecobonus Hyundai + Bonus Écologique (−7 500 €)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "hyundai-inster-electric-49",
@@ -2613,11 +2751,11 @@
       "energy": "BEV",
       "segment": "Citadine",
       "isSUV": false,
-      "officialUrl": "https://www.hyundai.com/fr/fr/modeles/inster.html",
-      "configuratorUrl": "https://www.hyundai.com/fr/fr/modeles/inster/configurateur.html",
-      "imageUrl": null,
-      "priceFromEur": 25000,
-      "priceToEur": 29500,
+      "officialUrl": "https://www.hyundai.com/fr/fr/modeles/inster-electric.html",
+      "configuratorUrl": "https://www.hyundai.com/fr/fr/modeles/inster-electric.html",
+      "imageUrl": "https://www.hyundai.com/cdn-cgi/image/width=680,height=383,fit=scale-down,quality=75,format=auto/eu/dam/hpp/eu/model/ax-ev/clearcut/inster/lhd/INSTER_6XS5ZDZ7ZHH685_NES_TJH_C082.png",
+      "priceFromEur": 26750,
+      "priceToEur": 30500,
       "specs": {
         "lengthMm": 3825,
         "widthMm": 1610,
@@ -2680,16 +2818,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Hyundai Inster Electric 115 ch (49 kWh) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 274,
+          "title": "🔥 Offre Flash jusqu'au 23/11 : Inster 49 kWh au prix du 42 kWh",
+          "monthlyEur": 229,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 2500,
-          "priceAfterEur": 22500,
-          "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 2 500 € incluse.",
-          "sourceUrl": "https://www.hyundai.com/fr/fr/offres.html"
+          "officialMonthlyEur": 189,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km · Offre 49 kWh au prix du 42 kWh",
+          "discountEur": 3250,
+          "priceAfterEur": 23500,
+          "validUntil": "2026-11-23",
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 229 €/mois (Offre affichée sur le site officiel : 189 €/mois — LLD 37 mois · 30 000 km · Offre 49 kWh au prix du 42 kWh). Offre ponctuelle vérifiée sur hyundai.com/fr/fr : jusqu'au 23 novembre 2026, la version grande batterie 49 kWh (370 km WLTP, 26 750 €) est facturée au prix de la version 42 kWh (25 000 €), plus une remise Ecobonus Hyundai portant le prix net à 23 500 €.",
+          "sourceUrl": "https://www.hyundai.com/fr/fr/modeles/inster-electric.html"
         }
       ],
       "dealerBehavior": "Petite citadine astucieuse au design rétro-pixel. Hyundai accorde 2 500 € de remise pour compenser le bonus.",
@@ -2712,23 +2852,27 @@
         "comfort": 8.3,
         "equipment": 8.8
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 25000,
+      "priceExplanation": "Offre ponctuelle vérifiée sur hyundai.com/fr/fr : jusqu'au 23 novembre 2026, la version grande batterie 49 kWh (370 km WLTP, 26 750 €) est facturée au prix de la version 42 kWh (25 000 €), plus une remise Ecobonus Hyundai portant le prix net à 23 500 €.",
+      "promoName": "🔥 Offre Flash jusqu'au 23/11 : Inster 49 kWh au prix du 42 kWh",
+      "validUntil": "2026-11-23"
     },
     {
       "id": "hyundai-tucson-hybrid-215",
       "brand": "Hyundai",
-      "model": "Tucson Hybride 215 ch",
+      "model": "Tucson Nouvelle Génération Hybrid 215 ch",
       "origin": "Corée du Sud",
       "madeIn": "Nosovice (Tchéquie)",
       "chineseBrand": false,
       "energy": "HEV",
       "segment": "SUV compact",
       "isSUV": true,
-      "officialUrl": "https://www.hyundai.com/fr/fr/modeles/tucson.html",
-      "configuratorUrl": "https://www.hyundai.com/fr/fr/modeles/tucson/configurateur.html",
-      "imageUrl": null,
-      "priceFromEur": 40500,
-      "priceToEur": 47800,
+      "officialUrl": "https://www.hyundai.com/fr/fr/modeles/tucson-nouvelle-generation.html",
+      "configuratorUrl": "https://www.hyundai.com/fr/fr/modeles/tucson-nouvelle-generation.html",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Hyundai_Tucson_%28NX4%2C_SWB%29_PHEV_1X7A1858.jpg/960px-Hyundai_Tucson_%28NX4%2C_SWB%29_PHEV_1X7A1858.jpg",
+      "priceFromEur": 39400,
+      "priceToEur": 47900,
       "specs": {
         "lengthMm": 4510,
         "widthMm": 1865,
@@ -2790,17 +2934,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Hyundai Tucson Hybride 215 ch — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 434,
+          "type": "LLD",
+          "title": "Offre Tucson Restylé (−3 000 € remise & reprise)",
+          "monthlyEur": 389,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 3800,
-          "priceAfterEur": 36700,
+          "officialMonthlyEur": 349,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km · Avec prime reprise Hyundai",
+          "discountEur": 3000,
+          "priceAfterEur": 36400,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 3 800 € incluse.",
-          "sourceUrl": "https://www.hyundai.com/fr/fr/offres.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 389 €/mois (Offre affichée sur le site officiel : 349 €/mois — LLD 37 mois · 30 000 km · Avec prime reprise Hyundai). Le Tucson Hybrid 215 ch restylé affiche un prix catalogue de 39 400 € TTC. Avec la remise commerciale Hyundai de 3 000 € sur les exemplaires en concession, le prix net s'établit à 36 400 €.",
+          "sourceUrl": "https://www.hyundai.com/fr/fr/modeles/tucson-nouvelle-generation.html"
         }
       ],
       "dealerBehavior": "SUV très prisé des familles. Le restylage intérieur séduit énormément ; remises de 7 à 9 % faciles à négocier sur stock.",
@@ -2823,12 +2969,16 @@
         "comfort": 8.8,
         "equipment": 8.9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 36400,
+      "priceExplanation": "Le Tucson Hybrid 215 ch restylé affiche un prix catalogue de 39 400 € TTC. Avec la remise commerciale Hyundai de 3 000 € sur les exemplaires en concession, le prix net s'établit à 36 400 €.",
+      "promoName": "Offre Tucson Restylé (−3 000 € remise & reprise)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "toyota-yaris-cross-116",
       "brand": "Toyota",
-      "model": "Yaris Cross Hybride 116h / 130h",
+      "model": "Nouvelle Yaris Cross Hybride 116h / 130h",
       "origin": "Japon",
       "madeIn": "Onnaing-Valenciennes (France - Origine France Garantie)",
       "chineseBrand": false,
@@ -2836,10 +2986,10 @@
       "segment": "SUV citadin",
       "isSUV": true,
       "officialUrl": "https://www.toyota.fr/vehicules-neufs/yaris-cross",
-      "configuratorUrl": "https://www.toyota.fr/vehicules-neufs/yaris-cross/build",
-      "imageUrl": null,
+      "configuratorUrl": "https://www.toyota.fr/vehicules-neufs/yaris-cross",
+      "imageUrl": "https://img-optimize.toyota-europe.com/ccis/zip/fr/product-token/b34bb4df-b215-4323-9ae9-b4e3e14204a8/vehicle/101377/width/680/height/383/padding/0,0,0,0/image-quality/70/day-exterior-03_M27.png",
       "priceFromEur": 28200,
-      "priceToEur": 35700,
+      "priceToEur": 34500,
       "specs": {
         "lengthMm": 4180,
         "widthMm": 1765,
@@ -2902,17 +3052,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Toyota Yaris Cross Hybride 116h / 130h — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 304,
+          "type": "LLD",
+          "title": "Prime Hybride Toyota (−2 500 €)",
+          "monthlyEur": 299,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
+          "officialMonthlyEur": 259,
+          "officialLeaseTerms": "LOA Easy 37 mois · 30 000 km · Avec 1er loyer majoré",
           "discountEur": 2500,
           "priceAfterEur": 25700,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 2 500 € incluse.",
-          "sourceUrl": "https://www.toyota.fr/offres-du-moment"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 299 €/mois (Offre affichée sur le site officiel : 259 €/mois — LOA Easy 37 mois · 30 000 km · Avec 1er loyer majoré). Fabriquée à Valenciennes (Onnaing), la Yaris Cross Hybride est à 28 200 € prix catalogue. Toyota applique sur toyota.fr/offres une Prime Hybride allant jusqu'à 2 500 €, ramenant le prix net à 25 700 €.",
+          "sourceUrl": "https://www.toyota.fr/offres"
         }
       ],
       "dealerBehavior": "SUV n°1 des ventes produit en France. Concessions actives avec 2 000 à 2 800 € de remise sur les modèles 116h et 130h en stock.",
@@ -2935,23 +3087,27 @@
         "comfort": 8.3,
         "equipment": 8.6
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 25700,
+      "priceExplanation": "Fabriquée à Valenciennes (Onnaing), la Yaris Cross Hybride est à 28 200 € prix catalogue. Toyota applique sur toyota.fr/offres une Prime Hybride allant jusqu'à 2 500 €, ramenant le prix net à 25 700 €.",
+      "promoName": "Prime Hybride Toyota (−2 500 €)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "toyota-c-hr-hybrid-140",
       "brand": "Toyota",
-      "model": "C-HR Hybride 140h",
+      "model": "Nouveau C-HR Hybride 140h / 200h",
       "origin": "Japon",
       "madeIn": "Sakarya (Turquie)",
       "chineseBrand": false,
       "energy": "HEV",
       "segment": "SUV compact",
       "isSUV": true,
-      "officialUrl": "https://www.toyota.fr/vehicules-neufs/c-hr",
-      "configuratorUrl": "https://www.toyota.fr/vehicules-neufs/c-hr/build",
-      "imageUrl": null,
-      "priceFromEur": 34900,
-      "priceToEur": 43400,
+      "officialUrl": "https://www.toyota.fr/vehicules-neufs/toyota-c-hr",
+      "configuratorUrl": "https://www.toyota.fr/vehicules-neufs/toyota-c-hr",
+      "imageUrl": "https://img-optimize.toyota-europe.com/ccis/zip/fr/product-token/177dc2f7-7a24-4640-98d0-791c136cdabe/vehicle/102015/width/680/height/383/padding/0,0,0,0/image-quality/70/day-exterior-03_M78.png",
+      "priceFromEur": 35450,
+      "priceToEur": 43900,
       "specs": {
         "lengthMm": 4362,
         "widthMm": 1832,
@@ -3014,17 +3170,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Toyota C-HR Hybride 140h — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 374,
+          "type": "LLD",
+          "title": "Offre Toyota C-HR (−3 000 € Prime Hybride)",
+          "monthlyEur": 379,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 3200,
-          "priceAfterEur": 31700,
+          "officialMonthlyEur": 339,
+          "officialLeaseTerms": "LOA Toyota Easy 37 mois · 30 000 km · Prime Hybride 3 000 € déduite",
+          "discountEur": 3000,
+          "priceAfterEur": 32450,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 3 200 € incluse.",
-          "sourceUrl": "https://www.toyota.fr/offres-du-moment"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 379 €/mois (Offre affichée sur le site officiel : 339 €/mois — LOA Toyota Easy 37 mois · 30 000 km · Prime Hybride 3 000 € déduite). Le nouveau C-HR démarre à 35 450 € catalogue mais bénéficie de 3 000 € de remise immédiate sur toyota.fr/offres (soit 32 450 € net).",
+          "sourceUrl": "https://www.toyota.fr/offres"
         }
       ],
       "dealerBehavior": "Design très expressif qui attire en concession. Remises moyennes de 3 000 € sur finitions de cœur de gamme Design.",
@@ -3047,12 +3205,16 @@
         "comfort": 8.6,
         "equipment": 8.9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 32450,
+      "priceExplanation": "Le nouveau C-HR démarre à 35 450 € catalogue mais bénéficie de 3 000 € de remise immédiate sur toyota.fr/offres (soit 32 450 € net).",
+      "promoName": "Offre Toyota C-HR (−3 000 € Prime Hybride)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "toyota-bz4x-pure",
       "brand": "Toyota",
-      "model": "bZ4X 100% Électrique 204 ch",
+      "model": "Nouveau bZ4X 100% Électrique 204 ch",
       "origin": "Japon",
       "madeIn": "Motomachi (Japon)",
       "chineseBrand": false,
@@ -3060,10 +3222,10 @@
       "segment": "SUV familial",
       "isSUV": true,
       "officialUrl": "https://www.toyota.fr/vehicules-neufs/bz4x",
-      "configuratorUrl": "https://www.toyota.fr/vehicules-neufs/bz4x/build",
-      "imageUrl": null,
-      "priceFromEur": 39990,
-      "priceToEur": 47990,
+      "configuratorUrl": "https://www.toyota.fr/vehicules-neufs/bz4x",
+      "imageUrl": "https://img-optimize.toyota-europe.com/ccis/zip/fr/product-token/8970be78-0c26-46cb-acb0-bbd1ff0075e4/vehicle/100615/width/680/height/383/padding/0,0,0,0/image-quality/70/day-exterior-03_218.png",
+      "priceFromEur": 39900,
+      "priceToEur": 47900,
       "specs": {
         "lengthMm": 4690,
         "widthMm": 1860,
@@ -3125,17 +3287,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Toyota bZ4X 100% Électrique 204 ch — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 414,
+          "type": "LLD",
+          "title": "Remise Exceptionnelle Toyota bZ4X (−5 000 €)",
+          "monthlyEur": 409,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 6000,
-          "priceAfterEur": 33990,
+          "officialMonthlyEur": 369,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km · Remise Toyota 5 000 € incluse",
+          "discountEur": 5000,
+          "priceAfterEur": 34900,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 6 000 € incluse.",
-          "sourceUrl": "https://www.toyota.fr/offres-du-moment"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 409 €/mois (Offre affichée sur le site officiel : 369 €/mois — LLD 37 mois · 30 000 km · Remise Toyota 5 000 € incluse). Fabriqué au Japon (non éligible au bonus français), Toyota compense directement par une remise officielle massive de 5 000 € ramenant le bZ4X de 39 900 € catalogue à 34 900 € net.",
+          "sourceUrl": "https://www.toyota.fr/offres"
         }
       ],
       "dealerBehavior": "Pour compenser l'absence de bonus écologique, Toyota applique d'énormes remises constructeur de 5 000 à 6 000 € sur les véhicules disponibles.",
@@ -3158,7 +3322,11 @@
         "comfort": 8.8,
         "equipment": 8.9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 34900,
+      "priceExplanation": "Fabriqué au Japon (non éligible au bonus français), Toyota compense directement par une remise officielle massive de 5 000 € ramenant le bZ4X de 39 900 € catalogue à 34 900 € net.",
+      "promoName": "Remise Exceptionnelle Toyota bZ4X (−5 000 €)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "volkswagen-id3-pro",
@@ -3170,11 +3338,11 @@
       "energy": "BEV",
       "segment": "Compacte",
       "isSUV": false,
-      "officialUrl": "https://www.volkswagen.fr/fr/modeles/id3.html",
-      "configuratorUrl": "https://www.volkswagen.fr/fr/configurateur/id3.html",
-      "imageUrl": null,
-      "priceFromEur": 37990,
-      "priceToEur": 44990,
+      "officialUrl": "https://www.volkswagen.fr/fr/modeles-et-configurateur/id-3-neo.html",
+      "configuratorUrl": "https://www.volkswagen.fr/fr/modeles-et-configurateur/id-3-neo.html",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Volkswagen_ID.3_%282023%29_IMG_7973.jpg/960px-Volkswagen_ID.3_%282023%29_IMG_7973.jpg",
+      "priceFromEur": 36990,
+      "priceToEur": 42990,
       "specs": {
         "lengthMm": 4261,
         "widthMm": 1809,
@@ -3235,17 +3403,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Volkswagen ID.3 Pro 204 ch (59 kWh) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 369,
+          "type": "LLD",
+          "title": "Offre ID.3 Neo & Pro (−3 000 € VW + 4 000 € Bonus)",
+          "monthlyEur": 299,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 3500,
-          "priceAfterEur": 30490,
+          "officialMonthlyEur": 249,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km · Bonus 4 000 € + Remise VW 3 000 € déduits",
+          "discountEur": 3000,
+          "priceAfterEur": 29990,
           "validUntil": "2026-11-30",
-          "conditions": "1er loyer intégralement couvert par le Bonus / Prime CEE de 4 000 € (0 € à débourser), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 3 500 € incluse.",
-          "sourceUrl": "https://www.volkswagen.fr/fr/offres.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 299 €/mois (Offre affichée sur le site officiel : 249 €/mois — LLD 37 mois · 30 000 km · Bonus 4 000 € + Remise VW 3 000 € déduits). Sur volkswagen.fr, l'ID.3 bénéficie à la fois du Bonus écologique / CEE de 4 000 € (produite en Allemagne) et d'un avantage client VW de 3 000 €, soit 29 990 € net au lieu de 36 990 € catalogue.",
+          "sourceUrl": "https://www.volkswagen.fr/fr/acheter/offres.html"
         }
       ],
       "dealerBehavior": "Nette amélioration depuis le restylage et le logiciel 4.0. Concessions très arrangeantes (7 à 10 % de remise) face à la concurrence des compactes françaises.",
@@ -3268,7 +3438,11 @@
         "comfort": 8.6,
         "equipment": 8.9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 29990,
+      "priceExplanation": "Sur volkswagen.fr, l'ID.3 bénéficie à la fois du Bonus écologique / CEE de 4 000 € (produite en Allemagne) et d'un avantage client VW de 3 000 €, soit 29 990 € net au lieu de 36 990 € catalogue.",
+      "promoName": "Offre ID.3 Neo & Pro (−3 000 € VW + 4 000 € Bonus)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "volkswagen-id4-pro",
@@ -3280,11 +3454,11 @@
       "energy": "BEV",
       "segment": "SUV familial",
       "isSUV": true,
-      "officialUrl": "https://www.volkswagen.fr/fr/modeles/id4.html",
-      "configuratorUrl": "https://www.volkswagen.fr/fr/configurateur/id4.html",
-      "imageUrl": null,
+      "officialUrl": "https://www.volkswagen.fr/fr/electriques-et-hybrides/nos-voitures-electriques.html",
+      "configuratorUrl": "https://www.volkswagen.fr/fr/electriques-et-hybrides/nos-voitures-electriques.html",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/2023_Volkswagen_ID.4_Pro_S%2C_front_left%2C_08-03-2024.jpg/960px-2023_Volkswagen_ID.4_Pro_S%2C_front_left%2C_08-03-2024.jpg",
       "priceFromEur": 45990,
-      "priceToEur": 53990,
+      "priceToEur": 52990,
       "specs": {
         "lengthMm": 4584,
         "widthMm": 1852,
@@ -3345,17 +3519,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Volkswagen ID.4 Pro 286 ch (77 kWh) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 464,
+          "type": "LLD",
+          "title": "Prime Volkswagen ID.4 (−4 000 € + Bonus 4 000 €)",
+          "monthlyEur": 429,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
+          "officialMonthlyEur": 379,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km · Bonus 4 000 € + Avantage VW 4 000 € déduits",
           "discountEur": 4000,
           "priceAfterEur": 37990,
           "validUntil": "2026-11-30",
-          "conditions": "1er loyer intégralement couvert par le Bonus / Prime CEE de 4 000 € (0 € à débourser), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 4 000 € incluse.",
-          "sourceUrl": "https://www.volkswagen.fr/fr/offres.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 429 €/mois (Offre affichée sur le site officiel : 379 €/mois — LLD 37 mois · 30 000 km · Bonus 4 000 € + Avantage VW 4 000 € déduits). Volkswagen positionne l'ID.4 Pro 286 ch sous le seuil des 47 000 € (à 45 990 € catalogue) pour déclencher les 4 000 € de Bonus/CEE, auxquels s'ajoutent 4 000 € de remise VW sur stock, soit 37 990 € net.",
+          "sourceUrl": "https://www.volkswagen.fr/fr/acheter/offres.html"
         }
       ],
       "dealerBehavior": "Les concessions ont d'importants quotas annuels à honorer : remises directes de 4 000 € sur stock pour passer sous les 42 000 €.",
@@ -3378,23 +3554,27 @@
         "comfort": 8.9,
         "equipment": 9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 37990,
+      "priceExplanation": "Volkswagen positionne l'ID.4 Pro 286 ch sous le seuil des 47 000 € (à 45 990 € catalogue) pour déclencher les 4 000 € de Bonus/CEE, auxquels s'ajoutent 4 000 € de remise VW sur stock, soit 37 990 € net.",
+      "promoName": "Prime Volkswagen ID.4 (−4 000 € + Bonus 4 000 €)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "skoda-elroq-85",
       "brand": "Skoda",
-      "model": "Elroq 85 (286 ch / 82 kWh)",
+      "model": "Nouveau Elroq (50 / 60 / 85)",
       "origin": "Tchéquie",
       "madeIn": "Mlada Boleslav (Tchéquie)",
       "chineseBrand": false,
       "energy": "BEV",
       "segment": "SUV compact",
       "isSUV": true,
-      "officialUrl": "https://www.skoda.fr/modeles/elroq",
-      "configuratorUrl": "https://www.skoda.fr/configurateur/elroq",
-      "imageUrl": null,
-      "priceFromEur": 33300,
-      "priceToEur": 42200,
+      "officialUrl": "https://www.skoda.fr/gamme/elroq/elroq",
+      "configuratorUrl": "https://www.skoda.fr/gamme/elroq/elroq",
+      "imageUrl": "https://cdn.skoda-auto.com/images/external/d6e06eedbdb9d4c8f9ba74d33e0e1243/DerivativeIntroductionModule/517a7c8aa96236dc9d8954f4916e42718d6bf87515b75d7ab74272b3bc3277bf/Default_bp1200_1.webp",
+      "priceFromEur": 42400,
+      "priceToEur": 46900,
       "specs": {
         "lengthMm": 4488,
         "widthMm": 1884,
@@ -3456,17 +3636,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Skoda Elroq 85 (286 ch / 82 kWh) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 334,
+          "type": "LLD",
+          "title": "Offre Lancement Škoda Elroq",
+          "monthlyEur": 379,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
+          "officialMonthlyEur": 339,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km · Bonus 4 000 € déduit",
           "discountEur": 2000,
-          "priceAfterEur": 27300,
+          "priceAfterEur": 36400,
           "validUntil": "2026-11-30",
-          "conditions": "1er loyer intégralement couvert par le Bonus / Prime CEE de 4 000 € (0 € à débourser), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 2 000 € incluse.",
-          "sourceUrl": "https://www.skoda.fr/offres"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 379 €/mois (Offre affichée sur le site officiel : 339 €/mois — LLD 37 mois · 30 000 km · Bonus 4 000 € déduit). Sur skoda.fr/gamme/elroq/elroq, l'Elroq s'affiche dès 36 020 € en version d'accès (et 42 400 € catalogue pour la grande batterie Elroq 85 de 286 ch / 560 km WLTP, soit 36 400 € net après bonus de 4 000 € et remise de 2 000 €).",
+          "sourceUrl": "https://www.skoda.fr/gamme/gamme-skoda"
         }
       ],
       "dealerBehavior": "Nouveauté fracassante de l'automne 2026 au positionnement tarifaire agressif. Skoda accorde déjà 1 500 à 2 500 € de remise.",
@@ -3489,7 +3671,11 @@
         "comfort": 8.8,
         "equipment": 9.1
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 36020,
+      "priceExplanation": "Sur skoda.fr/gamme/elroq/elroq, l'Elroq s'affiche dès 36 020 € en version d'accès (et 42 400 € catalogue pour la grande batterie Elroq 85 de 286 ch / 560 km WLTP, soit 36 400 € net après bonus de 4 000 € et remise de 2 000 €).",
+      "promoName": "Offre Lancement Škoda Elroq",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "skoda-enyaq-85",
@@ -3501,11 +3687,11 @@
       "energy": "BEV",
       "segment": "SUV familial",
       "isSUV": true,
-      "officialUrl": "https://www.skoda.fr/modeles/enyaq",
-      "configuratorUrl": "https://www.skoda.fr/configurateur/enyaq",
-      "imageUrl": null,
-      "priceFromEur": 46490,
-      "priceToEur": 54990,
+      "officialUrl": "https://www.skoda.fr/gamme/gamme-skoda",
+      "configuratorUrl": "https://www.skoda.fr/gamme/gamme-skoda",
+      "imageUrl": "https://cdn.skoda-auto.com/images/external/b8ed91b4b43e9f68796a2a3a95a2121c/DerivativeIntroductionModule/517a7c8aa96236dc9d8954f4916e42718d6bf87515b75d7ab74272b3bc3277bf/Default_bp1200_1.webp",
+      "priceFromEur": 46270,
+      "priceToEur": 53500,
       "specs": {
         "lengthMm": 4649,
         "widthMm": 1879,
@@ -3567,17 +3753,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Skoda Enyaq 85 (286 ch / 82 kWh) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 464,
+          "type": "LLD",
+          "title": "Avantage Client Škoda Enyaq (−3 500 € + Bonus)",
+          "monthlyEur": 445,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 4500,
-          "priceAfterEur": 37990,
+          "officialMonthlyEur": 399,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km · Bonus 4 000 € + Remise 3 500 €",
+          "discountEur": 3500,
+          "priceAfterEur": 38770,
           "validUntil": "2026-11-30",
-          "conditions": "1er loyer intégralement couvert par le Bonus / Prime CEE de 4 000 € (0 € à débourser), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 4 500 € incluse.",
-          "sourceUrl": "https://www.skoda.fr/offres"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 445 €/mois (Offre affichée sur le site officiel : 399 €/mois — LLD 37 mois · 30 000 km · Bonus 4 000 € + Remise 3 500 €). Tarif catalogue 46 270 € (sous le plafond de 47 000 € pour conserver le bonus de 4 000 €), plus 3 500 € de remise concession Škoda, soit 38 770 € net.",
+          "sourceUrl": "https://www.skoda.fr/gamme/gamme-skoda"
         }
       ],
       "dealerBehavior": "Face à l'arrivée de l'Elroq plus compact, les concessions Skoda accordent jusqu'à 9 % de remise directe sur les Enyaq en stock.",
@@ -3600,7 +3788,11 @@
         "comfort": 9.2,
         "equipment": 9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 38770,
+      "priceExplanation": "Tarif catalogue 46 270 € (sous le plafond de 47 000 € pour conserver le bonus de 4 000 €), plus 3 500 € de remise concession Škoda, soit 38 770 € net.",
+      "promoName": "Avantage Client Škoda Enyaq (−3 500 € + Bonus)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "bmw-ix1-edrive20",
@@ -3612,9 +3804,9 @@
       "energy": "BEV",
       "segment": "SUV compact",
       "isSUV": true,
-      "officialUrl": "https://www.bmw.fr/fr/tous-les-modeles/bmw-i/ix1.html",
-      "configuratorUrl": "https://configure.bmw.fr/fr_FR/configure/U11",
-      "imageUrl": null,
+      "officialUrl": "https://www.bmw.fr/fr/voiture-electrique.html",
+      "configuratorUrl": "https://www.bmw.fr/fr/voiture-electrique.html",
+      "imageUrl": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331pKAuhFqIbVBIHS9jBqH7TAJei1ZIjAxpXNCpLIDZHPox4qSN0enMA84YdKQ53XWIQ7ayVzbYCjyON74mvhB1VWxbZG%25I4Y%25E9CpL0FkV%25QJ22YI6NLJujnWZXGucOMzK1coubf4Bw8j7aA5qntUp6xbZxmeJv2TjHTM8IM3aJ9Ss4trb4gxmZNzOSnjXWPkJEF%255SYCjgkRCzChCeA5GvloMG4gp2XHhzKv6jQ%25oqh2YDafHLbjmqn125YDyLOEjwmqTJIsDUGL3uBrqTPJdSeZL3muzVMRJpnSkNh5u4DVA0ogsUkNF4HvrSg0Kc%252Gqz4WxfjpiScP81D6wOxbUEqYtB89GsLmMKUiprJyQrGw6Zu6T4ptYRSY0c67m5VmHEYCygNy4smlTv0TC%25yX3243eqTQdbduTWGZCp0EFGwgY3hyapRBmSbBl672WoKG4WXr1RRUQoFSr9V",
       "priceFromEur": 46900,
       "priceToEur": 55900,
       "specs": {
@@ -3671,16 +3863,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD BMW iX1 eDrive20 (204 ch) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 484,
+          "title": "Offre Exclusive BMW iX1 Sans Apport (390 €/mois)",
+          "monthlyEur": 445,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 3200,
-          "priceAfterEur": 39700,
+          "officialMonthlyEur": 390,
+          "officialLeaseTerms": "LLD 36 mois · 30 000 km · Sans apport (Bonus 4 000 € déduit)",
+          "discountEur": 3000,
+          "priceAfterEur": 39900,
           "validUntil": "2026-11-30",
-          "conditions": "1er loyer intégralement couvert par le Bonus / Prime CEE de 4 000 € (0 € à débourser), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 3 200 € incluse.",
-          "sourceUrl": "https://www.bmw.fr/fr/topics/univers/offres.html"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 445 €/mois (Offre affichée sur le site officiel : 390 €/mois — LLD 36 mois · 30 000 km · Sans apport (Bonus 4 000 € déduit)). Version spéciale eDrive20 positionnée par BMW France à 46 900 € (juste sous les 47 000 € d'éligibilité au bonus de 4 000 €). Avec 3 000 € d'avantage BMW sur stock, le prix net descend à 39 900 €.",
+          "sourceUrl": "https://www.bmw.fr/fr/Shop-Online/offres-exclusives.html"
         }
       ],
       "dealerBehavior": "La version eDrive20 passe sous la barre des 47 000 € pour capter le bonus. Concessions prêtes à concéder 6 à 8 % de remise.",
@@ -3703,12 +3897,16 @@
         "comfort": 9.1,
         "equipment": 9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 39900,
+      "priceExplanation": "Version spéciale eDrive20 positionnée par BMW France à 46 900 € (juste sous les 47 000 € d'éligibilité au bonus de 4 000 €). Avec 3 000 € d'avantage BMW sur stock, le prix net descend à 39 900 €.",
+      "promoName": "Offre Exclusive BMW iX1 Sans Apport (390 €/mois)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "volvo-ex30-single-motor",
       "brand": "Volvo",
-      "model": "EX30 Single Motor Extended Range (272 ch / 69 kWh)",
+      "model": "EX30 Single Motor & Extended Range",
       "origin": "Suède",
       "madeIn": "Gand (Belgique) / Zhangjiakou (Chine)",
       "chineseBrand": false,
@@ -3716,10 +3914,10 @@
       "segment": "SUV citadin",
       "isSUV": true,
       "officialUrl": "https://www.volvocars.com/fr/cars/ex30-electric/",
-      "configuratorUrl": "https://www.volvocars.com/fr/build/ex30-electric",
-      "imageUrl": null,
-      "priceFromEur": 37500,
-      "priceToEur": 47950,
+      "configuratorUrl": "https://www.volvocars.com/fr/cars/ex30-electric/",
+      "imageUrl": "https://www.volvocars.com/images/cs/v3/assets/blt84e01a6904dbd2e8/bltb0134ab4f423d549/69f1fef9c209ea3c6135b5ee/JPG_Full-STE_Desktop.jpg?branch=prod_alias&quality=85&format=auto&iar=0&w=1200",
+      "priceFromEur": 39100,
+      "priceToEur": 46900,
       "specs": {
         "lengthMm": 4233,
         "widthMm": 1837,
@@ -3783,16 +3981,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Volvo EX30 Single Motor Extended Range (272 ch / 69 kWh) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 379,
+          "title": "🔥 Offre Volvo EX30 dès 300 €/mois sans apport (jusqu'au 31/12)",
+          "monthlyEur": 345,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 2500,
-          "priceAfterEur": 35200,
-          "validUntil": "2026-11-30",
-          "conditions": "1er loyer intégralement couvert par le Bonus / Prime CEE de 4 000 € (0 € à débourser), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 2 500 € incluse.",
-          "sourceUrl": "https://www.volvocars.com/fr/offres"
+          "officialMonthlyEur": 300,
+          "officialLeaseTerms": "LLD 49 mois · 40 000 km (10 000 km/an) · 0 € d'apport (Coup de pouce CEE 6 000 € déduit)",
+          "discountEur": 2000,
+          "priceAfterEur": 33100,
+          "validUntil": "2026-12-31",
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 345 €/mois (Offre affichée sur le site officiel : 300 €/mois — LLD 49 mois · 40 000 km (10 000 km/an) · 0 € d'apport (Coup de pouce CEE 6 000 € déduit)). Vérifié sur volvocars.com/fr/l/offres-particuliers/volvo-ex30/ : grâce à sa production européenne à Gand (Belgique), le Volvo EX30 bénéficie du Coup de pouce CEE (jusqu'à 6 000 € sous conditions de revenus ou 4 000 € standard) et s'affiche à 300 €/mois sans apport sur 49 mois / 40 000 km (soit 345 €/mois en 15 000 km/an).",
+          "sourceUrl": "https://www.volvocars.com/fr/l/offres-particuliers/volvo-ex30/"
         }
       ],
       "dealerBehavior": "Production européenne désormais active à Gand (Belgique) restaurant l'éligibilité au bonus. Fort engouement, remises de 4 à 6 %.",
@@ -3815,23 +4015,27 @@
         "comfort": 8.6,
         "equipment": 8.8
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 33100,
+      "priceExplanation": "Vérifié sur volvocars.com/fr/l/offres-particuliers/volvo-ex30/ : grâce à sa production européenne à Gand (Belgique), le Volvo EX30 bénéficie du Coup de pouce CEE (jusqu'à 6 000 € sous conditions de revenus ou 4 000 € standard) et s'affiche à 300 €/mois sans apport sur 49 mois / 40 000 km (soit 345 €/mois en 15 000 km/an).",
+      "promoName": "🔥 Offre Volvo EX30 dès 300 €/mois sans apport (jusqu'au 31/12)",
+      "validUntil": "2026-12-31"
     },
     {
       "id": "mg4-electric-64",
       "brand": "MG",
-      "model": "MG4 Electric Comfort / Luxury (64 kWh)",
+      "model": "MG4 EV (Urban 43 kWh & 64 kWh)",
       "origin": "Chine",
       "madeIn": "Ningde (Chine)",
       "chineseBrand": true,
       "energy": "BEV",
       "segment": "Compacte",
       "isSUV": false,
-      "officialUrl": "https://mgmotor.fr/modeles/mg4",
-      "configuratorUrl": "https://mgmotor.fr/configurateur/mg4",
-      "imageUrl": null,
-      "priceFromEur": 29990,
-      "priceToEur": 39990,
+      "officialUrl": "https://www.mgmotor.fr/model/mg4",
+      "configuratorUrl": "https://www.mgmotor.fr/configurator/mg4",
+      "imageUrl": "https://cdn.mgmotor.eu/images/model/mg4-mce-compare-section-64-premium.png",
+      "priceFromEur": 24995,
+      "priceToEur": 35490,
       "specs": {
         "lengthMm": 4287,
         "widthMm": 1836,
@@ -3902,17 +4106,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise MG MG4 Electric Comfort / Luxury (64 kWh) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 304,
+          "type": "LLD",
+          "title": "🔥 Avantage MG −5 005 € (MG4 Urban à 19 990 € / 64 kWh à 28 490 €)",
+          "monthlyEur": 329,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 5000,
-          "priceAfterEur": 24990,
-          "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 5 000 € incluse.",
-          "sourceUrl": "https://mgmotor.fr/offres"
+          "officialMonthlyEur": 299,
+          "officialLeaseTerms": "LLD 48 mois · 40 000 km (10 000 km/an) · 0 € d'apport (Avantage MG déduit)",
+          "discountEur": 5005,
+          "priceAfterEur": 19990,
+          "validUntil": "2026-12-31",
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 329 €/mois (Offre affichée sur le site officiel : 299 €/mois — LLD 48 mois · 40 000 km (10 000 km/an) · 0 € d'apport (Avantage MG déduit)). Vérifié dans les mentions légales de mgmotor.fr (Tarif MG n°35) : la MG4 EV Urban (43 kWh) est à 24 995 € catalogue moins 5 005 € d'Avantage MG = 19 990 € TTC ! La version MG4 EV 64 kWh (450 km WLTP) est à 33 490 € catalogue moins 5 000 € (Avantage MG + Opération À saisir) = 28 490 € TTC.",
+          "sourceUrl": "https://store.mgmotor.fr/collections/operation-a-saisir"
         }
       ],
       "dealerBehavior": "Exclue du bonus gouvernemental, MG frappe fort avec une prime de 5 000 € systématique + négociation possible jusqu'à 6 000 €.",
@@ -3935,23 +4141,27 @@
         "comfort": 8.1,
         "equipment": 8.7
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 19990,
+      "priceExplanation": "Vérifié dans les mentions légales de mgmotor.fr (Tarif MG n°35) : la MG4 EV Urban (43 kWh) est à 24 995 € catalogue moins 5 005 € d'Avantage MG = 19 990 € TTC ! La version MG4 EV 64 kWh (450 km WLTP) est à 33 490 € catalogue moins 5 000 € (Avantage MG + Opération À saisir) = 28 490 € TTC.",
+      "promoName": "🔥 Avantage MG −5 005 € (MG4 Urban à 19 990 € / 64 kWh à 28 490 €)",
+      "validUntil": "2026-12-31"
     },
     {
       "id": "mg-zs-hybrid-plus",
       "brand": "MG",
-      "model": "ZS Hybrid+ (197 ch)",
+      "model": "ZS Hybrid+ 197 ch (Full Hybride)",
       "origin": "Chine",
       "madeIn": "Zhengzhou (Chine)",
       "chineseBrand": true,
       "energy": "HEV",
       "segment": "SUV compact",
       "isSUV": true,
-      "officialUrl": "https://mgmotor.fr/modeles/zs-hybrid-plus",
-      "configuratorUrl": "https://mgmotor.fr/configurateur/zs-hybrid-plus",
-      "imageUrl": null,
-      "priceFromEur": 22990,
-      "priceToEur": 26990,
+      "officialUrl": "https://www.mgmotor.fr/model/zs-hev",
+      "configuratorUrl": "https://www.mgmotor.fr/configurator/zs-hev",
+      "imageUrl": "https://cdn.mgmotor.eu/images/model/zs-hev-compare-section-standard-dover-white.webp",
+      "priceFromEur": 23490,
+      "priceToEur": 27490,
       "specs": {
         "lengthMm": 4430,
         "widthMm": 1818,
@@ -4014,17 +4224,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise MG ZS Hybrid+ (197 ch) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 254,
+          "type": "LLD",
+          "title": "🔥 Opération « À Saisir » MG (−1 000 € supp. jusqu'au 15/11)",
+          "monthlyEur": 279,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 1500,
-          "priceAfterEur": 23490,
-          "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 1 500 € incluse.",
-          "sourceUrl": "https://mgmotor.fr/offres"
+          "officialMonthlyEur": 249,
+          "officialLeaseTerms": "LLD 48 mois · 40 000 km (10 000 km/an) · 0 € d'apport",
+          "discountEur": 1000,
+          "priceAfterEur": 22490,
+          "validUntil": "2026-11-15",
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 279 €/mois (Offre affichée sur le site officiel : 249 €/mois — LLD 48 mois · 40 000 km (10 000 km/an) · 0 € d'apport). Vérifié sur mgmotor.fr/model/zs-hev : tarif catalogue dès 23 490 € TTC (Standard), avec 1 000 € de remise « À saisir » sur les finitions Comfort et Luxury en stock commandées jusqu'au 15/11/2026. LLD officielle à 249 €/mois sans apport en 48 mois / 40 000 km (soit 279 €/mois en 15 000 km/an).",
+          "sourceUrl": "https://store.mgmotor.fr/collections/operation-a-saisir"
         }
       ],
       "dealerBehavior": "Échappe aux surtaxes douanières européennes sur les électriques ! Gros succès en concession avec des tarifs défiant toute concurrence.",
@@ -4047,23 +4259,27 @@
         "comfort": 8.3,
         "equipment": 8.9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 22490,
+      "priceExplanation": "Vérifié sur mgmotor.fr/model/zs-hev : tarif catalogue dès 23 490 € TTC (Standard), avec 1 000 € de remise « À saisir » sur les finitions Comfort et Luxury en stock commandées jusqu'au 15/11/2026. LLD officielle à 249 €/mois sans apport en 48 mois / 40 000 km (soit 279 €/mois en 15 000 km/an).",
+      "promoName": "🔥 Opération « À Saisir » MG (−1 000 € supp. jusqu'au 15/11)",
+      "validUntil": "2026-11-15"
     },
     {
-      "id": "mg-hs-phev-339",
+      "id": "mg-ehs-phev",
       "brand": "MG",
-      "model": "HS Hybride Rechargeable (PHEV) 339 ch",
+      "model": "EHS PHEV 272 ch (Hybride Rechargeable)",
       "origin": "Chine",
       "madeIn": "Ningde (Chine)",
       "chineseBrand": true,
       "energy": "PHEV",
       "segment": "SUV familial",
       "isSUV": true,
-      "officialUrl": "https://mgmotor.fr/modeles/hs-phev",
-      "configuratorUrl": "https://mgmotor.fr/configurateur/hs-phev",
-      "imageUrl": null,
-      "priceFromEur": 36990,
-      "priceToEur": 39990,
+      "officialUrl": "https://www.mgmotor.fr/model/ehs",
+      "configuratorUrl": "https://www.mgmotor.fr/configurator/ehs",
+      "imageUrl": "https://cdn.mgmotor.eu/images/hero-image/_1200x630_crop_center-center_82_none/hs-phev-hero-desktop-1.jpg?mtime=1758118809",
+      "priceFromEur": 37990,
+      "priceToEur": 40490,
       "specs": {
         "lengthMm": 4670,
         "widthMm": 1890,
@@ -4117,17 +4333,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise MG HS Hybride Rechargeable (PHEV) 339 ch — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 394,
+          "type": "LLD",
+          "title": "🔥 Opération « À Saisir » MG EHS PHEV : −6 000 € (jusqu'au 15/11)",
+          "monthlyEur": 379,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 3000,
-          "priceAfterEur": 36990,
-          "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 3 000 € incluse.",
-          "sourceUrl": "https://mgmotor.fr/offres"
+          "officialMonthlyEur": 349,
+          "officialLeaseTerms": "LLD 48 mois · 40 000 km (10 000 km/an) · 0 € d'apport",
+          "discountEur": 6000,
+          "priceAfterEur": 31990,
+          "validUntil": "2026-11-15",
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 379 €/mois (Offre affichée sur le site officiel : 349 €/mois — LLD 48 mois · 40 000 km (10 000 km/an) · 0 € d'apport). En France, le SUV familial hybride rechargeable de MG s'appelle officiellement « MG EHS PHEV » (et non HS). Sur mgmotor.fr/model/ehs, son prix catalogue est de 37 990 € TTC (finition Comfort). Il cumule 4 000 € d'Avantage MG + 2 000 € de remise « À saisir » (jusqu'au 15/11/2026), soit 31 990 € TTC net ! En LLD sans apport : 349 €/mois sur le site officiel (48 mois / 40 000 km), soit 379 €/mois en 15 000 km/an.",
+          "sourceUrl": "https://store.mgmotor.fr/collections/operation-a-saisir"
         }
       ],
       "dealerBehavior": "PHEV exonéré des droits de douane supplémentaires. Remises de 2 500 à 3 500 € pour rivaliser avec le Toyota RAV4 et le Peugeot 3008.",
@@ -4150,12 +4368,16 @@
         "comfort": 8.7,
         "equipment": 9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 31990,
+      "priceExplanation": "En France, le SUV familial hybride rechargeable de MG s'appelle officiellement « MG EHS PHEV » (et non HS). Sur mgmotor.fr/model/ehs, son prix catalogue est de 37 990 € TTC (finition Comfort). Il cumule 4 000 € d'Avantage MG + 2 000 € de remise « À saisir » (jusqu'au 15/11/2026), soit 31 990 € TTC net ! En LLD sans apport : 349 €/mois sur le site officiel (48 mois / 40 000 km), soit 379 €/mois en 15 000 km/an.",
+      "promoName": "🔥 Opération « À Saisir » MG EHS PHEV : −6 000 € (jusqu'au 15/11)",
+      "validUntil": "2026-11-15"
     },
     {
       "id": "byd-seal-u-dm-i-boost",
       "brand": "BYD",
-      "model": "Seal U DM-i Hybride Rechargeable (PHEV)",
+      "model": "Seal U DM-i Super Hybride (PHEV)",
       "origin": "Chine",
       "madeIn": "Zhengzhou (Chine)",
       "chineseBrand": true,
@@ -4163,10 +4385,10 @@
       "segment": "SUV familial",
       "isSUV": true,
       "officialUrl": "https://www.byd.com/fr/voitures-hybrides/seal-u-dm-i",
-      "configuratorUrl": "https://www.byd.com/fr/configurateur/seal-u-dm-i",
-      "imageUrl": null,
-      "priceFromEur": 37500,
-      "priceToEur": 45500,
+      "configuratorUrl": "https://www.byd.com/fr/voitures-hybrides/seal-u-dm-i",
+      "imageUrl": "https://www.byd.com/material/__EU/byd-site/europe-public/navigation/sealu.webp",
+      "priceFromEur": 38990,
+      "priceToEur": 45990,
       "specs": {
         "lengthMm": 4775,
         "widthMm": 1890,
@@ -4228,17 +4450,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise BYD Seal U DM-i Hybride Rechargeable (PHEV) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 379,
+          "type": "LLD",
+          "title": "🔥 Offre BYD Seal U DM-i à 32 630 € (−6 360 € de remise)",
+          "monthlyEur": 449,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 4600,
-          "priceAfterEur": 32900,
-          "validUntil": "2026-12-31",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 4 600 € incluse.",
-          "sourceUrl": "https://www.byd.com/fr/offres"
+          "officialMonthlyEur": 429,
+          "officialLeaseTerms": "LLD 48 mois · 40 000 km (10 000 km/an) · Sans apport",
+          "discountEur": 6360,
+          "priceAfterEur": 32630,
+          "validUntil": "2026-11-30",
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 449 €/mois (Offre affichée sur le site officiel : 429 €/mois — LLD 48 mois · 40 000 km (10 000 km/an) · Sans apport). Vérifié sur byd.com/fr/voitures-hybrides/seal-u-dm-i : initialement lancé à 38 990 € catalogue, BYD France affiche une offre promotionnelle officielle « À partir de 32 630 € TTC (soit −6 360 € de remise constructeur) ou 429 € TTC/mois sans apport » (449 €/mois en 15 000 km/an).",
+          "sourceUrl": "https://www.byd.com/fr/offres-du-moment"
         }
       ],
       "dealerBehavior": "PHEV échappant aux surtaxes douanières BEV ! Concessions BYD très agressives avec 4 000 à 5 000 € de remise.",
@@ -4261,23 +4485,27 @@
         "comfort": 8.6,
         "equipment": 9.6
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 32630,
+      "priceExplanation": "Vérifié sur byd.com/fr/voitures-hybrides/seal-u-dm-i : initialement lancé à 38 990 € catalogue, BYD France affiche une offre promotionnelle officielle « À partir de 32 630 € TTC (soit −6 360 € de remise constructeur) ou 429 € TTC/mois sans apport » (449 €/mois en 15 000 km/an).",
+      "promoName": "🔥 Offre BYD Seal U DM-i à 32 630 € (−6 360 € de remise)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "byd-atto-3-comfort",
       "brand": "BYD",
-      "model": "Atto 3 (60,5 kWh / 204 ch)",
+      "model": "Atto 3 Evo (60,5 kWh / 204 ch)",
       "origin": "Chine",
       "madeIn": "Changsha (Chine)",
       "chineseBrand": true,
       "energy": "BEV",
       "segment": "SUV compact",
       "isSUV": true,
-      "officialUrl": "https://www.byd.com/fr/voitures-electriques/atto-3",
-      "configuratorUrl": "https://www.byd.com/fr/configurateur/atto-3",
-      "imageUrl": null,
-      "priceFromEur": 37990,
-      "priceToEur": 39990,
+      "officialUrl": "https://www.byd.com/fr/voitures-electriques/atto-3-evo",
+      "configuratorUrl": "https://www.byd.com/fr/voitures-electriques/atto-3-evo",
+      "imageUrl": "https://www.byd.com/material/__EU/byd-site/europe-public/navigation/atto3-evo.webp",
+      "priceFromEur": 38990,
+      "priceToEur": 41990,
       "specs": {
         "lengthMm": 4455,
         "widthMm": 1875,
@@ -4331,17 +4559,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise BYD Atto 3 (60,5 kWh / 204 ch) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 409,
+          "type": "LLD",
+          "title": "Offre du Moment BYD Atto 3 Evo (−3 865 €)",
+          "monthlyEur": 439,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 4500,
-          "priceAfterEur": 33490,
+          "officialMonthlyEur": 409,
+          "officialLeaseTerms": "LLD 48 mois · 40 000 km · Sans apport",
+          "discountEur": 3865,
+          "priceAfterEur": 35125,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 4 500 € incluse.",
-          "sourceUrl": "https://www.byd.com/fr/offres"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 439 €/mois (Offre affichée sur le site officiel : 409 €/mois — LLD 48 mois · 40 000 km · Sans apport). Renommé « BYD Atto 3 Evo » sur byd.com/fr, il s'affiche officiellement à partir de 35 125 € TTC (contre 38 990 € tarif catalogue initial, soit 3 865 € d'avantage BYD) ou 409 €/mois (439 €/mois en 15 000 km/an sans apport).",
+          "sourceUrl": "https://www.byd.com/fr/offres-du-moment/atto-3-evo"
         }
       ],
       "dealerBehavior": "Pour contrer les taxes douanières UE, BYD prend sur sa marge et offre 4 000 à 5 000 € de prime immédiate.",
@@ -4364,12 +4594,16 @@
         "comfort": 8.5,
         "equipment": 9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 35125,
+      "priceExplanation": "Renommé « BYD Atto 3 Evo » sur byd.com/fr, il s'affiche officiellement à partir de 35 125 € TTC (contre 38 990 € tarif catalogue initial, soit 3 865 € d'avantage BYD) ou 409 €/mois (439 €/mois en 15 000 km/an sans apport).",
+      "promoName": "Offre du Moment BYD Atto 3 Evo (−3 865 €)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "byd-dolphin-comfort",
       "brand": "BYD",
-      "model": "Dolphin Comfort (60,4 kWh / 204 ch)",
+      "model": "Dolphin 204 ch (60,4 kWh)",
       "origin": "Chine",
       "madeIn": "Changsha (Chine)",
       "chineseBrand": true,
@@ -4377,8 +4611,8 @@
       "segment": "Compacte",
       "isSUV": false,
       "officialUrl": "https://www.byd.com/fr/voitures-electriques/dolphin",
-      "configuratorUrl": "https://www.byd.com/fr/configurateur/dolphin",
-      "imageUrl": null,
+      "configuratorUrl": "https://www.byd.com/fr/voitures-electriques/dolphin",
+      "imageUrl": "https://www.byd.com/material/__EU/byd-site/europe-public/navigation/dolphin.webp",
       "priceFromEur": 33990,
       "priceToEur": 35990,
       "specs": {
@@ -4434,17 +4668,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise BYD Dolphin Comfort (60,4 kWh / 204 ch) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 364,
+          "type": "LLD",
+          "title": "🔥 Remise BYD Dolphin (−7 365 € → dès 26 625 €)",
+          "monthlyEur": 395,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 4000,
-          "priceAfterEur": 29990,
+          "officialMonthlyEur": 369,
+          "officialLeaseTerms": "LLD 48 mois · 40 000 km · Sans apport",
+          "discountEur": 7365,
+          "priceAfterEur": 26625,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 4 000 € incluse.",
-          "sourceUrl": "https://www.byd.com/fr/offres"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 395 €/mois (Offre affichée sur le site officiel : 369 €/mois — LLD 48 mois · 40 000 km · Sans apport). Vérifié sur byd.com/fr/voitures-electriques/dolphin : BYD applique une remise officielle spectaculaire ramenant le prix affiché à 26 625 € TTC (ou 369 €/mois sans apport sur le site, soit 395 €/mois en 15 000 km/an).",
+          "sourceUrl": "https://www.byd.com/fr/offres-du-moment/dolphin"
         }
       ],
       "dealerBehavior": "BYD fait passer la Dolphin sous les 30 000 € grâce à des remises concession systématiques de 4 000 €.",
@@ -4467,7 +4703,11 @@
         "comfort": 8.3,
         "equipment": 8.9
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 26625,
+      "priceExplanation": "Vérifié sur byd.com/fr/voitures-electriques/dolphin : BYD applique une remise officielle spectaculaire ramenant le prix affiché à 26 625 € TTC (ou 369 €/mois sans apport sur le site, soit 395 €/mois en 15 000 km/an).",
+      "promoName": "🔥 Remise BYD Dolphin (−7 365 € → dès 26 625 €)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "leapmotor-t03-electric",
@@ -4479,11 +4719,11 @@
       "energy": "BEV",
       "segment": "Citadine",
       "isSUV": false,
-      "officialUrl": "https://www.leapmotor.net/fr/t03",
-      "configuratorUrl": "https://www.leapmotor.net/fr/t03/configurateur",
-      "imageUrl": null,
-      "priceFromEur": 18900,
-      "priceToEur": 19900,
+      "officialUrl": "https://www.leapmotor.net/fr-fr/modeles/t03",
+      "configuratorUrl": "https://www.leapmotor.net/fr-fr/autres-produits/offres/offres-pour-les-particuliers",
+      "imageUrl": "https://www.leapmotor.net/_next/image?url=https%3A%2F%2Fwww.leapmotor.net%2Fimages%2Fdefault-source%2Ft03%2F1080x1350_leapmotor_8.png%3Fsfvrsn%3Da580a6d3_46&w=640&q=90",
+      "priceFromEur": 19500,
+      "priceToEur": 19500,
       "specs": {
         "lengthMm": 3620,
         "widthMm": 1652,
@@ -4523,23 +4763,25 @@
       ],
       "aids": {
         "ecoScoreEligible": true,
-        "bonusEur": 4000,
+        "bonusEur": 0,
         "malusEur": 0,
         "socialLeasing": "Éligible au leasing social grâce à l'assemblage en Pologne"
       },
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Leapmotor T03 Électrique 95 ch (37,3 kWh) — 0 € d'apport · 15 000 km/an (48 mois)",
+          "title": "Offre Particuliers Leapmotor T03 dès 149 €/mois",
           "monthlyEur": 179,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 1500,
-          "priceAfterEur": 13400,
+          "officialMonthlyEur": 149,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km · Sans apport (Réseau Stellantis)",
+          "discountEur": 2600,
+          "priceAfterEur": 16900,
           "validUntil": "2026-11-30",
-          "conditions": "1er loyer intégralement couvert par le Bonus / Prime CEE de 4 000 € (0 € à débourser), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 1 500 € incluse.",
-          "sourceUrl": "https://www.leapmotor.net/fr/offres"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 179 €/mois (Offre affichée sur le site officiel : 149 €/mois — LLD 37 mois · 30 000 km · Sans apport (Réseau Stellantis)). Vérifié sur leapmotor.net/fr-fr : tarif catalogue 19 500 € tout équipé (toit panoramique, écran 10\", ADAS), remisé à 16 900 € (ou 149 €/mois sur le site officiel en 10 000 km/an, soit 179 €/mois en 15 000 km/an sans apport).",
+          "sourceUrl": "https://www.leapmotor.net/fr-fr/autres-produits/offres/offres-pour-les-particuliers"
         }
       ],
       "dealerBehavior": "Distribuée dans les concessions Stellantis (Peugeot, Citroën, Fiat). Éligible au bonus grâce à l'usine polonaise de Tychy, tarif net spectaculaire sous 14 000 €.",
@@ -4562,7 +4804,11 @@
         "comfort": 7.8,
         "equipment": 8.4
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 16900,
+      "priceExplanation": "Vérifié sur leapmotor.net/fr-fr : tarif catalogue 19 500 € tout équipé (toit panoramique, écran 10\", ADAS), remisé à 16 900 € (ou 149 €/mois sur le site officiel en 10 000 km/an, soit 179 €/mois en 15 000 km/an sans apport).",
+      "promoName": "Offre Particuliers Leapmotor T03 dès 149 €/mois",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "leapmotor-c10-electric",
@@ -4574,11 +4820,11 @@
       "energy": "BEV",
       "segment": "SUV familial",
       "isSUV": true,
-      "officialUrl": "https://www.leapmotor.net/fr/c10",
-      "configuratorUrl": "https://www.leapmotor.net/fr/c10/configurateur",
-      "imageUrl": null,
+      "officialUrl": "https://www.leapmotor.net/fr-fr/modeles/c10",
+      "configuratorUrl": "https://www.leapmotor.net/fr-fr/autres-produits/offres/offres-pour-les-particuliers",
+      "imageUrl": "https://www.leapmotor.net/_next/image?url=https%3A%2F%2Fwww.leapmotor.net%2Fimages%2Fdefault-source%2Fc10%2F1080x1350_leapmotor_5.png%3Fsfvrsn%3Dd81dcc84_38&w=640&q=90",
       "priceFromEur": 36400,
-      "priceToEur": 39900,
+      "priceToEur": 37900,
       "specs": {
         "lengthMm": 4739,
         "widthMm": 1900,
@@ -4632,17 +4878,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Leapmotor C10 SUV Électrique 218 ch (70 kWh) — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 399,
+          "type": "LLD",
+          "title": "Offre de Lancement Leapmotor C10 (−2 000 €)",
+          "monthlyEur": 389,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 3500,
-          "priceAfterEur": 32900,
+          "officialMonthlyEur": 349,
+          "officialLeaseTerms": "LLD 37 mois · 30 000 km · Sans apport",
+          "discountEur": 2000,
+          "priceAfterEur": 34400,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 3 500 € incluse.",
-          "sourceUrl": "https://www.leapmotor.net/fr/offres"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 389 €/mois (Offre affichée sur le site officiel : 349 €/mois — LLD 37 mois · 30 000 km · Sans apport). Grand SUV familial de 4,74 m distribué dans le réseau Stellantis à 36 400 € catalogue et 34 400 € avec la remise de lancement de 2 000 €.",
+          "sourceUrl": "https://www.leapmotor.net/fr-fr/autres-produits/offres/offres-pour-les-particuliers"
         }
       ],
       "dealerBehavior": "Vendu dans le réseau Stellantis. Tarif de départ très agressif pour un SUV de 4,74 m, remises de 3 000 à 4 000 €.",
@@ -4665,23 +4913,27 @@
         "comfort": 8.9,
         "equipment": 9.2
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 34400,
+      "priceExplanation": "Grand SUV familial de 4,74 m distribué dans le réseau Stellantis à 36 400 € catalogue et 34 400 € avec la remise de lancement de 2 000 €.",
+      "promoName": "Offre de Lancement Leapmotor C10 (−2 000 €)",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "xpeng-g6-rwd-long-range",
       "brand": "Xpeng",
-      "model": "G6 Autonomie Standard & Étendue 800V",
+      "model": "G6 Autonomie Standard & Étendue (800V)",
       "origin": "Chine",
       "madeIn": "Wuhan (Chine)",
       "chineseBrand": true,
       "energy": "BEV",
       "segment": "SUV familial",
       "isSUV": true,
-      "officialUrl": "https://www.xpeng.com/fr/g6",
-      "configuratorUrl": "https://www.xpeng.com/fr/configurateur/g6",
-      "imageUrl": null,
+      "officialUrl": "https://www.xpeng.com/fr/model/g6",
+      "configuratorUrl": "https://www.xpeng.com/fr/model/g6",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/XPeng_G6_%282025%29_IAA_2025_DSC_2057.jpg/960px-XPeng_G6_%282025%29_IAA_2025_DSC_2057.jpg",
       "priceFromEur": 42990,
-      "priceToEur": 50990,
+      "priceToEur": 46990,
       "specs": {
         "lengthMm": 4753,
         "widthMm": 1920,
@@ -4742,17 +4994,19 @@
       },
       "offers": [
         {
-          "type": "Remise",
-          "title": "Remise Xpeng G6 Autonomie Standard & Étendue 800V — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 474,
+          "type": "LLD",
+          "title": "Offre LLD Xpeng G6 dès 375 €/mois",
+          "monthlyEur": 445,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 4000,
-          "priceAfterEur": 38990,
+          "officialMonthlyEur": 375,
+          "officialLeaseTerms": "LLD 48 mois · 40 000 km · 1er loyer majoré 3 350 € (ou prime reprise)",
+          "discountEur": 3500,
+          "priceAfterEur": 39490,
           "validUntil": "2026-11-30",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60000 km (15 000 km/an), remise constructeur de 4 000 € incluse.",
-          "sourceUrl": "https://www.xpeng.com/fr/offres"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 445 €/mois (Offre affichée sur le site officiel : 375 €/mois — LLD 48 mois · 40 000 km · 1er loyer majoré 3 350 € (ou prime reprise)). Vérifié sur xpeng.com/fr/explore/leasing-offer : le Xpeng G6 Autonomie Standard est proposé à 375 €/mois sur 48 mois / 40 000 km avec un 1er loyer majoré de ~3 350 €. En lissant à 0 € d'apport personnel et 15 000 km/an, la mensualité réelle ressort à 445 €/mois.",
+          "sourceUrl": "https://www.xpeng.com/fr/explore/leasing-offer"
         }
       ],
       "dealerBehavior": "Rival direct et déclaré du Tesla Model Y avec technologie 800V supérieure. Remises agressives de 3 500 à 4 500 € pour s'implanter en France.",
@@ -4775,23 +5029,27 @@
         "comfort": 8.8,
         "equipment": 9.5
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 39490,
+      "priceExplanation": "Vérifié sur xpeng.com/fr/explore/leasing-offer : le Xpeng G6 Autonomie Standard est proposé à 375 €/mois sur 48 mois / 40 000 km avec un 1er loyer majoré de ~3 350 €. En lissant à 0 € d'apport personnel et 15 000 km/an, la mensualité réelle ressort à 445 €/mois.",
+      "promoName": "Offre LLD Xpeng G6 dès 375 €/mois",
+      "validUntil": "2026-11-30"
     },
     {
       "id": "jaecoo-7-shs-phev",
       "brand": "Jaecoo",
-      "model": "Jaecoo 7 SHS-P 279 ch (Hybride Rechargeable)",
+      "model": "7 Hybride Rechargeable SHS (PHEV 279 ch)",
       "origin": "Chine",
       "madeIn": "Wuhu (Chine - Groupe Chery)",
       "chineseBrand": true,
       "energy": "PHEV",
       "segment": "SUV familial",
       "isSUV": true,
-      "officialUrl": "https://www.omoda-jaecoo.fr/jaecoo-7-shs",
-      "configuratorUrl": "https://www.omoda-jaecoo.fr/jaecoo-7-shs",
-      "imageUrl": "",
+      "officialUrl": "https://omoda-jaecoo.fr/jaecoo/jaecoo-7",
+      "configuratorUrl": "https://omoda-jaecoo.fr/offres/jaecoo-7-hybride-rechargeable",
+      "imageUrl": "https://cdn.sanity.io/images/vyjgsqpd/production/f1f9e5f9089379059dc962bd1aa4249a782caa8b-2560x1429.webp?w=1280&q=80&fit=max&auto=format",
       "priceFromEur": 39990,
-      "priceToEur": 43990,
+      "priceToEur": 42990,
       "specs": {
         "lengthMm": 4500,
         "widthMm": 1865,
@@ -4850,16 +5108,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Jaecoo 7 SHS-P 279 ch — 0 € d'apport · 15 000 km/an (48 mois)",
+          "title": "🔥 Offre Officielle Jaecoo 7 PHEV : 419 €/mois Sans Apport",
           "monthlyEur": 439,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 3500,
-          "priceAfterEur": 36490,
+          "officialMonthlyEur": 419,
+          "officialLeaseTerms": "LLD 48 mois · 40 000 km (10 000 km/an) · 0 € d'apport (Finition Select)",
+          "discountEur": 3000,
+          "priceAfterEur": 36990,
           "validUntil": "2026-12-31",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60 000 km (15 000 km/an), remise lancement réseau Omoda-Jaecoo France de 3 500 € incluse.",
-          "sourceUrl": "https://www.omoda-jaecoo.fr/offres"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 439 €/mois (Offre affichée sur le site officiel : 419 €/mois — LLD 48 mois · 40 000 km (10 000 km/an) · 0 € d'apport (Finition Select)). Vérifié sur omoda-jaecoo.fr/offres/jaecoo-7-hybride-rechargeable : l'offre officielle est à 419 € TTC/mois SANS APPORT (1er loyer 0 €) sur 48 mois et 40 000 km (10 000 km/an) en finition Select. Pour passer à votre forfait de 15 000 km/an (60 000 km) toujours à 0 € d'apport, comptez 439 €/mois (dans votre budget ≤ 450 €/mois).",
+          "sourceUrl": "https://omoda-jaecoo.fr/offres/jaecoo-7-hybride-rechargeable"
         }
       ],
       "dealerBehavior": "En tant qu'hybride rechargeable (PHEV), le Jaecoo 7 SHS échappe totalement aux surtaxes douanières européennes sur les électriques chinoises ! Le réseau français Omoda-Jaecoo (adossé aux grands groupes de distribution et à Ayvens/Arval) pratique des offres LLD sans apport très agressives (autour de 439 €/mois en 15 000 km/an) et accorde 8 à 11 % de remise sur stock pour implanter la marque.",
@@ -4883,23 +5143,27 @@
         "comfort": 8.8,
         "equipment": 9.5
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 36990,
+      "priceExplanation": "Vérifié sur omoda-jaecoo.fr/offres/jaecoo-7-hybride-rechargeable : l'offre officielle est à 419 € TTC/mois SANS APPORT (1er loyer 0 €) sur 48 mois et 40 000 km (10 000 km/an) en finition Select. Pour passer à votre forfait de 15 000 km/an (60 000 km) toujours à 0 € d'apport, comptez 439 €/mois (dans votre budget ≤ 450 €/mois).",
+      "promoName": "🔥 Offre Officielle Jaecoo 7 PHEV : 419 €/mois Sans Apport",
+      "validUntil": "2026-12-31"
     },
     {
       "id": "jaecoo-7-shs-hev",
       "brand": "Jaecoo",
-      "model": "Jaecoo 7 SHS-H 224 ch (Full Hybride)",
+      "model": "7 Hybride SHS-H (Full Hybride 224 ch)",
       "origin": "Chine",
       "madeIn": "Wuhu (Chine - Groupe Chery)",
       "chineseBrand": true,
       "energy": "HEV",
       "segment": "SUV familial",
       "isSUV": true,
-      "officialUrl": "https://www.omoda-jaecoo.fr/jaecoo-7",
-      "configuratorUrl": "https://www.omoda-jaecoo.fr/jaecoo-7",
-      "imageUrl": "",
-      "priceFromEur": 34990,
-      "priceToEur": 37990,
+      "officialUrl": "https://omoda-jaecoo.fr/jaecoo/jaecoo-7",
+      "configuratorUrl": "https://omoda-jaecoo.fr/offres/jaecoo-7-hybride",
+      "imageUrl": "https://cdn.sanity.io/images/vyjgsqpd/production/40a9e23d890abc59cd0df9c6df0e85458ce5abd1-2414x1359.png?w=1200&q=80&fit=max&auto=format",
+      "priceFromEur": 33990,
+      "priceToEur": 36990,
       "specs": {
         "lengthMm": 4500,
         "widthMm": 1865,
@@ -4957,16 +5221,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Jaecoo 7 SHS-H 224 ch — 0 € d'apport · 15 000 km/an (48 mois)",
-          "monthlyEur": 379,
+          "title": "🔥 Offre Officielle Jaecoo 7 Hybride : 349 €/mois Sans Apport",
+          "monthlyEur": 375,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
-          "discountEur": 3000,
-          "priceAfterEur": 31990,
+          "officialMonthlyEur": 349,
+          "officialLeaseTerms": "LLD 48 mois · 40 000 km (10 000 km/an) · 0 € d'apport (Finition Select)",
+          "discountEur": 2500,
+          "priceAfterEur": 31490,
           "validUntil": "2026-12-31",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60 000 km (15 000 km/an), remise Omoda-Jaecoo de 3 000 € incluse.",
-          "sourceUrl": "https://www.omoda-jaecoo.fr/offres"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 375 €/mois (Offre affichée sur le site officiel : 349 €/mois — LLD 48 mois · 40 000 km (10 000 km/an) · 0 € d'apport (Finition Select)). Vérifié sur omoda-jaecoo.fr/offres/jaecoo-7-hybride : la LLD officielle en finition Select est à 349 € TTC/mois SANS APPORT (48 mois / 40 000 km). Ajustée à 15 000 km/an (60 000 km) et 0 € d'apport, elle ressort à 375 €/mois.",
+          "sourceUrl": "https://omoda-jaecoo.fr/offres/jaecoo-7-hybride"
         }
       ],
       "dealerBehavior": "Positionné frontalement contre les Renault Austral et Hyundai Tucson hybrides mais avec 3 000 à 5 000 € d'avantage tarifaire à équipement équivalent. Les distributeurs Jaecoo proposent des LLD sans apport sous la barre des 380 €/mois en 15 000 km/an.",
@@ -4989,23 +5255,27 @@
         "comfort": 8.7,
         "equipment": 9.4
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 31490,
+      "priceExplanation": "Vérifié sur omoda-jaecoo.fr/offres/jaecoo-7-hybride : la LLD officielle en finition Select est à 349 € TTC/mois SANS APPORT (48 mois / 40 000 km). Ajustée à 15 000 km/an (60 000 km) et 0 € d'apport, elle ressort à 375 €/mois.",
+      "promoName": "🔥 Offre Officielle Jaecoo 7 Hybride : 349 €/mois Sans Apport",
+      "validUntil": "2026-12-31"
     },
     {
       "id": "jaecoo-5-shs-hev",
       "brand": "Jaecoo",
-      "model": "Jaecoo 5 SHS-H 224 ch (Full Hybride)",
+      "model": "5 Hybride SHS-H (Full Hybride 224 ch)",
       "origin": "Chine",
       "madeIn": "Wuhu (Chine - Groupe Chery)",
       "chineseBrand": true,
       "energy": "HEV",
       "segment": "SUV compact",
       "isSUV": true,
-      "officialUrl": "https://www.omoda-jaecoo.fr/jaecoo-5",
-      "configuratorUrl": "https://www.omoda-jaecoo.fr/jaecoo-5",
-      "imageUrl": "",
-      "priceFromEur": 26990,
-      "priceToEur": 30490,
+      "officialUrl": "https://omoda-jaecoo.fr/jaecoo/jaecoo-5",
+      "configuratorUrl": "https://omoda-jaecoo.fr/offres/jaecoo-5-hybride",
+      "imageUrl": "https://cdn.sanity.io/images/vyjgsqpd/production/e124c1d49f021c8aca43a913b13044b4d5a2a8ca-2560x1429.webp?rect=0,43,2560,1344&w=1200&h=630&fit=crop&auto=format",
+      "priceFromEur": 28990,
+      "priceToEur": 31990,
       "specs": {
         "lengthMm": 4380,
         "widthMm": 1860,
@@ -5063,16 +5333,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Jaecoo 5 SHS-H 224 ch — 0 € d'apport · 15 000 km/an (48 mois)",
+          "title": "🔥 Offre Officielle Jaecoo 5 Hybride : 299 €/mois Sans Apport",
           "monthlyEur": 319,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
+          "officialMonthlyEur": 299,
+          "officialLeaseTerms": "LLD 48 mois · 40 000 km (10 000 km/an) · 0 € d'apport",
           "discountEur": 2000,
-          "priceAfterEur": 24990,
+          "priceAfterEur": 26990,
           "validUntil": "2026-12-31",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60 000 km (15 000 km/an) — affiché à 299 €/mois en 10 000 km/an et 319 €/mois en 15 000 km/an.",
-          "sourceUrl": "https://www.omoda-jaecoo.fr/offres"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 319 €/mois (Offre affichée sur le site officiel : 299 €/mois — LLD 48 mois · 40 000 km (10 000 km/an) · 0 € d'apport). Vérifié sur omoda-jaecoo.fr/offres/jaecoo-5-hybride : affiché à 299 € TTC/mois SANS APPORT sur 48 mois / 40 000 km, soit 319 €/mois pour 15 000 km/an sans apport.",
+          "sourceUrl": "https://omoda-jaecoo.fr/offres/jaecoo-5-hybride"
         }
       ],
       "dealerBehavior": "Offre d'appel majeure du réseau Omoda-Jaecoo en France : à 26 990 € prix catalogue (souvent négocié sous 25 000 €) et 319 €/mois sans apport en 15 000 km/an, il attaque frontalement les Dacia Duster Hybrid, Renault Symbioz et MG ZS Hybrid+.",
@@ -5094,23 +5366,27 @@
         "comfort": 8.4,
         "equipment": 9.2
       },
-      "lastChecked": "2026-11-08"
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 26990,
+      "priceExplanation": "Vérifié sur omoda-jaecoo.fr/offres/jaecoo-5-hybride : affiché à 299 € TTC/mois SANS APPORT sur 48 mois / 40 000 km, soit 319 €/mois pour 15 000 km/an sans apport.",
+      "promoName": "🔥 Offre Officielle Jaecoo 5 Hybride : 299 €/mois Sans Apport",
+      "validUntil": "2026-12-31"
     },
     {
       "id": "jaecoo-5-ev",
       "brand": "Jaecoo",
-      "model": "Jaecoo 5 EV 204 ch (100% Électrique)",
+      "model": "5 100% Électrique 204 ch (61 kWh)",
       "origin": "Chine",
       "madeIn": "Wuhu (Chine - Groupe Chery)",
       "chineseBrand": true,
       "energy": "BEV",
       "segment": "SUV compact",
       "isSUV": true,
-      "officialUrl": "https://www.omoda-jaecoo.fr/jaecoo-5-ev",
-      "configuratorUrl": "https://www.omoda-jaecoo.fr/jaecoo-5-ev",
-      "imageUrl": "",
-      "priceFromEur": 32490,
-      "priceToEur": 35490,
+      "officialUrl": "https://omoda-jaecoo.fr/jaecoo/jaecoo-5-electrique",
+      "configuratorUrl": "https://omoda-jaecoo.fr/offres/jaecoo-5-electrique",
+      "imageUrl": "https://cdn.sanity.io/images/vyjgsqpd/production/294ff4f4a84ad60a7f3409907c90bec6f22103bf-3840x2160.png?rect=0,72,3840,2016&w=1200&h=630&fit=crop&auto=format",
+      "priceFromEur": 34990,
+      "priceToEur": 37990,
       "specs": {
         "lengthMm": 4380,
         "widthMm": 1860,
@@ -5167,16 +5443,18 @@
       "offers": [
         {
           "type": "LLD",
-          "title": "LLD Jaecoo 5 EV 204 ch — 0 € d'apport · 15 000 km/an (48 mois)",
+          "title": "🔥 Offre Officielle Jaecoo 5 Électrique : 399 €/mois Sans Apport",
           "monthlyEur": 419,
           "durationMonths": 48,
           "downPaymentEur": 0,
           "kmPerYear": 15000,
+          "officialMonthlyEur": 399,
+          "officialLeaseTerms": "LLD 48 mois · 40 000 km (10 000 km/an) · 0 € d'apport",
           "discountEur": 3500,
-          "priceAfterEur": 28990,
+          "priceAfterEur": 31490,
           "validUntil": "2026-12-31",
-          "conditions": "Sans aucun apport personnel (0 € d'apport), contrat 48 mois / 60 000 km (15 000 km/an), prime constructeur Jaecoo de 3 500 € déduite.",
-          "sourceUrl": "https://www.omoda-jaecoo.fr/offres"
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 419 €/mois (Offre affichée sur le site officiel : 399 €/mois — LLD 48 mois · 40 000 km (10 000 km/an) · 0 € d'apport). Vérifié sur omoda-jaecoo.fr/offres/jaecoo-5-electrique : proposé à 399 € TTC/mois SANS APPORT sur 48 mois / 40 000 km, soit 419 €/mois en 15 000 km/an sans apport.",
+          "sourceUrl": "https://omoda-jaecoo.fr/offres/jaecoo-5-electrique"
         }
       ],
       "dealerBehavior": "Soumis aux droits de douane UE en version BEV, Jaecoo compense par une remise constructeur directe de 3 500 € et une LLD sans apport à 419 €/mois en 15 000 km/an (399 €/mois en 10 000 km/an).",
@@ -5198,6 +5476,238 @@
         "range": 8,
         "comfort": 8.5,
         "equipment": 9.2
+      },
+      "lastChecked": "2026-11-08",
+      "officialSiteFromEur": 31490,
+      "priceExplanation": "Vérifié sur omoda-jaecoo.fr/offres/jaecoo-5-electrique : proposé à 399 € TTC/mois SANS APPORT sur 48 mois / 40 000 km, soit 419 €/mois en 15 000 km/an sans apport.",
+      "promoName": "🔥 Offre Officielle Jaecoo 5 Électrique : 399 €/mois Sans Apport",
+      "validUntil": "2026-12-31"
+    },
+    {
+      "id": "mg-ehs-hybrid-plus",
+      "brand": "MG",
+      "model": "EHS Hybrid+ 224 ch (Full Hybride)",
+      "origin": "Chine",
+      "madeIn": "Ningde (Chine - SAIC Motor)",
+      "chineseBrand": true,
+      "energy": "HEV",
+      "segment": "SUV familial",
+      "isSUV": true,
+      "officialUrl": "https://www.mgmotor.fr/model/ehs-hev",
+      "configuratorUrl": "https://www.mgmotor.fr/configurator/ehs-hev",
+      "imageUrl": "https://mgmotor.imgix.net/images/hero-image/ehs-hev-hero-4k.jpg?auto=compress,format&crop=focalpoint&fit=crop&fm=auto&fp-x=0.5&fp-y=0.5&h=740&q=75&ratio=1.3333333333333&w=1360",
+      "priceFromEur": 32490,
+      "priceToEur": 34990,
+      "officialSiteFromEur": 26490,
+      "priceExplanation": "Vérifié sur mgmotor.fr/model/ehs-hev : le nouveau MG EHS existe aussi en Full Hybride non rechargeable (« MG EHS Hybrid+ » 224 ch). Prix catalogue 32 490 € TTC moins 4 000 € d'Avantage MG et 2 000 € d'opération « À saisir » (jusqu'au 15/11/2026) = 26 490 € TTC net ! En LLD sans apport : 299 €/mois sur le site (48 mois / 40 000 km), soit 329 €/mois en 15 000 km/an.",
+      "promoName": "🔥 Opération « À Saisir » MG EHS Hybrid+ : −6 000 € (jusqu'au 15/11)",
+      "validUntil": "2026-11-15",
+      "specs": {
+        "lengthMm": 4670,
+        "widthMm": 1890,
+        "trunkL": 507,
+        "seats": 5,
+        "powerHp": 224,
+        "batteryKwh": 1.83,
+        "rangeKm": 950,
+        "electricRangeKm": 4,
+        "consumption": "5,5 L/100 km",
+        "co2gkm": 126,
+        "dcChargeKw": null,
+        "acChargeKw": null,
+        "charge10to80min": null,
+        "zeroTo100s": 7.9,
+        "towingKg": 1500,
+        "warranty": "7 ans ou 150 000 km",
+        "batteryWarranty": "7 ans ou 150 000 km"
+      },
+      "versions": [
+        {
+          "name": "Comfort 224 ch Hybrid+",
+          "priceEur": 32490,
+          "highlights": [
+            "Double écran 12,3\"",
+            "Navigation & CarPlay sans fil",
+            "MG Pilot complet"
+          ]
+        },
+        {
+          "name": "Luxury 224 ch Hybrid+",
+          "priceEur": 34990,
+          "highlights": [
+            "Caméra 360°",
+            "Hayon électrique mains-libres",
+            "Sièges chauffants électriques",
+            "Chargeur induction"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Double dalle numérique 2 × 12,3 pouces",
+        "MG Pilot (régulateur adaptatif, maintien de voie, surveillance angle mort)",
+        "Phares Full LED et jantes alliage 19 pouces",
+        "Garantie constructeur 7 ans / 150 000 km"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 260,
+        "socialLeasing": "Non éligible (HEV)"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "🔥 Opération « À Saisir » MG EHS Hybrid+ : −6 000 € (jusqu'au 15/11)",
+          "monthlyEur": 329,
+          "durationMonths": 48,
+          "downPaymentEur": 0,
+          "kmPerYear": 15000,
+          "officialMonthlyEur": 299,
+          "officialLeaseTerms": "LLD 48 mois · 40 000 km (10 000 km/an) · 0 € d'apport",
+          "discountEur": 6000,
+          "priceAfterEur": 26490,
+          "validUntil": "2026-11-15",
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 329 €/mois (Offre affichée sur le site officiel : 299 €/mois — LLD 48 mois · 40 000 km · 0 € d'apport). Prix catalogue 32 490 € − 4 000 € Avantage MG − 2 000 € remise « À saisir » sur stock jusqu'au 15/11/2026 = 26 490 € TTC.",
+          "sourceUrl": "https://store.mgmotor.fr/collections/operation-a-saisir"
+        }
+      ],
+      "dealerBehavior": "Exempté des surtaxes douanières BEV, MG brade l'EHS Hybrid+ avec 6 000 € de remise directe sur les véhicules en stock.",
+      "negotiationMarginPct": [
+        14,
+        18
+      ],
+      "pros": [
+        "Rapport habitabilité / prix imbattable à 26 490 € net pour un SUV de 4,67 m",
+        "224 ch très performants sans contrainte de recharge",
+        "Garantie 7 ans / 150 000 km incluse"
+      ],
+      "cons": [
+        "Léger malus écologique CO2 (126 g/km)",
+        "Encombrement important en ville (4,67 m)"
+      ],
+      "ratings": {
+        "value": 9.6,
+        "range": 9.2,
+        "comfort": 8.8,
+        "equipment": 9.2
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "mg3-hybrid-plus",
+      "brand": "MG",
+      "model": "MG3 Hybrid+ 195 ch (Full Hybride)",
+      "origin": "Chine",
+      "madeIn": "Nanjing (Chine - SAIC Motor)",
+      "chineseBrand": true,
+      "energy": "HEV",
+      "segment": "Citadine",
+      "isSUV": false,
+      "officialUrl": "https://www.mgmotor.fr/model/mg3",
+      "configuratorUrl": "https://www.mgmotor.fr/configurator/mg3",
+      "imageUrl": "https://mgmotor.imgix.net/images/hero-image/1336x860px_Header-page-modele.png?auto=compress%2Cformat&crop=focalpoint&fit=crop&fm=auto&fp-x=0.5&fp-y=0.5&h=752&q=75&w=1336",
+      "priceFromEur": 19990,
+      "priceToEur": 23490,
+      "officialSiteFromEur": 18490,
+      "priceExplanation": "Rivale directe de la Renault Clio E-Tech 145 et de la Toyota Yaris, la MG3 Hybrid+ développe 195 ch pour un tarif catalogue démarrant à 19 990 € TTC (soit 18 490 € après 1 500 € de remise sur stock).",
+      "promoName": "🔥 Offre MG3 Hybrid+ dès 199 €/mois Sans Apport",
+      "validUntil": "2026-11-30",
+      "specs": {
+        "lengthMm": 4113,
+        "widthMm": 1797,
+        "trunkL": 293,
+        "seats": 5,
+        "powerHp": 195,
+        "batteryKwh": 1.83,
+        "rangeKm": 880,
+        "electricRangeKm": 4,
+        "consumption": "4,4 L/100 km",
+        "co2gkm": 100,
+        "dcChargeKw": null,
+        "acChargeKw": null,
+        "charge10to80min": null,
+        "zeroTo100s": 8,
+        "towingKg": 500,
+        "warranty": "7 ans ou 150 000 km",
+        "batteryWarranty": "7 ans ou 150 000 km"
+      },
+      "versions": [
+        {
+          "name": "Standard Hybrid+ 195 ch",
+          "priceEur": 19990,
+          "highlights": [
+            "Écran 10,25\"",
+            "Caméra de recul",
+            "Climatisation auto"
+          ]
+        },
+        {
+          "name": "Comfort Hybrid+ 195 ch",
+          "priceEur": 21490,
+          "highlights": [
+            "Jantes alliage 16\"",
+            "Rétros rabattables",
+            "6 haut-parleurs"
+          ]
+        },
+        {
+          "name": "Luxury Hybrid+ 195 ch",
+          "priceEur": 23490,
+          "highlights": [
+            "Caméra 360°",
+            "Sièges et volant chauffants",
+            "Phares LED"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Double écran 7\" + 10,25\" avec Apple CarPlay / Android Auto",
+        "Régulateur de vitesse adaptatif MG Pilot",
+        "Caméra de recul et radars de stationnement",
+        "Garantie 7 ans / 150 000 km"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible (HEV)"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "🔥 Offre MG3 Hybrid+ dès 199 €/mois Sans Apport",
+          "monthlyEur": 229,
+          "durationMonths": 48,
+          "downPaymentEur": 0,
+          "kmPerYear": 15000,
+          "officialMonthlyEur": 199,
+          "officialLeaseTerms": "LLD 48 mois · 40 000 km (10 000 km/an) · 0 € d'apport",
+          "discountEur": 1500,
+          "priceAfterEur": 18490,
+          "validUntil": "2026-11-30",
+          "conditions": "Loyer recalculé à 0 € d'apport · 15 000 km/an : 229 €/mois (Offre affichée sur mgmotor.fr : 199 €/mois en 48 mois / 40 000 km sans apport). Remise sur stock de 1 500 € incluse.",
+          "sourceUrl": "https://store.mgmotor.fr/collections/operation-a-saisir"
+        }
+      ],
+      "dealerBehavior": "Très forte disponibilité en concession, idéale en alternative économique à une Clio E-Tech avec 4 000 € d'écart à équipement équivalent.",
+      "negotiationMarginPct": [
+        6,
+        9
+      ],
+      "pros": [
+        "Citadine full hybride la moins chère et la plus puissante (195 ch) du marché",
+        "0 € de malus écologique (100 g/km)",
+        "Garantie 7 ans incluse"
+      ],
+      "cons": [
+        "Volant réglable en hauteur uniquement",
+        "Coffre de 293 L dans la moyenne basse"
+      ],
+      "ratings": {
+        "value": 9.4,
+        "range": 8.8,
+        "comfort": 8.1,
+        "equipment": 8.9
       },
       "lastChecked": "2026-11-08"
     }

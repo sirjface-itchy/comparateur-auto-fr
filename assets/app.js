@@ -115,21 +115,15 @@ function ensureDefaultCompareAndTco() {
   const vehicles = arr(state.data?.vehicles);
   if (!vehicles.length) return;
 
-  // Pré-remplir le comparateur avec 3 véhicules phares si vide ou invalide
+  // Pré-remplir le comparateur d'office avec un duel homogène par motorisation (SUV Full Hybrides HEV non rechargeables)
   const validIds = new Set(vehicles.map((v) => v.id));
   state.compareIds = state.compareIds.filter((id) => validIds.has(id));
   if (state.compareIds.length === 0) {
-    const ranked = [...vehicles].sort(
-      (a, b) => (state.scores.get(b.id)?.score || 0) - (state.scores.get(a.id)?.score || 0)
+    const defaultHevSuvs = ['mg-ehs-hybrid-plus', 'renault-symbioz-e-tech-145', 'jaecoo-7-shs-hev', 'dacia-duster-hybrid-140'].filter((id) =>
+      validIds.has(id)
     );
-    const pick = [];
-    const suv = ranked.find((v) => v.isSUV);
-    const compact = ranked.find((v) => isCompactGab(v));
-    const cn = ranked.find((v) => v.chineseBrand && v.id !== suv?.id && v.id !== compact?.id);
-    for (const cand of [compact, suv, cn, ...ranked]) {
-      if (cand && !pick.includes(cand.id) && pick.length < 3) pick.push(cand.id);
-    }
-    state.compareIds = pick;
+    state.compareIds = defaultHevSuvs.length >= 2 ? defaultHevSuvs : vehicles.slice(0, 4).map((v) => v.id);
+    comparatorEnergyFilter = 'HEV';
     saveCompare();
   }
 
@@ -169,7 +163,7 @@ function updateCompareBadges() {
   const names = state.compareIds
     .map((id) => vehicles.find((v) => v.id === id))
     .filter(Boolean)
-    .map((v) => `${esc(v.brand)} ${esc(v.model.split(' ')[0])}`);
+    .map((v) => esc(fullModelName(v).split('(')[0].trim()));
 
   dock.classList.remove('hidden');
   dock.innerHTML = `
@@ -222,11 +216,40 @@ async function loadData() {
 }
 
 /* ---------- Composants Cartes & Badges ---------- */
+function fullModelName(v) {
+  const b = str(v?.brand).trim();
+  const m = str(v?.model).trim();
+  if (!b) return m;
+  if (m.toLowerCase().startsWith(b.toLowerCase())) return m;
+  return `${b} ${m}`;
+}
+
+function isCutoutImage(url) {
+  return /carPicker|clearcut|day-exterior|navigation\/|compare-section|cosySec|DerivativeIntroductionModule|RangeFilterModule|odm\/vignettes|_next\/image/i.test(str(url));
+}
+
+function formatDeadlineInfo(validUntil) {
+  const s = str(validUntil).trim();
+  if (!s) return { label: 'Jusqu\'au 30/11/2026', urgent: false, daysLeft: 22 };
+  const target = new Date(`${s}T23:59:59`);
+  const ref = new Date('2026-11-08T12:00:00');
+  const diffDays = Math.max(0, Math.ceil((target - ref) / (1000 * 60 * 60 * 24)));
+  const [y, m, d] = s.split('-');
+  const frDate = d && m && y ? `${d}/${m}/${y}` : s;
+  const urgent = diffDays <= 16;
+  return {
+    frDate,
+    daysLeft: diffDays,
+    urgent,
+    label: diffDays <= 25 ? `⏳ Fin le ${frDate} (J−${diffDays})` : `⏳ Jusqu'au ${frDate}`,
+  };
+}
+
 function energyTag(energy) {
   const e = str(energy).toUpperCase();
   if (e === 'BEV') return `<span class="tag tag-bev">⚡ 100% Électrique (BEV)</span>`;
   if (e === 'PHEV') return `<span class="tag tag-phev">🔌 Hybride Rech. (PHEV)</span>`;
-  if (e === 'HEV') return `<span class="tag tag-hev">🌿 Hybride (HEV)</span>`;
+  if (e === 'HEV') return `<span class="tag tag-hev">🌿 Hybride Non-Rech. (HEV)</span>`;
   return `<span class="tag">${esc(e)}</span>`;
 }
 
@@ -237,16 +260,36 @@ function renderVehicleCard(v) {
   const margin = arr(v.negotiationMarginPct);
   const marginTxt = margin.length >= 2 ? `${margin[0]} à ${margin[1]} %` : margin.length === 1 ? `~${margin[0]} %` : '4 à 7 %';
   const official = safeUrl(v.officialUrl);
+  const offer0 = arr(v.offers)[0] || {};
+  const offerUrl = safeUrl(offer0.sourceUrl, official);
+  const dl = formatDeadlineInfo(v.validUntil || offer0.validUntil);
+  const imgUrl = safeUrl(v.imageUrl, '');
+  const cutoutCls = isCutoutImage(imgUrl) ? 'is-cutout' : '';
+  const discEur = num(offer0.discountEur) || m.maxDiscount || 0;
+  const bonusEur = num(v.aids?.bonusEur) || 0;
+  const officialMonthly = num(offer0.officialMonthlyEur);
 
   return `
     <article class="vehicle-card" data-vid="${esc(v.id)}">
       <div>
+        ${
+          imgUrl
+            ? `
+          <a href="#/vehicule/${encodeURIComponent(v.id)}" class="card-media" style="margin-bottom:0.75rem;text-decoration:none;">
+            <img src="${esc(imgUrl)}" alt="${esc(fullModelName(v))}" class="card-photo ${cutoutCls}" loading="lazy" onerror="this.closest('.card-media').style.display='none'" />
+            <div class="card-media-overlay">
+              <span class="promo-pill ${dl.urgent ? 'urgent' : ''}">${esc(dl.label)}</span>
+              ${m.bonus > 0 ? `<span class="tag tag-bonus" style="box-shadow:0 2px 8px rgba(0,0,0,0.4);">🎁 CEE/Bonus −${eur(m.bonus)}</span>` : ''}
+            </div>
+          </a>`
+            : ''
+        }
+
         <div class="card-top">
           <div class="badge-row">
             ${energyTag(v.energy)}
             <span class="tag">${esc(v.segment || (v.isSUV ? 'SUV' : 'Berline'))}</span>
             <span class="tag ${v.chineseBrand ? 'tag-cn' : ''}">📍 ${esc(v.origin || 'Europe')}${v.chineseBrand ? ' · Marque CN' : ''}</span>
-            ${m.bonus > 0 ? `<span class="tag tag-bonus">🎁 Bonus/CEE −${eur(m.bonus)}</span>` : ''}
           </div>
           <div class="score-badge" title="Score global d'opportunité sur 100">
             <span class="score-num">${sc.score}</span>
@@ -257,31 +300,58 @@ function renderVehicleCard(v) {
         <div class="card-title-group">
           <div class="card-brand">${esc(v.brand)} · Fabriqué : ${esc(v.madeIn || v.origin || 'NC')}</div>
           <h3 class="card-title">
-            <a href="#/vehicule/${encodeURIComponent(v.id)}">${esc(v.brand)} ${esc(v.model)}</a>
+            <a href="#/vehicule/${encodeURIComponent(v.id)}">${esc(fullModelName(v))}</a>
           </h3>
+        </div>
+
+        ${
+          v.promoName
+            ? `
+          <div class="promo-banner-box" style="margin-top:0.55rem;">
+            <strong style="color:var(--amber);font-size:0.78rem;">${esc(v.promoName)}</strong>
+            <span class="tag ${dl.urgent ? 'tag-cn' : ''}" style="font-size:0.7rem;">${esc(dl.label)}</span>
+          </div>`
+            : ''
+        }
+      </div>
+
+      <!-- Décomposition transparente du Prix & du Loyer -->
+      <div class="price-box">
+        <div class="price-col">
+          <span class="price-lbl">Prix net remise & aides déduites</span>
+          <span class="price-main">${eur(m.bestNet ?? m.price)}</span>
+          <div style="font-size:0.71rem;color:var(--text-secondary);margin-top:0.2rem;line-height:1.35;">
+            Catalogue : <strong>${eur(v.priceFromEur)}</strong><br/>
+            ${discEur > 0 ? `<span style="color:var(--amber);">− Remise officielle : ${eur(discEur)}</span><br/>` : ''}
+            ${bonusEur > 0 ? `<span style="color:var(--emerald);">− Bonus/CEE : ${eur(bonusEur)}</span><br/>` : ''}
+            ${
+              v.officialSiteFromEur && v.officialSiteFromEur !== (m.bestNet ?? m.price)
+                ? `<span class="muted">1er prix site ${esc(v.brand)} : ${eur(v.officialSiteFromEur)}</span>`
+                : ''
+            }
+          </div>
+        </div>
+        <div class="price-col" style="border-left:1px solid var(--border);padding-left:0.65rem;">
+          <span class="price-lbl">Votre loyer (0 € apport · 15 000 km/an)</span>
+          <span class="price-lease">${m.bestMonthly ? `${eur(m.bestMonthly)}/mois` : 'Sur devis'}</span>
+          <div style="font-size:0.71rem;color:var(--text-secondary);margin-top:0.2rem;line-height:1.35;">
+            ${
+              officialMonthly
+                ? `<strong>Affiché site ${esc(v.brand)} : ${eur(officialMonthly)}/mois</strong><br/><span class="muted">${esc(offer0.officialLeaseTerms || 'Base 10 000 km/an')}</span>`
+                : `0 € d'apport · 15 000 km/an · 48 mois`
+            }
+          </div>
         </div>
       </div>
 
-      <div class="price-box">
-        <div class="price-col">
-          <span class="price-lbl">Prix net estimé (aides & remise)</span>
-          <span class="price-main">${eur(m.bestNet ?? m.price)}</span>
-          ${
-            m.price && m.bestNet && m.bestNet < m.price
-              ? `<span class="price-strike">Catalogue ${eur(m.price)} (−${eur(m.price - m.bestNet)})</span>`
-              : `<span class="price-lbl">Catalogue : ${eur(m.price)}</span>`
-          }
-        </div>
-        <div class="price-col">
-          <span class="price-lbl">LLD / LOA (0 € apport · 15 000 km/an)</span>
-          <span class="price-lease">${m.bestMonthly ? `${eur(m.bestMonthly)}/mois` : 'Sur devis'}</span>
-          <span class="price-lbl">${
-            m.bestMonthlyOffer
-              ? `0 € d'apport · ${(m.bestMonthlyOffer.kmPerYear || 15000).toLocaleString('fr-FR')} km/an · ${m.bestMonthlyOffer.durationMonths || 48} mois`
-              : 'Voir offres concession'
-          }</span>
-        </div>
-      </div>
+      ${
+        v.priceExplanation
+          ? `
+        <div class="price-explain-note">
+          <strong>🔍 Pourquoi ce prix sur le site ${esc(v.brand)} ?</strong> ${esc(v.priceExplanation)}
+        </div>`
+          : ''
+      }
 
       <div class="specs-mini">
         <div class="spec-pill">
@@ -297,22 +367,21 @@ function renderVehicleCard(v) {
           <span class="spec-pill-lbl">Puissance</span>
         </div>
         <div class="spec-pill">
-          <span class="spec-pill-val">${esc(marginTxt)}</span>
-          <span class="spec-pill-lbl">Marge négo.</span>
+          <span class="spec-pill-val">−${esc(marginTxt)}</span>
+          <span class="spec-pill-lbl">Négo. stock</span>
         </div>
       </div>
 
-      <div class="dealer-snippet">
-        <strong>Concession :</strong> ${esc(str(v.dealerBehavior).slice(0, 125))}${str(v.dealerBehavior).length > 125 ? '…' : ''}
-      </div>
-
       <div class="card-actions">
-        <a href="#/vehicule/${encodeURIComponent(v.id)}" class="btn btn-primary btn-sm">Voir la fiche détaillée</a>
-        <button type="button" class="btn btn-outline btn-sm js-toggle-cmp" data-id="${esc(v.id)}">
-          ${inCmp ? '✓ Comparé' : 'Comparer (+)'}
+        <a href="#/vehicule/${encodeURIComponent(v.id)}" class="btn btn-primary btn-sm">Fiche & Détail Prix</a>
+        <button type="button" class="btn btn-outline btn-sm js-compare-rivals" data-id="${esc(v.id)}" title="Comparer directement aux modèles ${esc(v.energy)} concurrents">
+          ⚖️ Duel ${esc(v.energy)}
         </button>
-        <a href="${esc(official)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="Ouvrir la page officielle ${esc(v.brand)} ${esc(v.model)}">
-          Site officiel ${esc(v.brand)} ↗
+        <button type="button" class="btn btn-outline btn-sm js-toggle-cmp" data-id="${esc(v.id)}">
+          ${inCmp ? '✓ Comparé' : '+ Comparer'}
+        </button>
+        <a href="${esc(offerUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="Voir l'offre vérifiée sur le site officiel ${esc(v.brand)}">
+          Offre ${esc(v.brand)} ↗
         </a>
       </div>
     </article>
@@ -323,7 +392,7 @@ const VEHICLE_TYPE_GROUPS = [
   {
     id: 'suv-familial',
     title: '🚙 SUV Familiaux (Spacieux & Longs Trajets)',
-    subtitle: 'Gabarit 4,45 m à 4,78 m · Grand coffre (450 à 850 L) — ex : Jaecoo 7 SHS, Renault Scénic E-Tech, BYD Seal U DM-i, Peugeot 3008, Tesla Model Y…',
+    subtitle: 'Gabarit 4,45 m à 4,78 m · Grand coffre (450 à 850 L) — ex : MG EHS PHEV / Hybrid+, Jaecoo 7 SHS, Renault Scénic E-Tech, BYD Seal U DM-i, Peugeot 3008…',
     match: (v) => str(v.segment).toLowerCase() === 'suv familial',
   },
   {
@@ -335,19 +404,19 @@ const VEHICLE_TYPE_GROUPS = [
   {
     id: 'suv-citadin',
     title: '🚙 SUV Citadins & Urbains (Format Compact Surélevé)',
-    subtitle: 'Gabarit 3,82 m à 4,30 m — ex : Peugeot e-2008, Renault 4 E-Tech, Captur E-Tech, Toyota Yaris Cross, Citroën ë-C3 Aircross, Jeep Avenger…',
+    subtitle: 'Gabarit 3,82 m à 4,30 m — ex : Peugeot e-2008, Renault 4 E-Tech, Captur E-Tech, Toyota Yaris Cross, Citroën ë-C3 Aircross, Volvo EX30…',
     match: (v) => str(v.segment).toLowerCase() === 'suv citadin',
   },
   {
     id: 'compacte',
     title: '🚗 Compactes & Berlines (Gabarit type Mégane + Option Location Été)',
-    subtitle: 'Berlines compactes & familiales à faible consommation — ex : Renault Mégane E-Tech, MG4, VW ID.3, Citroën ë-C4, Tesla Model 3…',
+    subtitle: 'Berlines compactes & familiales à faible consommation — ex : Renault Mégane E-Tech, MG4 EV, VW ID.3, BYD Dolphin, Tesla Model 3…',
     match: (v) => !v.isSUV && ['compacte', 'berline'].includes(str(v.segment).toLowerCase()),
   },
   {
     id: 'citadine',
     title: '🚗 Citadines (Gabarit type Clio / R5 + Option Location Été)',
-    subtitle: 'Agiles au quotidien et loyers ultra-réduits — ex : Renault Clio E-Tech, R5 E-Tech, Peugeot e-208, Citroën ë-C3, BYD Dolphin, Dacia Spring…',
+    subtitle: 'Agiles au quotidien et loyers ultra-réduits — ex : Renault Clio E-Tech, MG3 Hybrid+, R5 E-Tech, Peugeot e-208, Citroën ë-C3, Dacia Spring…',
     match: (v) => !v.isSUV && str(v.segment).toLowerCase() === 'citadine',
   },
 ];
@@ -365,7 +434,7 @@ function filterAndSortVehicles() {
   const filtered = vehicles.filter((v) => {
     const m = state.scores.get(v.id)?.metrics || metrics(v);
     if (qNorm) {
-      const hay = `${v.brand} ${v.model} ${v.segment} ${v.energy} ${v.origin}`
+      const hay = `${v.brand} ${v.model} ${v.segment} ${v.energy} ${v.origin} ${v.promoName || ''}`
         .toLowerCase()
         .normalize('NFD')
         .replace(/[\u0300-\u036f]/g, '');
@@ -382,6 +451,10 @@ function filterAndSortVehicles() {
     if (['BEV', 'PHEV', 'HEV'].includes(f.quick) && v.energy !== f.quick) return false;
     if (f.quick === 'chinese' && !v.chineseBrand) return false;
     if (f.quick === 'bonus' && !(v.aids?.ecoScoreEligible || (num(v.aids?.bonusEur) || 0) > 0)) return false;
+    if (f.quick === 'urgent') {
+      const dl = formatDeadlineInfo(v.validUntil || v.offers?.[0]?.validUntil);
+      if (dl.daysLeft > 22 && !(m.maxDiscount >= 3000)) return false;
+    }
 
     const maxB = num(f.maxBudget);
     if (maxB != null && maxB > 0 && (m.bestNet ?? m.price ?? 999999) > maxB) return false;
@@ -426,78 +499,83 @@ function renderDashboard(main) {
     <!-- Bandeau KPI -->
     <section class="kpi-grid" aria-label="Indicateurs clés du marché">
       <div class="kpi-card">
-        <span class="kpi-label">Catalogue sous écoute</span>
+        <span class="kpi-label">Catalogue vérifié (liens & photos)</span>
         <span class="kpi-value">${vehicles.length} modèles</span>
         <span class="kpi-sub">${vehicles.filter((v) => v.isSUV).length} SUV · ${vehicles.filter((v) => isCompactGab(v)).length} Citadines/Compactes</span>
       </div>
       <div class="kpi-card">
-        <span class="kpi-label">Plus forte remise constatée</span>
+        <span class="kpi-label">Plus forte remise officielle</span>
         <span class="kpi-value" style="color:var(--emerald);">−${eur(bestDiscountItem?.m.maxDiscount || 0)}</span>
-        <span class="kpi-sub">${bestDiscountItem ? `${esc(bestDiscountItem.v.brand)} ${esc(bestDiscountItem.v.model)}` : '—'}</span>
+        <span class="kpi-sub">${bestDiscountItem ? `${esc(fullModelName(bestDiscountItem.v))}` : '—'}</span>
       </div>
       <div class="kpi-card">
-        <span class="kpi-label">Meilleur loyer LLD / LOA</span>
+        <span class="kpi-label">Meilleur loyer (0 € apport · 15k km)</span>
         <span class="kpi-value" style="color:var(--accent);">${bestLeaseItem ? `${eur(bestLeaseItem.m.bestMonthly)}/mois` : '—'}</span>
-        <span class="kpi-sub">${bestLeaseItem ? `${esc(bestLeaseItem.v.brand)} ${esc(bestLeaseItem.v.model)}` : '—'}</span>
+        <span class="kpi-sub">${bestLeaseItem ? `${esc(fullModelName(bestLeaseItem.v))}` : '—'}</span>
       </div>
       <div class="kpi-card">
-        <span class="kpi-label">Veille & Alertes Quotidiennes</span>
-        <span class="kpi-value" style="font-size:1.2rem;">📧 06h30 · 🔔 07h00</span>
-        <span class="kpi-sub"><a href="#/alertes">Email ${esc(state.config.alertEmail)} & Push actif →</a></span>
+        <span class="kpi-label">Comparatifs Dédiés par Énergie</span>
+        <span class="kpi-value" style="font-size:1.15rem;">🌿 HEV · 🔌 PHEV · ⚡ BEV</span>
+        <span class="kpi-sub"><a href="#/comparateur">Ouvrir les duels par motorisation →</a></span>
       </div>
     </section>
 
-    <!-- Section Alertes & Baisses du jour -->
-    <section class="alerts-strip" aria-label="Alertes et baisses du jour">
+    <!-- Encadré explicatif : Pourquoi les prix diffèrent parfois du 1er prix affiché chez le constructeur -->
+    <section class="panel-card" style="margin-bottom:1.25rem;border-left:4px solid var(--amber);padding:1rem 1.25rem;">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap;">
+        <div style="max-width:920px;">
+          <strong style="color:var(--amber);font-size:0.95rem;">💡 Pourquoi nos prix et loyers diffèrent parfois du 1er chiffre d'appel sur le site constructeur ?</strong>
+          <p class="muted" style="font-size:0.82rem;margin-top:0.3rem;line-height:1.45;">
+            Sur chaque fiche ci-dessous, nous affichons désormais <strong>les deux tarifs côte à côte</strong> pour une transparence totale :
+            <br/>1️⃣ <strong>Motorisation comparée :</strong> Le « 1er prix » d'une page constructeur (ex. Clio à 19 900 € ou Duster à 19 990 €) concerne souvent la version <em>essence/GPL de base</em>, alors que nous comparons la vraie version <strong>Hybride (HEV/PHEV) ou Électrique autonomie confort</strong>.
+            <br/>2️⃣ <strong>Aides d'État (Prime CEE) :</strong> Certains constructeurs (Peugeot, Volvo, Kia) déduisent dans leur loyer d'appel une <em>Prime Coup de pouce CEE majorée de 6 000 € à 7 000 €</em> réservée aux revenus très modestes (déciles D1–D3). Nous précisons le prix avec bonus/CEE standard (4 000 €) et la remise constructeur réelle.
+            <br/>3️⃣ <strong>Kilométrage & Apport LLD :</strong> Les loyers constructeurs sont presque toujours calculés pour <strong>10 000 km/an (et parfois 3 000 € d'apport)</strong>. Nous affichons l'offre officielle du site <u>ET</u> le loyer recalculé pour votre besoin réel : <strong>0 € d'apport · 15 000 km/an</strong>.
+          </p>
+        </div>
+        <a href="#/comparateur" class="btn btn-primary btn-sm">⚖️ Comparer par motorisation (HEV / PHEV / BEV) →</a>
+      </div>
+    </section>
+
+    <!-- Section Alertes & Offres Ponctuelles à Date Limite -->
+    <section class="alerts-strip" aria-label="Offres ponctuelles et dates de fin">
       <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;">
         <div>
-          <strong style="color:var(--emerald);">📡 Alertes & Baisses détectées du jour</strong>
+          <strong style="color:var(--emerald);">⏳ Offres Ponctuelles Constructeurs & Dates Limites de Commande</strong>
           <span class="muted" style="font-size:0.84rem;margin-left:0.5rem;">
-            ${ch.prevDate ? `Comparaison avec le snapshot du ${esc(ch.prevDate)}` : 'Veille quotidienne active sur les tarifs constructeurs et remises stock'}
+            Opérations spéciales vérifiées sur les sites officiels (Novembre – Décembre 2026)
           </span>
         </div>
-        <a href="#/alertes" class="btn btn-outline btn-sm">Configurer / Tester les alertes 6h30 & 7h00</a>
+        <a href="#/alertes" class="btn btn-outline btn-sm">Alertes 6h30 & 7h00</a>
       </div>
       <div class="alerts-list">
-        ${
-          hasChanges
-            ? [
-                ...ch.drops.slice(0, 4).map(
-                  (d) => `
-                  <div class="alert-item">
-                    <div>
-                      <strong>📉 ${esc(d.v.brand)} ${esc(d.v.model)}</strong>
-                      <div class="muted" style="font-size:0.78rem;">${esc(d.label)} : ${eur(d.old)} → <strong>${eur(d.now)}</strong></div>
-                    </div>
-                    <a href="#/vehicule/${encodeURIComponent(d.v.id)}" class="tag tag-bonus">${eur(d.delta)}</a>
-                  </div>`
-                ),
-                ...ch.newOffers.slice(0, 3).map(
-                  (no) => `
-                  <div class="alert-item">
-                    <div>
-                      <strong>🆕 ${esc(no.v.brand)} ${esc(no.v.model)}</strong>
-                      <div class="muted" style="font-size:0.78rem;">${esc(no.offer.title)}</div>
-                    </div>
-                    <a href="#/vehicule/${encodeURIComponent(no.v.id)}" class="tag tag-bev">Nouvelle offre</a>
-                  </div>`
-                ),
-              ].join('')
-            : top3
-                .map(
-                  (item) => `
-                  <div class="alert-item">
-                    <div>
-                      <strong>🔥 Offre phare : ${esc(item.v.brand)} ${esc(item.v.model)}</strong>
-                      <div class="muted" style="font-size:0.78rem;">Prix net : <strong>${eur(item.m.bestNet)}</strong> ${
-                    item.m.bestMonthly ? `· LLD dès ${eur(item.m.bestMonthly)}/mois` : ''
-                  }</div>
-                    </div>
-                    <a href="${esc(safeUrl(item.v.officialUrl))}" target="_blank" rel="noopener noreferrer" class="tag tag-bev">Site officiel ↗</a>
-                  </div>`
-                )
-                .join('')
-        }
+        <div class="alert-item">
+          <div>
+            <strong>🔥 MG EHS PHEV & EHS Hybrid+ (« À Saisir »)</strong>
+            <div class="muted" style="font-size:0.78rem;"><strong>−6 000 €</strong> (4 000 € Avantage MG + 2 000 € stock) → dès 26 490 € / 31 990 €</div>
+          </div>
+          <a href="#/vehicule/mg-ehs-phev" class="tag tag-cn">⏳ Fin 15/11 (J−7)</a>
+        </div>
+        <div class="alert-item">
+          <div>
+            <strong>🔥 Hyundai Inster 49 kWh au prix du 42 kWh</strong>
+            <div class="muted" style="font-size:0.78rem;">Grande batterie 370 km WLTP facturée au tarif 42 kWh (−3 250 € cumulés)</div>
+          </div>
+          <a href="#/vehicule/hyundai-inster-electric-49" class="tag tag-cn">⏳ Fin 23/11 (J−15)</a>
+        </div>
+        <div class="alert-item">
+          <div>
+            <strong>🔥 BYD Seal U DM-i PHEV & Dolphin</strong>
+            <div class="muted" style="font-size:0.78rem;">Remise officielle <strong>−6 360 € à −7 365 €</strong> → Seal U DM-i dès 32 630 €</div>
+          </div>
+          <a href="#/vehicule/byd-seal-u-dm-i-boost" class="tag tag-bonus">⏳ Fin 30/11</a>
+        </div>
+        <div class="alert-item">
+          <div>
+            <strong>🔥 Gamme Jaecoo 7 & 5 (LLD 0 € d'apport)</strong>
+            <div class="muted" style="font-size:0.78rem;">Jaecoo 5 Hybride 299 €/mois · Jaecoo 7 Hybride 349 € · PHEV 419 €</div>
+          </div>
+          <a href="#/vehicule/jaecoo-7-shs-phev" class="tag tag-bev">⏳ Offre T4 2026</a>
+        </div>
       </div>
     </section>
 
@@ -521,16 +599,16 @@ function renderDashboard(main) {
           </div>
           <div>
             <h3 style="font-family:'Space Grotesk',sans-serif;font-size:1.25rem;margin-bottom:0.25rem;">
-              <a href="#/vehicule/${encodeURIComponent(item.v.id)}" style="color:var(--text);">${esc(item.v.brand)} ${esc(item.v.model)}</a>
+              <a href="#/vehicule/${encodeURIComponent(item.v.id)}" style="color:var(--text);">${esc(fullModelName(item.v))}</a>
             </h3>
             <p class="muted" style="font-size:0.83rem;">
               Prix net : <strong style="color:var(--emerald);">${eur(item.m.bestNet)}</strong>
               ${item.m.maxDiscount ? `(Remise −${eur(item.m.maxDiscount)})` : ''}
-              ${item.m.bestMonthly ? ` · Dès <strong style="color:var(--accent);">${eur(item.m.bestMonthly)}/mois</strong>` : ''}
+              ${item.m.bestMonthly ? ` · 0 € apport / 15k km : <strong style="color:var(--accent);">${eur(item.m.bestMonthly)}/mois</strong>` : ''}
             </p>
           </div>
           <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
-            <a href="#/vehicule/${encodeURIComponent(item.v.id)}" class="btn btn-primary btn-sm">Fiche & Négociation</a>
+            <a href="#/vehicule/${encodeURIComponent(item.v.id)}" class="btn btn-primary btn-sm">Fiche & Explication Prix</a>
             <a href="${esc(safeUrl(item.v.officialUrl))}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Site ${esc(item.v.brand)} ↗</a>
           </div>
         </div>
@@ -543,7 +621,7 @@ function renderDashboard(main) {
     <section class="filter-panel" aria-label="Recherche et filtres">
       <div class="filter-top">
         <div class="search-input-wrap">
-          <input id="f-q" type="search" class="search-input" placeholder="🔍 Rechercher une marque, un modèle (ex: Jaecoo, Clio, Mégane, Scenic, BYD, MG, Kia EV3, 3008…)" value="${esc(state.filters.q)}" />
+          <input id="f-q" type="search" class="search-input" placeholder="🔍 Rechercher une marque ou modèle (ex: MG EHS, Jaecoo, Clio, Mégane, Scénic, BYD, Kia EV3, 3008…)" value="${esc(state.filters.q)}" />
         </div>
         <select id="f-sort" class="select-input" aria-label="Trier par">
           <option value="score" ${state.filters.sort === 'score' ? 'selected' : ''}>Trier : Meilleur score (/100)</option>
@@ -561,20 +639,21 @@ function renderDashboard(main) {
       </div>
 
       <div style="font-size:0.78rem;color:var(--text-muted);margin:0.5rem 0 0.35rem;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;">
-        1. Filtrer directement par type de véhicule (ou motorisation) :
+        1. Filtrer directement par motorisation, type de véhicule ou offre ponctuelle :
       </div>
       <div class="quick-pills" id="quick-pills">
         ${[
           ['all', '🗂️ Tous les types (groupés)'],
-          ['suv-familial', '🚙 SUV Familiaux (Jaecoo 7, Scénic, Seal U, 3008…)'],
+          ['HEV', '🌿 Hybrides Non-Rechargeables (HEV)'],
+          ['PHEV', '🔌 Hybrides Rechargeables (PHEV)'],
+          ['BEV', '⚡ 100% Électriques (BEV)'],
+          ['urgent', '⏳ Offres ponctuelles & Fortes remises'],
+          ['suv-familial', '🚙 SUV Familiaux (EHS, Jaecoo 7, Scénic, Seal U…)'],
           ['suv-compact', '🚙 SUV Compacts (Jaecoo 5, EV3, Symbioz, Duster…)'],
           ['suv-citadin', '🚙 SUV Citadins (e-2008, R4, Captur, Yaris Cross…)'],
           ['compacte', '🚗 Compactes & Berlines (type Mégane, MG4, ID.3…)'],
-          ['citadine', '🚗 Citadines (type Clio, R5, e-208, ë-C3…)'],
-          ['BEV', '⚡ 100% Électrique (BEV)'],
-          ['PHEV', '🔌 Hybride Rechargeable (PHEV)'],
-          ['HEV', '🌿 Full Hybride (HEV)'],
-          ['chinese', '🐉 Marques chinoises (Jaecoo, BYD, MG, Xpeng, Leapmotor)'],
+          ['citadine', '🚗 Citadines (type Clio, MG3, R5, e-208, ë-C3…)'],
+          ['chinese', '🐉 Marques chinoises (MG, Jaecoo, BYD, Xpeng, Leapmotor)'],
           ['bonus', '🎁 Éligible Bonus / CEE'],
         ]
           .map(
@@ -763,18 +842,29 @@ function renderVehicleDetail(main, id) {
   const m = sc.metrics;
   const official = safeUrl(v.officialUrl);
   const configUrl = v.configuratorUrl ? safeUrl(v.configuratorUrl, '') : '';
+  const offer0 = arr(v.offers)[0] || {};
+  const offerUrl = safeUrl(offer0.sourceUrl, official);
+  const dl = formatDeadlineInfo(v.validUntil || offer0.validUntil);
+  const imgUrl = safeUrl(v.imageUrl, '');
+  const cutoutCls = isCutoutImage(imgUrl) ? 'is-cutout' : '';
   const margin = arr(v.negotiationMarginPct);
   const marginStr = margin.length >= 2 ? `${margin[0]} % à ${margin[1]} %` : '4 % à 8 %';
   const scale = ratingScale(vehicles);
   const inCmp = state.compareIds.includes(v.id);
   const s = v.specs || {};
+  const discEur = num(offer0.discountEur) || m.maxDiscount || 0;
+  const bonusEur = num(v.aids?.bonusEur) || 0;
+  const officialMonthly = num(offer0.officialMonthlyEur);
 
   main.innerHTML = `
     <div style="margin-bottom:1rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;">
       <a href="#/" class="btn btn-ghost btn-sm">← Retour à toutes les offres</a>
-      <div style="display:flex;gap:0.5rem;">
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+        <button type="button" class="btn btn-primary btn-sm js-compare-rivals" data-id="${esc(v.id)}">
+          ⚖️ Comparer aux concurrents ${esc(v.energy)} directs
+        </button>
         <button type="button" class="btn btn-outline btn-sm js-toggle-cmp" data-id="${esc(v.id)}">
-          ${inCmp ? '✓ Dans le comparateur' : '⚖️ Ajouter au comparateur'}
+          ${inCmp ? '✓ Dans le comparateur' : '+ Ajouter au comparateur'}
         </button>
         <a href="#/simulateur" class="btn btn-outline btn-sm">🧮 Simuler le TCO 4 ans</a>
       </div>
@@ -782,23 +872,41 @@ function renderVehicleDetail(main, id) {
 
     <section class="detail-hero">
       <div class="detail-hero-top">
-        <div>
+        ${
+          imgUrl
+            ? `
+          <div class="detail-photo-frame">
+            <img src="${esc(imgUrl)}" alt="${esc(fullModelName(v))}" class="detail-photo ${cutoutCls}" />
+          </div>`
+            : ''
+        }
+        <div style="flex:1;min-width:260px;">
           <div class="badge-row">
             ${energyTag(v.energy)}
             <span class="tag">${esc(v.segment)}</span>
             <span class="tag ${v.chineseBrand ? 'tag-cn' : ''}">📍 Origine : ${esc(v.origin)} (${esc(v.madeIn || v.origin)})</span>
             ${v.aids?.ecoScoreEligible ? `<span class="tag tag-bonus">✓ Éco-score ADEME validé</span>` : ''}
+            <span class="tag ${dl.urgent ? 'tag-cn' : 'tag-bonus'}">${esc(dl.label)}</span>
           </div>
           <h1 class="detail-title">
-            <a href="${esc(official)}" target="_blank" rel="noopener noreferrer" title="Ouvrir la page officielle ${esc(v.brand)} ${esc(v.model)}">
-              ${esc(v.brand)} ${esc(v.model)} ↗
+            <a href="${esc(official)}" target="_blank" rel="noopener noreferrer" title="Ouvrir la page officielle ${esc(fullModelName(v))}">
+              ${esc(fullModelName(v))} ↗
             </a>
           </h1>
           <p class="muted">
-            Prix catalogue : <strong>${eur(v.priceFromEur)}</strong> ${v.priceToEur ? `à ${eur(v.priceToEur)}` : ''}
-            · Prix net estimé (remises & aides déduites) : <strong style="color:var(--emerald);font-size:1.1rem;">${eur(m.bestNet ?? m.price)}</strong>
-            ${m.bestMonthly ? ` · LLD/LOA dès <strong style="color:var(--accent);">${eur(m.bestMonthly)}/mois</strong>` : ''}
+            Prix catalogue de réf. : <strong>${eur(v.priceFromEur)}</strong> ${v.priceToEur ? `à ${eur(v.priceToEur)}` : ''}
+            · Prix net (remise & aides déduites) : <strong style="color:var(--emerald);font-size:1.15rem;">${eur(m.bestNet ?? m.price)}</strong>
+            ${m.bestMonthly ? ` · Votre loyer (0 € apport · 15 000 km/an) : <strong style="color:var(--accent);font-size:1.1rem;">${eur(m.bestMonthly)}/mois</strong>` : ''}
           </p>
+          ${
+            v.promoName
+              ? `
+            <div class="promo-banner-box" style="margin-top:0.75rem;">
+              <strong>${esc(v.promoName)}</strong>
+              <span class="tag ${dl.urgent ? 'tag-cn' : ''}">${esc(dl.label)}</span>
+            </div>`
+              : ''
+          }
         </div>
 
         <div class="score-badge" style="width:70px;height:70px;">
@@ -807,19 +915,22 @@ function renderVehicleDetail(main, id) {
         </div>
       </div>
 
-      <!-- Bannière d'accès direct au site officiel de la marque et du modèle -->
+      <!-- Bannière d'accès direct au site officiel de la marque et de l'offre -->
       <div class="official-cta-bar">
         <div>
-          <strong>🔗 Accès direct constructeur — ${esc(v.brand)} France</strong>
-          <p class="muted" style="font-size:0.84rem;">Consultez la brochure officielle, les stocks concession et configurez votre ${esc(v.brand)} ${esc(v.model)} directement sur le site de la marque.</p>
+          <strong>🔗 Liens officiels vérifiés — ${esc(v.brand)} France</strong>
+          <p class="muted" style="font-size:0.84rem;">Accédez directement à la page modèle, aux offres promotionnelles en cours et au configurateur ${esc(fullModelName(v))}.</p>
         </div>
         <div style="display:flex;gap:0.65rem;flex-wrap:wrap;">
-          <a href="${esc(official)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
-            Accéder au site officiel ${esc(v.brand)} ${esc(v.model)} ↗
+          <a href="${esc(official)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Page Modèle ${esc(v.brand)} ↗
+          </a>
+          <a href="${esc(offerUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-emerald">
+            Page Offre Promotionnelle ${esc(v.brand)} ↗
           </a>
           ${
-            configUrl
-              ? `<a href="${esc(configUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">Configurateur ${esc(v.brand)} ↗</a>`
+            configUrl && configUrl !== official
+              ? `<a href="${esc(configUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Configurateur ${esc(v.brand)} ↗</a>`
               : ''
           }
         </div>
@@ -828,9 +939,71 @@ function renderVehicleDetail(main, id) {
 
     <div class="detail-grid">
       <div>
+        <!-- Explication détaillée du prix & comparaison avec le site constructeur -->
+        <section class="panel-card" style="border-left:4px solid var(--accent);">
+          <h3>🔍 Explication Transparente du Prix, des Remises & du Financement</h3>
+          ${
+            v.priceExplanation
+              ? `<div class="price-explain-note" style="font-size:0.86rem;margin-bottom:1rem;padding:0.75rem 1rem;">
+                  <strong>Pourquoi ce tarif et comment le retrouver sur le site ${esc(v.brand)} ?</strong><br/>
+                  ${esc(v.priceExplanation)}
+                </div>`
+              : ''
+          }
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;">
+            <div class="price-waterfall">
+              <strong style="font-size:0.85rem;color:var(--accent);margin-bottom:0.25rem;">1. Décomposition du prix d'achat TTC</strong>
+              <div class="waterfall-row">
+                <span class="muted">Prix catalogue officiel (version réf.)</span>
+                <strong>${eur(v.priceFromEur)}</strong>
+              </div>
+              <div class="waterfall-row">
+                <span class="muted">− Remise / Avantage officiel ${esc(v.brand)}</span>
+                <strong style="color:var(--amber);">−${eur(discEur)}</strong>
+              </div>
+              <div class="waterfall-row">
+                <span class="muted">− Bonus Écologique / Prime CEE 2026</span>
+                <strong style="color:var(--emerald);">−${eur(bonusEur)}</strong>
+              </div>
+              <div class="waterfall-row net-row">
+                <span>= Prix net remise & aides déduites</span>
+                <span style="color:var(--emerald);font-size:1.05rem;">${eur(m.bestNet ?? m.price)}</span>
+              </div>
+              ${
+                v.officialSiteFromEur
+                  ? `<div class="waterfall-row" style="margin-top:0.2rem;font-size:0.75rem;">
+                      <span class="muted">1er prix « À partir de » affiché sur site ${esc(v.brand)}</span>
+                      <span>${eur(v.officialSiteFromEur)}</span>
+                    </div>`
+                  : ''
+              }
+            </div>
+
+            <div class="price-waterfall">
+              <strong style="font-size:0.85rem;color:var(--accent);margin-bottom:0.25rem;">2. Loyer Site Officiel vs Votre Profil (15 000 km/an)</strong>
+              <div class="waterfall-row">
+                <span class="muted">Loyer d'appel affiché sur site ${esc(v.brand)}</span>
+                <strong>${officialMonthly ? `${eur(officialMonthly)}/mois` : '—'}</strong>
+              </div>
+              <div class="waterfall-row">
+                <span class="muted">Conditions de l'offre site officiel</span>
+                <span style="text-align:right;font-size:0.74rem;">${esc(offer0.officialLeaseTerms || 'Base 10 000 km/an')}</span>
+              </div>
+              <div class="waterfall-row net-row">
+                <span>= Votre loyer recalculé (0 € apport · 15 000 km/an)</span>
+                <span style="color:var(--accent);font-size:1.05rem;">${m.bestMonthly ? `${eur(m.bestMonthly)}/mois` : '—'}</span>
+              </div>
+              <div class="waterfall-row" style="margin-top:0.2rem;font-size:0.75rem;">
+                <span class="muted">Date de fin de l'offre ponctuelle</span>
+                <strong style="color:var(--amber);">${esc(dl.label)}</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- Offres tarifaires actuelles -->
         <section class="panel-card">
-          <h3>🏷️ Offres tarifaires & Financements actuels (LLD / LOA / Remises)</h3>
+          <h3>🏷️ Offres ponctuelles & Financements vérifiés (LLD / LOA / Remises)</h3>
           <div class="offers-stack">
             ${
               arr(v.offers).length
@@ -842,7 +1015,7 @@ function renderVehicleDetail(main, id) {
                       <div class="badge-row" style="margin-bottom:0.3rem;">
                         <span class="tag tag-bev">${esc(o.type || 'Offre')}</span>
                         ${isRestricted(o) ? `<span class="tag tag-cn">Sous conditions de revenus</span>` : ''}
-                        ${o.validUntil ? `<span class="tag">Valide jusqu'au ${esc(o.validUntil)}</span>` : ''}
+                        <span class="tag ${dl.urgent ? 'tag-cn' : 'tag-bonus'}">${esc(dl.label)}</span>
                       </div>
                       <strong style="font-size:1rem;display:block;">${esc(o.title)}</strong>
                       <p class="muted" style="font-size:0.83rem;margin-top:0.25rem;">${esc(o.conditions || '')}</p>
@@ -851,20 +1024,25 @@ function renderVehicleDetail(main, id) {
                       ${
                         o.monthlyEur
                           ? `<div style="font-family:'Space Grotesk',sans-serif;font-size:1.35rem;font-weight:800;color:var(--accent);">${eur(o.monthlyEur)}/mois</div>
-                             <div class="muted" style="font-size:0.78rem;">Apport ${eur(o.downPaymentEur || 0)} · ${o.durationMonths || 37} mois · ${
-                              o.kmPerYear ? `${Number(o.kmPerYear).toLocaleString('fr-FR')} km/an` : ''
-                            }</div>`
+                             <div class="muted" style="font-size:0.78rem;">0 € d'apport · ${o.durationMonths || 48} mois · ${
+                              o.kmPerYear ? `${Number(o.kmPerYear).toLocaleString('fr-FR')} km/an` : '15 000 km/an'
+                            }</div>
+                             ${
+                               o.officialMonthlyEur
+                                 ? `<div style="font-size:0.75rem;color:var(--amber);margin-top:0.15rem;">(Affiché site ${esc(v.brand)} : ${eur(o.officialMonthlyEur)}/mois en 10 000 km/an)</div>`
+                                 : ''
+                             }`
                           : ''
                       }
                       ${
                         o.priceAfterEur
-                          ? `<div style="font-weight:700;color:var(--emerald);margin-top:0.2rem;">Prix remisé : ${eur(o.priceAfterEur)}</div>`
+                          ? `<div style="font-weight:700;color:var(--emerald);margin-top:0.2rem;">Prix net : ${eur(o.priceAfterEur)}</div>`
                           : ''
                       }
-                      ${o.discountEur ? `<div class="tag tag-bonus" style="margin-top:0.25rem;">Remise −${eur(o.discountEur)}</div>` : ''}
+                      ${o.discountEur ? `<div class="tag tag-bonus" style="margin-top:0.25rem;">Remise officielle −${eur(o.discountEur)}</div>` : ''}
                       <div style="margin-top:0.5rem;">
-                        <a href="${esc(safeUrl(o.sourceUrl, official))}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-                          Voir l'offre sur ${esc(v.brand)} ↗
+                        <a href="${esc(safeUrl(o.sourceUrl, official))}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                          Vérifier l'offre sur ${esc(v.brand)} ↗
                         </a>
                       </div>
                     </div>
@@ -883,11 +1061,11 @@ function renderVehicleDetail(main, id) {
           <p style="margin-bottom:0.75rem;">${esc(v.dealerBehavior || 'Négociation possible sur les véhicules en stock en fin de mois/trimestre.')}</p>
           <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1rem;">
             <div class="spec-pill" style="padding:0.6rem 1rem;">
-              <span class="spec-pill-lbl">Marge de négociation constatée</span>
-              <span class="spec-pill-val" style="color:var(--amber);font-size:1.05rem;">${esc(marginStr)}</span>
+              <span class="spec-pill-lbl">Marge de négociation supplémentaire en concession</span>
+              <span class="spec-pill-val" style="color:var(--amber);font-size:1.05rem;">−${esc(marginStr)}</span>
             </div>
             <div class="spec-pill" style="padding:0.6rem 1rem;">
-              <span class="spec-pill-lbl">Prix cible négocié estimé</span>
+              <span class="spec-pill-lbl">Prix cible négocié sur stock</span>
               <span class="spec-pill-val" style="color:var(--emerald);font-size:1.05rem;">
                 ${
                   m.bestNet && margin.length
@@ -909,7 +1087,7 @@ function renderVehicleDetail(main, id) {
 
         <!-- Comparatif des finitions / versions -->
         <section class="panel-card">
-          <h3>🎚️ Versions & Finitions disponibles</h3>
+          <h3>🎚️ Versions & Finitions disponibles (Tarifs Catalogue Officiels)</h3>
           <div class="offers-stack">
             ${arr(v.versions)
               .map(
@@ -1025,10 +1203,74 @@ function renderVehicleDetail(main, id) {
   });
 }
 
-/* ---------- Vue 3 : Comparateur Côte à Côte (#/comparateur) ---------- */
+/* ---------- Vue 3 : Comparateur Dédié par Motorisation & Catégorie (#/comparateur) ---------- */
+const COMPARATOR_PRESETS = [
+  {
+    id: 'suv-hev',
+    title: '🌿 Duel SUV Hybrides Non-Rechargeables (HEV)',
+    subtitle: 'Sans contrainte de branchement · MG EHS Hybrid+ vs Renault Symbioz vs Jaecoo 7 SHS-H vs Dacia Duster Hybrid',
+    energy: 'HEV',
+    ids: ['mg-ehs-hybrid-plus', 'renault-symbioz-e-tech-145', 'jaecoo-7-shs-hev', 'dacia-duster-hybrid-140'],
+  },
+  {
+    id: 'suv-phev',
+    title: '🔌 Duel SUV Hybrides Rechargeables (PHEV)',
+    subtitle: '75 à 100 km en électrique au quotidien + 1 000 km sur autoroute · MG EHS PHEV vs BYD Seal U DM-i vs Jaecoo 7 PHEV vs Kia Sportage',
+    energy: 'PHEV',
+    ids: ['mg-ehs-phev', 'byd-seal-u-dm-i-boost', 'jaecoo-7-shs-phev', 'kia-sportage-hybrid-215'],
+  },
+  {
+    id: 'suv-bev-fam',
+    title: '⚡ Duel Grands SUV 100% Électriques Familiaux (BEV)',
+    subtitle: 'Autonomie 500 à 625 km WLTP · Renault Scénic E-Tech vs Peugeot e-3008 vs Škoda Elroq vs Tesla Model Y',
+    energy: 'BEV',
+    ids: ['renault-scenic-e-tech-87', 'peugeot-e-3008-210', 'skoda-elroq-85', 'tesla-model-y-propulsion'],
+  },
+  {
+    id: 'suv-bev-comp',
+    title: '⚡ Duel SUV Compacts & Citadins Électriques (BEV)',
+    subtitle: 'Loyers 219 à 397 €/mois sans apport · Kia EV3 vs Volvo EX30 vs Renault 4 E-Tech vs Peugeot e-2008',
+    energy: 'BEV',
+    ids: ['kia-ev3-81kwh', 'volvo-ex30-single-motor', 'renault-4-e-tech-150', 'peugeot-e-2008-156'],
+  },
+  {
+    id: 'citadine-hev',
+    title: '🌿 Duel Citadines & Urbains Full Hybrides (HEV)',
+    subtitle: 'Sobriété record (4,2 à 4,6 L/100) · Renault Clio E-Tech vs MG3 Hybrid+ 195 ch vs Toyota Yaris Cross vs Captur E-Tech',
+    energy: 'HEV',
+    ids: ['renault-clio-e-tech-145', 'mg3-hybrid-plus', 'toyota-yaris-cross-116', 'renault-captur-e-tech-145'],
+  },
+  {
+    id: 'compacte-bev',
+    title: '⚡ Duel Citadines & Compactes 100% Électriques (BEV)',
+    subtitle: 'Format quotidien agile · Renault 5 E-Tech vs Renault Mégane E-Tech vs MG4 EV vs Peugeot e-208',
+    energy: 'BEV',
+    ids: ['renault-5-e-tech-150', 'renault-megane-e-tech-ev60', 'mg4-electric-64', 'peugeot-e-208-156'],
+  },
+  {
+    id: 'chinois-top',
+    title: '🐉 Duel SUV Marques Chinoises (0 € apport · ≤ 450 €/mois)',
+    subtitle: 'Suréquipés et garantis 6 à 7 ans · MG EHS PHEV vs Jaecoo 7 PHEV vs BYD Seal U DM-i vs MG ZS Hybrid+',
+    energy: 'ALL',
+    ids: ['mg-ehs-phev', 'jaecoo-7-shs-phev', 'byd-seal-u-dm-i-boost', 'mg-zs-hybrid-plus'],
+  },
+];
+
+let comparatorEnergyFilter = 'ALL'; // ALL | HEV | PHEV | BEV
+
 function renderComparator(main) {
   const vehicles = arr(state.data?.vehicles);
   const selected = state.compareIds.map((id) => vehicles.find((v) => v.id === id)).filter(Boolean);
+
+  const activePreset = COMPARATOR_PRESETS.find(
+    (p) => p.ids.length === state.compareIds.length && p.ids.every((id) => state.compareIds.includes(id))
+  );
+
+  const filteredSelectorVehicles = vehicles.filter((v) => {
+    if (state.compareIds.includes(v.id)) return false;
+    if (comparatorEnergyFilter !== 'ALL' && v.energy !== comparatorEnergyFilter) return false;
+    return true;
+  });
 
   const rows = [
     {
@@ -1038,53 +1280,85 @@ function renderComparator(main) {
       lowBetter: false,
     },
     {
-      label: 'Prix catalogue',
+      label: 'Énergie & Catégorie',
+      val: () => null,
+      render: (v) => `${energyTag(v.energy)} <span class="tag">${esc(v.segment)}</span>`,
+    },
+    {
+      label: 'Offre ponctuelle & Date de fin',
+      val: (v) => formatDeadlineInfo(v.validUntil || v.offers?.[0]?.validUntil).daysLeft,
+      render: (v) => {
+        const dl = formatDeadlineInfo(v.validUntil || v.offers?.[0]?.validUntil);
+        return `<div><strong style="color:var(--amber);font-size:0.8rem;">${esc(v.promoName || 'Offre constructeur')}</strong><br/><span class="tag ${dl.urgent ? 'tag-cn' : 'tag-bonus'}" style="margin-top:0.25rem;">${esc(dl.label)}</span></div>`;
+      },
+      lowBetter: null,
+    },
+    {
+      label: 'Prix catalogue officiel',
       val: (v) => num(v.priceFromEur),
       fmt: eur,
       lowBetter: true,
     },
     {
-      label: 'Prix net estimé (remise + aides)',
+      label: 'Remise officielle + Bonus/CEE',
+      val: (v) => {
+        const m = state.scores.get(v.id)?.metrics || metrics(v);
+        return (m.maxDiscount || 0) + (m.bonus || 0);
+      },
+      render: (v) => {
+        const o0 = arr(v.offers)[0] || {};
+        const d = num(o0.discountEur) || 0;
+        const b = num(v.aids?.bonusEur) || 0;
+        const tot = d + b;
+        return tot > 0
+          ? `<strong>−${eur(tot)}</strong><div class="muted" style="font-size:0.74rem;">Remise −${eur(d)}${b > 0 ? ` · Bonus −${eur(b)}` : ''}</div>`
+          : '0 €';
+      },
+      lowBetter: false,
+    },
+    {
+      label: 'Prix net (remise & aides déduites)',
       val: (v) => (state.scores.get(v.id)?.metrics || metrics(v)).bestNet,
       fmt: eur,
       lowBetter: true,
     },
     {
-      label: 'Remise max + Bonus',
-      val: (v) => {
-        const m = state.scores.get(v.id)?.metrics || metrics(v);
-        return (m.maxDiscount || 0) + (m.bonus || 0);
-      },
-      fmt: (x) => (x > 0 ? `−${eur(x)}` : '0 €'),
-      lowBetter: false,
-    },
-    {
-      label: 'Meilleure mensualité LLD/LOA',
+      label: 'Votre loyer (0 € apport · 15 000 km/an)',
       val: (v) => (state.scores.get(v.id)?.metrics || metrics(v)).bestMonthly,
       fmt: (x) => (x != null ? `${eur(x)}/mois` : '—'),
       lowBetter: true,
     },
     {
-      label: 'Mensualité lissée (apport inclus)',
-      val: (v) => (state.scores.get(v.id)?.metrics || metrics(v)).bestMonthlyEffective,
-      fmt: (x) => (x != null ? `${eur(x)}/mois` : '—'),
+      label: 'Loyer affiché sur le site officiel',
+      val: (v) => num(v.offers?.[0]?.officialMonthlyEur),
+      render: (v) => {
+        const o0 = arr(v.offers)[0] || {};
+        return o0.officialMonthlyEur
+          ? `<strong>${eur(o0.officialMonthlyEur)}/mois</strong><div class="muted" style="font-size:0.73rem;">${esc(o0.officialLeaseTerms || '')}</div>`
+          : '—';
+      },
       lowBetter: true,
     },
     {
-      label: 'Énergie & Segment',
+      label: 'Explication du prix constructeur',
       val: () => null,
-      render: (v) => `${energyTag(v.energy)} <span class="tag">${esc(v.segment)}</span>`,
+      render: (v) => `<div style="font-size:0.76rem;line-height:1.38;color:var(--text-secondary);">${esc(v.priceExplanation || '—')}</div>`,
     },
     {
       label: 'Autonomie WLTP',
       val: (v) => (state.scores.get(v.id)?.metrics || metrics(v)).range,
-      fmt: (x, v) => (x != null ? `${x} km${v.energy === 'PHEV' && v.specs?.electricRangeKm ? ` (${v.specs.electricRangeKm} km EV)` : ''}` : '—'),
+      fmt: (x, v) => (x != null ? `${x} km${v.energy === 'PHEV' && v.specs?.electricRangeKm ? ` (dont ${v.specs.electricRangeKm} km EV)` : ''}` : '—'),
       lowBetter: false,
+    },
+    {
+      label: 'Consommation mixte',
+      val: () => null,
+      render: (v) => `<strong>${esc(v.specs?.consumption || '—')}</strong>`,
     },
     {
       label: 'Batterie & Charge 10-80%',
       val: (v) => num(v.specs?.charge10to80min),
-      fmt: (x, v) => `${v.specs?.batteryKwh ? `${v.specs.batteryKwh} kWh` : '—'} · ${x ? `${x} min (${v.specs?.dcChargeKw || '?'} kW)` : 'AC seul'}`,
+      fmt: (x, v) => `${v.specs?.batteryKwh ? `${v.specs.batteryKwh} kWh` : '—'} · ${x ? `${x} min (${v.specs?.dcChargeKw || '?'} kW)` : 'Sans charge DC'}`,
       lowBetter: true,
     },
     {
@@ -1094,15 +1368,15 @@ function renderComparator(main) {
       lowBetter: false,
     },
     {
-      label: 'Longueur (gabarit)',
+      label: 'Longueur × Largeur',
       val: (v) => num(v.specs?.lengthMm),
-      fmt: (x) => (x != null ? `${(x / 1000).toFixed(2)} m` : '—'),
+      fmt: (x, v) => (x != null ? `${(x / 1000).toFixed(2)} m × ${v.specs?.widthMm ? (v.specs.widthMm / 1000).toFixed(2) : '—'} m` : '—'),
       lowBetter: null,
     },
     {
-      label: 'Puissance (ch)',
+      label: 'Puissance & Garantie',
       val: (v) => num(v.specs?.powerHp),
-      fmt: (x) => (x != null ? `${x} ch` : '—'),
+      render: (v) => `<strong>${v.specs?.powerHp || '—'} ch</strong> · Garantie ${esc(v.specs?.warranty || '2 ans')}`,
       lowBetter: false,
     },
     {
@@ -1113,65 +1387,117 @@ function renderComparator(main) {
       },
       fmt: (_, v) => {
         const m = arr(v.negotiationMarginPct);
-        return m.length >= 2 ? `${m[0]} à ${m[1]} %` : '4 à 7 %';
+        return m.length >= 2 ? `−${m[0]} à −${m[1]} %` : '−4 à −7 %';
       },
       lowBetter: false,
     },
     {
       label: 'Équipements de série clés',
       val: (v) => arr(v.standardEquipment).length,
-      render: (v) => `<ul style="padding-left:1rem;font-size:0.8rem;">${arr(v.standardEquipment).slice(0, 5).map((e) => `<li>${esc(e)}</li>`).join('')}</ul>`,
+      render: (v) => `<ul style="padding-left:1rem;font-size:0.78rem;">${arr(v.standardEquipment).slice(0, 5).map((e) => `<li>${esc(e)}</li>`).join('')}</ul>`,
       lowBetter: false,
-    },
-    {
-      label: 'Comportement concession',
-      val: () => null,
-      render: (v) => `<span style="font-size:0.8rem;">${esc(v.dealerBehavior || '—')}</span>`,
     },
   ];
 
   main.innerHTML = `
     <div class="section-header">
       <div>
-        <h1 class="section-title">⚖️ Comparateur Côte à Côte (jusqu'à 4 véhicules)</h1>
-        <p class="section-subtitle">Les meilleures valeurs sont surlignées en <strong style="color:var(--emerald);">vert</strong> et les moins favorables en <strong style="color:var(--amber);">ambre</strong>.</p>
-      </div>
-      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
-        <select id="cmp-add-select" class="select-input">
-          <option value="">+ Ajouter un véhicule au comparatif…</option>
-          ${vehicles
-            .filter((v) => !state.compareIds.includes(v.id))
-            .map((v) => `<option value="${esc(v.id)}">${esc(v.brand)} ${esc(v.model)} (${eur((state.scores.get(v.id)?.metrics || metrics(v)).bestNet)})</option>`)
-            .join('')}
-        </select>
+        <h1 class="section-title">⚖️ Comparateur Dédié par Motorisation & Catégorie (jusqu'à 4 modèles)</h1>
+        <p class="section-subtitle">
+          Comparez directement des modèles <strong>de même technologie</strong> (Hybrides non-rechargeables HEV entre eux, Hybrides rechargeables PHEV entre eux, ou 100 % Électriques BEV entre eux).
+        </p>
       </div>
     </div>
+
+    <!-- 1. Duels pré-configurés par motorisation en 1 clic -->
+    <section class="panel-card" style="margin-bottom:1.25rem;">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.75rem;">
+        <h3 style="margin:0;">🎯 1. Choisissez un comparatif dédié en 1 clic (par motorisation & usage) :</h3>
+        <span class="muted" style="font-size:0.8rem;">Cliquez sur une carte pour charger automatiquement les 4 véhicules face à face</span>
+      </div>
+      <div class="cmp-presets-grid" id="cmp-presets-grid">
+        ${COMPARATOR_PRESETS.map(
+          (p) => `
+          <button type="button" class="cmp-preset-card ${activePreset?.id === p.id ? 'active' : ''}" data-preset="${esc(p.id)}">
+            <div class="cmp-preset-title">
+              <span>${esc(p.title)}</span>
+              ${activePreset?.id === p.id ? `<span class="tag tag-bonus">Actif</span>` : ''}
+            </div>
+            <div class="cmp-preset-sub">${esc(p.subtitle)}</div>
+          </button>
+        `
+        ).join('')}
+      </div>
+
+      <!-- 2. Filtre par motorisation pour composer son propre comparatif homogène -->
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.75rem;padding-top:0.85rem;border-top:1px solid var(--border);">
+        <div style="display:flex;align-items:center;gap:0.45rem;flex-wrap:wrap;">
+          <span style="font-size:0.8rem;font-weight:700;color:var(--muted);">Filtrer l'ajout par énergie :</span>
+          ${[
+            ['ALL', 'Toutes énergies'],
+            ['HEV', '🌿 Hybrides non-rechargeables (HEV)'],
+            ['PHEV', '🔌 Hybrides rechargeables (PHEV)'],
+            ['BEV', '⚡ 100 % Électriques (BEV)'],
+          ]
+            .map(
+              ([k, lbl]) =>
+                `<button type="button" class="pill-btn ${comparatorEnergyFilter === k ? 'active' : ''}" data-cmp-energy="${k}">${lbl}</button>`
+            )
+            .join('')}
+        </div>
+
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;">
+          <select id="cmp-add-select" class="select-input">
+            <option value="">+ Ajouter un modèle ${comparatorEnergyFilter !== 'ALL' ? comparatorEnergyFilter : ''} au tableau (${filteredSelectorVehicles.length} dispo)…</option>
+            ${filteredSelectorVehicles
+              .map(
+                (v) =>
+                  `<option value="${esc(v.id)}">[${esc(v.energy)}] ${esc(fullModelName(v))} — ${eur((state.scores.get(v.id)?.metrics || metrics(v)).bestNet)} (${
+                    (state.scores.get(v.id)?.metrics || metrics(v)).bestMonthly || '?'
+                  } €/mois)</option>`
+              )
+              .join('')}
+          </select>
+        </div>
+      </div>
+    </section>
 
     <div class="compare-table-wrap">
       <table class="compare-table">
         <thead>
           <tr>
-            <th>Critères</th>
+            <th>Critères comparés</th>
             ${selected
-              .map(
-                (v) => `
+              .map((v) => {
+                const imgUrl = safeUrl(v.imageUrl, '');
+                const cutoutCls = isCutoutImage(imgUrl) ? 'is-cutout' : '';
+                const o0 = arr(v.offers)[0] || {};
+                const offerUrl = safeUrl(o0.sourceUrl, safeUrl(v.officialUrl));
+                return `
               <th>
+                ${
+                  imgUrl
+                    ? `<div class="cmp-photo-wrap">
+                        <img src="${esc(imgUrl)}" alt="${esc(fullModelName(v))}" class="cmp-photo ${cutoutCls}" loading="lazy" />
+                      </div>`
+                    : ''
+                }
                 <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:0.5rem;">
                   <div>
-                    <div class="muted" style="font-size:0.74rem;text-transform:uppercase;">${esc(v.brand)}</div>
-                    <a href="#/vehicule/${encodeURIComponent(v.id)}" style="font-family:'Space Grotesk',sans-serif;font-size:1.05rem;font-weight:700;color:var(--text);">
-                      ${esc(v.model)}
+                    <div class="muted" style="font-size:0.74rem;text-transform:uppercase;">${esc(v.brand)} · ${esc(v.energy)}</div>
+                    <a href="#/vehicule/${encodeURIComponent(v.id)}" style="font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;color:var(--text);">
+                      ${esc(fullModelName(v))}
                     </a>
                   </div>
                   <button type="button" class="btn-icon js-remove-cmp" data-id="${esc(v.id)}" title="Retirer" style="width:28px;height:28px;font-size:0.75rem;">✕</button>
                 </div>
                 <div style="margin-top:0.5rem;display:flex;gap:0.4rem;flex-wrap:wrap;">
-                  <a href="${esc(safeUrl(v.officialUrl))}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Site ${esc(v.brand)} ↗</a>
-                  <a href="#/vehicule/${encodeURIComponent(v.id)}" class="btn btn-outline btn-sm">Fiche</a>
+                  <a href="${esc(offerUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Offre ${esc(v.brand)} ↗</a>
+                  <a href="#/vehicule/${encodeURIComponent(v.id)}" class="btn btn-outline btn-sm">Détail Prix</a>
                 </div>
               </th>
-            `
-              )
+            `;
+              })
               .join('')}
           </tr>
         </thead>
@@ -1209,12 +1535,31 @@ function renderComparator(main) {
     </div>
   `;
 
+  document.getElementById('cmp-presets-grid')?.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-preset]');
+    if (!btn) return;
+    const pid = btn.getAttribute('data-preset');
+    const preset = COMPARATOR_PRESETS.find((x) => x.id === pid);
+    if (!preset) return;
+    state.compareIds = [...preset.ids];
+    comparatorEnergyFilter = preset.energy || 'ALL';
+    saveCompare();
+    renderComparator(main);
+    toast(`Comparatif chargé : ${preset.title}`);
+  });
+
+  main.querySelectorAll('[data-cmp-energy]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      comparatorEnergyFilter = btn.getAttribute('data-cmp-energy') || 'ALL';
+      renderComparator(main);
+    });
+  });
+
   document.getElementById('cmp-add-select')?.addEventListener('change', (e) => {
     const id = e.target.value;
     if (!id) return;
     if (state.compareIds.length >= 4) {
-      toast('Maximum 4 véhicules simultanés — retirez-en un d\'abord.');
-      return;
+      state.compareIds.shift();
     }
     if (!state.compareIds.includes(id)) {
       state.compareIds.push(id);
@@ -1792,6 +2137,34 @@ function route() {
 
 /* ---------- Initialisation & Événements globaux ---------- */
 document.addEventListener('click', (e) => {
+  const rivalsBtn = e.target.closest('.js-compare-rivals');
+  if (rivalsBtn) {
+    e.preventDefault();
+    const id = rivalsBtn.getAttribute('data-id');
+    const vehicles = arr(state.data?.vehicles);
+    const target = vehicles.find((v) => v.id === id);
+    if (!target) return;
+    const sameEnergySameSeg = vehicles
+      .filter((v) => v.id !== id && v.energy === target.energy && v.segment === target.segment)
+      .sort((a, b) => (state.scores.get(b.id)?.score || 0) - (state.scores.get(a.id)?.score || 0));
+    const sameEnergyOther = vehicles
+      .filter((v) => v.id !== id && v.energy === target.energy && v.segment !== target.segment && v.isSUV === target.isSUV)
+      .sort((a, b) => (state.scores.get(b.id)?.score || 0) - (state.scores.get(a.id)?.score || 0));
+    const sameEnergyAny = vehicles
+      .filter((v) => v.id !== id && v.energy === target.energy)
+      .sort((a, b) => (state.scores.get(b.id)?.score || 0) - (state.scores.get(a.id)?.score || 0));
+    const picks = [target.id];
+    for (const cand of [...sameEnergySameSeg, ...sameEnergyOther, ...sameEnergyAny]) {
+      if (picks.length < 4 && !picks.includes(cand.id)) picks.push(cand.id);
+    }
+    state.compareIds = picks;
+    comparatorEnergyFilter = target.energy;
+    saveCompare();
+    location.hash = '#/comparateur';
+    toast(`Comparatif ${target.energy} ouvert autour de ${fullModelName(target)} !`);
+    return;
+  }
+
   const cmpBtn = e.target.closest('.js-toggle-cmp');
   if (cmpBtn) {
     e.preventDefault();
