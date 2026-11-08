@@ -1,0 +1,16 @@
+{
+  "name": "comparateur-auto-fr",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Comparateur intelligent d'offres véhicules (BEV, PHEV, HEV) sur le marché français avec alertes quotidiennes",
+  "scripts": {
+    "update": "node scripts/update-offers.mjs",
+    "digest": "node scripts/send-digest.mjs",
+    "digest:dry": "node scripts/send-digest.mjs --dry-run",
+    "digest:push": "node scripts/send-digest.mjs --push"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}

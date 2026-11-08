@@ -1,0 +1,4780 @@
+{
+  "updatedAt": "2026-11-08T06:30:00Z",
+  "source": "Veille tarifaire constructeurs & réseaux de concessions France (novembre 2026)",
+  "incentives": {
+    "summary": "En France, les véhicules 100 % électriques assemblés en Europe et validant l'éco-score ADEME bénéficient du Bonus Écologique / Coup de pouce CEE (2 000 € à 4 200 € selon revenus). Les véhicules importés de Chine (BEV) sont soumis aux droits de douane européens additionnels et exclus du bonus gouvernemental, mais compensent par d'importantes remises constructeurs ou basculent sur des motorisations hybrides (HEV/PHEV) exemptées de surtaxe douanière.",
+    "items": [
+      {
+        "name": "Bonus Écologique & Coup de pouce CEE Véhicules Particuliers",
+        "amountEur": 4000,
+        "conditions": "Véhicule 100 % électrique neuf < 47 000 € TTC, masse < 2 400 kg, éco-score environnemental ADEME validé (production européenne).",
+        "url": "https://www.service-public.fr/particuliers/vosdroits/F34014"
+      },
+      {
+        "name": "Prime au rétrofit / Surprime ZFE & Reprise",
+        "amountEur": 1500,
+        "conditions": "Mise au rebut d'un véhicule thermique ancien (Crit'Air 3 ou plus) sous conditions de ressources.",
+        "url": "https://www.primealaconversion.gouv.fr/"
+      },
+      {
+        "name": "Exonération Taxe sur l'Affectation des Véhicules et Malus Poids",
+        "amountEur": 0,
+        "conditions": "Exonération totale de malus CO2 pour les BEV et abattement de 600 kg sur le malus au poids pour les véhicules électriques et hybrides rechargeables (> 50 km autonomie urbaine).",
+        "url": "https://www.service-public.fr/particuliers/vosdroits/F35947"
+      }
+    ]
+  },
+  "marketInsights": [
+    {
+      "title": "Offensive des marques chinoises : contournement par l'hybride (HEV/PHEV) et remises BEV",
+      "content": "Face aux droits de douane additionnels de l'UE sur les électriques produites en Chine (17 % pour BYD, 18,8 % pour Geely, 35,3 % pour SAIC/MG) et à l'exclusion du bonus écologique français, les constructeurs chinois répliquent sur deux fronts : d'une part des « primes constructeurs » de 4 000 € à 7 000 € sur leurs BEV (MG4, BYD Dolphin/Atto 3), et d'autre part le lancement massif de SUV hybrides et hybrides rechargeables non surtaxés (BYD Seal U DM-i, MG ZS Hybrid+) à des tarifs ultra-compétitifs.",
+      "brands": [
+        "BYD",
+        "MG",
+        "Leapmotor",
+        "Xpeng"
+      ],
+      "impact": "Très favorable à l'acheteur : jusqu'à 16 % de remise directe sur stock."
+    },
+    {
+      "title": "Pression sur les stocks de fin d'année en concession",
+      "content": "Pour atteindre leurs quotas CAFE (émissions moyennes de CO2 de la flotte) et boucler les objectifs annuels, les concessions françaises accordent des remises exceptionnelles sur les véhicules en stock livrables sous 30 jours, ainsi que des taux de LOA/LLD bonifiés (0 % à 2,9 %).",
+      "brands": [
+        "Renault",
+        "Peugeot",
+        "Volkswagen",
+        "Hyundai",
+        "Kia",
+        "Skoda"
+      ],
+      "impact": "Forte marge de négociation en fin d'année sur les véhicules en stock."
+    },
+    {
+      "title": "Duel de l'automne : Renault 5 E-Tech vs Citroën ë-C3 vs Leapmotor T03",
+      "content": "La bataille des citadines électriques à prix serré fait rage. La Citroën ë-C3 (dès 149 €/mois) et la Renault 5 E-Tech (dès 220 €/mois) capitalisent sur le bonus écologique grâce à leur fabrication européenne (Trnava et Douai), tandis que Leapmotor s'appuie sur le réseau Stellantis et son usine de Tychy en Pologne pour proposer la T03 à 99 €/mois !",
+      "brands": [
+        "Renault",
+        "Citroën",
+        "Leapmotor"
+      ],
+      "impact": "Les citadines électriques deviennent enfin plus accessibles que leurs homologues thermiques."
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "renault-scenic-e-tech-87",
+      "brand": "Renault",
+      "model": "Scénic E-Tech Electric 220 ch Grande Autonomie",
+      "origin": "France",
+      "madeIn": "Douai (France - ElectriCity)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "SUV familial",
+      "isSUV": true,
+      "officialUrl": "https://www.renault.fr/vehicules-electriques/scenic-e-tech-electrique.html",
+      "configuratorUrl": "https://www.renault.fr/vehicules-electriques/scenic-e-tech-electrique/configurateur.html",
+      "imageUrl": null,
+      "priceFromEur": 46990,
+      "priceToEur": 52490,
+      "specs": {
+        "lengthMm": 4470,
+        "widthMm": 1864,
+        "trunkL": 545,
+        "seats": 5,
+        "powerHp": 220,
+        "batteryKwh": 87,
+        "rangeKm": 625,
+        "electricRangeKm": 625,
+        "consumption": "16,8 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 150,
+        "acChargeKw": 22,
+        "charge10to80min": 37,
+        "zeroTo100s": 7.9,
+        "towingKg": 1100,
+        "warranty": "2 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km (70 % SOH)"
+      },
+      "versions": [
+        {
+          "name": "Evolution 60 kWh (170 ch - 430 km)",
+          "priceEur": 39990,
+          "highlights": [
+            "OpenR Link 9\"",
+            "Pompe à chaleur",
+            "Caméra de recul"
+          ]
+        },
+        {
+          "name": "Techno 87 kWh (220 ch - 625 km)",
+          "priceEur": 46990,
+          "highlights": [
+            "OpenR Link 12\" Google",
+            "Autonomie 625 km",
+            "Jantes 19\""
+          ]
+        },
+        {
+          "name": "Iconic 87 kWh (220 ch - 625 km)",
+          "priceEur": 52490,
+          "highlights": [
+            "Toit Solarbay",
+            "Son Harman Kardon",
+            "Sièges massants"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "OpenR Link 12\" avec Google Automotive",
+        "Pompe à chaleur de série",
+        "Régulateur adaptatif intelligent",
+        "Chargeur embarqué AC 22 kW",
+        "Toit panoramique Solarbay opacifiant (selon finition)",
+        "Banquette arrière 40/20/40"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible (segment supérieur)"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "LLD Renault Scénic E-Tech Techno 87 kWh — 37 mois",
+          "monthlyEur": 370,
+          "durationMonths": 37,
+          "downPaymentEur": 3500,
+          "kmPerYear": 10000,
+          "discountEur": 2500,
+          "priceAfterEur": 40490,
+          "validUntil": "2026-11-30",
+          "conditions": "Bonus écologique de 4 000 € déduit en 1er loyer + remise Renault 2 500 €.",
+          "sourceUrl": "https://www.renault.fr/offres-du-moment/offres-vehicules-electriques.html"
+        }
+      ],
+      "dealerBehavior": "Élu Voiture de l'Année, fort succès mais concessions ouvertes à 2 500 € de remise ou pack accessoires offert.",
+      "negotiationMarginPct": [
+        4,
+        7
+      ],
+      "pros": [
+        "Autonomie réelle remarquable (625 km WLTP)",
+        "Système OpenR Link Google au sommet du marché",
+        "Habitabilité et coffre de 545 L"
+      ],
+      "cons": [
+        "Recharge DC limitée à 150 kW (pas de 800V)",
+        "Finition d'accès avec petite batterie 60 kWh moins polyvalente"
+      ],
+      "ratings": {
+        "value": 9.1,
+        "range": 9.5,
+        "comfort": 9,
+        "equipment": 9.2
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "renault-5-e-tech-150",
+      "brand": "Renault",
+      "model": "R5 E-Tech Electric 150 ch Autonomie Confort",
+      "origin": "France",
+      "madeIn": "Douai (France - ElectriCity)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "Citadine",
+      "isSUV": false,
+      "officialUrl": "https://www.renault.fr/vehicules-electriques/r5-e-tech-electrique.html",
+      "configuratorUrl": "https://www.renault.fr/vehicules-electriques/r5-e-tech-electrique/configurateur.html",
+      "imageUrl": null,
+      "priceFromEur": 27990,
+      "priceToEur": 35490,
+      "specs": {
+        "lengthMm": 3922,
+        "widthMm": 1774,
+        "trunkL": 326,
+        "seats": 5,
+        "powerHp": 150,
+        "batteryKwh": 52,
+        "rangeKm": 410,
+        "electricRangeKm": 410,
+        "consumption": "14,9 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 100,
+        "acChargeKw": 11,
+        "charge10to80min": 30,
+        "zeroTo100s": 8,
+        "towingKg": 500,
+        "warranty": "2 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km (70 % SOH)"
+      },
+      "versions": [
+        {
+          "name": "Five 40 kWh (95 ch)",
+          "priceEur": 24990,
+          "highlights": [
+            "Écran 10\"",
+            "Sans charge rapide DC"
+          ]
+        },
+        {
+          "name": "Evolution 40 kWh (120 ch)",
+          "priceEur": 27990,
+          "highlights": [
+            "Pompe à chaleur",
+            "Charge DC 80 kW",
+            "V2L"
+          ]
+        },
+        {
+          "name": "Techno 52 kWh (150 ch)",
+          "priceEur": 31490,
+          "highlights": [
+            "OpenR Link Google 10\"",
+            "410 km WLTP",
+            "Jantes 18\""
+          ]
+        },
+        {
+          "name": "Iconic Cinq 52 kWh (150 ch)",
+          "priceEur": 33490,
+          "highlights": [
+            "Sièges chauffants",
+            "Peinture bi-ton",
+            "Parking mains-libres"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Pompe à chaleur de série (dès Evolution)",
+        "OpenR Link 10\" avec services Google intégrés",
+        "Chargeur AC 11 kW bidirectionnel V2G / V2L",
+        "Régulateur de vitesse adaptatif",
+        "Climatisation automatique"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Éligible leasing social sous conditions"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "LLD Renault R5 E-Tech Evolution 120 ch — 37 mois",
+          "monthlyEur": 220,
+          "durationMonths": 37,
+          "downPaymentEur": 0,
+          "kmPerYear": 10000,
+          "discountEur": 1800,
+          "priceAfterEur": 22190,
+          "validUntil": "2026-11-30",
+          "conditions": "1er loyer couvert par le bonus écologique de 4 000 €.",
+          "sourceUrl": "https://www.renault.fr/offres-du-moment/offres-vehicules-electriques.html"
+        }
+      ],
+      "dealerBehavior": "Forte demande mais disponibilité immédiate en concession. Négociation possible sur frais de mise en route ou 3-5 % sur stock.",
+      "negotiationMarginPct": [
+        3,
+        6
+      ],
+      "pros": [
+        "Design coup de cœur et agilité en ville",
+        "OpenR Link fluide avec Google",
+        "Made in France éligible au bonus"
+      ],
+      "cons": [
+        "Places arrière étroites pour adultes",
+        "Version Five de base sans charge DC"
+      ],
+      "ratings": {
+        "value": 8.8,
+        "range": 8.1,
+        "comfort": 8.2,
+        "equipment": 9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "renault-4-e-tech-150",
+      "brand": "Renault",
+      "model": "R4 E-Tech Electric 150 ch",
+      "origin": "France",
+      "madeIn": "Maubeuge (France - ElectriCity)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.renault.fr/vehicules-electriques/r4-e-tech-electrique.html",
+      "configuratorUrl": "https://www.renault.fr/vehicules-electriques/r4-e-tech-electrique/configurateur.html",
+      "imageUrl": null,
+      "priceFromEur": 29990,
+      "priceToEur": 36990,
+      "specs": {
+        "lengthMm": 4140,
+        "widthMm": 1800,
+        "trunkL": 420,
+        "seats": 5,
+        "powerHp": 150,
+        "batteryKwh": 52,
+        "rangeKm": 400,
+        "electricRangeKm": 400,
+        "consumption": "15,4 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 100,
+        "acChargeKw": 11,
+        "charge10to80min": 30,
+        "zeroTo100s": 8.5,
+        "towingKg": 750,
+        "warranty": "2 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km (70 % SOH)"
+      },
+      "versions": [
+        {
+          "name": "Evolution 40 kWh (120 ch)",
+          "priceEur": 29990,
+          "highlights": [
+            "Écran 10\"",
+            "Toit ouvrant toile en option",
+            "DC 80 kW"
+          ]
+        },
+        {
+          "name": "Techno 52 kWh (150 ch)",
+          "priceEur": 33490,
+          "highlights": [
+            "Autonomie 400 km",
+            "Google OpenR Link",
+            "Barres de toit"
+          ]
+        },
+        {
+          "name": "Iconic 52 kWh (150 ch)",
+          "priceEur": 36490,
+          "highlights": [
+            "Sellerie rétro pied-de-poule",
+            "One Pedal",
+            "Pack hiver"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Système OpenR Link 10\" Google",
+        "Seuil de coffre bas à 61 cm avec plancher modulable",
+        "Fonction One Pedal et V2L",
+        "Pompe à chaleur"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Éligible leasing social"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "Offre Lancement Renault R4 E-Tech Techno — 37 mois",
+          "monthlyEur": 249,
+          "durationMonths": 37,
+          "downPaymentEur": 2000,
+          "kmPerYear": 10000,
+          "discountEur": 1500,
+          "priceAfterEur": 27990,
+          "validUntil": "2026-11-30",
+          "conditions": "Bonus écologique 4 000 € déduit, apport 2 000 €.",
+          "sourceUrl": "https://www.renault.fr/offres-du-moment.html"
+        }
+      ],
+      "dealerBehavior": "Nouveauté phare 2026 : carnet de commandes plein, remises faibles (2 à 4 %), focus sur les financements LLD bonifiés.",
+      "negotiationMarginPct": [
+        2,
+        5
+      ],
+      "pros": [
+        "Praticité et seuil de coffre bas",
+        "Toit en toile découvrable unique",
+        "Espace à bord supérieur à la R5"
+      ],
+      "cons": [
+        "Tarif supérieur à la R5 de ~2 000 €",
+        "Charge rapide limitée à 100 kW"
+      ],
+      "ratings": {
+        "value": 8.7,
+        "range": 8,
+        "comfort": 8.5,
+        "equipment": 8.9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "renault-megane-e-tech-ev60",
+      "brand": "Renault",
+      "model": "Mégane E-Tech Electric EV60 220 ch",
+      "origin": "France",
+      "madeIn": "Douai (France - ElectriCity)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "Compacte",
+      "isSUV": false,
+      "officialUrl": "https://www.renault.fr/vehicules-electriques/megane-e-tech-electrique.html",
+      "configuratorUrl": "https://www.renault.fr/vehicules-electriques/megane-e-tech-electrique/configurateur.html",
+      "imageUrl": null,
+      "priceFromEur": 34000,
+      "priceToEur": 42000,
+      "specs": {
+        "lengthMm": 4200,
+        "widthMm": 1768,
+        "trunkL": 440,
+        "seats": 5,
+        "powerHp": 220,
+        "batteryKwh": 60,
+        "rangeKm": 470,
+        "electricRangeKm": 470,
+        "consumption": "15,6 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 130,
+        "acChargeKw": 22,
+        "charge10to80min": 30,
+        "zeroTo100s": 7.4,
+        "towingKg": 900,
+        "warranty": "2 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km (70 % SOH)"
+      },
+      "versions": [
+        {
+          "name": "Equilibre EV40 (130 ch)",
+          "priceEur": 34000,
+          "highlights": [
+            "Écran 9\"",
+            "Autonomie 300 km"
+          ]
+        },
+        {
+          "name": "Techno EV60 Optimum Charge (220 ch)",
+          "priceEur": 38000,
+          "highlights": [
+            "Google 12\"",
+            "Autonomie 470 km",
+            "AC 22 kW + DC 130 kW"
+          ]
+        },
+        {
+          "name": "Iconic EV60 (220 ch)",
+          "priceEur": 41500,
+          "highlights": [
+            "Cuir",
+            "Audio Harman Kardon",
+            "Jantes 20\""
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "OpenR Link 12\" avec Google Automotive",
+        "Chargeur AC 22 kW triphasé de série",
+        "Caméra de recul et radars",
+        "Pompe à chaleur"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Éligible sous critères"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Remise Stock Renault Automne — Mégane EV60 Techno",
+          "monthlyEur": 279,
+          "durationMonths": 37,
+          "downPaymentEur": 2500,
+          "kmPerYear": 10000,
+          "discountEur": 3500,
+          "priceAfterEur": 30500,
+          "validUntil": "2026-11-30",
+          "conditions": "Bonus de 4 000 € + remise commerciale immédiate de 3 500 € sur véhicules en stock.",
+          "sourceUrl": "https://www.renault.fr/offres-du-moment.html"
+        }
+      ],
+      "dealerBehavior": "Concurrencée par le Scénic et la R5, les concessionnaires accordent d'excellentes remises jusqu'à 3 500 € sur stock.",
+      "negotiationMarginPct": [
+        6,
+        10
+      ],
+      "pros": [
+        "Comportement routier dynamique et précis",
+        "Recharge AC 22 kW idéale sur bornes publiques",
+        "Système Google très fluide"
+      ],
+      "cons": [
+        "Visibilité arrière réduite",
+        "Seuil de chargement du coffre haut"
+      ],
+      "ratings": {
+        "value": 8.6,
+        "range": 8.3,
+        "comfort": 8.2,
+        "equipment": 8.8
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "renault-symbioz-e-tech-145",
+      "brand": "Renault",
+      "model": "Symbioz E-Tech full hybrid 145",
+      "origin": "France",
+      "madeIn": "Valladolid (Espagne)",
+      "chineseBrand": false,
+      "energy": "HEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.renault.fr/vehicules-hybrides/symbioz-e-tech-hybride.html",
+      "configuratorUrl": "https://www.renault.fr/vehicules-hybrides/symbioz-e-tech-hybride/configurateur.html",
+      "imageUrl": null,
+      "priceFromEur": 33400,
+      "priceToEur": 38400,
+      "specs": {
+        "lengthMm": 4413,
+        "widthMm": 1797,
+        "trunkL": 492,
+        "seats": 5,
+        "powerHp": 145,
+        "batteryKwh": 1.2,
+        "rangeKm": 980,
+        "electricRangeKm": 3,
+        "consumption": "4,7 L/100 km",
+        "co2gkm": 105,
+        "dcChargeKw": null,
+        "acChargeKw": null,
+        "charge10to80min": null,
+        "zeroTo100s": 10.6,
+        "towingKg": 750,
+        "warranty": "2 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km"
+      },
+      "versions": [
+        {
+          "name": "Evolution E-Tech 145",
+          "priceEur": 33400,
+          "highlights": [
+            "OpenR Link 10,4\"",
+            "Caméra de recul"
+          ]
+        },
+        {
+          "name": "Techno E-Tech 145",
+          "priceEur": 35400,
+          "highlights": [
+            "Google intégré",
+            "Banquette coulissante 16 cm",
+            "Jantes 18\""
+          ]
+        },
+        {
+          "name": "Iconic E-Tech 145",
+          "priceEur": 38400,
+          "highlights": [
+            "Toit Solarbay",
+            "Pack City Premium",
+            "Hayon motorisé"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Banquette arrière coulissante sur 16 cm (coffre 492 à 624 L)",
+        "Écran multimédia OpenR Link avec Google",
+        "Freinage régénératif e-shifter",
+        "Climatisation automatique"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "LLD Renault Symbioz Techno E-Tech 145 — 37 mois",
+          "monthlyEur": 290,
+          "durationMonths": 37,
+          "downPaymentEur": 3000,
+          "kmPerYear": 10000,
+          "discountEur": 2200,
+          "priceAfterEur": 33200,
+          "validUntil": "2026-11-30",
+          "conditions": "37 mois, remise Renault reprise de 2 200 € incluse.",
+          "sourceUrl": "https://www.renault.fr/offres-du-moment.html"
+        }
+      ],
+      "dealerBehavior": "Format intermédiaire très apprécié des familles. Remises de 2 000 € à 2 500 € facilement négociables sur stock.",
+      "negotiationMarginPct": [
+        5,
+        8
+      ],
+      "pros": [
+        "Banquette coulissante et coffre géant jusqu'à 624 L",
+        "Consommation réelle sous les 5 L/100 km",
+        "Interface OpenR Link avec Google"
+      ],
+      "cons": [
+        "Performances modestes en charge",
+        "Boîte à crabots parfois hésitante"
+      ],
+      "ratings": {
+        "value": 8.7,
+        "range": 9,
+        "comfort": 8.4,
+        "equipment": 8.8
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "renault-austral-e-tech-200",
+      "brand": "Renault",
+      "model": "Austral E-Tech full hybrid 200",
+      "origin": "France",
+      "madeIn": "Palencia (Espagne)",
+      "chineseBrand": false,
+      "energy": "HEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.renault.fr/vehicules-hybrides/austral-e-tech-hybride.html",
+      "configuratorUrl": "https://www.renault.fr/vehicules-hybrides/austral-e-tech-hybride/configurateur.html",
+      "imageUrl": null,
+      "priceFromEur": 40800,
+      "priceToEur": 46200,
+      "specs": {
+        "lengthMm": 4510,
+        "widthMm": 1825,
+        "trunkL": 500,
+        "seats": 5,
+        "powerHp": 200,
+        "batteryKwh": 2,
+        "rangeKm": 1100,
+        "electricRangeKm": 3,
+        "consumption": "4,6 L/100 km",
+        "co2gkm": 104,
+        "dcChargeKw": null,
+        "acChargeKw": null,
+        "charge10to80min": null,
+        "zeroTo100s": 8.4,
+        "towingKg": 1500,
+        "warranty": "2 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km"
+      },
+      "versions": [
+        {
+          "name": "Evolution E-Tech 200",
+          "priceEur": 40800,
+          "highlights": [
+            "OpenR Link 9\"",
+            "Aide au parking"
+          ]
+        },
+        {
+          "name": "Techno Esprit Alpine E-Tech 200",
+          "priceEur": 43300,
+          "highlights": [
+            "Look Alpine",
+            "OpenR Link 12\"",
+            "Jantes Daytona 20\""
+          ]
+        },
+        {
+          "name": "Iconic Esprit Alpine E-Tech 200",
+          "priceEur": 46200,
+          "highlights": [
+            "4Control advanced",
+            "Affichage tête haute",
+            "Sièges électriques chauffants"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Système 4Control advanced 4 roues directrices (selon finition)",
+        "Double écran 12\" OpenR Link avec Google",
+        "Feux LED matriciels",
+        "Consommation homologuée 4,6 L/100 km"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Offre Reprise Renault Austral Techno Esprit Alpine",
+          "monthlyEur": 350,
+          "durationMonths": 37,
+          "downPaymentEur": 3500,
+          "kmPerYear": 10000,
+          "discountEur": 3200,
+          "priceAfterEur": 40100,
+          "validUntil": "2026-11-30",
+          "conditions": "Remise immédiate de 3 200 € sur véhicules en stock.",
+          "sourceUrl": "https://www.renault.fr/offres-du-moment.html"
+        }
+      ],
+      "dealerBehavior": "Fin d'année active, les concessions ont des objectifs de volume sur Austral et accordent 7 à 9 % de remise.",
+      "negotiationMarginPct": [
+        6,
+        9
+      ],
+      "pros": [
+        "Agilité bluffante grâce aux 4 roues directrices",
+        "Moteur E-Tech 200 sobre et réactif",
+        "Présentation flatteuse Esprit Alpine"
+      ],
+      "cons": [
+        "Suspension un peu ferme avec jantes 20\"",
+        "Pas de transmission intégrale mécanique"
+      ],
+      "ratings": {
+        "value": 8.5,
+        "range": 9.3,
+        "comfort": 8.6,
+        "equipment": 9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "renault-clio-e-tech-145",
+      "brand": "Renault",
+      "model": "Clio E-Tech full hybrid 145",
+      "origin": "France",
+      "madeIn": "Bursa (Turquie) / Novo Mesto (Slovénie)",
+      "chineseBrand": false,
+      "energy": "HEV",
+      "segment": "Citadine",
+      "isSUV": false,
+      "officialUrl": "https://www.renault.fr/vehicules-hybrides/clio-e-tech-hybride.html",
+      "configuratorUrl": "https://www.renault.fr/vehicules-hybrides/clio-e-tech-hybride/configurateur.html",
+      "imageUrl": null,
+      "priceFromEur": 23900,
+      "priceToEur": 27700,
+      "specs": {
+        "lengthMm": 4053,
+        "widthMm": 1798,
+        "trunkL": 301,
+        "seats": 5,
+        "powerHp": 145,
+        "batteryKwh": 1.2,
+        "rangeKm": 900,
+        "electricRangeKm": 3,
+        "consumption": "4,2 L/100 km",
+        "co2gkm": 95,
+        "dcChargeKw": null,
+        "acChargeKw": null,
+        "charge10to80min": null,
+        "zeroTo100s": 9.3,
+        "towingKg": 900,
+        "warranty": "2 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km"
+      },
+      "versions": [
+        {
+          "name": "Evolution E-Tech 145",
+          "priceEur": 23900,
+          "highlights": [
+            "Écran 7\"",
+            "Climatisation",
+            "Radars AR"
+          ]
+        },
+        {
+          "name": "Techno E-Tech 145",
+          "priceEur": 25400,
+          "highlights": [
+            "Écran 9,3\"",
+            "Caméra de recul",
+            "Jantes alu 16\""
+          ]
+        },
+        {
+          "name": "Esprit Alpine E-Tech 145",
+          "priceEur": 27700,
+          "highlights": [
+            "Look sport Alpine",
+            "Instrumentation 10\"",
+            "Jantes 17\""
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Motorisation hybride sans recharge 145 ch",
+        "Écran Easy Link avec navigation",
+        "Régulateur/limiteur de vitesse",
+        "Aide au maintien dans la voie"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "LLD Renault Clio E-Tech Techno — 37 mois",
+          "monthlyEur": 189,
+          "durationMonths": 37,
+          "downPaymentEur": 2000,
+          "kmPerYear": 10000,
+          "discountEur": 2100,
+          "priceAfterEur": 23300,
+          "validUntil": "2026-11-30",
+          "conditions": "Offre LLD 37 mois avec reprise d'un ancien véhicule.",
+          "sourceUrl": "https://www.renault.fr/offres-du-moment.html"
+        }
+      ],
+      "dealerBehavior": "Best-seller absolu en France, stocks élevés, marges de négociation généreuses (jusqu'à 9-11 % en concession).",
+      "negotiationMarginPct": [
+        7,
+        11
+      ],
+      "pros": [
+        "Consommation urbaine imbattable (< 4 L/100 km)",
+        "Polyvalence route et insonorisation soignée",
+        "Finition intérieure de référence"
+      ],
+      "cons": [
+        "Coffre réduit à 301 L sur la version hybride",
+        "Accoups occasionnels de la boîte à crabots"
+      ],
+      "ratings": {
+        "value": 9.2,
+        "range": 9.4,
+        "comfort": 8.7,
+        "equipment": 8.6
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "renault-captur-e-tech-145",
+      "brand": "Renault",
+      "model": "Captur E-Tech full hybrid 145",
+      "origin": "France",
+      "madeIn": "Valladolid (Espagne)",
+      "chineseBrand": false,
+      "energy": "HEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.renault.fr/vehicules-hybrides/captur-e-tech-hybride.html",
+      "configuratorUrl": "https://www.renault.fr/vehicules-hybrides/captur-e-tech-hybride/configurateur.html",
+      "imageUrl": null,
+      "priceFromEur": 28900,
+      "priceToEur": 33800,
+      "specs": {
+        "lengthMm": 4239,
+        "widthMm": 1797,
+        "trunkL": 326,
+        "seats": 5,
+        "powerHp": 145,
+        "batteryKwh": 1.2,
+        "rangeKm": 920,
+        "electricRangeKm": 3,
+        "consumption": "4,6 L/100 km",
+        "co2gkm": 105,
+        "dcChargeKw": null,
+        "acChargeKw": null,
+        "charge10to80min": null,
+        "zeroTo100s": 10,
+        "towingKg": 750,
+        "warranty": "2 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km"
+      },
+      "versions": [
+        {
+          "name": "Evolution E-Tech 145",
+          "priceEur": 28900,
+          "highlights": [
+            "OpenR Link 10,4\"",
+            "Caméra de recul"
+          ]
+        },
+        {
+          "name": "Techno E-Tech 145",
+          "priceEur": 30900,
+          "highlights": [
+            "Google intégré",
+            "Banquette coulissante",
+            "Jantes 18\""
+          ]
+        },
+        {
+          "name": "Esprit Alpine E-Tech 145",
+          "priceEur": 33800,
+          "highlights": [
+            "Détails bleus Alpine",
+            "Sellerie sport",
+            "Pédalier alu"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Nouvel écran tactile vertical 10,4\" OpenR Link",
+        "Banquette arrière coulissante sur 16 cm",
+        "Reconnaissance des panneaux",
+        "Climatisation automatique"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Offre Les Jours Renault — Captur E-Tech 145 Techno",
+          "monthlyEur": 239,
+          "durationMonths": 37,
+          "downPaymentEur": 2500,
+          "kmPerYear": 10000,
+          "discountEur": 2600,
+          "priceAfterEur": 28300,
+          "validUntil": "2026-11-30",
+          "conditions": "2 600 € d'avantage client sur Captur restylé en stock.",
+          "sourceUrl": "https://www.renault.fr/offres-du-moment.html"
+        }
+      ],
+      "dealerBehavior": "Le restylage avec face avant affûtée plaît beaucoup. Stocks réguliers, 6 à 9 % de remise envisageable.",
+      "negotiationMarginPct": [
+        6,
+        9
+      ],
+      "pros": [
+        "Restylage moderne et Google OpenR Link",
+        "Banquette coulissante pratique",
+        "Confort de roulement remarquable"
+      ],
+      "cons": [
+        "Coffre tronqué par la batterie (326 L)",
+        "Performances modestes sur autoroute en montée"
+      ],
+      "ratings": {
+        "value": 8.8,
+        "range": 9.1,
+        "comfort": 8.6,
+        "equipment": 8.8
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "dacia-spring-electric-65",
+      "brand": "Dacia",
+      "model": "Spring Electric 65 ch",
+      "origin": "Roumanie",
+      "madeIn": "Shiyan (Chine)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "Citadine",
+      "isSUV": false,
+      "officialUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/spring.html",
+      "configuratorUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/spring/configurateur.html",
+      "imageUrl": null,
+      "priceFromEur": 18900,
+      "priceToEur": 21200,
+      "specs": {
+        "lengthMm": 3701,
+        "widthMm": 1583,
+        "trunkL": 308,
+        "seats": 4,
+        "powerHp": 65,
+        "batteryKwh": 26.8,
+        "rangeKm": 228,
+        "electricRangeKm": 228,
+        "consumption": "13,2 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 30,
+        "acChargeKw": 7.4,
+        "charge10to80min": 45,
+        "zeroTo100s": 13.7,
+        "towingKg": 0,
+        "warranty": "3 ans ou 100 000 km",
+        "batteryWarranty": "8 ans ou 120 000 km"
+      },
+      "versions": [
+        {
+          "name": "Expression Electric 45",
+          "priceEur": 17400,
+          "highlights": [
+            "Media Control",
+            "Climatisation manuelle"
+          ]
+        },
+        {
+          "name": "Extreme Electric 65",
+          "priceEur": 19900,
+          "highlights": [
+            "Écran tactile 10\"",
+            "Navigation",
+            "V2L"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Écran multimédia Media Nav Live 10\" (Extreme)",
+        "Chargeur bidirectionnel V2L pour brancher des appareils",
+        "Aide au stationnement arrière",
+        "Freinage automatique d'urgence"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible (fabriquée en Chine)"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Prime Eco Dacia de 2 500 € sur Spring en stock",
+          "monthlyEur": 119,
+          "durationMonths": 37,
+          "downPaymentEur": 1500,
+          "kmPerYear": 10000,
+          "discountEur": 2500,
+          "priceAfterEur": 17400,
+          "validUntil": "2026-11-30",
+          "conditions": "Prime commerciale Dacia compensant l'absence de bonus écologique d'État.",
+          "sourceUrl": "https://www.dacia.fr/offres.html"
+        }
+      ],
+      "dealerBehavior": "Pour compenser la perte du bonus écologique, Dacia offre une remise de 2 000 à 2 500 € pour maintenir la mensualité sous 120 €/mois.",
+      "negotiationMarginPct": [
+        4,
+        8
+      ],
+      "pros": [
+        "Voiture électrique neuve la moins chère du marché",
+        "Gabarit ultra compact facile à garer",
+        "Coffre de 308 L surprenant"
+      ],
+      "cons": [
+        "Fabriquée en Chine donc privée de bonus",
+        "Performances et tenue de route limitées hors agglomération"
+      ],
+      "ratings": {
+        "value": 8.9,
+        "range": 6.8,
+        "comfort": 6.9,
+        "equipment": 7.2
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "dacia-duster-hybrid-140",
+      "brand": "Dacia",
+      "model": "Duster Hybrid 140 ch",
+      "origin": "Roumanie",
+      "madeIn": "Mioveni (Roumanie)",
+      "chineseBrand": false,
+      "energy": "HEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/duster.html",
+      "configuratorUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/duster/configurateur.html",
+      "imageUrl": null,
+      "priceFromEur": 26600,
+      "priceToEur": 28100,
+      "specs": {
+        "lengthMm": 4343,
+        "widthMm": 1813,
+        "trunkL": 430,
+        "seats": 5,
+        "powerHp": 140,
+        "batteryKwh": 1.2,
+        "rangeKm": 950,
+        "electricRangeKm": 3,
+        "consumption": "4,8 L/100 km",
+        "co2gkm": 110,
+        "dcChargeKw": null,
+        "acChargeKw": null,
+        "charge10to80min": null,
+        "zeroTo100s": 10.1,
+        "towingKg": 1200,
+        "warranty": "3 ans ou 100 000 km",
+        "batteryWarranty": "8 ans ou 160 000 km"
+      },
+      "versions": [
+        {
+          "name": "Expression Hybrid 140",
+          "priceEur": 26600,
+          "highlights": [
+            "Écran 10,1\"",
+            "Caméra de recul",
+            "Climatisation auto"
+          ]
+        },
+        {
+          "name": "Journey Hybrid 140",
+          "priceEur": 28100,
+          "highlights": [
+            "Chargeur induction",
+            "Frein de parking élec",
+            "Jantes 18\""
+          ]
+        },
+        {
+          "name": "Extreme Hybrid 140",
+          "priceEur": 28100,
+          "highlights": [
+            "Sellerie lavable MicroCloud",
+            "Barres de toit modulables",
+            "Tapis caoutchouc"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Système multimédia Media Display 10,1\" avec réplication sans fil",
+        "Système de fixation modulable YouClip",
+        "Climatisation automatique",
+        "Motorisation hybride 140 ch avec boîte automatique"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "LLD Dacia Duster Hybrid 140 Journey — 37 mois",
+          "monthlyEur": 235,
+          "durationMonths": 37,
+          "downPaymentEur": 2500,
+          "kmPerYear": 10000,
+          "discountEur": 800,
+          "priceAfterEur": 27300,
+          "validUntil": "2026-11-30",
+          "conditions": "Offre LLD Dacia Sérénité 37 mois / 30 000 km.",
+          "sourceUrl": "https://www.dacia.fr/offres.html"
+        }
+      ],
+      "dealerBehavior": "Politique de prix nets Dacia : peu de remises directes sur le neuf (1 à 3 %), mais facilités sur accessoires YouClip et frais d'immatriculation.",
+      "negotiationMarginPct": [
+        1,
+        4
+      ],
+      "pros": [
+        "Rapport prix/prestations imbattable sur le segment SUV",
+        "Design robuste et système YouClip malin",
+        "Sobriété de la motorisation E-Tech 140"
+      ],
+      "cons": [
+        "Insonorisation sur autoroute perfectible",
+        "Pas de version 4x4 sur l'hybride"
+      ],
+      "ratings": {
+        "value": 9.3,
+        "range": 9.1,
+        "comfort": 8.3,
+        "equipment": 8.4
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "dacia-bigster-hybrid-155",
+      "brand": "Dacia",
+      "model": "Bigster Hybrid 155 ch",
+      "origin": "Roumanie",
+      "madeIn": "Mioveni (Roumanie)",
+      "chineseBrand": false,
+      "energy": "HEV",
+      "segment": "SUV familial",
+      "isSUV": true,
+      "officialUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/bigster.html",
+      "configuratorUrl": "https://www.dacia.fr/gamme-electrique-et-hybride/bigster/configurateur.html",
+      "imageUrl": null,
+      "priceFromEur": 29900,
+      "priceToEur": 32900,
+      "specs": {
+        "lengthMm": 4570,
+        "widthMm": 1820,
+        "trunkL": 667,
+        "seats": 5,
+        "powerHp": 155,
+        "batteryKwh": 1.4,
+        "rangeKm": 1050,
+        "electricRangeKm": 3,
+        "consumption": "4,9 L/100 km",
+        "co2gkm": 112,
+        "dcChargeKw": null,
+        "acChargeKw": null,
+        "charge10to80min": null,
+        "zeroTo100s": 9.7,
+        "towingKg": 1400,
+        "warranty": "3 ans ou 100 000 km",
+        "batteryWarranty": "8 ans ou 160 000 km"
+      },
+      "versions": [
+        {
+          "name": "Expression Hybrid 155",
+          "priceEur": 29900,
+          "highlights": [
+            "Écran 10,1\"",
+            "Clim bi-zone",
+            "Radars AV/AR"
+          ]
+        },
+        {
+          "name": "Journey Hybrid 155",
+          "priceEur": 31900,
+          "highlights": [
+            "Hayon électrique",
+            "Toit ouvrant panoramique",
+            "Siège conducteur électrique"
+          ]
+        },
+        {
+          "name": "Extreme Hybrid 155",
+          "priceEur": 32900,
+          "highlights": [
+            "Look baroudeur",
+            "MicroCloud",
+            "Barres de toit modulaires"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Nouveau moteur 4 cylindres 1.8L Hybrid 155 ch",
+        "Coffre record de 667 L",
+        "Toit ouvrant panoramique vitré (Journey/Extreme)",
+        "Hayon motorisé avec ouverture mains libres"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "Offre Lancement Dacia Bigster Hybrid 155 Journey",
+          "monthlyEur": 279,
+          "durationMonths": 37,
+          "downPaymentEur": 3000,
+          "kmPerYear": 10000,
+          "discountEur": 700,
+          "priceAfterEur": 31200,
+          "validUntil": "2026-11-30",
+          "conditions": "Offre 37 mois avec entretien inclus.",
+          "sourceUrl": "https://www.dacia.fr/offres.html"
+        }
+      ],
+      "dealerBehavior": "Grand SUV familial le plus accessible de France. Carnet de réservation très dynamique, négociation limitée aux packs d'options.",
+      "negotiationMarginPct": [
+        1,
+        3
+      ],
+      "pros": [
+        "Coffre gigantesque de 667 L",
+        "Nouveau bloc hybride 155 ch plus musclé",
+        "Toit panoramique et hayon électrique inédits chez Dacia"
+      ],
+      "cons": [
+        "Pas de configuration 7 places proposée",
+        "Plastiques durs omniprésents"
+      ],
+      "ratings": {
+        "value": 9.4,
+        "range": 9.2,
+        "comfort": 8.5,
+        "equipment": 8.6
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "peugeot-e-2008-156",
+      "brand": "Peugeot",
+      "model": "e-2008 156 ch Autonomie Élargie (54 kWh)",
+      "origin": "France",
+      "madeIn": "Vigo (Espagne)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.peugeot.fr/gamme/peugeot-2008/electrique.html",
+      "configuratorUrl": "https://www.peugeot.fr/configurateur/2008.html",
+      "imageUrl": null,
+      "priceFromEur": 38750,
+      "priceToEur": 42550,
+      "specs": {
+        "lengthMm": 4304,
+        "widthMm": 1775,
+        "trunkL": 434,
+        "seats": 5,
+        "powerHp": 156,
+        "batteryKwh": 54,
+        "rangeKm": 406,
+        "electricRangeKm": 406,
+        "consumption": "15,2 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 100,
+        "acChargeKw": 11,
+        "charge10to80min": 30,
+        "zeroTo100s": 9.1,
+        "towingKg": 500,
+        "warranty": "2 ans + Peugeot Allure Care 8 ans ou 160 000 km",
+        "batteryWarranty": "8 ans ou 160 000 km (70 % SOH)"
+      },
+      "versions": [
+        {
+          "name": "Active e-2008 136 ch (50 kWh)",
+          "priceEur": 35950,
+          "highlights": [
+            "Écran 10\"",
+            "Clim auto"
+          ]
+        },
+        {
+          "name": "Allure e-2008 156 ch (54 kWh)",
+          "priceEur": 38750,
+          "highlights": [
+            "i-Cockpit 2D 10\"",
+            "Radars AV/AR",
+            "Autonomie 406 km"
+          ]
+        },
+        {
+          "name": "GT e-2008 156 ch (54 kWh)",
+          "priceEur": 41250,
+          "highlights": [
+            "i-Cockpit 3D",
+            "Projecteurs Full LED",
+            "Recharge induction"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Garantie Peugeot Allure Care 8 ans / 160 000 km",
+        "Écran tactile 10\" avec i-Connect et mirroring sans fil",
+        "Projecteurs LED 3 griffes",
+        "Pompe à chaleur"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Éligible sous conditions"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Prime Électrique Peugeot + Bonus — e-2008 Allure 156 ch",
+          "monthlyEur": 269,
+          "durationMonths": 37,
+          "downPaymentEur": 2500,
+          "kmPerYear": 10000,
+          "discountEur": 4200,
+          "priceAfterEur": 30550,
+          "validUntil": "2026-11-30",
+          "conditions": "Bonus de 4 000 € inclus + remise immédiate Peugeot Store de 4 200 €.",
+          "sourceUrl": "https://www.peugeot.fr/offres-vehicules-electriques.html"
+        }
+      ],
+      "dealerBehavior": "Concurrence rude avec Renault et BYD. Concessions très agressives : 4 000 à 4 500 € de remise immédiate sur stock livrable.",
+      "negotiationMarginPct": [
+        7,
+        11
+      ],
+      "pros": [
+        "Programme Peugeot Allure Care 8 ans très rassurant",
+        "Châssis précis et agréable",
+        "Design affirmé avec signature lumineuse 3 griffes"
+      ],
+      "cons": [
+        "Charge DC limitée à 100 kW",
+        "Position de conduite i-Cockpit qui ne convient pas à tous les gabarits"
+      ],
+      "ratings": {
+        "value": 8.5,
+        "range": 8,
+        "comfort": 8.4,
+        "equipment": 8.7
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "peugeot-e-3008-210",
+      "brand": "Peugeot",
+      "model": "e-3008 210 ch Autonomie Standard (73 kWh)",
+      "origin": "France",
+      "madeIn": "Sochaux (France)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.peugeot.fr/gamme/peugeot-3008/electrique.html",
+      "configuratorUrl": "https://www.peugeot.fr/configurateur/3008.html",
+      "imageUrl": null,
+      "priceFromEur": 44990,
+      "priceToEur": 49990,
+      "specs": {
+        "lengthMm": 4542,
+        "widthMm": 1895,
+        "trunkL": 520,
+        "seats": 5,
+        "powerHp": 210,
+        "batteryKwh": 73,
+        "rangeKm": 527,
+        "electricRangeKm": 527,
+        "consumption": "16,7 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 160,
+        "acChargeKw": 11,
+        "charge10to80min": 30,
+        "zeroTo100s": 8.8,
+        "towingKg": 1250,
+        "warranty": "Peugeot Allure Care 8 ans ou 160 000 km",
+        "batteryWarranty": "8 ans ou 160 000 km (70 % SOH)"
+      },
+      "versions": [
+        {
+          "name": "Allure 73 kWh (210 ch - 527 km)",
+          "priceEur": 44990,
+          "highlights": [
+            "Double écran 10\"",
+            "Caméra HD",
+            "Allure Care 8 ans"
+          ]
+        },
+        {
+          "name": "GT 73 kWh (210 ch - 527 km)",
+          "priceEur": 49490,
+          "highlights": [
+            "Écran panoramique 21\"",
+            "Pixel LED",
+            "i-Toggles tactiles"
+          ]
+        },
+        {
+          "name": "Long Range 98 kWh (230 ch - 700 km)",
+          "priceEur": 51490,
+          "highlights": [
+            "Autonomie record 700 km",
+            "Batterie Made in France ACC"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Écran panoramique incurvé 21\" (finition GT)",
+        "Garantie Allure Care 8 ans / 160 000 km",
+        "Pompe à chaleur de série",
+        "Planificateur d'itinéraire de voyage connecté"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "LLD Peugeot e-3008 Allure 210 ch — 37 mois",
+          "monthlyEur": 389,
+          "durationMonths": 37,
+          "downPaymentEur": 3500,
+          "kmPerYear": 10000,
+          "discountEur": 2800,
+          "priceAfterEur": 38190,
+          "validUntil": "2026-11-30",
+          "conditions": "Bonus de 4 000 € déduit en 1er loyer + avantage client Peugeot de 2 800 €.",
+          "sourceUrl": "https://www.peugeot.fr/offres-vehicules-electriques.html"
+        }
+      ],
+      "dealerBehavior": "Fabriqué à Sochaux et éligible au bonus d'État sur Allure. Remises de 2 500 à 3 500 € accordées en concession pour contrer le Scénic E-Tech.",
+      "negotiationMarginPct": [
+        5,
+        8
+      ],
+      "pros": [
+        "Planche de bord spectaculaire avec écran incurvé 21\"",
+        "Insonorisation et confort de roulement haut de gamme",
+        "Garantie 8 ans Allure Care"
+      ],
+      "cons": [
+        "Poids élevé (~2 150 kg)",
+        "Tarif de la version Long Range 98 kWh au-delà du seuil bonus"
+      ],
+      "ratings": {
+        "value": 8.8,
+        "range": 9,
+        "comfort": 9.2,
+        "equipment": 9.1
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "peugeot-3008-hybrid-136",
+      "brand": "Peugeot",
+      "model": "3008 Hybrid 136 ch e-DCS6",
+      "origin": "France",
+      "madeIn": "Sochaux (France)",
+      "chineseBrand": false,
+      "energy": "HEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.peugeot.fr/gamme/peugeot-3008/hybride.html",
+      "configuratorUrl": "https://www.peugeot.fr/configurateur/3008.html",
+      "imageUrl": null,
+      "priceFromEur": 38490,
+      "priceToEur": 42990,
+      "specs": {
+        "lengthMm": 4542,
+        "widthMm": 1895,
+        "trunkL": 520,
+        "seats": 5,
+        "powerHp": 136,
+        "batteryKwh": 0.9,
+        "rangeKm": 950,
+        "electricRangeKm": 2,
+        "consumption": "5,5 L/100 km",
+        "co2gkm": 124,
+        "dcChargeKw": null,
+        "acChargeKw": null,
+        "charge10to80min": null,
+        "zeroTo100s": 10.2,
+        "towingKg": 1250,
+        "warranty": "2 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km"
+      },
+      "versions": [
+        {
+          "name": "Allure Hybrid 136",
+          "priceEur": 38490,
+          "highlights": [
+            "Double écran 10\"",
+            "Jantes 19\"",
+            "Caméra de recul"
+          ]
+        },
+        {
+          "name": "GT Hybrid 136",
+          "priceEur": 42990,
+          "highlights": [
+            "Écran 21\" Panoramic",
+            "Alcantara",
+            "Pixel LED"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Boîte électrifiée e-DCS6 à double embrayage",
+        "Écran panoramique Peugeot",
+        "Climatisation automatique bi-zone",
+        "Projecteurs LED 3 griffes"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 170,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Offre Reprise Peugeot 3008 Hybrid 136 Allure",
+          "monthlyEur": 319,
+          "durationMonths": 37,
+          "downPaymentEur": 3000,
+          "kmPerYear": 10000,
+          "discountEur": 3000,
+          "priceAfterEur": 35490,
+          "validUntil": "2026-11-30",
+          "conditions": "Remise immédiate de 3 000 € sur véhicules neufs en stock.",
+          "sourceUrl": "https://www.peugeot.fr/offres-du-moment.html"
+        }
+      ],
+      "dealerBehavior": "Très demandé en flotte et particulier, les concessions accordent néanmoins 6 à 8 % de remise pour liquider les stocks.",
+      "negotiationMarginPct": [
+        6,
+        8
+      ],
+      "pros": [
+        "Ligne de SUV Fastback moderne",
+        "Habitacle très valorisant",
+        "Coffre de 520 L préservé"
+      ],
+      "cons": [
+        "Micro-hybridation 48V modeste par rapport aux vrais HEV Toyota/Renault",
+        "Petit malus CO2 de 170 €"
+      ],
+      "ratings": {
+        "value": 8.4,
+        "range": 8.8,
+        "comfort": 8.7,
+        "equipment": 8.9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "peugeot-e-208-156",
+      "brand": "Peugeot",
+      "model": "e-208 156 ch Autonomie Élargie (51 kWh)",
+      "origin": "France",
+      "madeIn": "Zaragoza (Espagne)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "Citadine",
+      "isSUV": false,
+      "officialUrl": "https://www.peugeot.fr/gamme/peugeot-208/electrique.html",
+      "configuratorUrl": "https://www.peugeot.fr/configurateur/208.html",
+      "imageUrl": null,
+      "priceFromEur": 33400,
+      "priceToEur": 37300,
+      "specs": {
+        "lengthMm": 4055,
+        "widthMm": 1745,
+        "trunkL": 309,
+        "seats": 5,
+        "powerHp": 156,
+        "batteryKwh": 51,
+        "rangeKm": 410,
+        "electricRangeKm": 410,
+        "consumption": "14,4 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 100,
+        "acChargeKw": 11,
+        "charge10to80min": 27,
+        "zeroTo100s": 8.2,
+        "towingKg": 500,
+        "warranty": "Peugeot Allure Care 8 ans ou 160 000 km",
+        "batteryWarranty": "8 ans ou 160 000 km (70 % SOH)"
+      },
+      "versions": [
+        {
+          "name": "Active e-208 136 ch (50 kWh)",
+          "priceEur": 31750,
+          "highlights": [
+            "Écran 10\"",
+            "Pompe à chaleur"
+          ]
+        },
+        {
+          "name": "Allure e-208 156 ch (51 kWh)",
+          "priceEur": 33400,
+          "highlights": [
+            "410 km WLTP",
+            "i-Cockpit 2D",
+            "Radars AV/AR"
+          ]
+        },
+        {
+          "name": "GT e-208 156 ch (51 kWh)",
+          "priceEur": 36300,
+          "highlights": [
+            "i-Cockpit 3D",
+            "Phares Full LED",
+            "Jantes 17\" Shaw"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Programme Allure Care 8 ans / 160 000 km inclus",
+        "Écran central HD 10\" avec i-Connect",
+        "Chargeur rapide DC 100 kW",
+        "Pompe à chaleur"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Éligible leasing social sous conditions"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "LLD Peugeot e-208 Allure 156 ch — 37 mois",
+          "monthlyEur": 219,
+          "durationMonths": 37,
+          "downPaymentEur": 2000,
+          "kmPerYear": 10000,
+          "discountEur": 3500,
+          "priceAfterEur": 25900,
+          "validUntil": "2026-11-30",
+          "conditions": "Bonus de 4 000 € inclus + remise Peugeot Store de 3 500 €.",
+          "sourceUrl": "https://www.peugeot.fr/offres-vehicules-electriques.html"
+        }
+      ],
+      "dealerBehavior": "Riposte directe à la R5 E-Tech : Peugeot brade les e-208 en stock avec jusqu'à 10 % de remise constructeur.",
+      "negotiationMarginPct": [
+        7,
+        12
+      ],
+      "pros": [
+        "Consommation maîtrisée et autonomie de 410 km",
+        "Comportement routier dynamique et silencieux",
+        "Garantie Allure Care 8 ans"
+      ],
+      "cons": [
+        "Habitabilité arrière moyenne",
+        "Tarif catalogue encore élevé avant remises"
+      ],
+      "ratings": {
+        "value": 8.7,
+        "range": 8.4,
+        "comfort": 8.4,
+        "equipment": 8.8
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "citroen-e-c3-113",
+      "brand": "Citroën",
+      "model": "ë-C3 113 ch Batterie LFP 44 kWh",
+      "origin": "France",
+      "madeIn": "Trnava (Slovaquie)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "Citadine",
+      "isSUV": false,
+      "officialUrl": "https://www.citroen.fr/vehicules/nouvelle-e-c3.html",
+      "configuratorUrl": "https://www.citroen.fr/configurateur/nouvelle-e-c3.html",
+      "imageUrl": null,
+      "priceFromEur": 23300,
+      "priceToEur": 27800,
+      "specs": {
+        "lengthMm": 4015,
+        "widthMm": 1755,
+        "trunkL": 310,
+        "seats": 5,
+        "powerHp": 113,
+        "batteryKwh": 44,
+        "rangeKm": 326,
+        "electricRangeKm": 326,
+        "consumption": "15,8 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 100,
+        "acChargeKw": 7.4,
+        "charge10to80min": 26,
+        "zeroTo100s": 10.4,
+        "towingKg": 550,
+        "warranty": "2 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km (70 % SOH)"
+      },
+      "versions": [
+        {
+          "name": "You 44 kWh (113 ch)",
+          "priceEur": 23300,
+          "highlights": [
+            "Support smartphone",
+            "Suspensions Citroën Advanced Comfort"
+          ]
+        },
+        {
+          "name": "Plus 44 kWh (113 ch)",
+          "priceEur": 25500,
+          "highlights": [
+            "Écran tactile 10,25\"",
+            "Barres de toit"
+          ]
+        },
+        {
+          "name": "Max 44 kWh (113 ch)",
+          "priceEur": 27800,
+          "highlights": [
+            "Sièges Advanced Comfort",
+            "Caméra de recul",
+            "Clim auto"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Suspensions Citroën Advanced Comfort à butées hydrauliques",
+        "Recharge rapide DC 100 kW (26 min)",
+        "Affichage tête haute Citroën Head Up Display",
+        "Écran 10,25\" avec navigation sans fil (finition Max)"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Vedette du leasing social à partir de 54 €/mois"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "LLD Citroën ë-C3 You — 37 mois à loyer serré",
+          "monthlyEur": 149,
+          "durationMonths": 37,
+          "downPaymentEur": 1000,
+          "kmPerYear": 10000,
+          "discountEur": 1200,
+          "priceAfterEur": 18100,
+          "validUntil": "2026-11-30",
+          "conditions": "Bonus écologique de 4 000 € déduit, 37 mois.",
+          "sourceUrl": "https://www.citroen.fr/offres.html"
+        }
+      ],
+      "dealerBehavior": "Offre d'accès électrique très plébiscitée. Délais de livraison désormais stabilisés, 1 000 € de remise ou accessoires négociables.",
+      "negotiationMarginPct": [
+        3,
+        6
+      ],
+      "pros": [
+        "Prix canon éligible au bonus d'État",
+        "Suspensions ultra confortables à butées hydrauliques",
+        "Recharge DC 100 kW de série"
+      ],
+      "cons": [
+        "Finition intérieure plastique basique sur version You",
+        "Autonomie autoroute limitée (batterie 44 kWh LFP)"
+      ],
+      "ratings": {
+        "value": 9.3,
+        "range": 7.7,
+        "comfort": 8.9,
+        "equipment": 7.9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "citroen-e-c3-aircross-113",
+      "brand": "Citroën",
+      "model": "ë-C3 Aircross 113 ch (44 kWh)",
+      "origin": "France",
+      "madeIn": "Trnava (Slovaquie)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.citroen.fr/vehicules/nouveau-c3-aircross.html",
+      "configuratorUrl": "https://www.citroen.fr/configurateur/nouveau-c3-aircross.html",
+      "imageUrl": null,
+      "priceFromEur": 27400,
+      "priceToEur": 31900,
+      "specs": {
+        "lengthMm": 4390,
+        "widthMm": 1790,
+        "trunkL": 460,
+        "seats": 5,
+        "powerHp": 113,
+        "batteryKwh": 44,
+        "rangeKm": 305,
+        "electricRangeKm": 305,
+        "consumption": "16,4 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 100,
+        "acChargeKw": 7.4,
+        "charge10to80min": 26,
+        "zeroTo100s": 11.2,
+        "towingKg": 550,
+        "warranty": "2 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km (70 % SOH)"
+      },
+      "versions": [
+        {
+          "name": "You 44 kWh (5 places)",
+          "priceEur": 27400,
+          "highlights": [
+            "Suspensions Advanced Comfort",
+            "Climatisation"
+          ]
+        },
+        {
+          "name": "Max 44 kWh (5 places)",
+          "priceEur": 31400,
+          "highlights": [
+            "Écran 10,25\"",
+            "Barres de toit",
+            "Caméra de recul"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Suspensions Citroën Advanced Comfort",
+        "Écran multimédia 10,25\" avec navigation",
+        "Climatisation automatique",
+        "Recharge rapide DC 100 kW"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Éligible sous critères"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "LLD Citroën ë-C3 Aircross You — 37 mois",
+          "monthlyEur": 199,
+          "durationMonths": 37,
+          "downPaymentEur": 1500,
+          "kmPerYear": 10000,
+          "discountEur": 1500,
+          "priceAfterEur": 21900,
+          "validUntil": "2026-11-30",
+          "conditions": "Bonus de 4 000 € déduit, 37 mois.",
+          "sourceUrl": "https://www.citroen.fr/offres.html"
+        }
+      ],
+      "dealerBehavior": "SUV compact électrique le plus abordable de France après bonus. Concessions ouvertes à 1 500 € de remise pour booster le lancement.",
+      "negotiationMarginPct": [
+        4,
+        7
+      ],
+      "pros": [
+        "SUV familial électrique à ~22 000 € bonus déduit",
+        "Confort des suspensions moelleuses",
+        "Coffre de 460 L"
+      ],
+      "cons": [
+        "Autonomie de 305 km un peu juste pour les départs en vacances",
+        "Accélérations très tranquilles"
+      ],
+      "ratings": {
+        "value": 9,
+        "range": 7.5,
+        "comfort": 8.8,
+        "equipment": 8
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "tesla-model-y-propulsion",
+      "brand": "Tesla",
+      "model": "Model Y Propulsion Grande Autonomie",
+      "origin": "États-Unis",
+      "madeIn": "Berlin-Grünheide (Allemagne)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "SUV familial",
+      "isSUV": true,
+      "officialUrl": "https://www.tesla.com/fr_fr/modely",
+      "configuratorUrl": "https://www.tesla.com/fr_fr/modely/design",
+      "imageUrl": null,
+      "priceFromEur": 44990,
+      "priceToEur": 57990,
+      "specs": {
+        "lengthMm": 4751,
+        "widthMm": 1921,
+        "trunkL": 854,
+        "seats": 5,
+        "powerHp": 299,
+        "batteryKwh": 75,
+        "rangeKm": 600,
+        "electricRangeKm": 600,
+        "consumption": "14,9 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 250,
+        "acChargeKw": 11,
+        "charge10to80min": 22,
+        "zeroTo100s": 5.9,
+        "towingKg": 1600,
+        "warranty": "4 ans ou 80 000 km",
+        "batteryWarranty": "8 ans ou 192 000 km (70 % SOH)"
+      },
+      "versions": [
+        {
+          "name": "Propulsion Standard (455 km)",
+          "priceEur": 42990,
+          "highlights": [
+            "Assemblé à Berlin",
+            "Bonus 4 000 € éligible"
+          ]
+        },
+        {
+          "name": "Propulsion Grande Autonomie (600 km)",
+          "priceEur": 46990,
+          "highlights": [
+            "Autonomie 600 km WLTP",
+            "Supercharge 250 kW",
+            "Bonus 4 000 € éligible"
+          ]
+        },
+        {
+          "name": "Grande Autonomie Transmission Intégrale (533 km)",
+          "priceEur": 51990,
+          "highlights": [
+            "Dual Motor 4x4",
+            "0-100 en 5.0 s"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Réseau Superchargeur Tesla plug-and-play",
+        "Écran 15,4\" tactile avec planificateur d'itinéraire de pointe",
+        "Autopilot de série",
+        "Coffre arrière 854 L + coffre avant (frunk) de 117 L",
+        "Système audio 13 haut-parleurs avec caisson"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Ajustement Tarifaire Tesla & Taux LOA 1.99%",
+          "monthlyEur": 389,
+          "durationMonths": 36,
+          "downPaymentEur": 3500,
+          "kmPerYear": 10000,
+          "discountEur": 2000,
+          "priceAfterEur": 40990,
+          "validUntil": "2026-11-30",
+          "conditions": "Modèles en inventaire livrables en France, bonus 4 000 € déduit.",
+          "sourceUrl": "https://www.tesla.com/fr_fr/inventory/new/my"
+        }
+      ],
+      "dealerBehavior": "Pas de négociation en showroom, mais remises directes sur l'onglet Véhicules disponibles (ajustements de 1 500 à 3 000 € en fin de trimestre).",
+      "negotiationMarginPct": [
+        2,
+        5
+      ],
+      "pros": [
+        "Réseau Superchargeurs inégalé",
+        "Espace intérieur et volume de coffre imbattables (854 L + frunk)",
+        "Efficience énergétique record"
+      ],
+      "cons": [
+        "Suspension un peu ferme sur routes dégradées",
+        "Pas de combiné d'instrumentation face au conducteur ni d'Apple CarPlay"
+      ],
+      "ratings": {
+        "value": 9.3,
+        "range": 9.6,
+        "comfort": 8.5,
+        "equipment": 9.3
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "tesla-model-3-highland",
+      "brand": "Tesla",
+      "model": "Model 3 Restylée (Highland) Propulsion",
+      "origin": "États-Unis",
+      "madeIn": "Shanghai (Chine)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "Berline",
+      "isSUV": false,
+      "officialUrl": "https://www.tesla.com/fr_fr/model3",
+      "configuratorUrl": "https://www.tesla.com/fr_fr/model3/design",
+      "imageUrl": null,
+      "priceFromEur": 39990,
+      "priceToEur": 49990,
+      "specs": {
+        "lengthMm": 4720,
+        "widthMm": 1849,
+        "trunkL": 594,
+        "seats": 5,
+        "powerHp": 283,
+        "batteryKwh": 60,
+        "rangeKm": 554,
+        "electricRangeKm": 554,
+        "consumption": "13,2 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 170,
+        "acChargeKw": 11,
+        "charge10to80min": 24,
+        "zeroTo100s": 6.1,
+        "towingKg": 1000,
+        "warranty": "4 ans ou 80 000 km",
+        "batteryWarranty": "8 ans ou 160 000 km (70 % SOH)"
+      },
+      "versions": [
+        {
+          "name": "Propulsion (554 km WLTP)",
+          "priceEur": 39990,
+          "highlights": [
+            "Sièges ventilés",
+            "Écran arrière 8\"",
+            "Vitrage acoustique"
+          ]
+        },
+        {
+          "name": "Grande Autonomie Propulsion (702 km)",
+          "priceEur": 44990,
+          "highlights": [
+            "Autonomie record 702 km WLTP",
+            "Audio 17 HP"
+          ]
+        },
+        {
+          "name": "Grande Autonomie Transmission Intégrale (629 km)",
+          "priceEur": 48990,
+          "highlights": [
+            "Dual Motor AWD",
+            "0-100 en 4.4 s"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Sièges avant chauffants et ventilés en cuir vegan",
+        "Écran tactile arrière 8\" avec streaming vidéo et clim",
+        "Vitrage acoustique 360° pour un silence remarquable",
+        "Éclairage d'ambiance LED personnalisable",
+        "Accès aux Superchargeurs Tesla"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible (fabriquée en Chine)"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Offre Inventaire Tesla Model 3 — Taux LOA 0.99%",
+          "monthlyEur": 329,
+          "durationMonths": 36,
+          "downPaymentEur": 3000,
+          "kmPerYear": 10000,
+          "discountEur": 2500,
+          "priceAfterEur": 37490,
+          "validUntil": "2026-11-30",
+          "conditions": "Véhicules neufs disponibles en stock avec taux de financement bonifié.",
+          "sourceUrl": "https://www.tesla.com/fr_fr/inventory/new/m3"
+        }
+      ],
+      "dealerBehavior": "Exclue du bonus écologique car fabriquée à Shanghai, Tesla compense avec des ajustements de prix sur stock et des taux LOA proches de 0 %.",
+      "negotiationMarginPct": [
+        3,
+        6
+      ],
+      "pros": [
+        "Consommation autoroutière incroyablement basse (13,2 kWh/100 km)",
+        "Confort et insonorisation de berline de luxe",
+        "Écran arrière et sièges ventilés de série"
+      ],
+      "cons": [
+        "Privée du bonus écologique français",
+        "Commandes de clignotants au volant déroutantes au début"
+      ],
+      "ratings": {
+        "value": 9.2,
+        "range": 9.7,
+        "comfort": 9.2,
+        "equipment": 9.4
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "kia-ev3-81kwh",
+      "brand": "Kia",
+      "model": "EV3 Long Range 81,4 kWh",
+      "origin": "Corée du Sud",
+      "madeIn": "Gwangmyeong (Corée du Sud)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.kia.com/fr/modeles/ev3/decouvrir/",
+      "configuratorUrl": "https://www.kia.com/fr/acheter/configurateur/#/modele/ev3",
+      "imageUrl": null,
+      "priceFromEur": 35990,
+      "priceToEur": 45990,
+      "specs": {
+        "lengthMm": 4300,
+        "widthMm": 1850,
+        "trunkL": 460,
+        "seats": 5,
+        "powerHp": 204,
+        "batteryKwh": 81.4,
+        "rangeKm": 605,
+        "electricRangeKm": 605,
+        "consumption": "14,9 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 128,
+        "acChargeKw": 11,
+        "charge10to80min": 31,
+        "zeroTo100s": 7.7,
+        "towingKg": 1000,
+        "warranty": "7 ans ou 150 000 km",
+        "batteryWarranty": "7 ans ou 150 000 km"
+      },
+      "versions": [
+        {
+          "name": "EV3 Standard 58,3 kWh (436 km)",
+          "priceEur": 35990,
+          "highlights": [
+            "Autonomie 436 km",
+            "Triple écran 30\"",
+            "Garantie 7 ans"
+          ]
+        },
+        {
+          "name": "EV3 Long Range 81,4 kWh (605 km)",
+          "priceEur": 40990,
+          "highlights": [
+            "Autonomie 605 km WLTP",
+            "Coffre 460 L + Frunk 25 L"
+          ]
+        },
+        {
+          "name": "Earth 81,4 kWh",
+          "priceEur": 43190,
+          "highlights": [
+            "Sièges chauffants",
+            "Clé digitale 2.0"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Triple écran panoramique (12,3\" + 5,3\" + 12,3\")",
+        "Garantie 7 ans / 150 000 km constructeur",
+        "Coffre 460 L + coffre avant (frunk) de 25 L",
+        "Régulateur adaptatif avec maintien dans la voie",
+        "Charge bidirectionnelle V2L"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "LLD Kia EV3 avec Avantage Client Kia de 4 000 €",
+          "monthlyEur": 289,
+          "durationMonths": 37,
+          "downPaymentEur": 3500,
+          "kmPerYear": 10000,
+          "discountEur": 4000,
+          "priceAfterEur": 31990,
+          "validUntil": "2026-11-30",
+          "conditions": "Avantage client Kia de 4 000 € déduit (compensation bonus écologique).",
+          "sourceUrl": "https://www.kia.com/fr/acheter/offres-du-moment/"
+        }
+      ],
+      "dealerBehavior": "Pour compenser l'absence de bonus écologique (fabriqué en Corée), Kia offre 4 000 € de remise officielle + 3 % négociables.",
+      "negotiationMarginPct": [
+        6,
+        10
+      ],
+      "pros": [
+        "Autonomie remarquable de 605 km dans 4,30 m",
+        "Garantie 7 ans constructeur",
+        "Table coulissante centrale très pratique"
+      ],
+      "cons": [
+        "Architecture 400V (pas de charge ultra-rapide 800V comme EV6)",
+        "Pas de bonus de l'État"
+      ],
+      "ratings": {
+        "value": 8.9,
+        "range": 9.6,
+        "comfort": 8.7,
+        "equipment": 8.9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "kia-niro-ev-64",
+      "brand": "Kia",
+      "model": "Niro EV 204 ch (64,8 kWh)",
+      "origin": "Corée du Sud",
+      "madeIn": "Hwasung (Corée du Sud)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.kia.com/fr/modeles/niro-ev/decouvrir/",
+      "configuratorUrl": "https://www.kia.com/fr/acheter/configurateur/#/modele/niro-ev",
+      "imageUrl": null,
+      "priceFromEur": 41690,
+      "priceToEur": 47690,
+      "specs": {
+        "lengthMm": 4420,
+        "widthMm": 1825,
+        "trunkL": 475,
+        "seats": 5,
+        "powerHp": 204,
+        "batteryKwh": 64.8,
+        "rangeKm": 460,
+        "electricRangeKm": 460,
+        "consumption": "15,7 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 80,
+        "acChargeKw": 11,
+        "charge10to80min": 43,
+        "zeroTo100s": 7.8,
+        "towingKg": 750,
+        "warranty": "7 ans ou 150 000 km",
+        "batteryWarranty": "7 ans ou 150 000 km"
+      },
+      "versions": [
+        {
+          "name": "Motion 64,8 kWh",
+          "priceEur": 41690,
+          "highlights": [
+            "Écran 10,25\"",
+            "Caméra de recul"
+          ]
+        },
+        {
+          "name": "Active 64,8 kWh",
+          "priceEur": 44190,
+          "highlights": [
+            "Conduite semi-autonome",
+            "Sièges chauffants"
+          ]
+        },
+        {
+          "name": "Premium 64,8 kWh",
+          "priceEur": 47690,
+          "highlights": [
+            "Hayon mains-libres",
+            "V2L"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Garantie 7 ans / 150 000 km",
+        "Double écran 10,25\" avec navigation",
+        "Frunk avant 20 L",
+        "Prise 230V V2L à bord"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Offre Déstockage Kia Niro EV — Prime de 5 000 €",
+          "monthlyEur": 319,
+          "durationMonths": 37,
+          "downPaymentEur": 3000,
+          "kmPerYear": 10000,
+          "discountEur": 5000,
+          "priceAfterEur": 36690,
+          "validUntil": "2026-11-30",
+          "conditions": "5 000 € de prime Kia sur Niro EV en stock.",
+          "sourceUrl": "https://www.kia.com/fr/acheter/offres-du-moment/"
+        }
+      ],
+      "dealerBehavior": "Remplacé dans le cœur de gamme par l'EV3, le Niro EV subit de gros déstockages en concession (jusqu'à 6 000 € de remise).",
+      "negotiationMarginPct": [
+        9,
+        13
+      ],
+      "pros": [
+        "Garantie 7 ans Kia",
+        "Habitabilité familiale très accueillante",
+        "Prise V2L 230V"
+      ],
+      "cons": [
+        "Recharge DC lente (80 kW max, 43 min)",
+        "Concurrencé directement par le nouveau Kia EV3"
+      ],
+      "ratings": {
+        "value": 8.3,
+        "range": 8.3,
+        "comfort": 8.5,
+        "equipment": 8.6
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "kia-sportage-hybrid-215",
+      "brand": "Kia",
+      "model": "Sportage Hybride 215 ch",
+      "origin": "Corée du Sud",
+      "madeIn": "Zilina (Slovaquie)",
+      "chineseBrand": false,
+      "energy": "HEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.kia.com/fr/modeles/sportage/decouvrir/",
+      "configuratorUrl": "https://www.kia.com/fr/acheter/configurateur/#/modele/sportage",
+      "imageUrl": null,
+      "priceFromEur": 39990,
+      "priceToEur": 46990,
+      "specs": {
+        "lengthMm": 4515,
+        "widthMm": 1865,
+        "trunkL": 587,
+        "seats": 5,
+        "powerHp": 215,
+        "batteryKwh": 1.49,
+        "rangeKm": 950,
+        "electricRangeKm": 3,
+        "consumption": "5,6 L/100 km",
+        "co2gkm": 126,
+        "dcChargeKw": null,
+        "acChargeKw": null,
+        "charge10to80min": null,
+        "zeroTo100s": 8,
+        "towingKg": 1650,
+        "warranty": "7 ans ou 150 000 km",
+        "batteryWarranty": "7 ans ou 150 000 km"
+      },
+      "versions": [
+        {
+          "name": "Active Hybride 215",
+          "priceEur": 39990,
+          "highlights": [
+            "Double écran 12,3\"",
+            "Clim auto tri-zone"
+          ]
+        },
+        {
+          "name": "Design Hybride 215",
+          "priceEur": 42990,
+          "highlights": [
+            "Jantes 18\"",
+            "Sièges chauffants AV/AR"
+          ]
+        },
+        {
+          "name": "GT-line Premium Hybride 215",
+          "priceEur": 46990,
+          "highlights": [
+            "Toit ouvrant panoramique",
+            "Son Harman Kardon",
+            "Caméra 360°"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Double écran panoramique incurvé 2x 12,3\"",
+        "Garantie 7 ans ou 150 000 km",
+        "Coffre généreux de 587 L",
+        "Climatisation automatique tri-zone"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 230,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Offre Kia Sportage Hybride Active — Remise 3 500 €",
+          "monthlyEur": 339,
+          "durationMonths": 37,
+          "downPaymentEur": 3500,
+          "kmPerYear": 10000,
+          "discountEur": 3500,
+          "priceAfterEur": 36490,
+          "validUntil": "2026-11-30",
+          "conditions": "Remise de 3 500 € pour reprise d'un véhicule.",
+          "sourceUrl": "https://www.kia.com/fr/acheter/offres-du-moment/"
+        }
+      ],
+      "dealerBehavior": "Valeur sûre fabriquée en Slovaquie. Forte disponibilité, remises courantes de 7 à 9 % en concession.",
+      "negotiationMarginPct": [
+        6,
+        9
+      ],
+      "pros": [
+        "Garantie 7 ans très rassurante",
+        "Coffre immense de 587 L",
+        "Habitacle techno et ergonomique"
+      ],
+      "cons": [
+        "Consommation autoroute un peu supérieure aux hybrides Renault/Toyota",
+        "Petit malus CO2 de 230 €"
+      ],
+      "ratings": {
+        "value": 8.7,
+        "range": 8.8,
+        "comfort": 8.8,
+        "equipment": 9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "hyundai-kona-electric-65",
+      "brand": "Hyundai",
+      "model": "Kona Electric 217 ch (65,4 kWh)",
+      "origin": "Corée du Sud",
+      "madeIn": "Nosovice (Tchéquie)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.hyundai.com/fr/fr/modeles/kona-electric.html",
+      "configuratorUrl": "https://www.hyundai.com/fr/fr/modeles/kona-electric/configurateur.html",
+      "imageUrl": null,
+      "priceFromEur": 40850,
+      "priceToEur": 46750,
+      "specs": {
+        "lengthMm": 4355,
+        "widthMm": 1825,
+        "trunkL": 466,
+        "seats": 5,
+        "powerHp": 217,
+        "batteryKwh": 65.4,
+        "rangeKm": 514,
+        "electricRangeKm": 514,
+        "consumption": "14,7 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 102,
+        "acChargeKw": 11,
+        "charge10to80min": 41,
+        "zeroTo100s": 7.8,
+        "towingKg": 750,
+        "warranty": "5 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km"
+      },
+      "versions": [
+        {
+          "name": "Intuitive 48,4 kWh (377 km)",
+          "priceEur": 36850,
+          "highlights": [
+            "Double écran 12,3\"",
+            "Caméra de recul"
+          ]
+        },
+        {
+          "name": "Creative 65,4 kWh (514 km)",
+          "priceEur": 40850,
+          "highlights": [
+            "514 km WLTP",
+            "V2L intérieur/extérieur",
+            "Recharge induction"
+          ]
+        },
+        {
+          "name": "Executive 65,4 kWh (514 km)",
+          "priceEur": 44750,
+          "highlights": [
+            "Vision 360°",
+            "Sièges ventilés",
+            "Hayon mains-libres"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Fabriqué en Tchéquie éligible au Bonus écologique français",
+        "Double écran panoramique 12,3\"",
+        "Technologie V2L bidirectionnelle",
+        "Coffre 466 L + frunk avant 27 L",
+        "Garantie 5 ans kilométrage illimité"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Offre Hyundai Kona Electric Creative — Bonus + Remise 3 500 €",
+          "monthlyEur": 299,
+          "durationMonths": 37,
+          "downPaymentEur": 3000,
+          "kmPerYear": 10000,
+          "discountEur": 3500,
+          "priceAfterEur": 33350,
+          "validUntil": "2026-11-30",
+          "conditions": "Bonus de 4 000 € déduit + remise concession Hyundai de 3 500 €.",
+          "sourceUrl": "https://www.hyundai.com/fr/fr/offres.html"
+        }
+      ],
+      "dealerBehavior": "Fabriqué en Europe, il bénéficie du bonus écologique contrairement à son cousin Kia EV3. Les concessions poussent fort avec 3 000 à 4 000 € de remise.",
+      "negotiationMarginPct": [
+        6,
+        10
+      ],
+      "pros": [
+        "Éligible au bonus écologique de 4 000 €",
+        "Espace à bord généreux et coffre de 466 L",
+        "Efficience énergétique remarquable"
+      ],
+      "cons": [
+        "Puissance de charge DC modeste (102 kW)",
+        "Style avant très clivant"
+      ],
+      "ratings": {
+        "value": 8.9,
+        "range": 9.1,
+        "comfort": 8.6,
+        "equipment": 8.9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "hyundai-inster-electric-49",
+      "brand": "Hyundai",
+      "model": "Inster Electric 115 ch (49 kWh)",
+      "origin": "Corée du Sud",
+      "madeIn": "Gwangju (Corée du Sud)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "Citadine",
+      "isSUV": false,
+      "officialUrl": "https://www.hyundai.com/fr/fr/modeles/inster.html",
+      "configuratorUrl": "https://www.hyundai.com/fr/fr/modeles/inster/configurateur.html",
+      "imageUrl": null,
+      "priceFromEur": 25000,
+      "priceToEur": 29500,
+      "specs": {
+        "lengthMm": 3825,
+        "widthMm": 1610,
+        "trunkL": 351,
+        "seats": 4,
+        "powerHp": 115,
+        "batteryKwh": 49,
+        "rangeKm": 355,
+        "electricRangeKm": 355,
+        "consumption": "14,5 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 120,
+        "acChargeKw": 11,
+        "charge10to80min": 30,
+        "zeroTo100s": 10.6,
+        "towingKg": 0,
+        "warranty": "5 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km"
+      },
+      "versions": [
+        {
+          "name": "Inster 42 kWh (97 ch - 300 km)",
+          "priceEur": 25000,
+          "highlights": [
+            "Écran 10,25\"",
+            "Caméra de recul"
+          ]
+        },
+        {
+          "name": "Inster 49 kWh (115 ch - 355 km)",
+          "priceEur": 27500,
+          "highlights": [
+            "Autonomie 355 km",
+            "Chargeur 11 kW",
+            "V2L"
+          ]
+        },
+        {
+          "name": "Creative 49 kWh",
+          "priceEur": 29500,
+          "highlights": [
+            "Toit ouvrant",
+            "Banquette coulissante",
+            "Feux LED pixel"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Banquette arrière coulissante (coffre 280 à 351 L)",
+        "Double écran 10,25\" avec navigation",
+        "Recharge rapide DC 120 kW (10-80% en 30 min)",
+        "Technologie V2L bi-directionnelle"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "LLD Hyundai Inster 42 kWh — 37 mois",
+          "monthlyEur": 169,
+          "durationMonths": 37,
+          "downPaymentEur": 2000,
+          "kmPerYear": 10000,
+          "discountEur": 2500,
+          "priceAfterEur": 22500,
+          "validUntil": "2026-11-30",
+          "conditions": "Prime Hyundai de 2 500 € pour compenser l'absence de bonus.",
+          "sourceUrl": "https://www.hyundai.com/fr/fr/offres.html"
+        }
+      ],
+      "dealerBehavior": "Petite citadine astucieuse au design rétro-pixel. Hyundai accorde 2 500 € de remise pour compenser le bonus.",
+      "negotiationMarginPct": [
+        5,
+        8
+      ],
+      "pros": [
+        "Habitabilité géante rapportée au format de 3,82 m",
+        "Banquette coulissante et sièges avant rabattables en couchette",
+        "Charge DC 120 kW rapide"
+      ],
+      "cons": [
+        "Non éligible au bonus écologique de l'État",
+        "Seulement 4 places à bord"
+      ],
+      "ratings": {
+        "value": 8.8,
+        "range": 8.1,
+        "comfort": 8.3,
+        "equipment": 8.8
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "hyundai-tucson-hybrid-215",
+      "brand": "Hyundai",
+      "model": "Tucson Hybride 215 ch",
+      "origin": "Corée du Sud",
+      "madeIn": "Nosovice (Tchéquie)",
+      "chineseBrand": false,
+      "energy": "HEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.hyundai.com/fr/fr/modeles/tucson.html",
+      "configuratorUrl": "https://www.hyundai.com/fr/fr/modeles/tucson/configurateur.html",
+      "imageUrl": null,
+      "priceFromEur": 40500,
+      "priceToEur": 47800,
+      "specs": {
+        "lengthMm": 4510,
+        "widthMm": 1865,
+        "trunkL": 616,
+        "seats": 5,
+        "powerHp": 215,
+        "batteryKwh": 1.49,
+        "rangeKm": 960,
+        "electricRangeKm": 3,
+        "consumption": "5,6 L/100 km",
+        "co2gkm": 126,
+        "dcChargeKw": null,
+        "acChargeKw": null,
+        "charge10to80min": null,
+        "zeroTo100s": 8.1,
+        "towingKg": 1650,
+        "warranty": "5 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km"
+      },
+      "versions": [
+        {
+          "name": "Initia Hybride 215",
+          "priceEur": 40500,
+          "highlights": [
+            "Double écran incurvé 12,3\"",
+            "Clim auto"
+          ]
+        },
+        {
+          "name": "Creative Hybride 215",
+          "priceEur": 43600,
+          "highlights": [
+            "Navigation",
+            "Chargeur induction",
+            "Jantes 19\""
+          ]
+        },
+        {
+          "name": "Executive Hybride 215",
+          "priceEur": 47800,
+          "highlights": [
+            "Cuir",
+            "Toit panoramique",
+            "Caméra 360°"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Nouvel intérieur restylé avec double écran incurvé 12,3\"",
+        "Coffre record de 616 L",
+        "Garantie 5 ans kilométrage illimité",
+        "Système de climatisation multi-air silencieux"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 230,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Offre Reprise Hyundai Tucson Restylé — Remise 3 800 €",
+          "monthlyEur": 349,
+          "durationMonths": 37,
+          "downPaymentEur": 3500,
+          "kmPerYear": 10000,
+          "discountEur": 3800,
+          "priceAfterEur": 36700,
+          "validUntil": "2026-11-30",
+          "conditions": "Remise immédiate de 3 800 € sur Tucson restylé en stock.",
+          "sourceUrl": "https://www.hyundai.com/fr/fr/offres.html"
+        }
+      ],
+      "dealerBehavior": "SUV très prisé des familles. Le restylage intérieur séduit énormément ; remises de 7 à 9 % faciles à négocier sur stock.",
+      "negotiationMarginPct": [
+        6,
+        9
+      ],
+      "pros": [
+        "Coffre gigantesque de 616 L",
+        "Habitacle restylé très moderne avec double écran",
+        "Garantie 5 ans sans limite de kilométrage"
+      ],
+      "cons": [
+        "Gabarit large en ville",
+        "Léger malus écologique de 230 €"
+      ],
+      "ratings": {
+        "value": 8.6,
+        "range": 8.8,
+        "comfort": 8.8,
+        "equipment": 8.9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "toyota-yaris-cross-116",
+      "brand": "Toyota",
+      "model": "Yaris Cross Hybride 116h / 130h",
+      "origin": "Japon",
+      "madeIn": "Onnaing-Valenciennes (France - Origine France Garantie)",
+      "chineseBrand": false,
+      "energy": "HEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.toyota.fr/vehicules-neufs/yaris-cross",
+      "configuratorUrl": "https://www.toyota.fr/vehicules-neufs/yaris-cross/build",
+      "imageUrl": null,
+      "priceFromEur": 28200,
+      "priceToEur": 35700,
+      "specs": {
+        "lengthMm": 4180,
+        "widthMm": 1765,
+        "trunkL": 397,
+        "seats": 5,
+        "powerHp": 130,
+        "batteryKwh": 1,
+        "rangeKm": 880,
+        "electricRangeKm": 2,
+        "consumption": "4,5 L/100 km",
+        "co2gkm": 102,
+        "dcChargeKw": null,
+        "acChargeKw": null,
+        "charge10to80min": null,
+        "zeroTo100s": 10.7,
+        "towingKg": 750,
+        "warranty": "Jusqu'à 10 ans avec Toyota Relax",
+        "batteryWarranty": "10 ans avec Toyota Relax"
+      },
+      "versions": [
+        {
+          "name": "Dynamic 116h",
+          "priceEur": 28200,
+          "highlights": [
+            "Écran 9\"",
+            "Toyota Safety Sense",
+            "Clim auto"
+          ]
+        },
+        {
+          "name": "Design 130h",
+          "priceEur": 31200,
+          "highlights": [
+            "Écran 10,5\"",
+            "Moteur 130 ch plus vigoureux",
+            "Jantes 17\""
+          ]
+        },
+        {
+          "name": "GR Sport 130h",
+          "priceEur": 34700,
+          "highlights": [
+            "Look GR Sport",
+            "Châssis raffermi",
+            "Jantes 18\""
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Origine France Garantie (fabriqué à Valenciennes)",
+        "Garantie Toyota Relax jusqu'à 10 ans ou 160 000 km",
+        "Système Toyota Smart Connect 10,5\"",
+        "Toyota Safety Sense complet de série"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Offre Les Immanquables Toyota — Remise 2 500 € Yaris Cross",
+          "monthlyEur": 229,
+          "durationMonths": 37,
+          "downPaymentEur": 2500,
+          "kmPerYear": 10000,
+          "discountEur": 2500,
+          "priceAfterEur": 25700,
+          "validUntil": "2026-11-30",
+          "conditions": "Remise de 2 500 € pour la reprise d'un véhicule.",
+          "sourceUrl": "https://www.toyota.fr/offres-du-moment"
+        }
+      ],
+      "dealerBehavior": "SUV n°1 des ventes produit en France. Concessions actives avec 2 000 à 2 800 € de remise sur les modèles 116h et 130h en stock.",
+      "negotiationMarginPct": [
+        6,
+        9
+      ],
+      "pros": [
+        "Fabrication française à Valenciennes",
+        "Garantie jusqu'à 10 ans Toyota Relax",
+        "Consommation urbaine remarquable (< 4,3 L/100 km)"
+      ],
+      "cons": [
+        "Moteur qui s'emballe lors des fortes accélérations",
+        "Places arrière un peu étriquées"
+      ],
+      "ratings": {
+        "value": 9.1,
+        "range": 9.2,
+        "comfort": 8.3,
+        "equipment": 8.6
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "toyota-c-hr-hybrid-140",
+      "brand": "Toyota",
+      "model": "C-HR Hybride 140h",
+      "origin": "Japon",
+      "madeIn": "Sakarya (Turquie)",
+      "chineseBrand": false,
+      "energy": "HEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.toyota.fr/vehicules-neufs/c-hr",
+      "configuratorUrl": "https://www.toyota.fr/vehicules-neufs/c-hr/build",
+      "imageUrl": null,
+      "priceFromEur": 34900,
+      "priceToEur": 43400,
+      "specs": {
+        "lengthMm": 4362,
+        "widthMm": 1832,
+        "trunkL": 388,
+        "seats": 5,
+        "powerHp": 140,
+        "batteryKwh": 1.1,
+        "rangeKm": 900,
+        "electricRangeKm": 3,
+        "consumption": "4,7 L/100 km",
+        "co2gkm": 105,
+        "dcChargeKw": null,
+        "acChargeKw": null,
+        "charge10to80min": null,
+        "zeroTo100s": 9.9,
+        "towingKg": 725,
+        "warranty": "Jusqu'à 10 ans avec Toyota Relax",
+        "batteryWarranty": "10 ans avec Toyota Relax"
+      },
+      "versions": [
+        {
+          "name": "Dynamic 140h",
+          "priceEur": 34900,
+          "highlights": [
+            "Écran 8\"",
+            "Caméra de recul",
+            "Safety Sense"
+          ]
+        },
+        {
+          "name": "Design 140h",
+          "priceEur": 37900,
+          "highlights": [
+            "Écran 12,3\"",
+            "Clé digitale",
+            "Jantes 18\""
+          ]
+        },
+        {
+          "name": "GR Sport 200h",
+          "priceEur": 43400,
+          "highlights": [
+            "Moteur 200 ch",
+            "Look sportif GR",
+            "Jantes 19\""
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Style audacieux avec poignées affleurantes",
+        "Combiné numérique 12,3\" et grand écran central",
+        "Garantie Toyota Relax jusqu'à 10 ans",
+        "Technologie hybride de 5e génération"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Offre LLD Toyota C-HR Design 140h — 37 mois",
+          "monthlyEur": 299,
+          "durationMonths": 37,
+          "downPaymentEur": 3000,
+          "kmPerYear": 10000,
+          "discountEur": 3200,
+          "priceAfterEur": 31700,
+          "validUntil": "2026-11-30",
+          "conditions": "3 200 € d'avantage client sous condition de reprise.",
+          "sourceUrl": "https://www.toyota.fr/offres-du-moment"
+        }
+      ],
+      "dealerBehavior": "Design très expressif qui attire en concession. Remises moyennes de 3 000 € sur finitions de cœur de gamme Design.",
+      "negotiationMarginPct": [
+        6,
+        9
+      ],
+      "pros": [
+        "Design sculptural avant-gardiste",
+        "Hybridation 5e génération très soignée et douce",
+        "Garantie 10 ans Toyota Relax"
+      ],
+      "cons": [
+        "Coffre modeste de 388 L",
+        "Sensation de confinement aux places arrière"
+      ],
+      "ratings": {
+        "value": 8.7,
+        "range": 9,
+        "comfort": 8.6,
+        "equipment": 8.9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "toyota-bz4x-pure",
+      "brand": "Toyota",
+      "model": "bZ4X 100% Électrique 204 ch",
+      "origin": "Japon",
+      "madeIn": "Motomachi (Japon)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "SUV familial",
+      "isSUV": true,
+      "officialUrl": "https://www.toyota.fr/vehicules-neufs/bz4x",
+      "configuratorUrl": "https://www.toyota.fr/vehicules-neufs/bz4x/build",
+      "imageUrl": null,
+      "priceFromEur": 39990,
+      "priceToEur": 47990,
+      "specs": {
+        "lengthMm": 4690,
+        "widthMm": 1860,
+        "trunkL": 452,
+        "seats": 5,
+        "powerHp": 204,
+        "batteryKwh": 71.4,
+        "rangeKm": 512,
+        "electricRangeKm": 512,
+        "consumption": "14,4 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 150,
+        "acChargeKw": 11,
+        "charge10to80min": 30,
+        "zeroTo100s": 7.5,
+        "towingKg": 750,
+        "warranty": "Jusqu'à 10 ans ou 1 million de km (Relax)",
+        "batteryWarranty": "10 ans ou 1 million de km (70% SOH)"
+      },
+      "versions": [
+        {
+          "name": "Pure 2WD (204 ch - 512 km)",
+          "priceEur": 39990,
+          "highlights": [
+            "Autonomie 512 km",
+            "Toyota Relax 10 ans",
+            "Écran 8\""
+          ]
+        },
+        {
+          "name": "Origin 2WD (204 ch - 504 km)",
+          "priceEur": 43990,
+          "highlights": [
+            "Écran 12,3\"",
+            "Caméra 360°",
+            "Sièges chauffants"
+          ]
+        },
+        {
+          "name": "Origin AWD (218 ch - 461 km)",
+          "priceEur": 46990,
+          "highlights": [
+            "Transmission intégrale X-MODE",
+            "Tout terrain"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Garantie batterie exceptionnelle 10 ans ou 1 million de km",
+        "Pompe à chaleur de série",
+        "Écran multimédia Toyota Smart Connect 12,3\"",
+        "Aides à la conduite Toyota Safety Sense de pointe"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible (fabriqué au Japon)"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Prime Électrique Toyota de 6 000 € sur bZ4X en stock",
+          "monthlyEur": 329,
+          "durationMonths": 37,
+          "downPaymentEur": 3500,
+          "kmPerYear": 10000,
+          "discountEur": 6000,
+          "priceAfterEur": 33990,
+          "validUntil": "2026-11-30",
+          "conditions": "6 000 € de remise Toyota sur Pure et Origin en stock.",
+          "sourceUrl": "https://www.toyota.fr/offres-du-moment"
+        }
+      ],
+      "dealerBehavior": "Pour compenser l'absence de bonus écologique, Toyota applique d'énormes remises constructeur de 5 000 à 6 000 € sur les véhicules disponibles.",
+      "negotiationMarginPct": [
+        9,
+        14
+      ],
+      "pros": [
+        "Garantie batterie colossale de 10 ans ou 1 000 000 km",
+        "Remise constructeur massive ramenant le prix net sous 34 000 €",
+        "Espace généreux aux jambes à l'arrière"
+      ],
+      "cons": [
+        "Pas de bonus écologique français",
+        "Volume de coffre de 452 L moyen pour 4,69 m"
+      ],
+      "ratings": {
+        "value": 9.1,
+        "range": 8.8,
+        "comfort": 8.8,
+        "equipment": 8.9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "volkswagen-id3-pro",
+      "brand": "Volkswagen",
+      "model": "ID.3 Pro 204 ch (59 kWh)",
+      "origin": "Allemagne",
+      "madeIn": "Zwickau (Allemagne)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "Compacte",
+      "isSUV": false,
+      "officialUrl": "https://www.volkswagen.fr/fr/modeles/id3.html",
+      "configuratorUrl": "https://www.volkswagen.fr/fr/configurateur/id3.html",
+      "imageUrl": null,
+      "priceFromEur": 37990,
+      "priceToEur": 44990,
+      "specs": {
+        "lengthMm": 4261,
+        "widthMm": 1809,
+        "trunkL": 385,
+        "seats": 5,
+        "powerHp": 204,
+        "batteryKwh": 59,
+        "rangeKm": 434,
+        "electricRangeKm": 434,
+        "consumption": "15,3 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 165,
+        "acChargeKw": 11,
+        "charge10to80min": 24,
+        "zeroTo100s": 7.4,
+        "towingKg": 0,
+        "warranty": "2 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km (70 % SOH)"
+      },
+      "versions": [
+        {
+          "name": "Pure 52 kWh (170 ch - 388 km)",
+          "priceEur": 34990,
+          "highlights": [
+            "Écran 12,9\"",
+            "Clim auto"
+          ]
+        },
+        {
+          "name": "Pro 59 kWh (204 ch - 434 km)",
+          "priceEur": 37990,
+          "highlights": [
+            "Charge DC 165 kW",
+            "ChatGPT intégré",
+            "OpenR Link 12,9\""
+          ]
+        },
+        {
+          "name": "Pro S 77 kWh (204 ch - 559 km)",
+          "priceEur": 42990,
+          "highlights": [
+            "Autonomie 559 km",
+            "Recharge DC 175 kW"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Nouvel écran central 12,9\" avec logiciel 4.0 et ChatGPT",
+        "Barre tactile enfin rétroéclairée pour le volume et la température",
+        "Recharge rapide DC jusqu'à 165 kW (10-80% en 24 min)",
+        "Feux matriciels IQ.Light LED"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Offre Volkswagen ID.3 Édition Life Plus — Bonus + Remise 3 500 €",
+          "monthlyEur": 269,
+          "durationMonths": 37,
+          "downPaymentEur": 2500,
+          "kmPerYear": 10000,
+          "discountEur": 3500,
+          "priceAfterEur": 30490,
+          "validUntil": "2026-11-30",
+          "conditions": "Bonus de 4 000 € déduit + avantage client VW de 3 500 € sur véhicules en stock.",
+          "sourceUrl": "https://www.volkswagen.fr/fr/offres.html"
+        }
+      ],
+      "dealerBehavior": "Nette amélioration depuis le restylage et le logiciel 4.0. Concessions très arrangeantes (7 à 10 % de remise) face à la concurrence des compactes françaises.",
+      "negotiationMarginPct": [
+        7,
+        10
+      ],
+      "pros": [
+        "Charge rapide 165 kW très efficace sur longs trajets",
+        "Logiciel 4.0 fluide et curseurs rétroéclairés",
+        "Rayon de braquage ultra court (10,2 m)"
+      ],
+      "cons": [
+        "Toujours pas de capacité de remorquage",
+        "Places arrière un peu fermes"
+      ],
+      "ratings": {
+        "value": 8.8,
+        "range": 8.5,
+        "comfort": 8.6,
+        "equipment": 8.9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "volkswagen-id4-pro",
+      "brand": "Volkswagen",
+      "model": "ID.4 Pro 286 ch (77 kWh)",
+      "origin": "Allemagne",
+      "madeIn": "Zwickau / Emden (Allemagne)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "SUV familial",
+      "isSUV": true,
+      "officialUrl": "https://www.volkswagen.fr/fr/modeles/id4.html",
+      "configuratorUrl": "https://www.volkswagen.fr/fr/configurateur/id4.html",
+      "imageUrl": null,
+      "priceFromEur": 45990,
+      "priceToEur": 53990,
+      "specs": {
+        "lengthMm": 4584,
+        "widthMm": 1852,
+        "trunkL": 543,
+        "seats": 5,
+        "powerHp": 286,
+        "batteryKwh": 77,
+        "rangeKm": 550,
+        "electricRangeKm": 550,
+        "consumption": "16,1 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 175,
+        "acChargeKw": 11,
+        "charge10to80min": 28,
+        "zeroTo100s": 6.7,
+        "towingKg": 1000,
+        "warranty": "2 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km (70 % SOH)"
+      },
+      "versions": [
+        {
+          "name": "Pure 52 kWh (170 ch)",
+          "priceEur": 42990,
+          "highlights": [
+            "Écran 12,9\"",
+            "Bonus 4 000 € éligible"
+          ]
+        },
+        {
+          "name": "Pro 77 kWh (286 ch - 550 km)",
+          "priceEur": 45990,
+          "highlights": [
+            "Nouveau moteur 286 ch",
+            "Autonomie 550 km",
+            "Bonus 4 000 € éligible"
+          ]
+        },
+        {
+          "name": "GTX 77 kWh Dual Motor (340 ch)",
+          "priceEur": 53990,
+          "highlights": [
+            "4x4 Dual Motor",
+            "0-100 en 5.4 s"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Nouveau moteur APP550 de 286 ch sobre et performant",
+        "Écran tactile 12,9\" avec interface logicielle 4.0",
+        "Coffre généreux de 543 L",
+        "Recharge rapide DC 175 kW"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Offre Volkswagen ID.4 Pro — Bonus + Remise Stock 4 000 €",
+          "monthlyEur": 359,
+          "durationMonths": 37,
+          "downPaymentEur": 3500,
+          "kmPerYear": 10000,
+          "discountEur": 4000,
+          "priceAfterEur": 37990,
+          "validUntil": "2026-11-30",
+          "conditions": "Bonus de 4 000 € + remise immédiate VW de 4 000 € sur véhicules en stock.",
+          "sourceUrl": "https://www.volkswagen.fr/fr/offres.html"
+        }
+      ],
+      "dealerBehavior": "Les concessions ont d'importants quotas annuels à honorer : remises directes de 4 000 € sur stock pour passer sous les 42 000 €.",
+      "negotiationMarginPct": [
+        7,
+        11
+      ],
+      "pros": [
+        "Moteur 286 ch très dynamique et efficient",
+        "Habitabilité et coffre de 543 L remarquables",
+        "Recharge DC 175 kW performante"
+      ],
+      "cons": [
+        "Poids important (~2 150 kg)",
+        "Commandes de lève-vitres conducteur peu ergonomiques"
+      ],
+      "ratings": {
+        "value": 8.9,
+        "range": 9.1,
+        "comfort": 8.9,
+        "equipment": 9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "skoda-elroq-85",
+      "brand": "Skoda",
+      "model": "Elroq 85 (286 ch / 82 kWh)",
+      "origin": "Tchéquie",
+      "madeIn": "Mlada Boleslav (Tchéquie)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.skoda.fr/modeles/elroq",
+      "configuratorUrl": "https://www.skoda.fr/configurateur/elroq",
+      "imageUrl": null,
+      "priceFromEur": 33300,
+      "priceToEur": 42200,
+      "specs": {
+        "lengthMm": 4488,
+        "widthMm": 1884,
+        "trunkL": 470,
+        "seats": 5,
+        "powerHp": 286,
+        "batteryKwh": 82,
+        "rangeKm": 560,
+        "electricRangeKm": 560,
+        "consumption": "15,8 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 175,
+        "acChargeKw": 11,
+        "charge10to80min": 28,
+        "zeroTo100s": 6.6,
+        "towingKg": 1200,
+        "warranty": "2 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km (70 % SOH)"
+      },
+      "versions": [
+        {
+          "name": "Elroq 50 (170 ch / 55 kWh - 370 km)",
+          "priceEur": 33300,
+          "highlights": [
+            "Prix canon",
+            "Écran 13\"",
+            "Bonus éligible"
+          ]
+        },
+        {
+          "name": "Elroq 60 (204 ch / 63 kWh - 400 km)",
+          "priceEur": 36500,
+          "highlights": [
+            "Charge DC 165 kW",
+            "Caméra de recul"
+          ]
+        },
+        {
+          "name": "Elroq 85 (286 ch / 82 kWh - 560 km)",
+          "priceEur": 42200,
+          "highlights": [
+            "560 km WLTP",
+            "Moteur 286 ch",
+            "Charge 175 kW"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Nouvelle face avant Modern Solid avec calandre Tech-Deck Face",
+        "Écran d'infodivertissement 13\" avec ChatGPT intégré",
+        "Solutions Simply Clever (filet pour câble de charge sous plage arrière)",
+        "Recharge rapide DC 175 kW"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Offre Lancement Skoda Elroq 50 — Bonus + Avantage Client",
+          "monthlyEur": 249,
+          "durationMonths": 37,
+          "downPaymentEur": 2500,
+          "kmPerYear": 10000,
+          "discountEur": 2000,
+          "priceAfterEur": 27300,
+          "validUntil": "2026-11-30",
+          "conditions": "Bonus de 4 000 € inclus + avantage client Skoda de 2 000 €.",
+          "sourceUrl": "https://www.skoda.fr/offres"
+        }
+      ],
+      "dealerBehavior": "Nouveauté fracassante de l'automne 2026 au positionnement tarifaire agressif. Skoda accorde déjà 1 500 à 2 500 € de remise.",
+      "negotiationMarginPct": [
+        4,
+        7
+      ],
+      "pros": [
+        "Rapport prix/autonomie/équipement sans équivalent dans le groupe VW",
+        "Moteur 286 ch moderne et efficient sur Elroq 85",
+        "Astuces Simply Clever pratiques"
+      ],
+      "cons": [
+        "Volume de coffre (470 L) en léger retrait par rapport à l'Enyaq",
+        "Plastiques un peu rigides en bas d'habitacle"
+      ],
+      "ratings": {
+        "value": 9.4,
+        "range": 9.3,
+        "comfort": 8.8,
+        "equipment": 9.1
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "skoda-enyaq-85",
+      "brand": "Skoda",
+      "model": "Enyaq 85 (286 ch / 82 kWh)",
+      "origin": "Tchéquie",
+      "madeIn": "Mlada Boleslav (Tchéquie)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "SUV familial",
+      "isSUV": true,
+      "officialUrl": "https://www.skoda.fr/modeles/enyaq",
+      "configuratorUrl": "https://www.skoda.fr/configurateur/enyaq",
+      "imageUrl": null,
+      "priceFromEur": 46490,
+      "priceToEur": 54990,
+      "specs": {
+        "lengthMm": 4649,
+        "widthMm": 1879,
+        "trunkL": 585,
+        "seats": 5,
+        "powerHp": 286,
+        "batteryKwh": 82,
+        "rangeKm": 565,
+        "electricRangeKm": 565,
+        "consumption": "15,9 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 175,
+        "acChargeKw": 11,
+        "charge10to80min": 28,
+        "zeroTo100s": 6.7,
+        "towingKg": 1200,
+        "warranty": "2 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km (70 % SOH)"
+      },
+      "versions": [
+        {
+          "name": "Enyaq 85 (286 ch - 565 km)",
+          "priceEur": 46490,
+          "highlights": [
+            "565 km WLTP",
+            "Moteur 286 ch",
+            "Bonus 4 000 € éligible"
+          ]
+        },
+        {
+          "name": "Enyaq 85x 4x4 (286 ch)",
+          "priceEur": 48990,
+          "highlights": [
+            "Transmission intégrale",
+            "0-100 en 6.6 s"
+          ]
+        },
+        {
+          "name": "Enyaq RS 4x4 (340 ch)",
+          "priceEur": 54990,
+          "highlights": [
+            "340 ch",
+            "Look RS",
+            "Châssis sport"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Moteur électrique 286 ch optimisé",
+        "Grand écran central 13\" avec préconditionnement de batterie",
+        "Coffre familial de 585 L avec double plancher",
+        "Calandre lumineuse Crystal Face (selon finition)"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Offre Skoda Enyaq 85 — Remise Exceptionnelle 4 500 €",
+          "monthlyEur": 369,
+          "durationMonths": 37,
+          "downPaymentEur": 3500,
+          "kmPerYear": 10000,
+          "discountEur": 4500,
+          "priceAfterEur": 37990,
+          "validUntil": "2026-11-30",
+          "conditions": "Bonus de 4 000 € déduit + remise concession Skoda de 4 500 €.",
+          "sourceUrl": "https://www.skoda.fr/offres"
+        }
+      ],
+      "dealerBehavior": "Face à l'arrivée de l'Elroq plus compact, les concessions Skoda accordent jusqu'à 9 % de remise directe sur les Enyaq en stock.",
+      "negotiationMarginPct": [
+        7,
+        11
+      ],
+      "pros": [
+        "Coffre familial géant de 585 L",
+        "Confort de suspension et insonorisation de premier ordre",
+        "Moteur 286 ch sobre et performant"
+      ],
+      "cons": [
+        "Gabarit imposant de 4,65 m",
+        "Rayon de braquage un peu moins vif que l'ID.4"
+      ],
+      "ratings": {
+        "value": 9.1,
+        "range": 9.3,
+        "comfort": 9.2,
+        "equipment": 9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "bmw-ix1-edrive20",
+      "brand": "BMW",
+      "model": "iX1 eDrive20 (204 ch)",
+      "origin": "Allemagne",
+      "madeIn": "Regensburg (Allemagne)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.bmw.fr/fr/tous-les-modeles/bmw-i/ix1.html",
+      "configuratorUrl": "https://configure.bmw.fr/fr_FR/configure/U11",
+      "imageUrl": null,
+      "priceFromEur": 46900,
+      "priceToEur": 55900,
+      "specs": {
+        "lengthMm": 4500,
+        "widthMm": 1845,
+        "trunkL": 490,
+        "seats": 5,
+        "powerHp": 204,
+        "batteryKwh": 64.7,
+        "rangeKm": 475,
+        "electricRangeKm": 475,
+        "consumption": "15,4 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 130,
+        "acChargeKw": 22,
+        "charge10to80min": 29,
+        "zeroTo100s": 8.6,
+        "towingKg": 750,
+        "warranty": "2 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km (70 % SOH)"
+      },
+      "versions": [
+        {
+          "name": "eDrive20 (204 ch - 475 km)",
+          "priceEur": 46900,
+          "highlights": [
+            "Traction",
+            "Bonus 4 000 € éligible",
+            "BMW Curved Display"
+          ]
+        },
+        {
+          "name": "xDrive30 (313 ch - 440 km)",
+          "priceEur": 55900,
+          "highlights": [
+            "Transmission intégrale 4x4",
+            "0-100 en 5.6 s"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "BMW Curved Display (10,25\" + 10,7\") avec OS 9",
+        "Chargeur AC 22 kW de série sur finitions M Sport",
+        "Pompe à chaleur",
+        "Climatisation automatique bi-zone",
+        "Hayon motorisé électrique"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "LLD BMW iX1 eDrive20 M Sport — 36 mois",
+          "monthlyEur": 420,
+          "durationMonths": 36,
+          "downPaymentEur": 4000,
+          "kmPerYear": 10000,
+          "discountEur": 3200,
+          "priceAfterEur": 39700,
+          "validUntil": "2026-11-30",
+          "conditions": "Bonus écologique de 4 000 € inclus + remise commerciale BMW.",
+          "sourceUrl": "https://www.bmw.fr/fr/topics/univers/offres.html"
+        }
+      ],
+      "dealerBehavior": "La version eDrive20 passe sous la barre des 47 000 € pour capter le bonus. Concessions prêtes à concéder 6 à 8 % de remise.",
+      "negotiationMarginPct": [
+        5,
+        8
+      ],
+      "pros": [
+        "Finition premium et qualité d'assemblage irréprochable",
+        "Système BMW OS 9 réactif",
+        "Éligible au bonus de 4 000 € sur eDrive20"
+      ],
+      "cons": [
+        "Capacité de batterie (64,7 kWh) un peu juste face aux rivaux",
+        "Options BMW onéreuses"
+      ],
+      "ratings": {
+        "value": 8.7,
+        "range": 8.4,
+        "comfort": 9.1,
+        "equipment": 9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "volvo-ex30-single-motor",
+      "brand": "Volvo",
+      "model": "EX30 Single Motor Extended Range (272 ch / 69 kWh)",
+      "origin": "Suède",
+      "madeIn": "Gand (Belgique) / Zhangjiakou (Chine)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.volvocars.com/fr/cars/ex30-electric/",
+      "configuratorUrl": "https://www.volvocars.com/fr/build/ex30-electric",
+      "imageUrl": null,
+      "priceFromEur": 37500,
+      "priceToEur": 47950,
+      "specs": {
+        "lengthMm": 4233,
+        "widthMm": 1837,
+        "trunkL": 318,
+        "seats": 5,
+        "powerHp": 272,
+        "batteryKwh": 69,
+        "rangeKm": 476,
+        "electricRangeKm": 476,
+        "consumption": "15,7 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 153,
+        "acChargeKw": 11,
+        "charge10to80min": 26,
+        "zeroTo100s": 5.3,
+        "towingKg": 1600,
+        "warranty": "3 ans ou 100 000 km",
+        "batteryWarranty": "8 ans ou 160 000 km (70 % SOH)"
+      },
+      "versions": [
+        {
+          "name": "Single Motor Core 51 kWh (344 km)",
+          "priceEur": 37500,
+          "highlights": [
+            "Moteur 272 ch",
+            "Google Automotive",
+            "Écran 12,3\""
+          ]
+        },
+        {
+          "name": "Single Motor Extended Range Plus 69 kWh (476 km)",
+          "priceEur": 41700,
+          "highlights": [
+            "476 km WLTP",
+            "Barre de son Harman Kardon",
+            "Hayon élec"
+          ]
+        },
+        {
+          "name": "Twin Motor Performance Ultra (428 ch)",
+          "priceEur": 47950,
+          "highlights": [
+            "4x4 428 ch",
+            "0-100 en 3.6 s",
+            "Toit panoramique"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Barre de son Harman Kardon intégrée sous le pare-brise",
+        "Système Google Automotive intégré avec Maps et Spotify",
+        "Recharge rapide DC 153 kW (10-80% en 26 min)",
+        "Capacité de remorquage jusqu'à 1 600 kg"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "LLD Volvo EX30 Single Motor Extended Range Plus",
+          "monthlyEur": 349,
+          "durationMonths": 36,
+          "downPaymentEur": 3500,
+          "kmPerYear": 10000,
+          "discountEur": 2500,
+          "priceAfterEur": 35200,
+          "validUntil": "2026-11-30",
+          "conditions": "Bonus de 4 000 € déduit + remise Volvo de 2 500 €.",
+          "sourceUrl": "https://www.volvocars.com/fr/offres"
+        }
+      ],
+      "dealerBehavior": "Production européenne désormais active à Gand (Belgique) restaurant l'éligibilité au bonus. Fort engouement, remises de 4 à 6 %.",
+      "negotiationMarginPct": [
+        4,
+        7
+      ],
+      "pros": [
+        "Accélérations foudroyantes (0-100 en 5,3 s dès 272 ch)",
+        "Barre de son Harman Kardon innovante",
+        "Production européenne à Gand avec bonus"
+      ],
+      "cons": [
+        "Coffre étriqué de 318 L",
+        "Commandes de rétroviseurs et vitres tout-à-l'écran agaçantes"
+      ],
+      "ratings": {
+        "value": 8.9,
+        "range": 8.6,
+        "comfort": 8.6,
+        "equipment": 8.8
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "mg4-electric-64",
+      "brand": "MG",
+      "model": "MG4 Electric Comfort / Luxury (64 kWh)",
+      "origin": "Chine",
+      "madeIn": "Ningde (Chine)",
+      "chineseBrand": true,
+      "energy": "BEV",
+      "segment": "Compacte",
+      "isSUV": false,
+      "officialUrl": "https://mgmotor.fr/modeles/mg4",
+      "configuratorUrl": "https://mgmotor.fr/configurateur/mg4",
+      "imageUrl": null,
+      "priceFromEur": 29990,
+      "priceToEur": 39990,
+      "specs": {
+        "lengthMm": 4287,
+        "widthMm": 1836,
+        "trunkL": 363,
+        "seats": 5,
+        "powerHp": 204,
+        "batteryKwh": 64,
+        "rangeKm": 450,
+        "electricRangeKm": 450,
+        "consumption": "16,0 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 140,
+        "acChargeKw": 11,
+        "charge10to80min": 26,
+        "zeroTo100s": 7.9,
+        "towingKg": 500,
+        "warranty": "7 ans ou 150 000 km",
+        "batteryWarranty": "7 ans ou 150 000 km"
+      },
+      "versions": [
+        {
+          "name": "Standard 51 kWh (170 ch - 350 km)",
+          "priceEur": 29990,
+          "highlights": [
+            "Batterie LFP",
+            "Écran 10,25\"",
+            "Garantie 7 ans"
+          ]
+        },
+        {
+          "name": "Comfort 64 kWh (204 ch - 450 km)",
+          "priceEur": 33990,
+          "highlights": [
+            "Batterie NMC 64 kWh",
+            "Jantes 17\"",
+            "Vitres surteintées"
+          ]
+        },
+        {
+          "name": "Luxury 64 kWh (204 ch - 435 km)",
+          "priceEur": 35990,
+          "highlights": [
+            "Pompe à chaleur",
+            "Caméra 360°",
+            "Sièges chauffants"
+          ]
+        },
+        {
+          "name": "XPOWER AWD (435 ch - 385 km)",
+          "priceEur": 39990,
+          "highlights": [
+            "Transmission intégrale 435 ch",
+            "0-100 en 3.8 s"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Garantie 7 ans ou 150 000 km",
+        "Écran tactile 10,25\" avec Apple CarPlay et Android Auto",
+        "Chargeur rapide DC 140 kW",
+        "Fonction V2L (recharge d'appareils externes)"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible (fabriquée en Chine)"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Prime Électrique MG de 5 000 € sur MG4 en stock",
+          "monthlyEur": 199,
+          "durationMonths": 37,
+          "downPaymentEur": 2000,
+          "kmPerYear": 10000,
+          "discountEur": 5000,
+          "priceAfterEur": 24990,
+          "validUntil": "2026-11-30",
+          "conditions": "Prime constructeur MG de 5 000 € compensant le bonus d'État sur versions en stock.",
+          "sourceUrl": "https://mgmotor.fr/offres"
+        }
+      ],
+      "dealerBehavior": "Exclue du bonus gouvernemental, MG frappe fort avec une prime de 5 000 € systématique + négociation possible jusqu'à 6 000 €.",
+      "negotiationMarginPct": [
+        9,
+        14
+      ],
+      "pros": [
+        "Rapport prix/prestations imbattable grâce à la prime MG",
+        "Garantie 7 ans constructeur",
+        "Comportement dynamique grâce à la propulsion arrière"
+      ],
+      "cons": [
+        "Surtaxe douanière UE absorbée par la marque",
+        "Interface logicielle perfectible"
+      ],
+      "ratings": {
+        "value": 9.3,
+        "range": 8.5,
+        "comfort": 8.1,
+        "equipment": 8.7
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "mg-zs-hybrid-plus",
+      "brand": "MG",
+      "model": "ZS Hybrid+ (197 ch)",
+      "origin": "Chine",
+      "madeIn": "Zhengzhou (Chine)",
+      "chineseBrand": true,
+      "energy": "HEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://mgmotor.fr/modeles/zs-hybrid-plus",
+      "configuratorUrl": "https://mgmotor.fr/configurateur/zs-hybrid-plus",
+      "imageUrl": null,
+      "priceFromEur": 22990,
+      "priceToEur": 26990,
+      "specs": {
+        "lengthMm": 4430,
+        "widthMm": 1818,
+        "trunkL": 443,
+        "seats": 5,
+        "powerHp": 197,
+        "batteryKwh": 1.83,
+        "rangeKm": 980,
+        "electricRangeKm": 4,
+        "consumption": "5,0 L/100 km",
+        "co2gkm": 115,
+        "dcChargeKw": null,
+        "acChargeKw": null,
+        "charge10to80min": null,
+        "zeroTo100s": 8.7,
+        "towingKg": 500,
+        "warranty": "7 ans ou 150 000 km",
+        "batteryWarranty": "7 ans ou 150 000 km"
+      },
+      "versions": [
+        {
+          "name": "Standard Hybrid+ 197",
+          "priceEur": 22990,
+          "highlights": [
+            "Écran 10,25\"",
+            "Caméra de recul",
+            "Clim auto"
+          ]
+        },
+        {
+          "name": "Comfort Hybrid+ 197",
+          "priceEur": 24990,
+          "highlights": [
+            "Écran 12,3\"",
+            "Phares Full LED",
+            "Jantes alu 17\""
+          ]
+        },
+        {
+          "name": "Luxury Hybrid+ 197",
+          "priceEur": 26990,
+          "highlights": [
+            "Caméra 360°",
+            "Sièges chauffants similicuir",
+            "Volant chauffant"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Motorisation hybride 197 ch avec grosse batterie 1,83 kWh",
+        "Écran central HD 12,3\" avec navigation",
+        "Garantie 7 ans / 150 000 km",
+        "MG Pilot avec régulateur adaptatif"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Offre Lancement MG ZS Hybrid+ Comfort — Remise 1 500 €",
+          "monthlyEur": 189,
+          "durationMonths": 37,
+          "downPaymentEur": 2000,
+          "kmPerYear": 10000,
+          "discountEur": 1500,
+          "priceAfterEur": 23490,
+          "validUntil": "2026-11-30",
+          "conditions": "Remise immédiate de 1 500 € sur véhicules en concession.",
+          "sourceUrl": "https://mgmotor.fr/offres"
+        }
+      ],
+      "dealerBehavior": "Échappe aux surtaxes douanières européennes sur les électriques ! Gros succès en concession avec des tarifs défiant toute concurrence.",
+      "negotiationMarginPct": [
+        5,
+        9
+      ],
+      "pros": [
+        "Exempté de droits de douane BEV",
+        "197 ch sous le capot pour moins de 25 000 €",
+        "Garantie 7 ans"
+      ],
+      "cons": [
+        "Bruit du moteur thermique en forte charge",
+        "Qualité de certains plastiques intérieurs"
+      ],
+      "ratings": {
+        "value": 9.4,
+        "range": 9,
+        "comfort": 8.3,
+        "equipment": 8.9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "mg-hs-phev-339",
+      "brand": "MG",
+      "model": "HS Hybride Rechargeable (PHEV) 339 ch",
+      "origin": "Chine",
+      "madeIn": "Ningde (Chine)",
+      "chineseBrand": true,
+      "energy": "PHEV",
+      "segment": "SUV familial",
+      "isSUV": true,
+      "officialUrl": "https://mgmotor.fr/modeles/hs-phev",
+      "configuratorUrl": "https://mgmotor.fr/configurateur/hs-phev",
+      "imageUrl": null,
+      "priceFromEur": 36990,
+      "priceToEur": 39990,
+      "specs": {
+        "lengthMm": 4670,
+        "widthMm": 1890,
+        "trunkL": 441,
+        "seats": 5,
+        "powerHp": 339,
+        "batteryKwh": 21.4,
+        "rangeKm": 1020,
+        "electricRangeKm": 103,
+        "consumption": "0,5 L/100 km (WLTP pondéré)",
+        "co2gkm": 14,
+        "dcChargeKw": null,
+        "acChargeKw": 7.4,
+        "charge10to80min": null,
+        "zeroTo100s": 6.8,
+        "towingKg": 1500,
+        "warranty": "7 ans ou 150 000 km",
+        "batteryWarranty": "7 ans ou 150 000 km"
+      },
+      "versions": [
+        {
+          "name": "Comfort PHEV (339 ch - 103 km EV)",
+          "priceEur": 36990,
+          "highlights": [
+            "Batterie 21,4 kWh",
+            "103 km 100% électrique",
+            "Double écran 12,3\""
+          ]
+        },
+        {
+          "name": "Luxury PHEV (339 ch - 103 km EV)",
+          "priceEur": 39990,
+          "highlights": [
+            "Caméra 360°",
+            "Sièges électriques chauffants",
+            "Jantes 19\""
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Autonomie électrique record de 103 km WLTP",
+        "Double écran panoramique 2x 12,3\"",
+        "Puissance cumulée de 339 ch",
+        "Garantie 7 ans / 150 000 km"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Offre MG HS PHEV Luxury — Remise Immédiate 3 000 €",
+          "monthlyEur": 329,
+          "durationMonths": 37,
+          "downPaymentEur": 3000,
+          "kmPerYear": 10000,
+          "discountEur": 3000,
+          "priceAfterEur": 36990,
+          "validUntil": "2026-11-30",
+          "conditions": "3 000 € de remise concession sur modèles en stock.",
+          "sourceUrl": "https://mgmotor.fr/offres"
+        }
+      ],
+      "dealerBehavior": "PHEV exonéré des droits de douane supplémentaires. Remises de 2 500 à 3 500 € pour rivaliser avec le Toyota RAV4 et le Peugeot 3008.",
+      "negotiationMarginPct": [
+        6,
+        10
+      ],
+      "pros": [
+        "103 km d'autonomie en mode 100% électrique",
+        "Puissance colossale de 339 ch",
+        "Garantie 7 ans constructeur"
+      ],
+      "cons": [
+        "Recharge AC limitée à 7 kW (pas de charge rapide DC)",
+        "Dynamique de conduite typée confort pépère"
+      ],
+      "ratings": {
+        "value": 9.3,
+        "range": 9.2,
+        "comfort": 8.7,
+        "equipment": 9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "byd-seal-u-dm-i-boost",
+      "brand": "BYD",
+      "model": "Seal U DM-i Hybride Rechargeable (PHEV)",
+      "origin": "Chine",
+      "madeIn": "Zhengzhou (Chine)",
+      "chineseBrand": true,
+      "energy": "PHEV",
+      "segment": "SUV familial",
+      "isSUV": true,
+      "officialUrl": "https://www.byd.com/fr/voitures-hybrides/seal-u-dm-i",
+      "configuratorUrl": "https://www.byd.com/fr/configurateur/seal-u-dm-i",
+      "imageUrl": null,
+      "priceFromEur": 37500,
+      "priceToEur": 45500,
+      "specs": {
+        "lengthMm": 4775,
+        "widthMm": 1890,
+        "trunkL": 425,
+        "seats": 5,
+        "powerHp": 218,
+        "batteryKwh": 18.3,
+        "rangeKm": 1080,
+        "electricRangeKm": 80,
+        "consumption": "0,9 L/100 km (WLTP pondéré) / 6,4 L batterie vide",
+        "co2gkm": 20,
+        "dcChargeKw": 18,
+        "acChargeKw": 11,
+        "charge10to80min": 35,
+        "zeroTo100s": 8.9,
+        "towingKg": 1300,
+        "warranty": "6 ans ou 150 000 km",
+        "batteryWarranty": "8 ans ou 200 000 km (Batterie Blade LFP)"
+      },
+      "versions": [
+        {
+          "name": "Boost (218 ch / 18,3 kWh / 80 km EV)",
+          "priceEur": 37500,
+          "highlights": [
+            "Toit ouvrant pano",
+            "Sièges ventilés",
+            "Audio Infinity"
+          ]
+        },
+        {
+          "name": "Comfort (218 ch / 26,6 kWh / 125 km EV)",
+          "priceEur": 40500,
+          "highlights": [
+            "Batterie 26,6 kWh",
+            "125 km 100% électrique"
+          ]
+        },
+        {
+          "name": "Design AWD (324 ch / 18,3 kWh / 4x4)",
+          "priceEur": 44500,
+          "highlights": [
+            "Transmission intégrale",
+            "0-100 en 5.9 s"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Toit ouvrant panoramique électrique avec rideau",
+        "Écran rotatif 15,6\" + affichage tête haute HUD",
+        "Sièges avant électriques chauffants et ventilés en cuir vegan",
+        "Caméra panoramique 360° HD",
+        "Charge rapide DC 18 kW + V2L (3,3 kW)"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Prime constructeur BYD & Offre déstockage",
+          "monthlyEur": 359,
+          "durationMonths": 48,
+          "downPaymentEur": 3500,
+          "kmPerYear": 10000,
+          "discountEur": 4600,
+          "priceAfterEur": 32900,
+          "validUntil": "2026-12-31",
+          "conditions": "Remise immédiate de 4 600 € sur version Boost en stock en concession BYD France.",
+          "sourceUrl": "https://www.byd.com/fr/offres"
+        }
+      ],
+      "dealerBehavior": "PHEV échappant aux surtaxes douanières BEV ! Concessions BYD très agressives avec 4 000 à 5 000 € de remise.",
+      "negotiationMarginPct": [
+        8,
+        13
+      ],
+      "pros": [
+        "Exempté de droits de douane et de malus",
+        "Équipement pléthorique tout inclus sans option payante",
+        "Charge rapide DC présente même sur de l'hybride"
+      ],
+      "cons": [
+        "Coffre de 425 L moyen pour 4,77 m",
+        "Comportement routier très axé sur le confort mou"
+      ],
+      "ratings": {
+        "value": 9.4,
+        "range": 9.2,
+        "comfort": 8.6,
+        "equipment": 9.6
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "byd-atto-3-comfort",
+      "brand": "BYD",
+      "model": "Atto 3 (60,5 kWh / 204 ch)",
+      "origin": "Chine",
+      "madeIn": "Changsha (Chine)",
+      "chineseBrand": true,
+      "energy": "BEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.byd.com/fr/voitures-electriques/atto-3",
+      "configuratorUrl": "https://www.byd.com/fr/configurateur/atto-3",
+      "imageUrl": null,
+      "priceFromEur": 37990,
+      "priceToEur": 39990,
+      "specs": {
+        "lengthMm": 4455,
+        "widthMm": 1875,
+        "trunkL": 440,
+        "seats": 5,
+        "powerHp": 204,
+        "batteryKwh": 60.5,
+        "rangeKm": 420,
+        "electricRangeKm": 420,
+        "consumption": "15,6 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 88,
+        "acChargeKw": 11,
+        "charge10to80min": 44,
+        "zeroTo100s": 7.3,
+        "towingKg": 750,
+        "warranty": "6 ans ou 150 000 km",
+        "batteryWarranty": "8 ans ou 200 000 km (Blade LFP)"
+      },
+      "versions": [
+        {
+          "name": "Comfort 60,5 kWh",
+          "priceEur": 37990,
+          "highlights": [
+            "Écran rotatif 12,8\"",
+            "Batterie Blade LFP",
+            "Pompe à chaleur"
+          ]
+        },
+        {
+          "name": "Design 60,5 kWh",
+          "priceEur": 39990,
+          "highlights": [
+            "Écran rotatif 15,6\"",
+            "Hayon électrique",
+            "Purification d'air PM2.5"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Batterie Blade LFP ultra sécurisée",
+        "Écran tactile rotatif 15,6\" motorisé",
+        "Toit ouvrant panoramique panoramique de série",
+        "Pompe à chaleur et charge bidirectionnelle V2L"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Prime Éco BYD France — Remise Directe 4 500 €",
+          "monthlyEur": 279,
+          "durationMonths": 37,
+          "downPaymentEur": 3000,
+          "kmPerYear": 10000,
+          "discountEur": 4500,
+          "priceAfterEur": 33490,
+          "validUntil": "2026-11-30",
+          "conditions": "4 500 € de remise constructeur sur modèles Atto 3 en stock.",
+          "sourceUrl": "https://www.byd.com/fr/offres"
+        }
+      ],
+      "dealerBehavior": "Pour contrer les taxes douanières UE, BYD prend sur sa marge et offre 4 000 à 5 000 € de prime immédiate.",
+      "negotiationMarginPct": [
+        8,
+        12
+      ],
+      "pros": [
+        "Batterie Blade LFP réputée indestructible",
+        "Équipement complet de série avec toit ouvrant",
+        "Design intérieur original"
+      ],
+      "cons": [
+        "Charge rapide DC limitée à 88 kW",
+        "Pneumatiques d'origine moyens sous la pluie"
+      ],
+      "ratings": {
+        "value": 8.7,
+        "range": 8.2,
+        "comfort": 8.5,
+        "equipment": 9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "byd-dolphin-comfort",
+      "brand": "BYD",
+      "model": "Dolphin Comfort (60,4 kWh / 204 ch)",
+      "origin": "Chine",
+      "madeIn": "Changsha (Chine)",
+      "chineseBrand": true,
+      "energy": "BEV",
+      "segment": "Compacte",
+      "isSUV": false,
+      "officialUrl": "https://www.byd.com/fr/voitures-electriques/dolphin",
+      "configuratorUrl": "https://www.byd.com/fr/configurateur/dolphin",
+      "imageUrl": null,
+      "priceFromEur": 33990,
+      "priceToEur": 35990,
+      "specs": {
+        "lengthMm": 4290,
+        "widthMm": 1770,
+        "trunkL": 345,
+        "seats": 5,
+        "powerHp": 204,
+        "batteryKwh": 60.4,
+        "rangeKm": 427,
+        "electricRangeKm": 427,
+        "consumption": "15,9 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 88,
+        "acChargeKw": 11,
+        "charge10to80min": 40,
+        "zeroTo100s": 7,
+        "towingKg": 0,
+        "warranty": "6 ans ou 150 000 km",
+        "batteryWarranty": "8 ans ou 200 000 km (Blade LFP)"
+      },
+      "versions": [
+        {
+          "name": "Comfort 60,4 kWh (204 ch)",
+          "priceEur": 33990,
+          "highlights": [
+            "Batterie Blade 60,4 kWh",
+            "Écran rotatif 12,8\"",
+            "Sièges chauffants"
+          ]
+        },
+        {
+          "name": "Design 60,4 kWh (204 ch)",
+          "priceEur": 35990,
+          "highlights": [
+            "Toit panoramique",
+            "Peinture bi-ton",
+            "Chargeur induction"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Batterie Blade LFP 60,4 kWh",
+        "Écran tactile 12,8\" pivotant",
+        "Caméra panoramique 360°",
+        "Pompe à chaleur de série"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Prime Éco BYD Dolphin — Remise 4 000 €",
+          "monthlyEur": 239,
+          "durationMonths": 37,
+          "downPaymentEur": 2500,
+          "kmPerYear": 10000,
+          "discountEur": 4000,
+          "priceAfterEur": 29990,
+          "validUntil": "2026-11-30",
+          "conditions": "4 000 € de remise BYD France sur modèles Comfort et Design en stock.",
+          "sourceUrl": "https://www.byd.com/fr/offres"
+        }
+      ],
+      "dealerBehavior": "BYD fait passer la Dolphin sous les 30 000 € grâce à des remises concession systématiques de 4 000 €.",
+      "negotiationMarginPct": [
+        8,
+        12
+      ],
+      "pros": [
+        "Moteur 204 ch et batterie 60 kWh sous 30 000 € après remise",
+        "Garantie 6 ans / 8 ans Blade",
+        "Équipement généreux avec caméra 360°"
+      ],
+      "cons": [
+        "Recharge DC limitée à 88 kW",
+        "Suspensions trop souples en conduite soutenue"
+      ],
+      "ratings": {
+        "value": 8.8,
+        "range": 8.3,
+        "comfort": 8.3,
+        "equipment": 8.9
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "leapmotor-t03-electric",
+      "brand": "Leapmotor",
+      "model": "T03 Électrique 95 ch (37,3 kWh)",
+      "origin": "Chine",
+      "madeIn": "Tychy (Pologne - Assemblé par Stellantis)",
+      "chineseBrand": true,
+      "energy": "BEV",
+      "segment": "Citadine",
+      "isSUV": false,
+      "officialUrl": "https://www.leapmotor.net/fr/t03",
+      "configuratorUrl": "https://www.leapmotor.net/fr/t03/configurateur",
+      "imageUrl": null,
+      "priceFromEur": 18900,
+      "priceToEur": 19900,
+      "specs": {
+        "lengthMm": 3620,
+        "widthMm": 1652,
+        "trunkL": 210,
+        "seats": 4,
+        "powerHp": 95,
+        "batteryKwh": 37.3,
+        "rangeKm": 265,
+        "electricRangeKm": 265,
+        "consumption": "14,1 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 45,
+        "acChargeKw": 6.6,
+        "charge10to80min": 36,
+        "zeroTo100s": 12,
+        "towingKg": 0,
+        "warranty": "3 ans ou 100 000 km",
+        "batteryWarranty": "8 ans ou 160 000 km (70% SOH)"
+      },
+      "versions": [
+        {
+          "name": "Design 37,3 kWh (95 ch)",
+          "priceEur": 18900,
+          "highlights": [
+            "Écran 10,1\"",
+            "Toit panoramique fixe",
+            "Caméra de recul",
+            "Clim auto"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Assemblé en Pologne chez Stellantis (Tychy)",
+        "Toit panoramique vitré avec rideau électrique",
+        "Écran multimédia 10,1\" avec commande vocale",
+        "Aide au stationnement et caméra de recul"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Éligible au leasing social grâce à l'assemblage en Pologne"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "Offre LLD Stellantis Leapmotor T03 — À partir de 99 €/mois",
+          "monthlyEur": 99,
+          "durationMonths": 37,
+          "downPaymentEur": 1000,
+          "kmPerYear": 10000,
+          "discountEur": 1500,
+          "priceAfterEur": 13400,
+          "validUntil": "2026-11-30",
+          "conditions": "Bonus écologique de 4 000 € déduit, distribué dans le réseau Stellantis.",
+          "sourceUrl": "https://www.leapmotor.net/fr/offres"
+        }
+      ],
+      "dealerBehavior": "Distribuée dans les concessions Stellantis (Peugeot, Citroën, Fiat). Éligible au bonus grâce à l'usine polonaise de Tychy, tarif net spectaculaire sous 14 000 €.",
+      "negotiationMarginPct": [
+        4,
+        7
+      ],
+      "pros": [
+        "Prix net sous 14 000 € bonus déduit grâce à l'assemblage européen",
+        "Réseau de distribution et service Stellantis en France",
+        "Moteur 95 ch tonique en ville"
+      ],
+      "cons": [
+        "Coffre réduit de 210 L",
+        "Recharge DC plafonnée à 45 kW"
+      ],
+      "ratings": {
+        "value": 9.5,
+        "range": 7.2,
+        "comfort": 7.8,
+        "equipment": 8.4
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "leapmotor-c10-electric",
+      "brand": "Leapmotor",
+      "model": "C10 SUV Électrique 218 ch (70 kWh)",
+      "origin": "Chine",
+      "madeIn": "Jinhua (Chine)",
+      "chineseBrand": true,
+      "energy": "BEV",
+      "segment": "SUV familial",
+      "isSUV": true,
+      "officialUrl": "https://www.leapmotor.net/fr/c10",
+      "configuratorUrl": "https://www.leapmotor.net/fr/c10/configurateur",
+      "imageUrl": null,
+      "priceFromEur": 36400,
+      "priceToEur": 39900,
+      "specs": {
+        "lengthMm": 4739,
+        "widthMm": 1900,
+        "trunkL": 435,
+        "seats": 5,
+        "powerHp": 218,
+        "batteryKwh": 69.9,
+        "rangeKm": 420,
+        "electricRangeKm": 420,
+        "consumption": "16,8 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 84,
+        "acChargeKw": 11,
+        "charge10to80min": 30,
+        "zeroTo100s": 7.5,
+        "towingKg": 1500,
+        "warranty": "3 ans ou 100 000 km",
+        "batteryWarranty": "8 ans ou 160 000 km"
+      },
+      "versions": [
+        {
+          "name": "Style 70 kWh (218 ch)",
+          "priceEur": 36400,
+          "highlights": [
+            "Écran 14,6\"",
+            "Puce Qualcomm 8155",
+            "Toit pano 2,1 m²"
+          ]
+        },
+        {
+          "name": "Design 70 kWh (218 ch)",
+          "priceEur": 38400,
+          "highlights": [
+            "Sièges chauffants/ventilés",
+            "Sellerie bio Oeko-Tex",
+            "Ambiance lumineuse"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Architecture électronique Leap 3.0 avec puce Qualcomm Snapdragon 8155",
+        "Écran tactile 2,5K de 14,6\" et combiné 10,25\"",
+        "Toit panoramique géant de 2,1 m² avec rideau pare-soleil électrique",
+        "Réseau d'entretien Stellantis en France"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Offre Lancement Leapmotor C10 — Avantage Client 3 500 €",
+          "monthlyEur": 299,
+          "durationMonths": 37,
+          "downPaymentEur": 3000,
+          "kmPerYear": 10000,
+          "discountEur": 3500,
+          "priceAfterEur": 32900,
+          "validUntil": "2026-11-30",
+          "conditions": "3 500 € d'avantage client chez les distributeurs Stellantis agréés.",
+          "sourceUrl": "https://www.leapmotor.net/fr/offres"
+        }
+      ],
+      "dealerBehavior": "Vendu dans le réseau Stellantis. Tarif de départ très agressif pour un SUV de 4,74 m, remises de 3 000 à 4 000 €.",
+      "negotiationMarginPct": [
+        7,
+        11
+      ],
+      "pros": [
+        "Grand SUV de 4,74 m tout équipé à moins de 33 000 € après remise",
+        "Habitacle très soigné avec sellerie Oeko-Tex",
+        "Adossé au réseau Stellantis pour l'après-vente"
+      ],
+      "cons": [
+        "Autonomie autoroutière modeste (420 km WLTP pour 70 kWh)",
+        "Puissance de charge DC de 84 kW"
+      ],
+      "ratings": {
+        "value": 9.1,
+        "range": 8,
+        "comfort": 8.9,
+        "equipment": 9.2
+      },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "xpeng-g6-rwd-long-range",
+      "brand": "Xpeng",
+      "model": "G6 Autonomie Standard & Étendue 800V",
+      "origin": "Chine",
+      "madeIn": "Wuhan (Chine)",
+      "chineseBrand": true,
+      "energy": "BEV",
+      "segment": "SUV familial",
+      "isSUV": true,
+      "officialUrl": "https://www.xpeng.com/fr/g6",
+      "configuratorUrl": "https://www.xpeng.com/fr/configurateur/g6",
+      "imageUrl": null,
+      "priceFromEur": 42990,
+      "priceToEur": 50990,
+      "specs": {
+        "lengthMm": 4753,
+        "widthMm": 1920,
+        "trunkL": 571,
+        "seats": 5,
+        "powerHp": 286,
+        "batteryKwh": 87.5,
+        "rangeKm": 570,
+        "electricRangeKm": 570,
+        "consumption": "15,8 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 280,
+        "acChargeKw": 11,
+        "charge10to80min": 20,
+        "zeroTo100s": 6.2,
+        "towingKg": 1500,
+        "warranty": "5 ans ou 120 000 km",
+        "batteryWarranty": "8 ans ou 160 000 km (70% SOH)"
+      },
+      "versions": [
+        {
+          "name": "RWD Standard Range 66 kWh (435 km)",
+          "priceEur": 42990,
+          "highlights": [
+            "Architecture 800V",
+            "Charge DC 215 kW",
+            "Écran 14,96\""
+          ]
+        },
+        {
+          "name": "RWD Long Range 87,5 kWh (570 km)",
+          "priceEur": 46990,
+          "highlights": [
+            "570 km WLTP",
+            "Charge DC 280 kW (10-80% en 20 min)"
+          ]
+        },
+        {
+          "name": "AWD Performance 87,5 kWh (476 ch)",
+          "priceEur": 50990,
+          "highlights": [
+            "Transmission 4x4",
+            "0-100 en 4.1 s"
+          ]
+        }
+      ],
+      "standardEquipment": [
+        "Architecture ultra-rapide 800V Silicon Carbide (recharge 10-80% en 20 min à 280 kW)",
+        "XPILOT 2.5 conduite assistée avec caméras et radars haute définition",
+        "Écran tactile 14,96\" et système audio Xopera 18 haut-parleurs",
+        "Grand toit vitré panoramique et sièges avant chauffants/ventilés"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Offre Lancement Xpeng G6 — Avantage Client 4 000 €",
+          "monthlyEur": 379,
+          "durationMonths": 37,
+          "downPaymentEur": 3500,
+          "kmPerYear": 10000,
+          "discountEur": 4000,
+          "priceAfterEur": 38990,
+          "validUntil": "2026-11-30",
+          "conditions": "Remise immédiate de 4 000 € sur véhicules neufs en stock.",
+          "sourceUrl": "https://www.xpeng.com/fr/offres"
+        }
+      ],
+      "dealerBehavior": "Rival direct et déclaré du Tesla Model Y avec technologie 800V supérieure. Remises agressives de 3 500 à 4 500 € pour s'implanter en France.",
+      "negotiationMarginPct": [
+        7,
+        10
+      ],
+      "pros": [
+        "Architecture 800V avec recharge éclair en 20 minutes",
+        "Équipement ultra complet sans catalogue d'options",
+        "Espace intérieur et coffre de 571 L"
+      ],
+      "cons": [
+        "Privé de bonus écologique en France",
+        "Marque jeune dont le réseau de concessionnaires s'étoffe"
+      ],
+      "ratings": {
+        "value": 9.3,
+        "range": 9.4,
+        "comfort": 8.8,
+        "equipment": 9.5
+      },
+      "lastChecked": "2026-11-08"
+    }
+  ]
+}

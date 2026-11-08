@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoVeille FR — Comparateur d'Offres Véhicules BEV · PHEV · HEV & Concessions</title>
+  <meta name="description" content="Comparateur quotidien des meilleures offres constructeurs et concessions en France : SUV, Citadines & Compactes (BEV, PHEV, HEV), aides CEE, TCO 4 ans et veille automatisée." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#/" class="brand-logo" aria-label="Accueil AutoVeille FR">
+        <span class="brand-mark">AV</span>
+        <div class="brand-text">
+          <span class="brand-title">AutoVeille <span class="brand-badge">FRANCE 2026</span></span>
+          <span class="brand-subtitle">Offres Constructeurs · Remises Concessions · BEV / PHEV / HEV</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="#/" class="nav-link" data-nav="">
+          <span class="nav-icon">⚡</span> Offres & Catalogue
+        </a>
+        <a href="#/comparateur" class="nav-link" data-nav="comparateur">
+          <span class="nav-icon">⚖️</span> Comparateur <span id="nav-cmp-badge" class="badge-pill">0</span>
+        </a>
+        <a href="#/simulateur" class="nav-link" data-nav="simulateur">
+          <span class="nav-icon">🧮</span> TCO & Compacte vs SUV
+        </a>
+        <a href="#/marche" class="nav-link" data-nav="marche">
+          <span class="nav-icon">📊</span> Marché & Concessions
+        </a>
+        <a href="#/alertes" class="nav-link" data-nav="alertes">
+          <span class="nav-icon">🔔</span> Alertes 6h30 / 7h00
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <a id="header-refresh-btn" href="#/alertes" class="btn btn-outline btn-sm" title="Actualiser les offres ou lancer le workflow quotidien">
+          <span>↻</span> Actualiser
+        </a>
+        <button id="theme-toggle" type="button" class="btn-icon" aria-label="Basculer le thème clair / sombre" title="Mode clair / sombre">
+          <span id="theme-icon">☀️</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div id="sample-banner" class="sample-banner hidden">
+    <div class="container">
+      ⚠️ Mode données d'exemple (<code>data/vehicles.sample.json</code>) affiché en secours.
+    </div>
+  </div>
+
+  <main id="app-main" class="container main-content" aria-live="polite">
+    <div class="loading-state">
+      <div class="spinner"></div>
+      <p>Chargement du catalogue et calcul des scores d'offres…</p>
+    </div>
+  </main>
+
+  <div id="compare-dock" class="compare-dock hidden" aria-label="Barre de comparaison rapide"></div>
+  <div id="toast-root" class="toast-root" aria-live="assertive"></div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <strong>AutoVeille FR — Intelligence Tarifaire Automobile</strong>
+        <p id="footer-meta" class="muted">Chargement des métadonnées…</p>
+        <p class="footer-disclaimer">
+          Tarifs TTC France, bonus écologique, primes CEE et remises constructeurs donnés à titre indicatif sous réserve d'éligibilité. Cliquez sur chaque véhicule pour vérifier l'offre en vigueur directement sur le site officiel de la marque.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="#/">Catalogue & Offres</a>
+        <a href="#/comparateur">Comparateur (4 max)</a>
+        <a href="#/simulateur">Simulateur Compacte + Été vs SUV</a>
+        <a href="#/marche">Analyse Concessions & Chine</a>
+        <a href="#/alertes">Alertes 6h30 Mail / 7h00 Push</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./assets/app.js"></script>
+</body>
+</html>

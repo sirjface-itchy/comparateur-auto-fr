@@ -1,0 +1,789 @@
+{
+  "updatedAt": "2026-11-08T06:30:00Z",
+  "snapshots": [
+    {
+      "date": "2026-11-07",
+      "items": [
+        {
+          "id": "renault-scenic-e-tech-87",
+          "p": 48490,
+          "n": 41990,
+          "m": 400,
+          "k": [
+            "xu39ux"
+          ]
+        },
+        {
+          "id": "renault-5-e-tech-150",
+          "p": 27990,
+          "n": 22190,
+          "m": 220,
+          "k": [
+            "n26ji1"
+          ]
+        },
+        {
+          "id": "renault-4-e-tech-150",
+          "p": 29990,
+          "n": 25990,
+          "m": 249,
+          "k": [
+            "24jtyw"
+          ]
+        },
+        {
+          "id": "renault-megane-e-tech-ev60",
+          "p": 34000,
+          "n": 30000,
+          "m": 279,
+          "k": [
+            "1q6urpc"
+          ]
+        },
+        {
+          "id": "renault-symbioz-e-tech-145",
+          "p": 33400,
+          "n": 33200,
+          "m": 290,
+          "k": [
+            "1hmtyr7"
+          ]
+        },
+        {
+          "id": "renault-austral-e-tech-200",
+          "p": 40800,
+          "n": 40100,
+          "m": 350,
+          "k": [
+            "zkufy8"
+          ]
+        },
+        {
+          "id": "renault-clio-e-tech-145",
+          "p": 23900,
+          "n": 23300,
+          "m": 189,
+          "k": [
+            "1mplnjt"
+          ]
+        },
+        {
+          "id": "renault-captur-e-tech-145",
+          "p": 28900,
+          "n": 28300,
+          "m": 239,
+          "k": [
+            "i408j9"
+          ]
+        },
+        {
+          "id": "dacia-spring-electric-65",
+          "p": 18900,
+          "n": 17400,
+          "m": 119,
+          "k": [
+            "10iz9by"
+          ]
+        },
+        {
+          "id": "dacia-duster-hybrid-140",
+          "p": 26600,
+          "n": 26600,
+          "m": 235,
+          "k": [
+            "sxenx"
+          ]
+        },
+        {
+          "id": "dacia-bigster-hybrid-155",
+          "p": 29900,
+          "n": 29900,
+          "m": 279,
+          "k": [
+            "18v28k4"
+          ]
+        },
+        {
+          "id": "peugeot-e-2008-156",
+          "p": 40250,
+          "n": 32050,
+          "m": 299,
+          "k": [
+            "1vr20ih"
+          ]
+        },
+        {
+          "id": "peugeot-e-3008-210",
+          "p": 44990,
+          "n": 38190,
+          "m": 389,
+          "k": [
+            "q5mx5b"
+          ]
+        },
+        {
+          "id": "peugeot-3008-hybrid-136",
+          "p": 38490,
+          "n": 35660,
+          "m": 319,
+          "k": [
+            "1dgbkc0"
+          ]
+        },
+        {
+          "id": "peugeot-e-208-156",
+          "p": 33400,
+          "n": 25900,
+          "m": 219,
+          "k": [
+            "1for62g"
+          ]
+        },
+        {
+          "id": "citroen-e-c3-113",
+          "p": 23300,
+          "n": 18100,
+          "m": 149,
+          "k": [
+            "1khdwer"
+          ]
+        },
+        {
+          "id": "citroen-e-c3-aircross-113",
+          "p": 27400,
+          "n": 21900,
+          "m": 199,
+          "k": [
+            "4eve5v"
+          ]
+        },
+        {
+          "id": "tesla-model-y-propulsion",
+          "p": 46490,
+          "n": 42490,
+          "m": 419,
+          "k": [
+            "9wiw6o"
+          ]
+        },
+        {
+          "id": "tesla-model-3-highland",
+          "p": 39990,
+          "n": 37490,
+          "m": 329,
+          "k": [
+            "1xiaett"
+          ]
+        },
+        {
+          "id": "kia-ev3-81kwh",
+          "p": 35990,
+          "n": 31990,
+          "m": 289,
+          "k": [
+            "19rdhhs"
+          ]
+        },
+        {
+          "id": "kia-niro-ev-64",
+          "p": 41690,
+          "n": 36690,
+          "m": 319,
+          "k": [
+            "4i7cyv"
+          ]
+        },
+        {
+          "id": "kia-sportage-hybrid-215",
+          "p": 39990,
+          "n": 36720,
+          "m": 339,
+          "k": [
+            "1bsm22r"
+          ]
+        },
+        {
+          "id": "hyundai-kona-electric-65",
+          "p": 40850,
+          "n": 33350,
+          "m": 299,
+          "k": [
+            "1skvpm6"
+          ]
+        },
+        {
+          "id": "hyundai-inster-electric-49",
+          "p": 25000,
+          "n": 22500,
+          "m": 169,
+          "k": [
+            "gykbfe"
+          ]
+        },
+        {
+          "id": "hyundai-tucson-hybrid-215",
+          "p": 40500,
+          "n": 36930,
+          "m": 349,
+          "k": [
+            "11i6ocb"
+          ]
+        },
+        {
+          "id": "toyota-yaris-cross-116",
+          "p": 28200,
+          "n": 25700,
+          "m": 229,
+          "k": [
+            "r1csmn"
+          ]
+        },
+        {
+          "id": "toyota-c-hr-hybrid-140",
+          "p": 34900,
+          "n": 31700,
+          "m": 299,
+          "k": [
+            "1sgw4lf"
+          ]
+        },
+        {
+          "id": "toyota-bz4x-pure",
+          "p": 39990,
+          "n": 33990,
+          "m": 329,
+          "k": [
+            "tj8l9q"
+          ]
+        },
+        {
+          "id": "volkswagen-id3-pro",
+          "p": 37990,
+          "n": 30490,
+          "m": 269,
+          "k": [
+            "1krpjg7"
+          ]
+        },
+        {
+          "id": "volkswagen-id4-pro",
+          "p": 45990,
+          "n": 37990,
+          "m": 359,
+          "k": [
+            "1kq4zlp"
+          ]
+        },
+        {
+          "id": "skoda-elroq-85",
+          "p": 33300,
+          "n": 27300,
+          "m": 249,
+          "k": [
+            "xh7lgm"
+          ]
+        },
+        {
+          "id": "skoda-enyaq-85",
+          "p": 47990,
+          "n": 39490,
+          "m": 399,
+          "k": [
+            "1cls4zx"
+          ]
+        },
+        {
+          "id": "bmw-ix1-edrive20",
+          "p": 46900,
+          "n": 39700,
+          "m": 420,
+          "k": [
+            "1w6n8qm"
+          ]
+        },
+        {
+          "id": "volvo-ex30-single-motor",
+          "p": 37500,
+          "n": 33500,
+          "m": 349,
+          "k": [
+            "axswnt"
+          ]
+        },
+        {
+          "id": "mg4-electric-64",
+          "p": 31490,
+          "n": 26490,
+          "m": 229,
+          "k": [
+            "1mtakx1"
+          ]
+        },
+        {
+          "id": "mg-zs-hybrid-plus",
+          "p": 22990,
+          "n": 22990,
+          "m": 189,
+          "k": [
+            "6u26hs"
+          ]
+        },
+        {
+          "id": "mg-hs-phev-339",
+          "p": 36990,
+          "n": 36990,
+          "m": 329,
+          "k": [
+            "yqubta"
+          ]
+        },
+        {
+          "id": "byd-seal-u-dm-i-boost",
+          "p": 39000,
+          "n": 34400,
+          "m": 389,
+          "k": [
+            "nbk99i"
+          ]
+        },
+        {
+          "id": "byd-atto-3-comfort",
+          "p": 37990,
+          "n": 33490,
+          "m": 279,
+          "k": [
+            "18ct8fw"
+          ]
+        },
+        {
+          "id": "byd-dolphin-comfort",
+          "p": 33990,
+          "n": 29990,
+          "m": 239,
+          "k": [
+            "tqrunr"
+          ]
+        },
+        {
+          "id": "leapmotor-t03-electric",
+          "p": 18900,
+          "n": 13400,
+          "m": 99,
+          "k": [
+            "1g6tro0"
+          ]
+        },
+        {
+          "id": "leapmotor-c10-electric",
+          "p": 36400,
+          "n": 32900,
+          "m": 299,
+          "k": [
+            "l5sh76"
+          ]
+        },
+        {
+          "id": "xpeng-g6-rwd-long-range",
+          "p": 42990,
+          "n": 38990,
+          "m": 379,
+          "k": [
+            "15ud2yo"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "items": [
+        {
+          "id": "renault-scenic-e-tech-87",
+          "p": 46990,
+          "n": 40490,
+          "m": 370,
+          "k": [
+            "xu39ux"
+          ]
+        },
+        {
+          "id": "renault-5-e-tech-150",
+          "p": 27990,
+          "n": 22190,
+          "m": 220,
+          "k": [
+            "n26ji1"
+          ]
+        },
+        {
+          "id": "renault-4-e-tech-150",
+          "p": 29990,
+          "n": 25990,
+          "m": 249,
+          "k": [
+            "24jtyw"
+          ]
+        },
+        {
+          "id": "renault-megane-e-tech-ev60",
+          "p": 34000,
+          "n": 30000,
+          "m": 279,
+          "k": [
+            "1q6urpc"
+          ]
+        },
+        {
+          "id": "renault-symbioz-e-tech-145",
+          "p": 33400,
+          "n": 33200,
+          "m": 290,
+          "k": [
+            "1hmtyr7"
+          ]
+        },
+        {
+          "id": "renault-austral-e-tech-200",
+          "p": 40800,
+          "n": 40100,
+          "m": 350,
+          "k": [
+            "zkufy8"
+          ]
+        },
+        {
+          "id": "renault-clio-e-tech-145",
+          "p": 23900,
+          "n": 23300,
+          "m": 189,
+          "k": [
+            "1mplnjt"
+          ]
+        },
+        {
+          "id": "renault-captur-e-tech-145",
+          "p": 28900,
+          "n": 28300,
+          "m": 239,
+          "k": [
+            "i408j9"
+          ]
+        },
+        {
+          "id": "dacia-spring-electric-65",
+          "p": 18900,
+          "n": 17400,
+          "m": 119,
+          "k": [
+            "10iz9by"
+          ]
+        },
+        {
+          "id": "dacia-duster-hybrid-140",
+          "p": 26600,
+          "n": 26600,
+          "m": 235,
+          "k": [
+            "sxenx"
+          ]
+        },
+        {
+          "id": "dacia-bigster-hybrid-155",
+          "p": 29900,
+          "n": 29900,
+          "m": 279,
+          "k": [
+            "18v28k4"
+          ]
+        },
+        {
+          "id": "peugeot-e-2008-156",
+          "p": 38750,
+          "n": 30550,
+          "m": 269,
+          "k": [
+            "1vr20ih"
+          ]
+        },
+        {
+          "id": "peugeot-e-3008-210",
+          "p": 44990,
+          "n": 38190,
+          "m": 389,
+          "k": [
+            "q5mx5b"
+          ]
+        },
+        {
+          "id": "peugeot-3008-hybrid-136",
+          "p": 38490,
+          "n": 35660,
+          "m": 319,
+          "k": [
+            "1dgbkc0"
+          ]
+        },
+        {
+          "id": "peugeot-e-208-156",
+          "p": 33400,
+          "n": 25900,
+          "m": 219,
+          "k": [
+            "1for62g"
+          ]
+        },
+        {
+          "id": "citroen-e-c3-113",
+          "p": 23300,
+          "n": 18100,
+          "m": 149,
+          "k": [
+            "1khdwer"
+          ]
+        },
+        {
+          "id": "citroen-e-c3-aircross-113",
+          "p": 27400,
+          "n": 21900,
+          "m": 199,
+          "k": [
+            "4eve5v"
+          ]
+        },
+        {
+          "id": "tesla-model-y-propulsion",
+          "p": 44990,
+          "n": 40990,
+          "m": 389,
+          "k": [
+            "9wiw6o"
+          ]
+        },
+        {
+          "id": "tesla-model-3-highland",
+          "p": 39990,
+          "n": 37490,
+          "m": 329,
+          "k": [
+            "1xiaett"
+          ]
+        },
+        {
+          "id": "kia-ev3-81kwh",
+          "p": 35990,
+          "n": 31990,
+          "m": 289,
+          "k": [
+            "19rdhhs"
+          ]
+        },
+        {
+          "id": "kia-niro-ev-64",
+          "p": 41690,
+          "n": 36690,
+          "m": 319,
+          "k": [
+            "4i7cyv"
+          ]
+        },
+        {
+          "id": "kia-sportage-hybrid-215",
+          "p": 39990,
+          "n": 36720,
+          "m": 339,
+          "k": [
+            "1bsm22r"
+          ]
+        },
+        {
+          "id": "hyundai-kona-electric-65",
+          "p": 40850,
+          "n": 33350,
+          "m": 299,
+          "k": [
+            "1skvpm6"
+          ]
+        },
+        {
+          "id": "hyundai-inster-electric-49",
+          "p": 25000,
+          "n": 22500,
+          "m": 169,
+          "k": [
+            "gykbfe"
+          ]
+        },
+        {
+          "id": "hyundai-tucson-hybrid-215",
+          "p": 40500,
+          "n": 36930,
+          "m": 349,
+          "k": [
+            "11i6ocb"
+          ]
+        },
+        {
+          "id": "toyota-yaris-cross-116",
+          "p": 28200,
+          "n": 25700,
+          "m": 229,
+          "k": [
+            "r1csmn"
+          ]
+        },
+        {
+          "id": "toyota-c-hr-hybrid-140",
+          "p": 34900,
+          "n": 31700,
+          "m": 299,
+          "k": [
+            "1sgw4lf"
+          ]
+        },
+        {
+          "id": "toyota-bz4x-pure",
+          "p": 39990,
+          "n": 33990,
+          "m": 329,
+          "k": [
+            "tj8l9q"
+          ]
+        },
+        {
+          "id": "volkswagen-id3-pro",
+          "p": 37990,
+          "n": 30490,
+          "m": 269,
+          "k": [
+            "1krpjg7"
+          ]
+        },
+        {
+          "id": "volkswagen-id4-pro",
+          "p": 45990,
+          "n": 37990,
+          "m": 359,
+          "k": [
+            "1kq4zlp"
+          ]
+        },
+        {
+          "id": "skoda-elroq-85",
+          "p": 33300,
+          "n": 27300,
+          "m": 249,
+          "k": [
+            "xh7lgm"
+          ]
+        },
+        {
+          "id": "skoda-enyaq-85",
+          "p": 46490,
+          "n": 37990,
+          "m": 369,
+          "k": [
+            "1cls4zx"
+          ]
+        },
+        {
+          "id": "bmw-ix1-edrive20",
+          "p": 46900,
+          "n": 39700,
+          "m": 420,
+          "k": [
+            "1w6n8qm"
+          ]
+        },
+        {
+          "id": "volvo-ex30-single-motor",
+          "p": 37500,
+          "n": 33500,
+          "m": 349,
+          "k": [
+            "axswnt"
+          ]
+        },
+        {
+          "id": "mg4-electric-64",
+          "p": 29990,
+          "n": 24990,
+          "m": 199,
+          "k": [
+            "1mtakx1"
+          ]
+        },
+        {
+          "id": "mg-zs-hybrid-plus",
+          "p": 22990,
+          "n": 22990,
+          "m": 189,
+          "k": [
+            "6u26hs"
+          ]
+        },
+        {
+          "id": "mg-hs-phev-339",
+          "p": 36990,
+          "n": 36990,
+          "m": 329,
+          "k": [
+            "yqubta"
+          ]
+        },
+        {
+          "id": "byd-seal-u-dm-i-boost",
+          "p": 37500,
+          "n": 32900,
+          "m": 359,
+          "k": [
+            "nbk99i"
+          ]
+        },
+        {
+          "id": "byd-atto-3-comfort",
+          "p": 37990,
+          "n": 33490,
+          "m": 279,
+          "k": [
+            "18ct8fw"
+          ]
+        },
+        {
+          "id": "byd-dolphin-comfort",
+          "p": 33990,
+          "n": 29990,
+          "m": 239,
+          "k": [
+            "tqrunr"
+          ]
+        },
+        {
+          "id": "leapmotor-t03-electric",
+          "p": 18900,
+          "n": 13400,
+          "m": 99,
+          "k": [
+            "1g6tro0"
+          ]
+        },
+        {
+          "id": "leapmotor-c10-electric",
+          "p": 36400,
+          "n": 32900,
+          "m": 299,
+          "k": [
+            "l5sh76"
+          ]
+        },
+        {
+          "id": "xpeng-g6-rwd-long-range",
+          "p": 42990,
+          "n": 38990,
+          "m": 379,
+          "k": [
+            "15ud2yo"
+          ]
+        }
+      ]
+    }
+  ]
+}

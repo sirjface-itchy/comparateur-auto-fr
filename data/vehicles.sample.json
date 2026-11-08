@@ -1,0 +1,269 @@
+{
+  "updatedAt": "2026-11-08T06:30:00Z",
+  "source": "Données d'exemple (fallback) — Sites constructeurs France (novembre 2026)",
+  "incentives": {
+    "summary": "En France, les véhicules 100 % électriques assemblés en Europe et validant l'éco-score ADEME bénéficient du Bonus Écologique / Coup de pouce CEE (2 000 € à 4 200 € selon revenus). Les véhicules importés de Chine (BEV) sont soumis aux droits de douane européens additionnels et exclus du bonus gouvernemental, mais compensent par d'importantes remises constructeurs ou basculent sur des motorisations hybrides (HEV/PHEV) exemptées de surtaxe douanière.",
+    "items": [
+      {
+        "name": "Bonus Écologique & Coup de pouce CEE Véhicules Particuliers",
+        "amountEur": 4000,
+        "conditions": "Véhicule 100 % électrique neuf < 47 000 € TTC, masse < 2 400 kg, éco-score environnemental ADEME validé (production européenne).",
+        "url": "https://www.service-public.fr/particuliers/vosdroits/F34014"
+      },
+      {
+        "name": "Prime au rétrofit / Surprime ZFE & Reprise",
+        "amountEur": 1500,
+        "conditions": "Mise au rebut d'un véhicule thermique ancien (Crit'Air 3 ou plus) sous conditions de ressources.",
+        "url": "https://www.primealaconversion.gouv.fr/"
+      },
+      {
+        "name": "Exonération Taxe sur l'Affectation des Véhicules et Malus Poids",
+        "amountEur": 0,
+        "conditions": "Exonération totale de malus CO2 pour les BEV et abattement de 600 kg sur le malus au poids pour les véhicules électriques et hybrides rechargeables (> 50 km autonomie urbaine).",
+        "url": "https://www.service-public.fr/particuliers/vosdroits/F35947"
+      }
+    ]
+  },
+  "marketInsights": [
+    {
+      "title": "Offensive des marques chinoises : contournement par l'hybride (HEV/PHEV) et remises BEV",
+      "content": "Face aux droits de douane additionnels de l'UE sur les électriques produites en Chine (17 % pour BYD, 18,8 % pour Geely, 35,3 % pour SAIC/MG) et à l'exclusion du bonus écologique français, les constructeurs chinois répliquent sur deux fronts : d'une part des « primes constructeurs » de 4 000 € à 7 000 € sur leurs BEV (MG4, BYD Dolphin/Atto 3), et d'autre part le lancement massif de SUV hybrides et hybrides rechargeables non surtaxés (BYD Seal U DM-i, MG ZS Hybrid+) à des tarifs ultra-compétitifs.",
+      "brands": ["BYD", "MG", "Leapmotor", "Xpeng"],
+      "impact": "Très favorable à l'acheteur : jusqu'à 16 % de remise directe sur stock."
+    },
+    {
+      "title": "Pression sur les stocks de fin d'année en concession",
+      "content": "Pour atteindre leurs quotas CAFE (émissions moyennes de CO2 de la flotte) et boucler les objectifs annuels, les concessions françaises accordent des remises exceptionnelles sur les véhicules en stock livrables sous 30 jours, ainsi que des taux de LOA/LLD bonifiés (0 % à 2,9 %).",
+      "brands": ["Renault", "Peugeot", "Volkswagen", "Hyundai", "Kia"],
+      "impact": "Forte marge de négociation en fin de trimestre sur les véhicules en stock."
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "renault-5-e-tech-150",
+      "brand": "Renault",
+      "model": "R5 E-Tech Electric 150 ch Confort Range",
+      "origin": "France",
+      "madeIn": "Douai (France - ElectriCity)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "Citadine",
+      "isSUV": false,
+      "officialUrl": "https://www.renault.fr/vehicules-electriques/r5-e-tech-electrique.html",
+      "configuratorUrl": "https://www.renault.fr/vehicules-electriques/r5-e-tech-electrique/configurateur.html",
+      "imageUrl": null,
+      "priceFromEur": 27990,
+      "priceToEur": 35490,
+      "specs": {
+        "lengthMm": 3922,
+        "widthMm": 1774,
+        "trunkL": 326,
+        "seats": 5,
+        "powerHp": 150,
+        "batteryKwh": 52,
+        "rangeKm": 410,
+        "electricRangeKm": 410,
+        "consumption": "14,9 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 100,
+        "acChargeKw": 11,
+        "charge10to80min": 30,
+        "zeroTo100s": 8.0,
+        "towingKg": 500,
+        "warranty": "2 ans kilométrage illimité",
+        "batteryWarranty": "8 ans ou 160 000 km (70 % SOH)"
+      },
+      "versions": [
+        { "name": "Five (95 ch / 40 kWh)", "priceEur": 24990, "highlights": ["Écran 10\"", "Climatisation manuelle", "Sans charge DC"] },
+        { "name": "Evolution (120 ch / 40 kWh)", "priceEur": 27990, "highlights": ["Pompe à chaleur", "Charge DC 80 kW", "Charge bidirectionnelle V2L"] },
+        { "name": "Techno (150 ch / 52 kWh)", "priceEur": 31490, "highlights": ["OpenR Link Google intégré", "Autonomie 410 km WLTP", "Jantes 18\" diamantées", "Caméra de recul"] },
+        { "name": "Iconic Cinq (150 ch / 52 kWh)", "priceEur": 33490, "highlights": ["Sièges et volant chauffants", "Parking mains-libres", "Peinture bi-ton de série"] }
+      ],
+      "standardEquipment": [
+        "Pompe à chaleur de série ( dès Evolution )",
+        "Système multimédia OpenR Link 10\" avec services Google",
+        "Chargeur embarqué AC 11 kW bidirectionnel V2L",
+        "Régulateur de vitesse adaptatif",
+        "Aide au parking avant/arrière avec caméra",
+        "Climatisation automatique"
+      ],
+      "aids": {
+        "ecoScoreEligible": true,
+        "bonusEur": 4000,
+        "malusEur": 0,
+        "socialLeasing": "Éligible au dispositif de leasing social sous conditions de revenus"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "LLD Renault R5 E-Tech Evolution 120 ch — 37 mois",
+          "monthlyEur": 230,
+          "durationMonths": 37,
+          "downPaymentEur": 0,
+          "kmPerYear": 10000,
+          "discountEur": 1500,
+          "priceAfterEur": 22490,
+          "validUntil": "2026-11-30",
+          "conditions": "1er loyer couvert par le bonus écologique et prime CEE de 4 000 €, 37 mois / 30 000 km.",
+          "sourceUrl": "https://www.renault.fr/offres-du-moment/offres-vehicules-electriques.html"
+        }
+      ],
+      "dealerBehavior": "Modèle très demandé mais stocks désormais disponibles en finition Techno. Les concessions accordent 4 à 6 % de remise ou offrent le câble domestique + pack entretien sur véhicules en stock.",
+      "negotiationMarginPct": [3, 6],
+      "pros": ["Fabrication française éligible à toutes les aides", "Châssis agile et habitacle Google OpenR Link", "Coffre de 326 L généreux pour 3,92 m"],
+      "cons": ["Places arrière justes pour des adultes sur longs trajets", "Version d'entrée Five dépourvue de charge rapide DC"],
+      "ratings": { "value": 8.5, "range": 8.0, "comfort": 8.2, "equipment": 9.0 },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "byd-seal-u-dm-i-boost",
+      "brand": "BYD",
+      "model": "Seal U DM-i Hybride Rechargeable (PHEV)",
+      "origin": "Chine",
+      "madeIn": "Zhengzhou (Chine)",
+      "chineseBrand": true,
+      "energy": "PHEV",
+      "segment": "SUV familial",
+      "isSUV": true,
+      "officialUrl": "https://www.byd.com/fr/voitures-hybrides/seal-u-dm-i",
+      "configuratorUrl": "https://www.byd.com/fr/configurateur/seal-u-dm-i",
+      "imageUrl": null,
+      "priceFromEur": 37500,
+      "priceToEur": 45500,
+      "specs": {
+        "lengthMm": 4775,
+        "widthMm": 1890,
+        "trunkL": 425,
+        "seats": 5,
+        "powerHp": 218,
+        "batteryKwh": 18.3,
+        "rangeKm": 1080,
+        "electricRangeKm": 80,
+        "consumption": "0,9 L/100 km (WLTP pondéré) / 6,4 L batterie vide",
+        "co2gkm": 20,
+        "dcChargeKw": 18,
+        "acChargeKw": 11,
+        "charge10to80min": 35,
+        "zeroTo100s": 8.9,
+        "towingKg": 1300,
+        "warranty": "6 ans ou 150 000 km",
+        "batteryWarranty": "8 ans ou 200 000 km (Batterie Blade LFP)"
+      },
+      "versions": [
+        { "name": "Boost (218 ch / 18,3 kWh / 80 km EV)", "priceEur": 37500, "highlights": ["Tout équipé de série", "Toit ouvrant panoramique", "Sièges ventilés/chauffants", "Audio Infinity 10 HP"] },
+        { "name": "Comfort (218 ch / 26,6 kWh / 125 km EV)", "priceEur": 40500, "highlights": ["Batterie 26,6 kWh", "125 km d'autonomie 100 % électrique", "Autonomie totale 1 125 km"] },
+        { "name": "Design AWD (324 ch / 18,3 kWh / 4x4)", "priceEur": 44500, "highlights": ["Transmission intégrale", "0-100 km/h en 5,9 s", "Traction 1 300 kg"] }
+      ],
+      "standardEquipment": [
+        "Toit ouvrant panoramique électrique avec rideau",
+        "Écran rotatif 15,6\" + affichage tête haute HUD",
+        "Sièges avant électriques chauffants et ventilés en similicuir vegan",
+        "Caméra panoramique 360° HD",
+        "Système audio Infinity 10 haut-parleurs",
+        "Charge rapide DC 18 kW + V2L (3,3 kW)"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible"
+      },
+      "offers": [
+        {
+          "type": "Remise",
+          "title": "Prime constructeur BYD & Offre déstockage",
+          "monthlyEur": 369,
+          "durationMonths": 48,
+          "downPaymentEur": 3500,
+          "kmPerYear": 10000,
+          "discountEur": 4600,
+          "priceAfterEur": 32900,
+          "validUntil": "2026-12-31",
+          "conditions": "Remise immédiate de 4 600 € sur version Boost en stock en concession BYD France.",
+          "sourceUrl": "https://www.byd.com/fr/offres"
+        }
+      ],
+      "dealerBehavior": "En tant que PHEV, le Seal U DM-i échappe aux surtaxes douanières UE sur les BEV chinois ! Les concessions BYD ont d'importants objectifs de volume et accordent facilement 4 500 € à 5 500 € de remise directe.",
+      "negotiationMarginPct": [8, 13],
+      "pros": ["Exempté de surtaxe douanière UE et de malus CO2/poids", "Équipement pléthorique tout inclus sans option payante", "80 à 125 km en électrique + 1 080 km au total avec charge DC"],
+      "cons": ["Direction peu informative sur route sinueuse", "Coffre de 425 L moyen pour un SUV de 4,77 m"],
+      "ratings": { "value": 9.4, "range": 9.2, "comfort": 8.6, "equipment": 9.6 },
+      "lastChecked": "2026-11-08"
+    },
+    {
+      "id": "kia-ev3-81kwh",
+      "brand": "Kia",
+      "model": "EV3 Long Range 81,4 kWh",
+      "origin": "Corée du Sud",
+      "madeIn": "Gwangmyeong (Corée du Sud)",
+      "chineseBrand": false,
+      "energy": "BEV",
+      "segment": "SUV compact",
+      "isSUV": true,
+      "officialUrl": "https://www.kia.com/fr/modeles/ev3/decouvrir/",
+      "configuratorUrl": "https://www.kia.com/fr/acheter/configurateur/#/modele/ev3",
+      "imageUrl": null,
+      "priceFromEur": 35990,
+      "priceToEur": 45990,
+      "specs": {
+        "lengthMm": 4300,
+        "widthMm": 1850,
+        "trunkL": 460,
+        "seats": 5,
+        "powerHp": 204,
+        "batteryKwh": 81.4,
+        "rangeKm": 605,
+        "electricRangeKm": 605,
+        "consumption": "14,9 kWh/100 km",
+        "co2gkm": 0,
+        "dcChargeKw": 128,
+        "acChargeKw": 11,
+        "charge10to80min": 31,
+        "zeroTo100s": 7.7,
+        "towingKg": 1000,
+        "warranty": "7 ans ou 150 000 km",
+        "batteryWarranty": "7 ans ou 150 000 km"
+      },
+      "versions": [
+        { "name": "EV3 Standard 58,3 kWh (436 km)", "priceEur": 35990, "highlights": ["Autonomie 436 km", "Triple écran panoramique 30\"", "Garantie 7 ans"] },
+        { "name": "EV3 Autonomie Étendue 81,4 kWh (605 km)", "priceEur": 40990, "highlights": ["Autonomie record 605 km WLTP", "Coffre 460 L + Frunk 25 L", "Navigation intelligente EV"] },
+        { "name": "Earth 81,4 kWh", "priceEur": 43190, "highlights": ["Sièges et volant chauffants", "Clé digitale 2.0", "Vitres arrière surteintées"] }
+      ],
+      "standardEquipment": [
+        "Triple écran panoramique (12,3\" + 5,3\" + 12,3\")",
+        "Garantie 7 ans / 150 000 km constructeur",
+        "Coffre 460 L + coffre avant (frunk) de 25 L",
+        "Régulateur adaptatif avec maintien dans la voie",
+        "Caméra de recul et radars AV/AR",
+        "Apple CarPlay & Android Auto sans fil"
+      ],
+      "aids": {
+        "ecoScoreEligible": false,
+        "bonusEur": 0,
+        "malusEur": 0,
+        "socialLeasing": "Non éligible (assemblé en Corée)"
+      },
+      "offers": [
+        {
+          "type": "LLD",
+          "title": "LLD Kia EV3 avec Avantage Client Kia de 4 000 €",
+          "monthlyEur": 297,
+          "durationMonths": 37,
+          "downPaymentEur": 3500,
+          "kmPerYear": 10000,
+          "discountEur": 4000,
+          "priceAfterEur": 31990,
+          "validUntil": "2026-11-30",
+          "conditions": "Avantage client Kia de 4 000 € déduit (compensation bonus écologique).",
+          "sourceUrl": "https://www.kia.com/fr/acheter/offres-du-moment/"
+        }
+      ],
+      "dealerBehavior": "Pour compenser l'absence de bonus gouvernemental (production coréenne), Kia accorde une remise officielle de 4 000 €, cumulable avec 3 à 4 % de geste commercial supplémentaire en concession.",
+      "negotiationMarginPct": [6, 10],
+      "pros": ["Autonomie exceptionnelle de 605 km dans seulement 4,30 m", "Habitabilité et coffre (460 L + 25 L) dignes d'un segment supérieur", "Garantie 7 ans rassurante"],
+      "cons": ["Non éligible au bonus écologique d'État (compensé par remise Kia)", "Architecture 400V (31 min 10-80 %) moins rapide que les EV6/EV9 800V"],
+      "ratings": { "value": 8.9, "range": 9.6, "comfort": 8.7, "equipment": 8.9 },
+      "lastChecked": "2026-11-08"
+    }
+  ]
+}

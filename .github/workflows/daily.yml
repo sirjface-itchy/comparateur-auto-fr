@@ -1,0 +1,118 @@
+name: Veille Quotidienne Offres Auto (06h30 Email & 07h00 Push)
+
+on:
+  schedule:
+    # 06h30 heure de Paris (UTC+2 en été = 04:30 UTC, UTC+1 en hiver = 05:30 UTC)
+    - cron: "30 4,5 * * *"
+    # 07h00 heure de Paris (UTC+2 en été = 05:00 UTC, UTC+1 en hiver = 06:00 UTC)
+    - cron: "0 5,6 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Mode d'exécution (all, email, push, update-only)"
+        required: false
+        default: "all"
+        type: choice
+        options:
+          - all
+          - email
+          - push
+          - update-only
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  daily-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Déterminer l'heure de Paris et les tâches à exécuter
+        id: gate
+        run: |
+          PARIS_HM=$(TZ=Europe/Paris date +%H:%M)
+          PARIS_H=$(TZ=Europe/Paris date +%H)
+          echo "Heure actuelle à Paris : $PARIS_HM (événement : ${{ github.event_name }}, cron : ${{ github.event.schedule }})"
+
+          RUN_UPDATE="false"
+          RUN_EMAIL="false"
+          RUN_PUSH="false"
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            MODE="${{ inputs.mode || 'all' }}"
+            if [ "$MODE" = "all" ]; then
+              RUN_UPDATE="true"
+              RUN_EMAIL="true"
+              RUN_PUSH="true"
+            elif [ "$MODE" = "email" ]; then
+              RUN_UPDATE="true"
+              RUN_EMAIL="true"
+            elif [ "$MODE" = "push" ]; then
+              RUN_PUSH="true"
+            elif [ "$MODE" = "update-only" ]; then
+              RUN_UPDATE="true"
+            fi
+          else
+            # Déclenchement planifié (schedule) : vérifie l'heure réelle à Paris
+            if [ "$PARIS_H" = "06" ]; then
+              RUN_UPDATE="true"
+              RUN_EMAIL="true"
+            elif [ "$PARIS_H" = "07" ]; then
+              RUN_PUSH="true"
+            fi
+          fi
+
+          echo "run_update=$RUN_UPDATE" >> "$GITHUB_OUTPUT"
+          echo "run_email=$RUN_EMAIL" >> "$GITHUB_OUTPUT"
+          echo "run_push=$RUN_PUSH" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout du dépôt
+        if: steps.gate.outputs.run_update == 'true' || steps.gate.outputs.run_email == 'true' || steps.gate.outputs.run_push == 'true'
+        uses: actions/checkout@v4
+
+      - name: Configuration de Node.js 20
+        if: steps.gate.outputs.run_update == 'true' || steps.gate.outputs.run_email == 'true' || steps.gate.outputs.run_push == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Installation des dépendances
+        if: steps.gate.outputs.run_update == 'true' || steps.gate.outputs.run_email == 'true' || steps.gate.outputs.run_push == 'true'
+        run: npm install --no-audit --no-fund
+
+      - name: Actualisation des offres constructeurs & snapshot historique
+        if: steps.gate.outputs.run_update == 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/update-offers.mjs
+
+      - name: Commit et push des données mises à jour
+        if: steps.gate.outputs.run_update == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if ! git diff --staged --quiet; then
+            git commit -m "chore(data): actualisation quotidienne des offres ($(TZ=Europe/Paris date +%Y-%m-%d))"
+            git pull --rebase origin main || true
+            git push origin HEAD:main
+          else
+            echo "Aucune modification de données à commiter."
+          fi
+
+      - name: Envoi du rapport Email de 06h30 (et génération digest HTML)
+        if: steps.gate.outputs.run_email == 'true'
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          DIGEST_TO: ${{ secrets.DIGEST_TO || 'sirjface@gmail.com' }}
+          APP_URL: "https://sirjface-itchy.github.io/comparateur-auto-fr/"
+        run: node scripts/send-digest.mjs
+
+      - name: Envoi de la notification Push matinale de 07h00 (ntfy.sh)
+        if: steps.gate.outputs.run_push == 'true'
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC || 'comparateur-auto-fr-sirjface-7h' }}
+          APP_URL: "https://sirjface-itchy.github.io/comparateur-auto-fr/"
+        run: node scripts/send-digest.mjs --push
